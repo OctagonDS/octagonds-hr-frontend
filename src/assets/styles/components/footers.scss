@@ -393,7 +393,11 @@
     }
   }
   .logo_city {
-    fill: #4e483b;
+    // fill: #4e483b;
+    fill: #ffffff;
+    filter: drop-shadow(0px 0px 2.5px #cfd6dd)
+      drop-shadow(0px 0px 1.5px #ffd369);
+    opacity: 0.3;
   }
   @media (min-width: 3440px) {
     justify-content: center;
