@@ -1,0 +1,38 @@
+{
+  "header": {
+    "titleMainSite": "Main site"
+  },
+  "main": {
+    "cookie": "We use cookies <br/> to make our website better",
+    "cookieButton": "mmm... cookies :)"
+  },
+  "aboutUs": {
+    "slideDesignTitle": "design",
+    "slideCodingTitle": "coding",
+    "slideDesignDescription": "UI/UX design for web <br /> and mobile applications. <br /> Development of vector graphics.",
+    "slideCodingDescription": "Creation of multifunctional web applications and mobile applications development. <br /> Development of server architecture and databases.",
+    "slideButton": "Let's do it"
+  },
+  "footer": {
+    "copyright": " All rights reserved © {{year}} <3>Octagon DS</3>",
+    "LLC": "Limited Liability Company 'Octagon DS'",
+    "titleBank": "Bank details",
+    "PSRN": "KPP",
+    "ITN": "INN",
+    "TRRC": "OGRN",
+    "legalAddress": "Legal address",
+    "legalAddressText": "mkr. Severnyj, d. 4, kv. 5, Igra, Igrinskij r-n, Udmurt republic , 427145, Russian Federation",
+    "actualAddress": "Actual address",
+    "actualAddressText": "154, Vorovskogo Street, Izhevsk, Udmurt republic, 426000, Russian Federation",
+    "account": "Bank account",
+    "bank": "Bank",
+    "bankName": "AO Tinkoff Bank",
+    "legalAddressBank": "38A, bld. 26, 2 Khutorskaya Street, Moscow, 127287",
+    "corrAcc": "Corr. acc",
+    "LetsGetCloser": "Let's get closer",
+    "titleContacts": "We're in touch",
+    "timeWork": "Mon - Fri 9:00 to 18:00 MSK",
+    "titleWork": "Join the team",
+    "freeСall": "free call"
+  }
+}
