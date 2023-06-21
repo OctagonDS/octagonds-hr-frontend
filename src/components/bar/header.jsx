@@ -23,7 +23,7 @@ const Header = () => {
         </div>
         <div className="header_flex__right__social">
           <div className="header_flex__mail">
-            <a href="mailto:hello@octagonds.tech">hello@octagonds.tech</a>
+            <a href="mailto:hr@octagonds.tech">hr@octagonds.tech</a>
           </div>
           <div className="header_flex__phone">
             <a href="tel:+78007775312">8 800 777 53 12</a>
