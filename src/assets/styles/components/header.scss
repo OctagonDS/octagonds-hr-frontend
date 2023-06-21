@@ -194,6 +194,10 @@
     text-transform: lowercase;
     & div {
       font-size: 12px;
+      &::selection {
+        background-color: #ffd369;
+        color: #393e46;
+      }
     }
     & a {
       color: #eee;

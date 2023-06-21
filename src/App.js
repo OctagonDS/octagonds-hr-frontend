@@ -1,6 +1,6 @@
 import './assets/styles/App.scss'
 import './assets/styles/Fonts.scss'
-import { MainPage } from './page/main'
+import { MainPage } from './routes/main'
 
 function App() {
   return (

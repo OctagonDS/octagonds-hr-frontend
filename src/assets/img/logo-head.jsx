@@ -1,12 +1,13 @@
 import React from 'react'
 
-export function LogoHeadSVG() {
+export function LogoHeadSVG(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       x="0px"
       y="0px"
       viewBox="0 0 1125.9 327.3"
+      {...props}
     >
       <g id="Слой_1">
         <g id="Слой_3">

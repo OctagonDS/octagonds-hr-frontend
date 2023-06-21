@@ -1,8 +1,11 @@
 import Header from '../components/bar/header.jsx'
-import Content from '../components/page/content.jsx'
+import Content from '../page/content.jsx'
 import CookieConsent from 'react-cookie-consent'
 import { Cookie } from '../assets/img/svg/cookie.jsx'
 import { useTranslation, Trans } from 'react-i18next'
+import { Route, Routes } from 'react-router-dom'
+import NotFound from '../page/notFound.jsx'
+import Footer from '../components/page/footer.jsx'
 
 export function MainPage() {
   const { t } = useTranslation()
@@ -10,7 +13,13 @@ export function MainPage() {
   return (
     <div className="body-page" style={{ position: 'relative' }}>
       <Header />
-      <Content />
+      <div className="footer-block">
+        <Routes>
+          <Route path={'/'} index={true} element={<Content />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        <Footer />
+      </div>
       <CookieConsent
         location="bottom"
         buttonText={t('main.cookieButton')}

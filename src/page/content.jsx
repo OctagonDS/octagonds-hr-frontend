@@ -1,12 +1,7 @@
-import Footer from './footer'
-
 const Content = () => {
   return (
     <div className="footer-block">
-      {/* <div className="logo-footer">
-        <LogoHeadSVG />
-      </div> */}
-      <div className={'slide-block'}>
+      <div className="slide-block">
         <div className="page-404">
           <div className="code-area">
             <span
@@ -177,7 +172,6 @@ const Content = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   )
 }

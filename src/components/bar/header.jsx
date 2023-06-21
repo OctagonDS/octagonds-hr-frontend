@@ -6,10 +6,13 @@ import LangMenu from '../../ui/langMenu'
 
 const Header = () => {
   const { t } = useTranslation()
+
   return (
     <div className="header_flex">
       <div className="logo">
-        <LogoHeadSVG />
+        <LogoHeadSVG
+          onClick={() => window.open('https://octagonds.tech/', '_blank')}
+        />
       </div>
       <div className="header_flex__right">
         <div className="header_flex__right__social">
