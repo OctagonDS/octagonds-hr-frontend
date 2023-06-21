@@ -95,6 +95,13 @@ textarea:-webkit-autofill:focus {
   display: flex;
   background: linear-gradient(0deg, rgb(34 40 49 / 58%), #222831);
 }
+.content_block {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(0deg, rgb(34 40 49 / 58%), #222831);
+  margin-bottom: 10%;
+}
 
 /*  */
 .slide-block .left-block {
