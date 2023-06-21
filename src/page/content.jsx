@@ -11,8 +11,8 @@ const Content = () => {
   return (
     <div className="footer-block">
       <div className="content_block">
-        <div className="content" data-aos="fade-up">
-          <div data-aos="fade-up" className="content__title">
+        <div className="content">
+          <div className="content__title">
             этому городу ножен новый{' '}
             <span className="title_back_color">герой</span>
           </div>
@@ -32,19 +32,17 @@ const Content = () => {
             </p>
           </div>
         </div>
-        <div className="content" data-aos="fade-up">
-          <div data-aos="fade-up" className="content__title">
-            вакансии
-          </div>
+        <div className="content">
+          <div className="content__title">вакансии</div>
         </div>
         <div className="content" data-aos="fade-up">
-          <div data-aos="fade-up" className="content__item__row">
+          <div className="content__item__row">
             <div className="content__bit"></div>
             <div className="content__item"></div>
           </div>
         </div>
         <div className="content" data-aos="fade-up">
-          <div data-aos="fade-up" className="content__item__row">
+          <div className="content__item__row">
             <div className="content__item"></div>
             <div className="content__bit"></div>
           </div>

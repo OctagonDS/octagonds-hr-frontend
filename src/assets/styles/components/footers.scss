@@ -1023,6 +1023,7 @@ body:active .skyline:before {
   animation-direction: alternate;
   animation-timing-function: ease-out;
   animation-delay: 0s;
+  transform: translateX(-50%);
   &-active {
     @extend .hr_form;
     transform: translateX(-50%);
