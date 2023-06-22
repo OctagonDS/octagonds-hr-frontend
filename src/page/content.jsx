@@ -35,7 +35,7 @@ const Content = () => {
       </div>
       <div className="content" style={{ marginBottom: 20 }}>
         <div className="content__title" style={{ marginBottom: 20 }}>
-          наши вакансии
+          python разработчик
         </div>
       </div>
       <div className="content" data-aos="fade-up">
@@ -69,7 +69,6 @@ const Content = () => {
             </div>
           </div>
           <div className="content__item">
-            <h4>Python разработчик</h4>
             <p>
               Lorem Ipsum - это текст-"рыба", часто используемый в печати и
               вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
@@ -82,6 +81,15 @@ const Content = () => {
           </div>
         </div>
       </div>
+      <div
+        className="content"
+        style={{ marginBottom: 20, marginTop: 20 }}
+        data-aos="fade-up"
+      >
+        <div className="content__title" style={{ marginBottom: 20 }}>
+          тестировщик
+        </div>
+      </div>
       <div className="content" data-aos="fade-up">
         <div
           className="content__item__row"
@@ -89,7 +97,6 @@ const Content = () => {
           onMouseOut={() => setGlados('-close')}
         >
           <div className="content__item">
-            <h4>Тестировщик</h4>
             <p>
               Lorem Ipsum - это текст-"рыба", часто используемый в печати и
               вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
@@ -126,6 +133,15 @@ const Content = () => {
           </div>
         </div>
       </div>
+      <div
+        className="content"
+        style={{ marginBottom: 20, marginTop: 20 }}
+        data-aos="fade-up"
+      >
+        <div className="content__title" style={{ marginBottom: 20 }}>
+          HR
+        </div>
+      </div>
       <div className="content" data-aos="fade-up">
         <div
           className="content__item__row"
@@ -136,7 +152,6 @@ const Content = () => {
             <div className="knight" />
           </div>
           <div className="content__item">
-            <h4>HR</h4>
             <p>
               Lorem Ipsum - это текст-"рыба", часто используемый в печати и
               вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
@@ -149,10 +164,18 @@ const Content = () => {
           </div>
         </div>
       </div>
+      <div
+        className="content"
+        style={{ marginBottom: 20, marginTop: 20 }}
+        data-aos="fade-up"
+      >
+        <div className="content__title" style={{ marginBottom: 20 }}>
+          team lead
+        </div>
+      </div>
       <div className="content" data-aos="fade-up">
         <div className="content__item__row">
           <div className="content__item">
-            <h4>Team Lead</h4>
             <p>
               Lorem Ipsum - это текст-"рыба", часто используемый в печати и
               вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов

@@ -28,12 +28,20 @@ $bubble-border: 0 -1 * $px $eee, 0 -2 * $px $black, $px 0 $eee,
     font-size: 70px;
     font-weight: 800;
     margin-bottom: 50px;
+    &::selection {
+      background-color: #ffd369;
+      color: #393e46;
+    }
   }
   &__desc {
     width: 700px;
     min-height: 100px;
     font-size: 16px;
     text-align: left;
+    &::selection {
+      background-color: #ffd369;
+      color: #393e46;
+    }
   }
 
   &__bit {
@@ -46,6 +54,16 @@ $bubble-border: 0 -1 * $px $eee, 0 -2 * $px $black, $px 0 $eee,
       text-align: left;
       font-size: 12px;
       color: #393e46;
+      &::selection {
+        background-color: #ffd369;
+        color: #393e46;
+      }
+      & div {
+        &::selection {
+          background-color: #ffd369;
+          color: #393e46;
+        }
+      }
     }
   }
   &__item {
@@ -53,14 +71,15 @@ $bubble-border: 0 -1 * $px $eee, 0 -2 * $px $black, $px 0 $eee,
     border-radius: 10px;
     width: 50%;
     transition: 0.4s;
-    & h4 {
-      font-size: 24px;
-      text-align: left;
-      margin-bottom: 50px;
-    }
+    display: flex;
+    align-items: center;
     & p {
       font-size: 16px;
       text-align: left;
+      &::selection {
+        background-color: #ffd369;
+        color: #393e46;
+      }
     }
 
     &__row {
@@ -76,6 +95,10 @@ $bubble-border: 0 -1 * $px $eee, 0 -2 * $px $black, $px 0 $eee,
   color: #393e46;
   background: #ffd369;
   box-shadow: 7px 0 #ffd369, -7px 0 #ffd369;
+  &::selection {
+    background-color: #ffd369;
+    color: #393e46;
+  }
 }
 
 .bubble {
