@@ -11,7 +11,10 @@ $gray-blue-glados: #9badb7;
   height: $width-glados;
   position: absolute;
   top: 0;
-  right: 19em;
+  left: 150px;
+  @media (max-width: 1600px) {
+    left: 100px;
+  }
   &__eye {
     position: relative;
     width: $width-glados * 2;
@@ -23,9 +26,12 @@ $gray-blue-glados: #9badb7;
     transform: translate(171px, 221px);
   }
   &__dialog {
-    position: relative;
-    right: -30%;
+    position: absolute;
+    left: 380px;
     top: 178px;
+    @media (max-width: 1600px) {
+      left: 335px;
+    }
   }
   box-shadow: (4 * $width-glados) (1 * $width-glados) 0 $black-glados,
     (5 * $width-glados) (1 * $width-glados) 0 $black-glados,
