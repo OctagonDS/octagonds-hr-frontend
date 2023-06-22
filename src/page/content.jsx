@@ -48,7 +48,7 @@ const Content = () => {
               <div className="portal" />
             </div>
             <div className="rick" />
-            {portal && (
+            {portal === '-open' && (
               <div
                 className="bubble bottom rick__dialog"
                 style={{ width: 233 }}
