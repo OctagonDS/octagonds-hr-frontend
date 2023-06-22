@@ -51,10 +51,11 @@ const Content = () => {
             {portal === '-open' && (
               <div
                 className="bubble bottom rick__dialog"
-                style={{ width: 233 }}
+                style={{ width: 240 }}
               >
                 <div className="content__bit__text">
-                  <div>Погнали!</div> Приключение на 5 минут.
+                  <div>Новая таска, погнали!</div> Вошли и вышли. Приключение на
+                  20 минут.
                 </div>
               </div>
             )}
