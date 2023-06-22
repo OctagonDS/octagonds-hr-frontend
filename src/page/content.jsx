@@ -48,17 +48,24 @@ const Content = () => {
               <div className="portal" />
             </div>
             <div className="rick" />
-            {portal === '-open' && (
-              <div
-                className="bubble bottom rick__dialog"
-                style={{ width: 240 }}
-              >
-                <div className="content__bit__text">
-                  <div>Новая таска, погнали!</div> Вошли и вышли. Приключение на
-                  20 минут.
-                </div>
+            <div
+              className="bubble bottom rick__dialog"
+              style={
+                portal === '-open'
+                  ? { width: 240, top: '-82px' }
+                  : { width: 240, top: '-41px' }
+              }
+            >
+              <div className="content__bit__text">
+                {portal === '-open' ? (
+                  <>
+                    <div>Давай.</div> Вошли и вышли. Приключение на 20 минут.
+                  </>
+                ) : (
+                  <>Пришли новые таски.</>
+                )}
               </div>
-            )}
+            </div>
           </div>
           <div className="content__item">
             <h4>Python разработчик</h4>
