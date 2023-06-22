@@ -66,7 +66,14 @@
     radial-gradient(2px 2px at 249px 162px, #884228, transparent),
     radial-gradient(2px 2px at 73px 99px, #442e26, transparent),
     radial-gradient(1px 1px at 163px 42px, #403433, transparent),
-    linear-gradient(180deg, #fff0 10%, #000 25%, #111 50%, #222 75%, #111 100%);
+    linear-gradient(
+      180deg,
+      #fff0 10%,
+      #000000b8 25%,
+      #111 50%,
+      #222 75%,
+      #111 100%
+    );
   background-repeat: no-repeat, repeat;
   background-size: 333px 263px, 333px 163px, 333px 163px, 333px 163px,
     333px 163px, 333px 163px, 333px 163px, 333px 163px, 333px 163px, 333px 163px,
