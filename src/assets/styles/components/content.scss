@@ -1,3 +1,37 @@
+$width-rick: 10px;
+$width-portal: 8px;
+
+$blu-head-rick: #b5ddeb;
+$gray-head-rick: #84bacf;
+$skin-rick: #f2e4c1;
+$skin-shadow-rick: #dccb9f;
+$mouth-rick: #dee4ca;
+$nose-rick: #f3737e;
+$jacket-rick: #eff3f4;
+$jacket-shadow-rick: #c7ccd1;
+$jacket-blue-rick: #a5e4e2;
+$belt-rick: #282928;
+$plaque-rick: #fdd514;
+$plaque-shadow-rick: #feb10f;
+$pants-rick: #5c4130;
+$pants-shadow-rick: #4d3729;
+$shoes-rick: #272727;
+$shoes-shadow-rick: #222222;
+$green-rick: #6af62a;
+$black: #000;
+$portal-1: #0c9c06;
+$portal-2: #0cc005;
+$portal-3: #a0eb14;
+$portal-4: #f0f9b6;
+$eee: #eee;
+$shadow: rgba(0, 0, 0, 0.1);
+$px: 4px;
+
+$bubble-border: 0 -1 * $px $eee, 0 -2 * $px $black, $px 0 $eee,
+  $px -1 * $px $black, 2 * $px 0 $black, 0 $px $eee, 0 2 * $px $black,
+  -1 * $px 0 $eee, -1 * $px $px $black, -2 * $px 0 $black,
+  -1 * $px -1 * $px $black, $px $px $black;
+
 .content {
   align-items: flex-start;
   display: flex;
@@ -7,6 +41,10 @@
   padding-left: 10%;
   padding-right: 10%;
   position: relative;
+  @media (min-width: 3440px) {
+    padding-left: 24%;
+    padding-right: 24%;
+  }
   &__title {
     font-size: 70px;
     font-weight: 800;
@@ -18,25 +56,39 @@
     font-size: 16px;
     text-align: left;
   }
+
   &__bit {
-    min-height: 100px;
+    min-height: 350px;
     width: 50%;
+    position: relative;
+    &__text {
+      font-family: 'Pixeloid';
+      font-weight: 600;
+      text-align: left;
+      font-size: 12px;
+      color: #393e46;
+    }
   }
   &__item {
-    border: 1px solid #eee;
-    min-height: 100px;
+    min-height: 350px;
     border-radius: 10px;
     width: 50%;
     transition: 0.4s;
+    & h4 {
+      font-size: 20px;
+      text-align: left;
+      margin-bottom: 50px;
+    }
+    & p {
+      font-size: 16px;
+      text-align: left;
+    }
 
     &__row {
       display: flex;
       align-items: center;
       gap: 100px;
       width: 100%;
-      &:hover .content__item {
-        border: 1px solid #ffd369;
-      }
     }
   }
 }
@@ -45,4 +97,787 @@
   color: #393e46;
   background: #ffd369;
   box-shadow: 7px 0 #ffd369, -7px 0 #ffd369;
+}
+
+.bubble {
+  position: relative;
+  display: inline-block;
+  margin: 5 * $px;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 16px;
+  line-height: 1.3em;
+  // letter-spacing: -0.04em;
+  background-color: $eee;
+  color: $black;
+  padding: 3 * $px;
+  box-shadow: $bubble-border;
+
+  box-sizing: border-box;
+  width: 200px;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+  }
+
+  &.shadow {
+    box-shadow: $bubble-border, $px 3 * $px $shadow, 3 * $px $px $shadow,
+      2 * $px 2 * $px $shadow;
+  }
+
+  &.mini {
+    width: 110px;
+    font-size: 16px;
+    padding: 4px;
+    font-family: monospace;
+  }
+  &.large {
+    width: 560px;
+    font-size: 24px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  &.grow {
+    width: initial;
+  }
+
+  &.top::after {
+    height: $px;
+    width: $px;
+    top: -2 * $px;
+    left: 8 * $px;
+    box-shadow: 0 -1 * $px $black, 0 -2 * $px $black, 0 -3 * $px $black,
+      0 -4 * $px $black, -1 * $px -3 * $px $black, -2 * $px -2 * $px $black,
+      -3 * $px -1 * $px $black, -1 * $px -1 * $px $eee, -2 * $px -1 * $px $eee,
+      -1 * $px -2 * $px $eee, -1 * $px 0 $eee, -2 * $px 0 $eee, -3 * $px 0 $eee;
+  }
+
+  &.right::after {
+    height: $px;
+    width: $px;
+    top: 21 * $px;
+    right: -2 * $px;
+    background: white;
+    box-shadow: 1 * $px -1 * $px $eee, 1 * $px 0 $eee, 2 * $px 0 $eee,
+      0 -2 * $px $eee, 1 * $px 1 * $px $black, 2 * $px 1 * $px $black,
+      3 * $px 1 * $px $black, 4 * $px 1 * $px $black, 3 * $px 0 $black,
+      2 * $px -1 * $px $black, 1 * $px -2 * $px $black, 0 -1 * $px $eee;
+  }
+
+  &.bottom::after {
+    height: $px;
+    width: $px;
+    bottom: -2 * $px;
+    left: 8 * $px;
+    box-shadow: 0 $px $black, 0 2 * $px $black, 0 3 * $px $black,
+      0 4 * $px $black, -1 * $px 3 * $px $black, -2 * $px 2 * $px $black,
+      -3 * $px 1 * $px $black, -1 * $px $px $eee, -2 * $px $px $eee,
+      -1 * $px 2 * $px $eee, -1 * $px 0 $eee, -2 * $px 0 $eee, -3 * $px 0 $eee;
+  }
+
+  &.left::after {
+    height: $px;
+    width: $px;
+    top: 5 * $px;
+    left: -2 * $px;
+    background: white;
+    box-shadow: -1 * $px -1 * $px $eee, -1 * $px 0 $eee, -2 * $px 0 $eee,
+      0 -2 * $px $eee, -1 * $px 1 * $px $black, -2 * $px 1 * $px $black,
+      -3 * $px 1 * $px $black, -4 * $px 1 * $px $black, -3 * $px 0 $black,
+      -2 * $px -1 * $px $black, -1 * $px -2 * $px $black, 0 -1 * $px $eee;
+  }
+}
+
+.rick {
+  width: $width-rick;
+  height: $width-rick;
+  position: absolute;
+  top: 15px;
+  right: 11em;
+  &__dialog {
+    position: absolute;
+    right: 72px;
+    top: -72px;
+  }
+  box-shadow: (9 * $width-rick) (3 * $width-rick) 0 $blu-head-rick,
+    (5 * $width-rick) (4 * $width-rick) 0 $blu-head-rick,
+    (8 * $width-rick) (4 * $width-rick) 0 $blu-head-rick,
+    (9 * $width-rick) (4 * $width-rick) 0 $blu-head-rick,
+    (12 * $width-rick) (4 * $width-rick) 0 $gray-head-rick,
+    (5 * $width-rick) (5 * $width-rick) 0 $blu-head-rick,
+    (6 * $width-rick) (5 * $width-rick) 0 $blu-head-rick,
+    (8 * $width-rick) (5 * $width-rick) 0 $blu-head-rick,
+    (9 * $width-rick) (5 * $width-rick) 0 $gray-head-rick,
+    (10 * $width-rick) (5 * $width-rick) 0 $blu-head-rick,
+    (11 * $width-rick) (5 * $width-rick) 0 $gray-head-rick,
+    (12 * $width-rick) (5 * $width-rick) 0 $gray-head-rick,
+    (3 * $width-rick) (6 * $width-rick) 0 $blu-head-rick,
+    (5 * $width-rick) (6 * $width-rick) 0 $blu-head-rick,
+    (6 * $width-rick) (6 * $width-rick) 0 $blu-head-rick,
+    (7 * $width-rick) (6 * $width-rick) 0 $gray-head-rick,
+    (8 * $width-rick) (6 * $width-rick) 0 $gray-head-rick,
+    (9 * $width-rick) (6 * $width-rick) 0 $blu-head-rick,
+    (10 * $width-rick) (6 * $width-rick) 0 $blu-head-rick,
+    (11 * $width-rick) (6 * $width-rick) 0 $gray-head-rick,
+    (3 * $width-rick) (7 * $width-rick) 0 $blu-head-rick,
+    (4 * $width-rick) (7 * $width-rick) 0 $blu-head-rick,
+    (5 * $width-rick) (7 * $width-rick) 0 $blu-head-rick,
+    (6 * $width-rick) (7 * $width-rick) 0 $skin-rick,
+    (7 * $width-rick) (7 * $width-rick) 0 $skin-rick,
+    (8 * $width-rick) (7 * $width-rick) 0 $skin-rick,
+    (9 * $width-rick) (7 * $width-rick) 0 $skin-rick,
+    (10 * $width-rick) (7 * $width-rick) 0 $gray-head-rick,
+    (11 * $width-rick) (7 * $width-rick) 0 $gray-head-rick,
+    (12 * $width-rick) (7 * $width-rick) 0 $blu-head-rick,
+    (13 * $width-rick) (7 * $width-rick) 0 $gray-head-rick,
+    (14 * $width-rick) (7 * $width-rick) 0 $gray-head-rick,
+    (4 * $width-rick) (8 * $width-rick) 0 $blu-head-rick,
+    (5 * $width-rick) (8 * $width-rick) 0 $skin-rick,
+    (6 * $width-rick) (8 * $width-rick) 0 $skin-rick,
+    (7 * $width-rick) (8 * $width-rick) 0 $skin-rick,
+    (8 * $width-rick) (8 * $width-rick) 0 $skin-rick,
+    (9 * $width-rick) (8 * $width-rick) 0 $skin-rick,
+    (10 * $width-rick) (8 * $width-rick) 0 $skin-rick,
+    (11 * $width-rick) (8 * $width-rick) 0 $blu-head-rick,
+    (12 * $width-rick) (8 * $width-rick) 0 $gray-head-rick,
+    (13 * $width-rick) (8 * $width-rick) 0 $gray-head-rick,
+    (3 * $width-rick) (9 * $width-rick) 0 $blu-head-rick,
+    (4 * $width-rick) (9 * $width-rick) 0 $gray-head-rick,
+    (5 * $width-rick) (9 * $width-rick) 0 $blu-head-rick,
+    (6 * $width-rick) (9 * $width-rick) 0 $blu-head-rick,
+    (7 * $width-rick) (9 * $width-rick) 0 $blu-head-rick,
+    (8 * $width-rick) (9 * $width-rick) 0 $blu-head-rick,
+    (9 * $width-rick) (9 * $width-rick) 0 $skin-rick,
+    (10 * $width-rick) (9 * $width-rick) 0 $skin-rick,
+    (11 * $width-rick) (9 * $width-rick) 0 $gray-head-rick,
+    (12 * $width-rick) (9 * $width-rick) 0 $gray-head-rick,
+    (4 * $width-rick) (10 * $width-rick) 0 $gray-head-rick,
+    (5 * $width-rick) (10 * $width-rick) 0 $black,
+    (6 * $width-rick) (10 * $width-rick) 0 $nose-rick,
+    (7 * $width-rick) (10 * $width-rick) 0 $skin-rick,
+    (8 * $width-rick) (10 * $width-rick) 0 $black,
+    (9 * $width-rick) (10 * $width-rick) 0 $skin-rick,
+    (10 * $width-rick) (10 * $width-rick) 0 $skin-rick,
+    (11 * $width-rick) (10 * $width-rick) 0 $skin-rick,
+    (12 * $width-rick) (10 * $width-rick) 0 $gray-head-rick,
+    (13 * $width-rick) (10 * $width-rick) 0 $gray-head-rick,
+    (5 * $width-rick) (11 * $width-rick) 0 $skin-rick,
+    (6 * $width-rick) (11 * $width-rick) 0 $nose-rick,
+    (7 * $width-rick) (11 * $width-rick) 0 $skin-rick,
+    (8 * $width-rick) (11 * $width-rick) 0 $skin-rick,
+    (9 * $width-rick) (11 * $width-rick) 0 $skin-rick,
+    (10 * $width-rick) (11 * $width-rick) 0 $skin-rick,
+    (11 * $width-rick) (11 * $width-rick) 0 $skin-shadow-rick,
+    (12 * $width-rick) (11 * $width-rick) 0 $gray-head-rick,
+    (13 * $width-rick) (11 * $width-rick) 0 $gray-head-rick,
+    (14 * $width-rick) (11 * $width-rick) 0 $gray-head-rick,
+    (5 * $width-rick) (12 * $width-rick) 0 $skin-rick,
+    (6 * $width-rick) (12 * $width-rick) 0 $skin-rick,
+    (7 * $width-rick) (12 * $width-rick) 0 $skin-rick,
+    (8 * $width-rick) (12 * $width-rick) 0 $skin-rick,
+    (9 * $width-rick) (12 * $width-rick) 0 $skin-shadow-rick,
+    (10 * $width-rick) (12 * $width-rick) 0 $skin-shadow-rick,
+    (11 * $width-rick) (12 * $width-rick) 0 $gray-head-rick,
+    (12 * $width-rick) (12 * $width-rick) 0 $gray-head-rick,
+    (6 * $width-rick) (13 * $width-rick) 0 $skin-rick,
+    (7 * $width-rick) (13 * $width-rick) 0 $mouth-rick,
+    (8 * $width-rick) (13 * $width-rick) 0 $skin-shadow-rick,
+    (9 * $width-rick) (13 * $width-rick) 0 $skin-shadow-rick,
+    (10 * $width-rick) (13 * $width-rick) 0 $skin-shadow-rick,
+    (11 * $width-rick) (13 * $width-rick) 0 $gray-head-rick,
+    (5 * $width-rick) (14 * $width-rick) 0 $jacket-rick,
+    (6 * $width-rick) (14 * $width-rick) 0 $jacket-rick,
+    (7 * $width-rick) (14 * $width-rick) 0 $gray-head-rick,
+    (8 * $width-rick) (14 * $width-rick) 0 $gray-head-rick,
+    (9 * $width-rick) (14 * $width-rick) 0 $gray-head-rick,
+    (10 * $width-rick) (14 * $width-rick) 0 $jacket-shadow-rick,
+    (11 * $width-rick) (14 * $width-rick) 0 $jacket-shadow-rick,
+    (12 * $width-rick) (14 * $width-rick) 0 $jacket-shadow-rick,
+    (13 * $width-rick) (14 * $width-rick) 0 $jacket-shadow-rick,
+    (4 * $width-rick) (15 * $width-rick) 0 $jacket-rick,
+    (5 * $width-rick) (15 * $width-rick) 0 $jacket-rick,
+    (6 * $width-rick) (15 * $width-rick) 0 $jacket-rick,
+    (7 * $width-rick) (15 * $width-rick) 0 $gray-head-rick,
+    (8 * $width-rick) (15 * $width-rick) 0 $gray-head-rick,
+    (9 * $width-rick) (15 * $width-rick) 0 $gray-head-rick,
+    (10 * $width-rick) (15 * $width-rick) 0 $jacket-rick,
+    (11 * $width-rick) (15 * $width-rick) 0 $jacket-shadow-rick,
+    (12 * $width-rick) (15 * $width-rick) 0 $jacket-shadow-rick,
+    (13 * $width-rick) (15 * $width-rick) 0 $jacket-shadow-rick,
+    (14 * $width-rick) (15 * $width-rick) 0 $jacket-shadow-rick,
+    (4 * $width-rick) (16 * $width-rick) 0 $jacket-rick,
+    (5 * $width-rick) (16 * $width-rick) 0 $jacket-rick,
+    (6 * $width-rick) (16 * $width-rick) 0 $jacket-rick,
+    (7 * $width-rick) (16 * $width-rick) 0 $gray-head-rick,
+    (8 * $width-rick) (16 * $width-rick) 0 $jacket-blue-rick,
+    (9 * $width-rick) (16 * $width-rick) 0 $jacket-blue-rick,
+    (10 * $width-rick) (16 * $width-rick) 0 $jacket-rick,
+    (11 * $width-rick) (16 * $width-rick) 0 $jacket-shadow-rick,
+    (12 * $width-rick) (16 * $width-rick) 0 $jacket-shadow-rick,
+    (13 * $width-rick) (16 * $width-rick) 0 $jacket-rick,
+    (14 * $width-rick) (16 * $width-rick) 0 $jacket-shadow-rick,
+    (4 * $width-rick) (17 * $width-rick) 0 $jacket-rick,
+    (5 * $width-rick) (17 * $width-rick) 0 $jacket-shadow-rick,
+    (6 * $width-rick) (17 * $width-rick) 0 $jacket-rick,
+    (7 * $width-rick) (17 * $width-rick) 0 $gray-head-rick,
+    (8 * $width-rick) (17 * $width-rick) 0 $jacket-blue-rick,
+    (9 * $width-rick) (17 * $width-rick) 0 $jacket-blue-rick,
+    (10 * $width-rick) (17 * $width-rick) 0 $jacket-rick,
+    (11 * $width-rick) (17 * $width-rick) 0 $jacket-shadow-rick,
+    (12 * $width-rick) (17 * $width-rick) 0 $jacket-shadow-rick,
+    (13 * $width-rick) (17 * $width-rick) 0 $jacket-rick,
+    (14 * $width-rick) (17 * $width-rick) 0 $jacket-shadow-rick,
+    (4 * $width-rick) (18 * $width-rick) 0 $jacket-rick,
+    (5 * $width-rick) (18 * $width-rick) 0 $jacket-shadow-rick,
+    (6 * $width-rick) (18 * $width-rick) 0 $jacket-rick,
+    (7 * $width-rick) (18 * $width-rick) 0 $gray-head-rick,
+    (8 * $width-rick) (18 * $width-rick) 0 $jacket-blue-rick,
+    (9 * $width-rick) (18 * $width-rick) 0 $jacket-blue-rick,
+    (10 * $width-rick) (18 * $width-rick) 0 $jacket-rick,
+    (11 * $width-rick) (18 * $width-rick) 0 $jacket-shadow-rick,
+    (12 * $width-rick) (18 * $width-rick) 0 $jacket-shadow-rick,
+    (13 * $width-rick) (18 * $width-rick) 0 $jacket-rick,
+    (14 * $width-rick) (18 * $width-rick) 0 $jacket-shadow-rick,
+    (4 * $width-rick) (19 * $width-rick) 0 $jacket-rick,
+    (5 * $width-rick) (19 * $width-rick) 0 $jacket-shadow-rick,
+    (6 * $width-rick) (19 * $width-rick) 0 $jacket-rick,
+    (7 * $width-rick) (19 * $width-rick) 0 $gray-head-rick,
+    (8 * $width-rick) (19 * $width-rick) 0 $jacket-blue-rick,
+    (9 * $width-rick) (19 * $width-rick) 0 $jacket-blue-rick,
+    (10 * $width-rick) (19 * $width-rick) 0 $jacket-shadow-rick,
+    (11 * $width-rick) (19 * $width-rick) 0 $jacket-shadow-rick,
+    (12 * $width-rick) (19 * $width-rick) 0 $jacket-shadow-rick,
+    (13 * $width-rick) (19 * $width-rick) 0 $jacket-rick,
+    (14 * $width-rick) (19 * $width-rick) 0 $jacket-shadow-rick,
+    (4 * $width-rick) (20 * $width-rick) 0 $jacket-rick,
+    (5 * $width-rick) (20 * $width-rick) 0 $jacket-shadow-rick,
+    (6 * $width-rick) (20 * $width-rick) 0 $jacket-rick,
+    (7 * $width-rick) (20 * $width-rick) 0 $belt-rick,
+    (8 * $width-rick) (20 * $width-rick) 0 $plaque-rick,
+    (9 * $width-rick) (20 * $width-rick) 0 $plaque-shadow-rick,
+    (10 * $width-rick) (20 * $width-rick) 0 $jacket-shadow-rick,
+    (11 * $width-rick) (20 * $width-rick) 0 $jacket-shadow-rick,
+    (12 * $width-rick) (20 * $width-rick) 0 $jacket-shadow-rick,
+    (13 * $width-rick) (20 * $width-rick) 0 $jacket-rick,
+    (14 * $width-rick) (20 * $width-rick) 0 $jacket-shadow-rick,
+    (4 * $width-rick) (21 * $width-rick) 0 $skin-rick,
+    (5 * $width-rick) (21 * $width-rick) 0 $skin-shadow-rick,
+    (6 * $width-rick) (21 * $width-rick) 0 $jacket-rick,
+    (7 * $width-rick) (21 * $width-rick) 0 $pants-shadow-rick,
+    (8 * $width-rick) (21 * $width-rick) 0 $pants-shadow-rick,
+    (9 * $width-rick) (21 * $width-rick) 0 $pants-shadow-rick,
+    (10 * $width-rick) (21 * $width-rick) 0 $jacket-rick,
+    (11 * $width-rick) (21 * $width-rick) 0 $jacket-shadow-rick,
+    (12 * $width-rick) (21 * $width-rick) 0 $jacket-shadow-rick,
+    (13 * $width-rick) (21 * $width-rick) 0 $skin-rick,
+    (14 * $width-rick) (21 * $width-rick) 0 $skin-shadow-rick,
+    (3 * $width-rick) (22 * $width-rick) 0 $jacket-rick,
+    (4 * $width-rick) (22 * $width-rick) 0 $skin-rick,
+    (5 * $width-rick) (22 * $width-rick) 0 $skin-shadow-rick,
+    (6 * $width-rick) (22 * $width-rick) 0 $jacket-rick,
+    (7 * $width-rick) (22 * $width-rick) 0 $pants-shadow-rick,
+    (8 * $width-rick) (22 * $width-rick) 0 $pants-shadow-rick,
+    (9 * $width-rick) (22 * $width-rick) 0 $pants-shadow-rick,
+    (10 * $width-rick) (22 * $width-rick) 0 $jacket-rick,
+    (11 * $width-rick) (22 * $width-rick) 0 $jacket-shadow-rick,
+    (12 * $width-rick) (22 * $width-rick) 0 $jacket-shadow-rick,
+    (13 * $width-rick) (22 * $width-rick) 0 $skin-rick,
+    (14 * $width-rick) (22 * $width-rick) 0 $skin-shadow-rick,
+    (2 * $width-rick) (23 * $width-rick) 0 $green-rick,
+    (3 * $width-rick) (23 * $width-rick) 0 $jacket-rick,
+    (6 * $width-rick) (23 * $width-rick) 0 $jacket-rick,
+    (7 * $width-rick) (23 * $width-rick) 0 $pants-shadow-rick,
+    (8 * $width-rick) (23 * $width-rick) 0 $pants-rick,
+    (9 * $width-rick) (23 * $width-rick) 0 $pants-shadow-rick,
+    (10 * $width-rick) (23 * $width-rick) 0 $jacket-rick,
+    (11 * $width-rick) (23 * $width-rick) 0 $jacket-shadow-rick,
+    (12 * $width-rick) (23 * $width-rick) 0 $jacket-shadow-rick,
+    (3 * $width-rick) (24 * $width-rick) 0 $jacket-rick,
+    (6 * $width-rick) (24 * $width-rick) 0 $jacket-rick,
+    (7 * $width-rick) (24 * $width-rick) 0 $pants-shadow-rick,
+    (8 * $width-rick) (24 * $width-rick) 0 $pants-shadow-rick,
+    (9 * $width-rick) (24 * $width-rick) 0 $jacket-shadow-rick,
+    (10 * $width-rick) (24 * $width-rick) 0 $jacket-rick,
+    (11 * $width-rick) (24 * $width-rick) 0 $jacket-rick,
+    (12 * $width-rick) (24 * $width-rick) 0 $jacket-shadow-rick,
+    (3 * $width-rick) (25 * $width-rick) 0 $jacket-rick,
+    (6 * $width-rick) (25 * $width-rick) 0 $jacket-rick,
+    (7 * $width-rick) (25 * $width-rick) 0 $pants-shadow-rick,
+    (8 * $width-rick) (25 * $width-rick) 0 $pants-shadow-rick,
+    (9 * $width-rick) (25 * $width-rick) 0 $jacket-shadow-rick,
+    (10 * $width-rick) (25 * $width-rick) 0 $jacket-rick,
+    (11 * $width-rick) (25 * $width-rick) 0 $jacket-rick,
+    (12 * $width-rick) (25 * $width-rick) 0 $jacket-shadow-rick,
+    (6 * $width-rick) (26 * $width-rick) 0 $pants-shadow-rick,
+    (7 * $width-rick) (26 * $width-rick) 0 $pants-rick,
+    (8 * $width-rick) (26 * $width-rick) 0 $pants-shadow-rick,
+    (10 * $width-rick) (26 * $width-rick) 0 $pants-shadow-rick,
+    (11 * $width-rick) (26 * $width-rick) 0 $pants-shadow-rick,
+    (12 * $width-rick) (26 * $width-rick) 0 $pants-shadow-rick,
+    (6 * $width-rick) (27 * $width-rick) 0 $pants-rick,
+    (7 * $width-rick) (27 * $width-rick) 0 $pants-rick,
+    (8 * $width-rick) (27 * $width-rick) 0 $pants-shadow-rick,
+    (10 * $width-rick) (27 * $width-rick) 0 $pants-rick,
+    (11 * $width-rick) (27 * $width-rick) 0 $pants-shadow-rick,
+    (12 * $width-rick) (27 * $width-rick) 0 $pants-shadow-rick,
+    (6 * $width-rick) (28 * $width-rick) 0 $shoes-rick,
+    (7 * $width-rick) (28 * $width-rick) 0 $shoes-shadow-rick,
+    (8 * $width-rick) (28 * $width-rick) 0 $shoes-shadow-rick,
+    (10 * $width-rick) (28 * $width-rick) 0 $shoes-rick,
+    (11 * $width-rick) (28 * $width-rick) 0 $shoes-shadow-rick,
+    (12 * $width-rick) (28 * $width-rick) 0 $shoes-shadow-rick,
+    (5 * $width-rick) (29 * $width-rick) 0 $shoes-shadow-rick,
+    (6 * $width-rick) (29 * $width-rick) 0 $shoes-shadow-rick,
+    (7 * $width-rick) (29 * $width-rick) 0 $shoes-shadow-rick,
+    (8 * $width-rick) (29 * $width-rick) 0 $shoes-shadow-rick,
+    (10 * $width-rick) (29 * $width-rick) 0 $shoes-shadow-rick,
+    (11 * $width-rick) (29 * $width-rick) 0 $shoes-shadow-rick,
+    (12 * $width-rick) (29 * $width-rick) 0 $shoes-shadow-rick;
+}
+
+.portal {
+  width: $width-portal;
+  height: $width-portal;
+  &__box {
+    width: 270px;
+    height: 340px;
+    position: absolute;
+    top: 15px;
+    right: 12em;
+    animation-duration: 100ms;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    transform: scaleY(0);
+    &-close {
+      @extend .portal__box;
+      transform: scaleY(0);
+      animation-name: blinky;
+      @keyframes blinky {
+        0% {
+          transform: scaleY(1);
+        }
+        100% {
+          transform: scaleY(0);
+        }
+      }
+    }
+    &-open {
+      @extend .portal__box;
+      transform: scaleY(1);
+      animation-name: blinky-close;
+      @keyframes blinky-close {
+        0% {
+          transform: scaleY(0);
+        }
+        100% {
+          transform: scaleY(1);
+        }
+      }
+    }
+    // @-webkit-keyframes blinky {
+    //   0%,
+    //   9%,
+    //   11%,
+    //   19%,
+    //   21%,
+    //   69%,
+    //   71%,
+    //   100% {
+    //     transform: scaleY(1);
+    //   }
+    //   10%,
+    //   20%,
+    //   70% {
+    //     transform: scaleY(0);
+    //   }
+    // }
+    // @keyframes blinky {
+    //   0%,
+    //   9%,
+    //   11%,
+    //   19%,
+    //   21%,
+    //   69%,
+    //   71%,
+    //   100% {
+    //     transform: scaleY(1);
+    //   }
+    //   10%
+    //   // 20%,
+    //   // 70%
+    //   {
+    //     transform: scaleY(0);
+    //   }
+    // }
+  }
+  box-shadow: (9 * $width-portal) (0 * $width-portal) 0 $portal-1,
+    (19 * $width-portal) (1 * $width-portal) 0 $portal-1,
+    (20 * $width-portal) (1 * $width-portal) 0 $portal-1,
+    (21 * $width-portal) (1 * $width-portal) 0 $portal-1,
+    (17 * $width-portal) (2 * $width-portal) 0 $portal-1,
+    (18 * $width-portal) (2 * $width-portal) 0 $portal-1,
+    (19 * $width-portal) (2 * $width-portal) 0 $portal-2,
+    (20 * $width-portal) (2 * $width-portal) 0 $portal-3,
+    (21 * $width-portal) (2 * $width-portal) 0 $portal-3,
+    (22 * $width-portal) (2 * $width-portal) 0 $portal-2,
+    (23 * $width-portal) (2 * $width-portal) 0 $portal-1,
+    (17 * $width-portal) (3 * $width-portal) 0 $portal-1,
+    (18 * $width-portal) (3 * $width-portal) 0 $portal-1,
+    (19 * $width-portal) (3 * $width-portal) 0 $portal-2,
+    (20 * $width-portal) (3 * $width-portal) 0 $portal-3,
+    (21 * $width-portal) (3 * $width-portal) 0 $portal-4,
+    (22 * $width-portal) (3 * $width-portal) 0 $portal-3,
+    (23 * $width-portal) (3 * $width-portal) 0 $portal-1,
+    (16 * $width-portal) (4 * $width-portal) 0 $portal-1,
+    (17 * $width-portal) (4 * $width-portal) 0 $portal-1,
+    (18 * $width-portal) (4 * $width-portal) 0 $portal-2,
+    (19 * $width-portal) (4 * $width-portal) 0 $portal-3,
+    (20 * $width-portal) (4 * $width-portal) 0 $portal-4,
+    (21 * $width-portal) (4 * $width-portal) 0 $portal-1,
+    (22 * $width-portal) (4 * $width-portal) 0 $portal-2,
+    (23 * $width-portal) (4 * $width-portal) 0 $portal-3,
+    (24 * $width-portal) (4 * $width-portal) 0 $portal-1,
+    (26 * $width-portal) (4 * $width-portal) 0 $portal-1,
+    (27 * $width-portal) (4 * $width-portal) 0 $portal-1,
+    (16 * $width-portal) (5 * $width-portal) 0 $portal-1,
+    (17 * $width-portal) (5 * $width-portal) 0 $portal-1,
+    (18 * $width-portal) (5 * $width-portal) 0 $portal-2,
+    (19 * $width-portal) (5 * $width-portal) 0 $portal-3,
+    (20 * $width-portal) (5 * $width-portal) 0 $portal-1,
+    (21 * $width-portal) (5 * $width-portal) 0 $portal-2,
+    (22 * $width-portal) (5 * $width-portal) 0 $portal-1,
+    (23 * $width-portal) (5 * $width-portal) 0 $portal-3,
+    (24 * $width-portal) (5 * $width-portal) 0 $portal-1,
+    (26 * $width-portal) (5 * $width-portal) 0 $portal-1,
+    (27 * $width-portal) (5 * $width-portal) 0 $portal-1,
+    (16 * $width-portal) (6 * $width-portal) 0 $portal-1,
+    (17 * $width-portal) (6 * $width-portal) 0 $portal-1,
+    (18 * $width-portal) (6 * $width-portal) 0 $portal-2,
+    (19 * $width-portal) (6 * $width-portal) 0 $portal-1,
+    (20 * $width-portal) (6 * $width-portal) 0 $portal-2,
+    (21 * $width-portal) (6 * $width-portal) 0 $portal-2,
+    (22 * $width-portal) (6 * $width-portal) 0 $portal-2,
+    (23 * $width-portal) (6 * $width-portal) 0 $portal-1,
+    (24 * $width-portal) (6 * $width-portal) 0 $portal-1,
+    (29 * $width-portal) (6 * $width-portal) 0 $portal-1,
+    (15 * $width-portal) (7 * $width-portal) 0 $portal-1,
+    (16 * $width-portal) (7 * $width-portal) 0 $portal-1,
+    (17 * $width-portal) (7 * $width-portal) 0 $portal-2,
+    (18 * $width-portal) (7 * $width-portal) 0 $portal-1,
+    (19 * $width-portal) (7 * $width-portal) 0 $portal-2,
+    (20 * $width-portal) (7 * $width-portal) 0 $portal-2,
+    (21 * $width-portal) (7 * $width-portal) 0 $portal-2,
+    (22 * $width-portal) (7 * $width-portal) 0 $portal-2,
+    (23 * $width-portal) (7 * $width-portal) 0 $portal-2,
+    (24 * $width-portal) (7 * $width-portal) 0 $portal-1,
+    (25 * $width-portal) (7 * $width-portal) 0 $portal-1,
+    (15 * $width-portal) (8 * $width-portal) 0 $portal-1,
+    (16 * $width-portal) (8 * $width-portal) 0 $portal-1,
+    (17 * $width-portal) (8 * $width-portal) 0 $portal-3,
+    (18 * $width-portal) (8 * $width-portal) 0 $portal-1,
+    (19 * $width-portal) (8 * $width-portal) 0 $portal-2,
+    (20 * $width-portal) (8 * $width-portal) 0 $portal-2,
+    (21 * $width-portal) (8 * $width-portal) 0 $portal-3,
+    (22 * $width-portal) (8 * $width-portal) 0 $portal-2,
+    (23 * $width-portal) (8 * $width-portal) 0 $portal-2,
+    (24 * $width-portal) (8 * $width-portal) 0 $portal-1,
+    (25 * $width-portal) (8 * $width-portal) 0 $portal-1,
+    (15 * $width-portal) (9 * $width-portal) 0 $portal-1,
+    (16 * $width-portal) (9 * $width-portal) 0 $portal-1,
+    (17 * $width-portal) (9 * $width-portal) 0 $portal-3,
+    (18 * $width-portal) (9 * $width-portal) 0 $portal-1,
+    (19 * $width-portal) (9 * $width-portal) 0 $portal-2,
+    (20 * $width-portal) (9 * $width-portal) 0 $portal-3,
+    (21 * $width-portal) (9 * $width-portal) 0 $portal-3,
+    (22 * $width-portal) (9 * $width-portal) 0 $portal-3,
+    (23 * $width-portal) (9 * $width-portal) 0 $portal-2,
+    (24 * $width-portal) (9 * $width-portal) 0 $portal-1,
+    (25 * $width-portal) (9 * $width-portal) 0 $portal-1,
+    (15 * $width-portal) (10 * $width-portal) 0 $portal-1,
+    (16 * $width-portal) (10 * $width-portal) 0 $portal-1,
+    (17 * $width-portal) (10 * $width-portal) 0 $portal-3,
+    (18 * $width-portal) (10 * $width-portal) 0 $portal-1,
+    (19 * $width-portal) (10 * $width-portal) 0 $portal-2,
+    (20 * $width-portal) (10 * $width-portal) 0 $portal-3,
+    (21 * $width-portal) (10 * $width-portal) 0 $portal-2,
+    (22 * $width-portal) (10 * $width-portal) 0 $portal-2,
+    (23 * $width-portal) (10 * $width-portal) 0 $portal-3,
+    (24 * $width-portal) (10 * $width-portal) 0 $portal-1,
+    (25 * $width-portal) (10 * $width-portal) 0 $portal-1,
+    (14 * $width-portal) (11 * $width-portal) 0 $portal-1,
+    (15 * $width-portal) (11 * $width-portal) 0 $portal-1,
+    (16 * $width-portal) (11 * $width-portal) 0 $portal-3,
+    (17 * $width-portal) (11 * $width-portal) 0 $portal-1,
+    (18 * $width-portal) (11 * $width-portal) 0 $portal-4,
+    (19 * $width-portal) (11 * $width-portal) 0 $portal-2,
+    (20 * $width-portal) (11 * $width-portal) 0 $portal-1,
+    (21 * $width-portal) (11 * $width-portal) 0 $portal-2,
+    (22 * $width-portal) (11 * $width-portal) 0 $portal-2,
+    (23 * $width-portal) (11 * $width-portal) 0 $portal-1,
+    (24 * $width-portal) (11 * $width-portal) 0 $portal-3,
+    (25 * $width-portal) (11 * $width-portal) 0 $portal-2,
+    (26 * $width-portal) (11 * $width-portal) 0 $portal-1,
+    (1 * $width-portal) (12 * $width-portal) 0 $portal-1,
+    (12 * $width-portal) (12 * $width-portal) 0 $portal-1,
+    (14 * $width-portal) (12 * $width-portal) 0 $portal-1,
+    (15 * $width-portal) (12 * $width-portal) 0 $portal-1,
+    (16 * $width-portal) (12 * $width-portal) 0 $portal-3,
+    (17 * $width-portal) (12 * $width-portal) 0 $portal-1,
+    (18 * $width-portal) (12 * $width-portal) 0 $portal-4,
+    (19 * $width-portal) (12 * $width-portal) 0 $portal-2,
+    (20 * $width-portal) (12 * $width-portal) 0 $portal-1,
+    (21 * $width-portal) (12 * $width-portal) 0 $portal-2,
+    (22 * $width-portal) (12 * $width-portal) 0 $portal-2,
+    (23 * $width-portal) (12 * $width-portal) 0 $portal-1,
+    (24 * $width-portal) (12 * $width-portal) 0 $portal-3,
+    (25 * $width-portal) (12 * $width-portal) 0 $portal-2,
+    (26 * $width-portal) (12 * $width-portal) 0 $portal-1,
+    (14 * $width-portal) (13 * $width-portal) 0 $portal-1,
+    (15 * $width-portal) (13 * $width-portal) 0 $portal-1,
+    (16 * $width-portal) (13 * $width-portal) 0 $portal-3,
+    (17 * $width-portal) (13 * $width-portal) 0 $portal-1,
+    (18 * $width-portal) (13 * $width-portal) 0 $portal-4,
+    (19 * $width-portal) (13 * $width-portal) 0 $portal-1,
+    (20 * $width-portal) (13 * $width-portal) 0 $portal-2,
+    (21 * $width-portal) (13 * $width-portal) 0 $portal-2,
+    (22 * $width-portal) (13 * $width-portal) 0 $portal-2,
+    (23 * $width-portal) (13 * $width-portal) 0 $portal-2,
+    (24 * $width-portal) (13 * $width-portal) 0 $portal-1,
+    (25 * $width-portal) (13 * $width-portal) 0 $portal-3,
+    (26 * $width-portal) (13 * $width-portal) 0 $portal-1,
+    (26 * $width-portal) (13 * $width-portal) 0 $portal-1,
+    (14 * $width-portal) (14 * $width-portal) 0 $portal-1,
+    (15 * $width-portal) (14 * $width-portal) 0 $portal-1,
+    (16 * $width-portal) (14 * $width-portal) 0 $portal-3,
+    (17 * $width-portal) (14 * $width-portal) 0 $portal-1,
+    (18 * $width-portal) (14 * $width-portal) 0 $portal-2,
+    (19 * $width-portal) (14 * $width-portal) 0 $portal-1,
+    (20 * $width-portal) (14 * $width-portal) 0 $portal-2,
+    (21 * $width-portal) (14 * $width-portal) 0 $portal-3,
+    (22 * $width-portal) (14 * $width-portal) 0 $portal-3,
+    (23 * $width-portal) (14 * $width-portal) 0 $portal-2,
+    (24 * $width-portal) (14 * $width-portal) 0 $portal-1,
+    (25 * $width-portal) (14 * $width-portal) 0 $portal-3,
+    (26 * $width-portal) (14 * $width-portal) 0 $portal-1,
+    (14 * $width-portal) (15 * $width-portal) 0 $portal-1,
+    (15 * $width-portal) (15 * $width-portal) 0 $portal-1,
+    (16 * $width-portal) (15 * $width-portal) 0 $portal-2,
+    (17 * $width-portal) (15 * $width-portal) 0 $portal-1,
+    (18 * $width-portal) (15 * $width-portal) 0 $portal-2,
+    (19 * $width-portal) (15 * $width-portal) 0 $portal-1,
+    (20 * $width-portal) (15 * $width-portal) 0 $portal-4,
+    (21 * $width-portal) (15 * $width-portal) 0 $portal-3,
+    (22 * $width-portal) (15 * $width-portal) 0 $portal-2,
+    (23 * $width-portal) (15 * $width-portal) 0 $portal-3,
+    (24 * $width-portal) (15 * $width-portal) 0 $portal-1,
+    (25 * $width-portal) (15 * $width-portal) 0 $portal-4,
+    (26 * $width-portal) (15 * $width-portal) 0 $portal-1,
+    (14 * $width-portal) (16 * $width-portal) 0 $portal-1,
+    (15 * $width-portal) (16 * $width-portal) 0 $portal-1,
+    (16 * $width-portal) (16 * $width-portal) 0 $portal-2,
+    (17 * $width-portal) (16 * $width-portal) 0 $portal-1,
+    (18 * $width-portal) (16 * $width-portal) 0 $portal-2,
+    (19 * $width-portal) (16 * $width-portal) 0 $portal-1,
+    (20 * $width-portal) (16 * $width-portal) 0 $portal-4,
+    (21 * $width-portal) (16 * $width-portal) 0 $portal-2,
+    (22 * $width-portal) (16 * $width-portal) 0 $portal-2,
+    (23 * $width-portal) (16 * $width-portal) 0 $portal-2,
+    (24 * $width-portal) (16 * $width-portal) 0 $portal-1,
+    (25 * $width-portal) (16 * $width-portal) 0 $portal-4,
+    (26 * $width-portal) (16 * $width-portal) 0 $portal-1,
+    (14 * $width-portal) (17 * $width-portal) 0 $portal-1,
+    (15 * $width-portal) (17 * $width-portal) 0 $portal-1,
+    (16 * $width-portal) (17 * $width-portal) 0 $portal-2,
+    (17 * $width-portal) (17 * $width-portal) 0 $portal-1,
+    (18 * $width-portal) (17 * $width-portal) 0 $portal-2,
+    (19 * $width-portal) (17 * $width-portal) 0 $portal-1,
+    (20 * $width-portal) (17 * $width-portal) 0 $portal-3,
+    (21 * $width-portal) (17 * $width-portal) 0 $portal-2,
+    (22 * $width-portal) (17 * $width-portal) 0 $portal-1,
+    (23 * $width-portal) (17 * $width-portal) 0 $portal-2,
+    (24 * $width-portal) (17 * $width-portal) 0 $portal-2,
+    (25 * $width-portal) (17 * $width-portal) 0 $portal-1,
+    (26 * $width-portal) (17 * $width-portal) 0 $portal-1,
+    (14 * $width-portal) (18 * $width-portal) 0 $portal-1,
+    (15 * $width-portal) (18 * $width-portal) 0 $portal-1,
+    (16 * $width-portal) (18 * $width-portal) 0 $portal-2,
+    (17 * $width-portal) (18 * $width-portal) 0 $portal-1,
+    (18 * $width-portal) (18 * $width-portal) 0 $portal-2,
+    (19 * $width-portal) (18 * $width-portal) 0 $portal-1,
+    (20 * $width-portal) (18 * $width-portal) 0 $portal-3,
+    (21 * $width-portal) (18 * $width-portal) 0 $portal-1,
+    (22 * $width-portal) (18 * $width-portal) 0 $portal-2,
+    (23 * $width-portal) (18 * $width-portal) 0 $portal-1,
+    (24 * $width-portal) (18 * $width-portal) 0 $portal-2,
+    (25 * $width-portal) (18 * $width-portal) 0 $portal-1,
+    (26 * $width-portal) (18 * $width-portal) 0 $portal-1,
+    (14 * $width-portal) (19 * $width-portal) 0 $portal-1,
+    (15 * $width-portal) (19 * $width-portal) 0 $portal-1,
+    (16 * $width-portal) (19 * $width-portal) 0 $portal-2,
+    (17 * $width-portal) (19 * $width-portal) 0 $portal-1,
+    (18 * $width-portal) (19 * $width-portal) 0 $portal-2,
+    (19 * $width-portal) (19 * $width-portal) 0 $portal-1,
+    (20 * $width-portal) (19 * $width-portal) 0 $portal-3,
+    (21 * $width-portal) (19 * $width-portal) 0 $portal-1,
+    (22 * $width-portal) (19 * $width-portal) 0 $portal-2,
+    (23 * $width-portal) (19 * $width-portal) 0 $portal-1,
+    (24 * $width-portal) (19 * $width-portal) 0 $portal-2,
+    (25 * $width-portal) (19 * $width-portal) 0 $portal-1,
+    (26 * $width-portal) (19 * $width-portal) 0 $portal-1,
+    (5 * $width-portal) (20 * $width-portal) 0 $portal-1,
+    (14 * $width-portal) (20 * $width-portal) 0 $portal-1,
+    (15 * $width-portal) (20 * $width-portal) 0 $portal-1,
+    (16 * $width-portal) (20 * $width-portal) 0 $portal-2,
+    (17 * $width-portal) (20 * $width-portal) 0 $portal-1,
+    (18 * $width-portal) (20 * $width-portal) 0 $portal-3,
+    (19 * $width-portal) (20 * $width-portal) 0 $portal-1,
+    (20 * $width-portal) (20 * $width-portal) 0 $portal-2,
+    (21 * $width-portal) (20 * $width-portal) 0 $portal-1,
+    (22 * $width-portal) (20 * $width-portal) 0 $portal-3,
+    (23 * $width-portal) (20 * $width-portal) 0 $portal-1,
+    (24 * $width-portal) (20 * $width-portal) 0 $portal-3,
+    (25 * $width-portal) (20 * $width-portal) 0 $portal-1,
+    (26 * $width-portal) (20 * $width-portal) 0 $portal-1,
+    (14 * $width-portal) (21 * $width-portal) 0 $portal-1,
+    (15 * $width-portal) (21 * $width-portal) 0 $portal-1,
+    (16 * $width-portal) (21 * $width-portal) 0 $portal-3,
+    (17 * $width-portal) (21 * $width-portal) 0 $portal-1,
+    (18 * $width-portal) (21 * $width-portal) 0 $portal-3,
+    (19 * $width-portal) (21 * $width-portal) 0 $portal-1,
+    (20 * $width-portal) (21 * $width-portal) 0 $portal-2,
+    (21 * $width-portal) (21 * $width-portal) 0 $portal-2,
+    (22 * $width-portal) (21 * $width-portal) 0 $portal-3,
+    (23 * $width-portal) (21 * $width-portal) 0 $portal-1,
+    (24 * $width-portal) (21 * $width-portal) 0 $portal-3,
+    (25 * $width-portal) (21 * $width-portal) 0 $portal-1,
+    (26 * $width-portal) (21 * $width-portal) 0 $portal-1,
+    (14 * $width-portal) (22 * $width-portal) 0 $portal-1,
+    (15 * $width-portal) (22 * $width-portal) 0 $portal-1,
+    (16 * $width-portal) (22 * $width-portal) 0 $portal-3,
+    (17 * $width-portal) (22 * $width-portal) 0 $portal-1,
+    (18 * $width-portal) (22 * $width-portal) 0 $portal-3,
+    (19 * $width-portal) (22 * $width-portal) 0 $portal-3,
+    (20 * $width-portal) (22 * $width-portal) 0 $portal-1,
+    (21 * $width-portal) (22 * $width-portal) 0 $portal-3,
+    (22 * $width-portal) (22 * $width-portal) 0 $portal-3,
+    (23 * $width-portal) (22 * $width-portal) 0 $portal-1,
+    (24 * $width-portal) (22 * $width-portal) 0 $portal-3,
+    (25 * $width-portal) (22 * $width-portal) 0 $portal-1,
+    (26 * $width-portal) (22 * $width-portal) 0 $portal-1,
+    (14 * $width-portal) (23 * $width-portal) 0 $portal-1,
+    (15 * $width-portal) (23 * $width-portal) 0 $portal-1,
+    (16 * $width-portal) (23 * $width-portal) 0 $portal-3,
+    (17 * $width-portal) (23 * $width-portal) 0 $portal-1,
+    (18 * $width-portal) (23 * $width-portal) 0 $portal-3,
+    (19 * $width-portal) (23 * $width-portal) 0 $portal-3,
+    (20 * $width-portal) (23 * $width-portal) 0 $portal-1,
+    (21 * $width-portal) (23 * $width-portal) 0 $portal-3,
+    (22 * $width-portal) (23 * $width-portal) 0 $portal-1,
+    (23 * $width-portal) (23 * $width-portal) 0 $portal-2,
+    (24 * $width-portal) (23 * $width-portal) 0 $portal-2,
+    (25 * $width-portal) (23 * $width-portal) 0 $portal-1,
+    (26 * $width-portal) (23 * $width-portal) 0 $portal-1,
+    (15 * $width-portal) (24 * $width-portal) 0 $portal-1,
+    (16 * $width-portal) (24 * $width-portal) 0 $portal-1,
+    (17 * $width-portal) (24 * $width-portal) 0 $portal-3,
+    (18 * $width-portal) (24 * $width-portal) 0 $portal-1,
+    (19 * $width-portal) (24 * $width-portal) 0 $portal-3,
+    (20 * $width-portal) (24 * $width-portal) 0 $portal-1,
+    (21 * $width-portal) (24 * $width-portal) 0 $portal-2,
+    (22 * $width-portal) (24 * $width-portal) 0 $portal-1,
+    (23 * $width-portal) (24 * $width-portal) 0 $portal-3,
+    (24 * $width-portal) (24 * $width-portal) 0 $portal-1,
+    (25 * $width-portal) (24 * $width-portal) 0 $portal-1,
+    (15 * $width-portal) (25 * $width-portal) 0 $portal-1,
+    (16 * $width-portal) (25 * $width-portal) 0 $portal-1,
+    (17 * $width-portal) (25 * $width-portal) 0 $portal-3,
+    (18 * $width-portal) (25 * $width-portal) 0 $portal-1,
+    (19 * $width-portal) (25 * $width-portal) 0 $portal-2,
+    (20 * $width-portal) (25 * $width-portal) 0 $portal-1,
+    (21 * $width-portal) (25 * $width-portal) 0 $portal-2,
+    (22 * $width-portal) (25 * $width-portal) 0 $portal-1,
+    (23 * $width-portal) (25 * $width-portal) 0 $portal-4,
+    (24 * $width-portal) (25 * $width-portal) 0 $portal-1,
+    (25 * $width-portal) (25 * $width-portal) 0 $portal-1,
+    (15 * $width-portal) (26 * $width-portal) 0 $portal-1,
+    (16 * $width-portal) (26 * $width-portal) 0 $portal-1,
+    (17 * $width-portal) (26 * $width-portal) 0 $portal-4,
+    (18 * $width-portal) (26 * $width-portal) 0 $portal-1,
+    (19 * $width-portal) (26 * $width-portal) 0 $portal-2,
+    (20 * $width-portal) (26 * $width-portal) 0 $portal-4,
+    (21 * $width-portal) (26 * $width-portal) 0 $portal-1,
+    (22 * $width-portal) (26 * $width-portal) 0 $portal-2,
+    (23 * $width-portal) (26 * $width-portal) 0 $portal-4,
+    (24 * $width-portal) (26 * $width-portal) 0 $portal-1,
+    (25 * $width-portal) (26 * $width-portal) 0 $portal-1,
+    (15 * $width-portal) (27 * $width-portal) 0 $portal-1,
+    (16 * $width-portal) (27 * $width-portal) 0 $portal-1,
+    (17 * $width-portal) (27 * $width-portal) 0 $portal-4,
+    (18 * $width-portal) (27 * $width-portal) 0 $portal-1,
+    (19 * $width-portal) (27 * $width-portal) 0 $portal-2,
+    (20 * $width-portal) (27 * $width-portal) 0 $portal-3,
+    (21 * $width-portal) (27 * $width-portal) 0 $portal-4,
+    (22 * $width-portal) (27 * $width-portal) 0 $portal-4,
+    (23 * $width-portal) (27 * $width-portal) 0 $portal-3,
+    (24 * $width-portal) (27 * $width-portal) 0 $portal-1,
+    (25 * $width-portal) (27 * $width-portal) 0 $portal-1,
+    (15 * $width-portal) (28 * $width-portal) 0 $portal-1,
+    (16 * $width-portal) (28 * $width-portal) 0 $portal-1,
+    (17 * $width-portal) (28 * $width-portal) 0 $portal-2,
+    (18 * $width-portal) (28 * $width-portal) 0 $portal-3,
+    (19 * $width-portal) (28 * $width-portal) 0 $portal-1,
+    (20 * $width-portal) (28 * $width-portal) 0 $portal-2,
+    (21 * $width-portal) (28 * $width-portal) 0 $portal-2,
+    (22 * $width-portal) (28 * $width-portal) 0 $portal-2,
+    (23 * $width-portal) (28 * $width-portal) 0 $portal-1,
+    (24 * $width-portal) (28 * $width-portal) 0 $portal-2,
+    (25 * $width-portal) (28 * $width-portal) 0 $portal-1,
+    (16 * $width-portal) (29 * $width-portal) 0 $portal-1,
+    (17 * $width-portal) (29 * $width-portal) 0 $portal-1,
+    (18 * $width-portal) (29 * $width-portal) 0 $portal-3,
+    (19 * $width-portal) (29 * $width-portal) 0 $portal-3,
+    (20 * $width-portal) (29 * $width-portal) 0 $portal-1,
+    (21 * $width-portal) (29 * $width-portal) 0 $portal-2,
+    (22 * $width-portal) (29 * $width-portal) 0 $portal-1,
+    (23 * $width-portal) (29 * $width-portal) 0 $portal-2,
+    (24 * $width-portal) (29 * $width-portal) 0 $portal-1,
+    (16 * $width-portal) (30 * $width-portal) 0 $portal-1,
+    (17 * $width-portal) (30 * $width-portal) 0 $portal-1,
+    (18 * $width-portal) (30 * $width-portal) 0 $portal-2,
+    (19 * $width-portal) (30 * $width-portal) 0 $portal-3,
+    (20 * $width-portal) (30 * $width-portal) 0 $portal-3,
+    (21 * $width-portal) (30 * $width-portal) 0 $portal-1,
+    (22 * $width-portal) (30 * $width-portal) 0 $portal-2,
+    (23 * $width-portal) (30 * $width-portal) 0 $portal-3,
+    (24 * $width-portal) (30 * $width-portal) 0 $portal-1,
+    (16 * $width-portal) (31 * $width-portal) 0 $portal-1,
+    (17 * $width-portal) (31 * $width-portal) 0 $portal-1,
+    (18 * $width-portal) (31 * $width-portal) 0 $portal-2,
+    (19 * $width-portal) (31 * $width-portal) 0 $portal-2,
+    (20 * $width-portal) (31 * $width-portal) 0 $portal-2,
+    (21 * $width-portal) (31 * $width-portal) 0 $portal-2,
+    (22 * $width-portal) (31 * $width-portal) 0 $portal-3,
+    (23 * $width-portal) (31 * $width-portal) 0 $portal-4,
+    (24 * $width-portal) (31 * $width-portal) 0 $portal-1,
+    (17 * $width-portal) (32 * $width-portal) 0 $portal-1,
+    (18 * $width-portal) (32 * $width-portal) 0 $portal-1,
+    (19 * $width-portal) (32 * $width-portal) 0 $portal-2,
+    (20 * $width-portal) (32 * $width-portal) 0 $portal-2,
+    (21 * $width-portal) (32 * $width-portal) 0 $portal-3,
+    (22 * $width-portal) (32 * $width-portal) 0 $portal-4,
+    (23 * $width-portal) (32 * $width-portal) 0 $portal-1,
+    (11 * $width-portal) (33 * $width-portal) 0 $portal-4,
+    (18 * $width-portal) (33 * $width-portal) 0 $portal-1,
+    (19 * $width-portal) (33 * $width-portal) 0 $portal-1,
+    (20 * $width-portal) (33 * $width-portal) 0 $portal-2,
+    (21 * $width-portal) (33 * $width-portal) 0 $portal-2,
+    (22 * $width-portal) (33 * $width-portal) 0 $portal-1,
+    (19 * $width-portal) (34 * $width-portal) 0 $portal-1,
+    (20 * $width-portal) (34 * $width-portal) 0 $portal-1,
+    (21 * $width-portal) (34 * $width-portal) 0 $portal-1;
 }
