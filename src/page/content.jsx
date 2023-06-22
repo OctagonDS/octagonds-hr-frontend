@@ -4,6 +4,7 @@ import 'aos/dist/aos.css'
 
 const Content = () => {
   const [portal, setPortal] = useState('')
+  const [glados, setGlados] = useState('')
 
   useEffect(() => {
     AOS.init({ duration: 1000 })
@@ -82,9 +83,13 @@ const Content = () => {
         </div>
       </div>
       <div className="content" data-aos="fade-up">
-        <div className="content__item__row">
+        <div
+          className="content__item__row"
+          onMouseOver={() => setGlados('-open')}
+          onMouseOut={() => setGlados('-close')}
+        >
           <div className="content__item">
-            <h4>HR</h4>
+            <h4>Тестировщик</h4>
             <p>
               Lorem Ipsum - это текст-"рыба", часто используемый в печати и
               вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
@@ -96,21 +101,42 @@ const Content = () => {
             </p>
           </div>
           <div className="content__bit">
-            <div className="knight" />
+            <div className="glados">
+              <div
+                className="glados__eye"
+                style={
+                  glados === '-open'
+                    ? { transform: 'translate(165px, 234px)' }
+                    : {}
+                }
+              />
+            </div>
+            <div className="bubble left glados__dialog" style={{ width: 270 }}>
+              <div className="content__bit__text">
+                {glados === '-open' ? (
+                  <>
+                    Я серьезно, тут так и сказано: "ужасный человек". Хотя мы на
+                    это даже не тестировали.
+                  </>
+                ) : (
+                  <>Прекрасно. Вот результаты теста: ты ужасный человек.</>
+                )}
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div className="content" data-aos="fade-up">
         <div
           className="content__item__row"
-          onMouseOver={() => setPortal('-open')}
-          onMouseOut={() => setPortal('-close')}
+          // onMouseOver={() => setPortal('-open')}
+          // onMouseOut={() => setPortal('-close')}
         >
           <div className="content__bit">
-            <div className="glados" />
+            <div className="knight" />
           </div>
           <div className="content__item">
-            <h4>Тестировщик</h4>
+            <h4>HR</h4>
             <p>
               Lorem Ipsum - это текст-"рыба", часто используемый в печати и
               вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
