@@ -149,7 +149,19 @@ const Content = () => {
           // onMouseOut={() => setPortal('-close')}
         >
           <div className="content__bit">
-            <div className="knight" />
+            <div className="morpheus" />
+            {/* <div className="bubble left glados__dialog" style={{ width: 270 }}>
+              <div className="content__bit__text">
+                {glados === '-open' ? (
+                  <>
+                    Я серьезно, тут так и сказано: "ужасный код".{' '}
+                    <div>Хотя мы на это даже не тестировали.</div>
+                  </>
+                ) : (
+                  <>Ты программист, Гарри.</>
+                )}
+              </div>
+            </div> */}
           </div>
           <div className="content__item">
             <p>
@@ -187,7 +199,16 @@ const Content = () => {
             </p>
           </div>
           <div className="content__bit">
-            <div className="knight" />
+            <div className="yoda">
+              <div
+                className="yoda__sword"
+                // style={
+                //   glados === '-open'
+                //     ? { transform: 'translate(165px, 234px)' }
+                //     : {}
+                // }
+              />
+            </div>
           </div>
         </div>
       </div>
