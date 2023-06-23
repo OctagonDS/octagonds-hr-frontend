@@ -1,4 +1,4 @@
-$width-morpheus: 6px;
+$width-morpheus: 5px;
 
 $black-morpheus: #010101;
 $gray-morpheus: #252525;
@@ -18,7 +18,7 @@ $shirt-shadow-morpheus: #251123;
   &__box {
     position: absolute;
     height: $width-morpheus * 58;
-    width: $width-morpheus * 23;
+    width: $width-morpheus * 22;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -27,7 +27,7 @@ $shirt-shadow-morpheus: #251123;
   }
   &__dialog {
     position: absolute;
-    right: 140px;
+    right: 125px;
     top: -40px;
     // @media (max-width: 1600px) {
     //   left: 335px;
