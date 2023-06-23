@@ -162,7 +162,7 @@ $bubble-border: 0 -1 * $px $eee, 0 -2 * $px $black, $px 0 $eee,
   &.right::after {
     height: $px;
     width: $px;
-    top: 21 * $px;
+    top: 9 * $px;
     right: -2 * $px;
     background: white;
     box-shadow: 1 * $px -1 * $px $eee, 1 * $px 0 $eee, 2 * $px 0 $eee,

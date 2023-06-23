@@ -1,4 +1,4 @@
-$width-yoda: 10px;
+$width-yoda: 12px;
 
 $sword-yoda: #498b41;
 $handle-yoda: #626368;
@@ -16,14 +16,14 @@ $black-yoda: #090504;
   height: $width-yoda;
   position: absolute;
   top: 170px;
-  left: 8em;
+  left: 7em;
   &__sword {
     position: absolute;
     width: $width-yoda * 1;
     height: $width-yoda * 9;
     background-color: $sword-yoda;
-    left: 30px;
-    bottom: -80px;
+    left: 36px;
+    bottom: -96px;
     transition: height 300ms;
     -moz-transition: height 300ms;
     -webkit-transition: height 300ms;

@@ -1,4 +1,4 @@
-$width-morpheus: 5px;
+$width-morpheus: 6px;
 
 $black-morpheus: #010101;
 $gray-morpheus: #252525;
@@ -14,17 +14,25 @@ $shirt-shadow-morpheus: #251123;
 .morpheus {
   width: $width-morpheus;
   height: $width-morpheus;
-  position: absolute;
-  top: 15px;
-  left: 10em;
-  // &__dialog {
-  //   position: absolute;
-  //   left: 380px;
-  //   top: 178px;
-  //   @media (max-width: 1600px) {
-  //     left: 335px;
-  //   }
-  // }
+
+  &__box {
+    position: absolute;
+    height: $width-morpheus * 58;
+    width: $width-morpheus * 23;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  &__dialog {
+    position: absolute;
+    right: 140px;
+    top: -40px;
+    // @media (max-width: 1600px) {
+    //   left: 335px;
+    // }
+  }
   box-shadow: (5 * $width-morpheus) (1 * $width-morpheus) 0 $skin-morpheus,
     (6 * $width-morpheus) (1 * $width-morpheus) 0 $skin-morpheus,
     (7 * $width-morpheus) (1 * $width-morpheus) 0 $skin-morpheus,

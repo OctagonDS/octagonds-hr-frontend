@@ -5,6 +5,7 @@ import 'aos/dist/aos.css'
 const Content = () => {
   const [portal, setPortal] = useState('')
   const [glados, setGlados] = useState('')
+  const [morpheus, setMorpheus] = useState(false)
   const [yoda, setYoda] = useState(false)
 
   useEffect(() => {
@@ -150,19 +151,24 @@ const Content = () => {
           // onMouseOut={() => setPortal('-close')}
         >
           <div className="content__bit">
-            <div className="morpheus" />
-            {/* <div className="bubble left glados__dialog" style={{ width: 270 }}>
-              <div className="content__bit__text">
-                {glados === '-open' ? (
-                  <>
-                    Я серьезно, тут так и сказано: "ужасный код".{' '}
-                    <div>Хотя мы на это даже не тестировали.</div>
-                  </>
-                ) : (
-                  <>Ты программист, Гарри.</>
-                )}
+            <div className="morpheus__box">
+              <div className="morpheus" />
+              <div
+                className="bubble right morpheus__dialog"
+                style={{ width: 215 }}
+              >
+                <div className="content__bit__text">
+                  {morpheus ? (
+                    <>
+                      Я серьезно, тут так и сказано: "ужасный код".{' '}
+                      <div>Хотя мы на это даже не тестировали.</div>
+                    </>
+                  ) : (
+                    <>Ты программист, Гарри.</>
+                  )}
+                </div>
               </div>
-            </div> */}
+            </div>
           </div>
           <div className="content__item">
             <p>
