@@ -18,14 +18,22 @@ $black-yoda: #090504;
   top: 170px;
   left: 8em;
   &__sword {
-    position: relative;
+    position: absolute;
     width: $width-yoda * 1;
     height: $width-yoda * 9;
     background-color: $sword-yoda;
-    left: 50%;
-    top: 50%;
-    transition: 1s ease-out;
-    transform: translate(25px, -5px) scale(1);
+    left: 30px;
+    bottom: -80px;
+    transition: height 300ms;
+    -moz-transition: height 300ms;
+    -webkit-transition: height 300ms;
+    -o-transition: height 300ms;
+    -ms-transition: height 300ms;
+    // filter: blur(1px);
+    // -moz-filter: blur(1px);
+    // -webkit-filter: blur(1px);
+    // -o-filter: blur(1px);
+    // -ms-filter: blur(1px);
     background: rgb(135, 220, 90); /* Old browsers */
     background: linear-gradient(
       to right,

@@ -5,6 +5,7 @@ import 'aos/dist/aos.css'
 const Content = () => {
   const [portal, setPortal] = useState('')
   const [glados, setGlados] = useState('')
+  const [yoda, setYoda] = useState(false)
 
   useEffect(() => {
     AOS.init({ duration: 1000 })
@@ -186,7 +187,11 @@ const Content = () => {
         </div>
       </div>
       <div className="content" data-aos="fade-up">
-        <div className="content__item__row">
+        <div
+          className="content__item__row"
+          onMouseOver={() => setYoda(true)}
+          onMouseOut={() => setYoda(false)}
+        >
           <div className="content__item">
             <p>
               Lorem Ipsum - это текст-"рыба", часто используемый в печати и
@@ -200,14 +205,7 @@ const Content = () => {
           </div>
           <div className="content__bit">
             <div className="yoda">
-              <div
-                className="yoda__sword"
-                // style={
-                //   glados === '-open'
-                //     ? { transform: 'translate(165px, 234px)' }
-                //     : {}
-                // }
-              />
+              <div className="yoda__sword" style={yoda ? {} : { height: 0 }} />
             </div>
           </div>
         </div>
