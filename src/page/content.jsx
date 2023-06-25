@@ -147,21 +147,27 @@ const Content = () => {
       <div className="content" data-aos="fade-up">
         <div
           className="content__item__row"
-          // onMouseOver={() => setPortal('-open')}
-          // onMouseOut={() => setPortal('-close')}
+          onMouseOver={() => setMorpheus(true)}
+          onMouseOut={() => setMorpheus(false)}
         >
           <div className="content__bit">
+            {morpheus && (
+              <div className="red__box">
+                <div className="red" />
+                <div className="red__neon" />
+              </div>
+            )}
             <div className="morpheus__box">
               <div className="morpheus" />
               <div
                 className="bubble right morpheus__dialog"
-                style={{ width: 215 }}
+                style={morpheus ? { width: 250 } : { width: 215 }}
               >
                 <div className="content__bit__text">
                   {morpheus ? (
                     <>
-                      Я серьезно, тут так и сказано: "ужасный код".{' '}
-                      <div>Хотя мы на это даже не тестировали.</div>
+                      Примешь синюю таблетку — и сказке конец.{' '}
+                      <div>Примешь красную таблетку — войдешь в IT.</div>
                     </>
                   ) : (
                     <>Ты программист, Гарри.</>
@@ -169,6 +175,12 @@ const Content = () => {
                 </div>
               </div>
             </div>
+            {morpheus && (
+              <div className="blue__box">
+                <div className="blue" />
+                <div className="blue__neon" />
+              </div>
+            )}
           </div>
           <div className="content__item">
             <p>

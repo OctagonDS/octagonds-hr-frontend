@@ -1,8 +1,19 @@
 $width-morpheus: 5px;
+$width-red: 4px;
 
+$red-pill: #ce1127;
+$red-shadow-pill: #a50e1f;
+$red-shadow2-pill: #840c18;
+$red-outline-pill: #650000;
+
+$blue-pill: #0066ca;
+$blue-shadow-pill: #0053a3;
+$blue-shadow2-pill: #014282;
+$blue-outline-pill: #003466;
+
+$white: #ffffff;
 $black-morpheus: #010101;
 $gray-morpheus: #252525;
-$white-morpheus: #ffffff;
 $skin-morpheus: #794b33;
 $skin-shadow-morpheus: #573521;
 $jacket-gray-morpheus: #242525;
@@ -10,6 +21,554 @@ $jacket-morpheus: #111111;
 $tie-morpheus: #c7a249;
 $shirt-morpheus: #452047;
 $shirt-shadow-morpheus: #251123;
+
+.red {
+  width: $width-red;
+  height: $width-red;
+  z-index: 1;
+  position: absolute;
+  &__box {
+    position: absolute;
+    height: $width-red * 20;
+    width: $width-red * 20;
+    top: 50%;
+    left: 50%;
+    transform: translate(-260%, -40%);
+    animation-name: float-animate-red;
+    animation-duration: 1800ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-delay: 0;
+    -webkit-animation-name: float-animate-red;
+    -webkit-animation-duration: 1800ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0;
+    @-webkit-keyframes float-animate-red {
+      0% {
+        transform: translate(-260%, -50%);
+      }
+      100% {
+        transform: translate(-260%, -40%);
+      }
+    }
+    @keyframes float-animate-red {
+      0% {
+        transform: translate(-260%, -50%);
+      }
+      100% {
+        transform: translate(-260%, -40%);
+      }
+    }
+  }
+  &__neon {
+    width: 8px;
+    height: 65px;
+    transform: translate(38px, 10px) rotate(45deg);
+    animation: neon-red 1.5s ease-in-out infinite alternate;
+    @keyframes neon-red {
+      from {
+        box-shadow: 0 0 5px $red-shadow-pill, 0 0 10px $red-shadow-pill,
+          0 0 15px $red-shadow-pill, 0 0 20px $red-pill, 0 0 35px $red-pill,
+          0 0 40px $red-pill, 0 0 50px $red-pill, 0 0 75px $red-pill;
+      }
+      to {
+        box-shadow: 0 0 3px $red-shadow-pill, 0 0 7px $red-shadow-pill,
+          0 0 10px $red-shadow-pill, 0 0 15px $red-pill, 0 0 22px $red-pill,
+          0 0 30px $red-pill, 0 0 35px $red-pill, 0 0 50px $red-pill;
+      }
+    }
+  }
+  box-shadow: (13 * $width-red) (1 * $width-red) 0 $red-outline-pill,
+    (14 * $width-red) (1 * $width-red) 0 $red-outline-pill,
+    (15 * $width-red) (1 * $width-red) 0 $red-outline-pill,
+    (16 * $width-red) (1 * $width-red) 0 $red-outline-pill,
+    (11 * $width-red) (2 * $width-red) 0 $red-outline-pill,
+    (12 * $width-red) (2 * $width-red) 0 $red-outline-pill,
+    (13 * $width-red) (2 * $width-red) 0 $red-shadow-pill,
+    (14 * $width-red) (2 * $width-red) 0 $red-shadow-pill,
+    (15 * $width-red) (2 * $width-red) 0 $red-shadow-pill,
+    (16 * $width-red) (2 * $width-red) 0 $red-shadow-pill,
+    (17 * $width-red) (2 * $width-red) 0 $red-outline-pill,
+    (10 * $width-red) (3 * $width-red) 0 $red-outline-pill,
+    (11 * $width-red) (3 * $width-red) 0 $red-shadow-pill,
+    (12 * $width-red) (3 * $width-red) 0 $red-shadow-pill,
+    (13 * $width-red) (3 * $width-red) 0 $white,
+    (14 * $width-red) (3 * $width-red) 0 $red-shadow-pill,
+    (15 * $width-red) (3 * $width-red) 0 $red-shadow-pill,
+    (16 * $width-red) (3 * $width-red) 0 $red-shadow-pill,
+    (17 * $width-red) (3 * $width-red) 0 $red-shadow-pill,
+    (18 * $width-red) (3 * $width-red) 0 $red-outline-pill,
+    (9 * $width-red) (4 * $width-red) 0 $red-outline-pill,
+    (10 * $width-red) (4 * $width-red) 0 $red-shadow-pill,
+    (11 * $width-red) (4 * $width-red) 0 $white,
+    (12 * $width-red) (4 * $width-red) 0 $white,
+    (13 * $width-red) (4 * $width-red) 0 $red-shadow-pill,
+    (14 * $width-red) (4 * $width-red) 0 $red-shadow-pill,
+    (15 * $width-red) (4 * $width-red) 0 $red-shadow-pill,
+    (16 * $width-red) (4 * $width-red) 0 $red-shadow-pill,
+    (17 * $width-red) (4 * $width-red) 0 $red-shadow-pill,
+    (18 * $width-red) (4 * $width-red) 0 $red-shadow2-pill,
+    (19 * $width-red) (4 * $width-red) 0 $red-outline-pill,
+    (8 * $width-red) (5 * $width-red) 0 $red-outline-pill,
+    (9 * $width-red) (5 * $width-red) 0 $red-shadow-pill,
+    (10 * $width-red) (5 * $width-red) 0 $white,
+    (11 * $width-red) (5 * $width-red) 0 $red-shadow-pill,
+    (12 * $width-red) (5 * $width-red) 0 $red-shadow-pill,
+    (13 * $width-red) (5 * $width-red) 0 $red-shadow-pill,
+    (14 * $width-red) (5 * $width-red) 0 $red-shadow-pill,
+    (15 * $width-red) (5 * $width-red) 0 $red-shadow-pill,
+    (16 * $width-red) (5 * $width-red) 0 $red-shadow-pill,
+    (17 * $width-red) (5 * $width-red) 0 $red-shadow-pill,
+    (18 * $width-red) (5 * $width-red) 0 $red-shadow2-pill,
+    (19 * $width-red) (5 * $width-red) 0 $red-outline-pill,
+    (7 * $width-red) (6 * $width-red) 0 $red-outline-pill,
+    (8 * $width-red) (6 * $width-red) 0 $red-shadow-pill,
+    (9 * $width-red) (6 * $width-red) 0 $white,
+    (10 * $width-red) (6 * $width-red) 0 $red-shadow-pill,
+    (11 * $width-red) (6 * $width-red) 0 $red-shadow-pill,
+    (12 * $width-red) (6 * $width-red) 0 $red-shadow-pill,
+    (13 * $width-red) (6 * $width-red) 0 $red-shadow-pill,
+    (14 * $width-red) (6 * $width-red) 0 $red-shadow-pill,
+    (15 * $width-red) (6 * $width-red) 0 $red-shadow-pill,
+    (16 * $width-red) (6 * $width-red) 0 $red-shadow-pill,
+    (17 * $width-red) (6 * $width-red) 0 $red-shadow-pill,
+    (18 * $width-red) (6 * $width-red) 0 $red-shadow2-pill,
+    (19 * $width-red) (6 * $width-red) 0 $red-outline-pill,
+    (6 * $width-red) (7 * $width-red) 0 $red-outline-pill,
+    (7 * $width-red) (7 * $width-red) 0 $red-pill,
+    (8 * $width-red) (7 * $width-red) 0 $white,
+    (9 * $width-red) (7 * $width-red) 0 $red-shadow-pill,
+    (10 * $width-red) (7 * $width-red) 0 $red-shadow-pill,
+    (11 * $width-red) (7 * $width-red) 0 $red-shadow-pill,
+    (12 * $width-red) (7 * $width-red) 0 $red-shadow-pill,
+    (13 * $width-red) (7 * $width-red) 0 $red-shadow-pill,
+    (14 * $width-red) (7 * $width-red) 0 $red-shadow-pill,
+    (15 * $width-red) (7 * $width-red) 0 $red-shadow-pill,
+    (16 * $width-red) (7 * $width-red) 0 $red-shadow-pill,
+    (17 * $width-red) (7 * $width-red) 0 $red-shadow2-pill,
+    (18 * $width-red) (7 * $width-red) 0 $red-shadow2-pill,
+    (19 * $width-red) (7 * $width-red) 0 $red-outline-pill,
+    (5 * $width-red) (8 * $width-red) 0 $red-outline-pill,
+    (6 * $width-red) (8 * $width-red) 0 $red-pill,
+    (7 * $width-red) (8 * $width-red) 0 $white,
+    (8 * $width-red) (8 * $width-red) 0 $red-pill,
+    (9 * $width-red) (8 * $width-red) 0 $red-pill,
+    (10 * $width-red) (8 * $width-red) 0 $red-pill,
+    (11 * $width-red) (8 * $width-red) 0 $red-pill,
+    (12 * $width-red) (8 * $width-red) 0 $red-shadow-pill,
+    (13 * $width-red) (8 * $width-red) 0 $red-shadow-pill,
+    (14 * $width-red) (8 * $width-red) 0 $red-shadow-pill,
+    (15 * $width-red) (8 * $width-red) 0 $red-shadow-pill,
+    (16 * $width-red) (8 * $width-red) 0 $red-shadow2-pill,
+    (17 * $width-red) (8 * $width-red) 0 $red-shadow2-pill,
+    (18 * $width-red) (8 * $width-red) 0 $red-outline-pill,
+    (4 * $width-red) (9 * $width-red) 0 $red-outline-pill,
+    (5 * $width-red) (9 * $width-red) 0 $red-pill,
+    (6 * $width-red) (9 * $width-red) 0 $white,
+    (7 * $width-red) (9 * $width-red) 0 $red-pill,
+    (8 * $width-red) (9 * $width-red) 0 $red-pill,
+    (9 * $width-red) (9 * $width-red) 0 $red-pill,
+    (10 * $width-red) (9 * $width-red) 0 $red-pill,
+    (11 * $width-red) (9 * $width-red) 0 $red-pill,
+    (12 * $width-red) (9 * $width-red) 0 $red-pill,
+    (13 * $width-red) (9 * $width-red) 0 $red-shadow-pill,
+    (14 * $width-red) (9 * $width-red) 0 $red-shadow-pill,
+    (15 * $width-red) (9 * $width-red) 0 $red-shadow-pill,
+    (16 * $width-red) (9 * $width-red) 0 $red-shadow2-pill,
+    (17 * $width-red) (9 * $width-red) 0 $red-shadow2-pill,
+    (18 * $width-red) (9 * $width-red) 0 $red-outline-pill,
+    (3 * $width-red) (10 * $width-red) 0 $red-outline-pill,
+    (4 * $width-red) (10 * $width-red) 0 $red-pill,
+    (5 * $width-red) (10 * $width-red) 0 $white,
+    (6 * $width-red) (10 * $width-red) 0 $red-pill,
+    (7 * $width-red) (10 * $width-red) 0 $red-pill,
+    (8 * $width-red) (10 * $width-red) 0 $red-pill,
+    (9 * $width-red) (10 * $width-red) 0 $red-pill,
+    (10 * $width-red) (10 * $width-red) 0 $red-pill,
+    (11 * $width-red) (10 * $width-red) 0 $red-pill,
+    (12 * $width-red) (10 * $width-red) 0 $red-pill,
+    (13 * $width-red) (10 * $width-red) 0 $red-shadow-pill,
+    (14 * $width-red) (10 * $width-red) 0 $red-shadow-pill,
+    (15 * $width-red) (10 * $width-red) 0 $red-shadow2-pill,
+    (16 * $width-red) (10 * $width-red) 0 $red-shadow2-pill,
+    (17 * $width-red) (10 * $width-red) 0 $red-outline-pill,
+    (2 * $width-red) (11 * $width-red) 0 $red-outline-pill,
+    (3 * $width-red) (11 * $width-red) 0 $red-pill,
+    (4 * $width-red) (11 * $width-red) 0 $white,
+    (5 * $width-red) (11 * $width-red) 0 $red-pill,
+    (6 * $width-red) (11 * $width-red) 0 $red-pill,
+    (7 * $width-red) (11 * $width-red) 0 $red-pill,
+    (8 * $width-red) (11 * $width-red) 0 $red-pill,
+    (9 * $width-red) (11 * $width-red) 0 $red-pill,
+    (10 * $width-red) (11 * $width-red) 0 $red-pill,
+    (11 * $width-red) (11 * $width-red) 0 $red-pill,
+    (12 * $width-red) (11 * $width-red) 0 $red-pill,
+    (13 * $width-red) (11 * $width-red) 0 $red-shadow-pill,
+    (14 * $width-red) (11 * $width-red) 0 $red-shadow2-pill,
+    (15 * $width-red) (11 * $width-red) 0 $red-shadow2-pill,
+    (16 * $width-red) (11 * $width-red) 0 $red-outline-pill,
+    (2 * $width-red) (12 * $width-red) 0 $red-outline-pill,
+    (3 * $width-red) (12 * $width-red) 0 $red-pill,
+    (4 * $width-red) (12 * $width-red) 0 $white,
+    (5 * $width-red) (12 * $width-red) 0 $red-pill,
+    (6 * $width-red) (12 * $width-red) 0 $red-pill,
+    (7 * $width-red) (12 * $width-red) 0 $red-pill,
+    (8 * $width-red) (12 * $width-red) 0 $red-pill,
+    (9 * $width-red) (12 * $width-red) 0 $red-pill,
+    (10 * $width-red) (12 * $width-red) 0 $red-pill,
+    (11 * $width-red) (12 * $width-red) 0 $red-pill,
+    (12 * $width-red) (12 * $width-red) 0 $red-pill,
+    (13 * $width-red) (12 * $width-red) 0 $red-shadow2-pill,
+    (14 * $width-red) (12 * $width-red) 0 $red-shadow2-pill,
+    (15 * $width-red) (12 * $width-red) 0 $red-outline-pill,
+    (1 * $width-red) (13 * $width-red) 0 $red-outline-pill,
+    (2 * $width-red) (13 * $width-red) 0 $red-pill,
+    (3 * $width-red) (13 * $width-red) 0 $white,
+    (4 * $width-red) (13 * $width-red) 0 $red-pill,
+    (5 * $width-red) (13 * $width-red) 0 $red-pill,
+    (6 * $width-red) (13 * $width-red) 0 $red-pill,
+    (7 * $width-red) (13 * $width-red) 0 $red-pill,
+    (8 * $width-red) (13 * $width-red) 0 $red-pill,
+    (9 * $width-red) (13 * $width-red) 0 $red-pill,
+    (10 * $width-red) (13 * $width-red) 0 $red-pill,
+    (11 * $width-red) (13 * $width-red) 0 $red-pill,
+    (12 * $width-red) (13 * $width-red) 0 $red-shadow-pill,
+    (13 * $width-red) (13 * $width-red) 0 $red-shadow-pill,
+    (14 * $width-red) (13 * $width-red) 0 $red-outline-pill,
+    (1 * $width-red) (14 * $width-red) 0 $red-outline-pill,
+    (2 * $width-red) (14 * $width-red) 0 $red-pill,
+    (3 * $width-red) (14 * $width-red) 0 $red-pill,
+    (4 * $width-red) (14 * $width-red) 0 $red-pill,
+    (5 * $width-red) (14 * $width-red) 0 $red-pill,
+    (6 * $width-red) (14 * $width-red) 0 $red-pill,
+    (7 * $width-red) (14 * $width-red) 0 $red-pill,
+    (8 * $width-red) (14 * $width-red) 0 $red-pill,
+    (9 * $width-red) (14 * $width-red) 0 $red-pill,
+    (10 * $width-red) (14 * $width-red) 0 $red-pill,
+    (11 * $width-red) (14 * $width-red) 0 $red-shadow-pill,
+    (12 * $width-red) (14 * $width-red) 0 $red-shadow-pill,
+    (13 * $width-red) (14 * $width-red) 0 $red-outline-pill,
+    (1 * $width-red) (15 * $width-red) 0 $red-outline-pill,
+    (2 * $width-red) (15 * $width-red) 0 $red-pill,
+    (3 * $width-red) (15 * $width-red) 0 $red-pill,
+    (4 * $width-red) (15 * $width-red) 0 $red-pill,
+    (5 * $width-red) (15 * $width-red) 0 $red-pill,
+    (6 * $width-red) (15 * $width-red) 0 $red-pill,
+    (7 * $width-red) (15 * $width-red) 0 $red-pill,
+    (8 * $width-red) (15 * $width-red) 0 $red-pill,
+    (9 * $width-red) (15 * $width-red) 0 $red-pill,
+    (10 * $width-red) (15 * $width-red) 0 $red-shadow-pill,
+    (11 * $width-red) (15 * $width-red) 0 $red-shadow-pill,
+    (12 * $width-red) (15 * $width-red) 0 $red-outline-pill,
+    (1 * $width-red) (16 * $width-red) 0 $red-outline-pill,
+    (2 * $width-red) (16 * $width-red) 0 $red-pill,
+    (3 * $width-red) (16 * $width-red) 0 $red-pill,
+    (4 * $width-red) (16 * $width-red) 0 $red-pill,
+    (5 * $width-red) (16 * $width-red) 0 $red-pill,
+    (6 * $width-red) (16 * $width-red) 0 $red-pill,
+    (7 * $width-red) (16 * $width-red) 0 $red-pill,
+    (8 * $width-red) (16 * $width-red) 0 $red-shadow-pill,
+    (9 * $width-red) (16 * $width-red) 0 $red-shadow-pill,
+    (10 * $width-red) (16 * $width-red) 0 $red-shadow-pill,
+    (11 * $width-red) (16 * $width-red) 0 $red-outline-pill,
+    (2 * $width-red) (17 * $width-red) 0 $red-outline-pill,
+    (3 * $width-red) (17 * $width-red) 0 $red-pill,
+    (4 * $width-red) (17 * $width-red) 0 $red-pill,
+    (5 * $width-red) (17 * $width-red) 0 $red-pill,
+    (6 * $width-red) (17 * $width-red) 0 $red-pill,
+    (7 * $width-red) (17 * $width-red) 0 $red-shadow-pill,
+    (8 * $width-red) (17 * $width-red) 0 $red-shadow-pill,
+    (9 * $width-red) (17 * $width-red) 0 $red-shadow-pill,
+    (10 * $width-red) (17 * $width-red) 0 $red-outline-pill,
+    (3 * $width-red) (18 * $width-red) 0 $red-outline-pill,
+    (4 * $width-red) (18 * $width-red) 0 $red-shadow-pill,
+    (5 * $width-red) (18 * $width-red) 0 $red-shadow-pill,
+    (6 * $width-red) (18 * $width-red) 0 $red-shadow-pill,
+    (7 * $width-red) (18 * $width-red) 0 $red-shadow-pill,
+    (8 * $width-red) (18 * $width-red) 0 $red-outline-pill,
+    (9 * $width-red) (18 * $width-red) 0 $red-outline-pill,
+    (4 * $width-red) (19 * $width-red) 0 $red-outline-pill,
+    (5 * $width-red) (19 * $width-red) 0 $red-outline-pill,
+    (6 * $width-red) (19 * $width-red) 0 $red-outline-pill,
+    (7 * $width-red) (19 * $width-red) 0 $red-outline-pill;
+}
+
+.blue {
+  width: $width-red;
+  height: $width-red;
+  z-index: 1;
+  position: absolute;
+  &__box {
+    position: absolute;
+    height: $width-red * 20;
+    width: $width-red * 20;
+    top: 50%;
+    left: 50%;
+    transform: translate(160%, -50%);
+    animation-name: float-animate;
+    animation-duration: 1800ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    -webkit-animation-name: float-animate;
+    -webkit-animation-duration: 1800ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    @-webkit-keyframes float-animate {
+      0% {
+        transform: translate(160%, -50%);
+      }
+      100% {
+        transform: translate(160%, -40%);
+      }
+    }
+    @keyframes float-animate {
+      0% {
+        transform: translate(160%, -50%);
+      }
+      100% {
+        transform: translate(160%, -40%);
+      }
+    }
+  }
+  &__neon {
+    width: 8px;
+    height: 65px;
+    transform: translate(38px, 10px) rotate(45deg);
+    animation: neon-blue 1.5s ease-in-out infinite alternate;
+    @keyframes neon-blue {
+      from {
+        box-shadow: 0 0 3px $blue-shadow-pill, 0 0 7px $blue-shadow-pill,
+          0 0 10px $blue-shadow-pill, 0 0 15px $blue-pill, 0 0 22px $blue-pill,
+          0 0 30px $blue-pill, 0 0 35px $blue-pill, 0 0 50px $blue-pill;
+      }
+      to {
+        box-shadow: 0 0 5px $blue-shadow-pill, 0 0 10px $blue-shadow-pill,
+          0 0 15px $blue-shadow-pill, 0 0 20px $blue-pill, 0 0 35px $blue-pill,
+          0 0 40px $blue-pill, 0 0 50px $blue-pill, 0 0 75px $blue-pill;
+      }
+    }
+  }
+  box-shadow: (13 * $width-red) (1 * $width-red) 0 $blue-outline-pill,
+    (14 * $width-red) (1 * $width-red) 0 $blue-outline-pill,
+    (15 * $width-red) (1 * $width-red) 0 $blue-outline-pill,
+    (16 * $width-red) (1 * $width-red) 0 $blue-outline-pill,
+    (11 * $width-red) (2 * $width-red) 0 $blue-outline-pill,
+    (12 * $width-red) (2 * $width-red) 0 $blue-outline-pill,
+    (13 * $width-red) (2 * $width-red) 0 $blue-shadow-pill,
+    (14 * $width-red) (2 * $width-red) 0 $blue-shadow-pill,
+    (15 * $width-red) (2 * $width-red) 0 $blue-shadow-pill,
+    (16 * $width-red) (2 * $width-red) 0 $blue-shadow-pill,
+    (17 * $width-red) (2 * $width-red) 0 $blue-outline-pill,
+    (10 * $width-red) (3 * $width-red) 0 $blue-outline-pill,
+    (11 * $width-red) (3 * $width-red) 0 $blue-shadow-pill,
+    (12 * $width-red) (3 * $width-red) 0 $blue-shadow-pill,
+    (13 * $width-red) (3 * $width-red) 0 $white,
+    (14 * $width-red) (3 * $width-red) 0 $blue-shadow-pill,
+    (15 * $width-red) (3 * $width-red) 0 $blue-shadow-pill,
+    (16 * $width-red) (3 * $width-red) 0 $blue-shadow-pill,
+    (17 * $width-red) (3 * $width-red) 0 $blue-shadow-pill,
+    (18 * $width-red) (3 * $width-red) 0 $blue-outline-pill,
+    (9 * $width-red) (4 * $width-red) 0 $blue-outline-pill,
+    (10 * $width-red) (4 * $width-red) 0 $blue-shadow-pill,
+    (11 * $width-red) (4 * $width-red) 0 $white,
+    (12 * $width-red) (4 * $width-red) 0 $white,
+    (13 * $width-red) (4 * $width-red) 0 $blue-shadow-pill,
+    (14 * $width-red) (4 * $width-red) 0 $blue-shadow-pill,
+    (15 * $width-red) (4 * $width-red) 0 $blue-shadow-pill,
+    (16 * $width-red) (4 * $width-red) 0 $blue-shadow-pill,
+    (17 * $width-red) (4 * $width-red) 0 $blue-shadow-pill,
+    (18 * $width-red) (4 * $width-red) 0 $blue-shadow2-pill,
+    (19 * $width-red) (4 * $width-red) 0 $blue-outline-pill,
+    (8 * $width-red) (5 * $width-red) 0 $blue-outline-pill,
+    (9 * $width-red) (5 * $width-red) 0 $blue-shadow-pill,
+    (10 * $width-red) (5 * $width-red) 0 $white,
+    (11 * $width-red) (5 * $width-red) 0 $blue-shadow-pill,
+    (12 * $width-red) (5 * $width-red) 0 $blue-shadow-pill,
+    (13 * $width-red) (5 * $width-red) 0 $blue-shadow-pill,
+    (14 * $width-red) (5 * $width-red) 0 $blue-shadow-pill,
+    (15 * $width-red) (5 * $width-red) 0 $blue-shadow-pill,
+    (16 * $width-red) (5 * $width-red) 0 $blue-shadow-pill,
+    (17 * $width-red) (5 * $width-red) 0 $blue-shadow-pill,
+    (18 * $width-red) (5 * $width-red) 0 $blue-shadow2-pill,
+    (19 * $width-red) (5 * $width-red) 0 $blue-outline-pill,
+    (7 * $width-red) (6 * $width-red) 0 $blue-outline-pill,
+    (8 * $width-red) (6 * $width-red) 0 $blue-shadow-pill,
+    (9 * $width-red) (6 * $width-red) 0 $white,
+    (10 * $width-red) (6 * $width-red) 0 $blue-shadow-pill,
+    (11 * $width-red) (6 * $width-red) 0 $blue-shadow-pill,
+    (12 * $width-red) (6 * $width-red) 0 $blue-shadow-pill,
+    (13 * $width-red) (6 * $width-red) 0 $blue-shadow-pill,
+    (14 * $width-red) (6 * $width-red) 0 $blue-shadow-pill,
+    (15 * $width-red) (6 * $width-red) 0 $blue-shadow-pill,
+    (16 * $width-red) (6 * $width-red) 0 $blue-shadow-pill,
+    (17 * $width-red) (6 * $width-red) 0 $blue-shadow-pill,
+    (18 * $width-red) (6 * $width-red) 0 $blue-shadow2-pill,
+    (19 * $width-red) (6 * $width-red) 0 $blue-outline-pill,
+    (6 * $width-red) (7 * $width-red) 0 $blue-outline-pill,
+    (7 * $width-red) (7 * $width-red) 0 $blue-pill,
+    (8 * $width-red) (7 * $width-red) 0 $white,
+    (9 * $width-red) (7 * $width-red) 0 $blue-shadow-pill,
+    (10 * $width-red) (7 * $width-red) 0 $blue-shadow-pill,
+    (11 * $width-red) (7 * $width-red) 0 $blue-shadow-pill,
+    (12 * $width-red) (7 * $width-red) 0 $blue-shadow-pill,
+    (13 * $width-red) (7 * $width-red) 0 $blue-shadow-pill,
+    (14 * $width-red) (7 * $width-red) 0 $blue-shadow-pill,
+    (15 * $width-red) (7 * $width-red) 0 $blue-shadow-pill,
+    (16 * $width-red) (7 * $width-red) 0 $blue-shadow-pill,
+    (17 * $width-red) (7 * $width-red) 0 $blue-shadow2-pill,
+    (18 * $width-red) (7 * $width-red) 0 $blue-shadow2-pill,
+    (19 * $width-red) (7 * $width-red) 0 $blue-outline-pill,
+    (5 * $width-red) (8 * $width-red) 0 $blue-outline-pill,
+    (6 * $width-red) (8 * $width-red) 0 $blue-pill,
+    (7 * $width-red) (8 * $width-red) 0 $white,
+    (8 * $width-red) (8 * $width-red) 0 $blue-pill,
+    (9 * $width-red) (8 * $width-red) 0 $blue-pill,
+    (10 * $width-red) (8 * $width-red) 0 $blue-pill,
+    (11 * $width-red) (8 * $width-red) 0 $blue-pill,
+    (12 * $width-red) (8 * $width-red) 0 $blue-shadow-pill,
+    (13 * $width-red) (8 * $width-red) 0 $blue-shadow-pill,
+    (14 * $width-red) (8 * $width-red) 0 $blue-shadow-pill,
+    (15 * $width-red) (8 * $width-red) 0 $blue-shadow-pill,
+    (16 * $width-red) (8 * $width-red) 0 $blue-shadow2-pill,
+    (17 * $width-red) (8 * $width-red) 0 $blue-shadow2-pill,
+    (18 * $width-red) (8 * $width-red) 0 $blue-outline-pill,
+    (4 * $width-red) (9 * $width-red) 0 $blue-outline-pill,
+    (5 * $width-red) (9 * $width-red) 0 $blue-pill,
+    (6 * $width-red) (9 * $width-red) 0 $white,
+    (7 * $width-red) (9 * $width-red) 0 $blue-pill,
+    (8 * $width-red) (9 * $width-red) 0 $blue-pill,
+    (9 * $width-red) (9 * $width-red) 0 $blue-pill,
+    (10 * $width-red) (9 * $width-red) 0 $blue-pill,
+    (11 * $width-red) (9 * $width-red) 0 $blue-pill,
+    (12 * $width-red) (9 * $width-red) 0 $blue-pill,
+    (13 * $width-red) (9 * $width-red) 0 $blue-shadow-pill,
+    (14 * $width-red) (9 * $width-red) 0 $blue-shadow-pill,
+    (15 * $width-red) (9 * $width-red) 0 $blue-shadow-pill,
+    (16 * $width-red) (9 * $width-red) 0 $blue-shadow2-pill,
+    (17 * $width-red) (9 * $width-red) 0 $blue-shadow2-pill,
+    (18 * $width-red) (9 * $width-red) 0 $blue-outline-pill,
+    (3 * $width-red) (10 * $width-red) 0 $blue-outline-pill,
+    (4 * $width-red) (10 * $width-red) 0 $blue-pill,
+    (5 * $width-red) (10 * $width-red) 0 $white,
+    (6 * $width-red) (10 * $width-red) 0 $blue-pill,
+    (7 * $width-red) (10 * $width-red) 0 $blue-pill,
+    (8 * $width-red) (10 * $width-red) 0 $blue-pill,
+    (9 * $width-red) (10 * $width-red) 0 $blue-pill,
+    (10 * $width-red) (10 * $width-red) 0 $blue-pill,
+    (11 * $width-red) (10 * $width-red) 0 $blue-pill,
+    (12 * $width-red) (10 * $width-red) 0 $blue-pill,
+    (13 * $width-red) (10 * $width-red) 0 $blue-shadow-pill,
+    (14 * $width-red) (10 * $width-red) 0 $blue-shadow-pill,
+    (15 * $width-red) (10 * $width-red) 0 $blue-shadow2-pill,
+    (16 * $width-red) (10 * $width-red) 0 $blue-shadow2-pill,
+    (17 * $width-red) (10 * $width-red) 0 $blue-outline-pill,
+    (2 * $width-red) (11 * $width-red) 0 $blue-outline-pill,
+    (3 * $width-red) (11 * $width-red) 0 $blue-pill,
+    (4 * $width-red) (11 * $width-red) 0 $white,
+    (5 * $width-red) (11 * $width-red) 0 $blue-pill,
+    (6 * $width-red) (11 * $width-red) 0 $blue-pill,
+    (7 * $width-red) (11 * $width-red) 0 $blue-pill,
+    (8 * $width-red) (11 * $width-red) 0 $blue-pill,
+    (9 * $width-red) (11 * $width-red) 0 $blue-pill,
+    (10 * $width-red) (11 * $width-red) 0 $blue-pill,
+    (11 * $width-red) (11 * $width-red) 0 $blue-pill,
+    (12 * $width-red) (11 * $width-red) 0 $blue-pill,
+    (13 * $width-red) (11 * $width-red) 0 $blue-shadow-pill,
+    (14 * $width-red) (11 * $width-red) 0 $blue-shadow2-pill,
+    (15 * $width-red) (11 * $width-red) 0 $blue-shadow2-pill,
+    (16 * $width-red) (11 * $width-red) 0 $blue-outline-pill,
+    (2 * $width-red) (12 * $width-red) 0 $blue-outline-pill,
+    (3 * $width-red) (12 * $width-red) 0 $blue-pill,
+    (4 * $width-red) (12 * $width-red) 0 $white,
+    (5 * $width-red) (12 * $width-red) 0 $blue-pill,
+    (6 * $width-red) (12 * $width-red) 0 $blue-pill,
+    (7 * $width-red) (12 * $width-red) 0 $blue-pill,
+    (8 * $width-red) (12 * $width-red) 0 $blue-pill,
+    (9 * $width-red) (12 * $width-red) 0 $blue-pill,
+    (10 * $width-red) (12 * $width-red) 0 $blue-pill,
+    (11 * $width-red) (12 * $width-red) 0 $blue-pill,
+    (12 * $width-red) (12 * $width-red) 0 $blue-pill,
+    (13 * $width-red) (12 * $width-red) 0 $blue-shadow2-pill,
+    (14 * $width-red) (12 * $width-red) 0 $blue-shadow2-pill,
+    (15 * $width-red) (12 * $width-red) 0 $blue-outline-pill,
+    (1 * $width-red) (13 * $width-red) 0 $blue-outline-pill,
+    (2 * $width-red) (13 * $width-red) 0 $blue-pill,
+    (3 * $width-red) (13 * $width-red) 0 $white,
+    (4 * $width-red) (13 * $width-red) 0 $blue-pill,
+    (5 * $width-red) (13 * $width-red) 0 $blue-pill,
+    (6 * $width-red) (13 * $width-red) 0 $blue-pill,
+    (7 * $width-red) (13 * $width-red) 0 $blue-pill,
+    (8 * $width-red) (13 * $width-red) 0 $blue-pill,
+    (9 * $width-red) (13 * $width-red) 0 $blue-pill,
+    (10 * $width-red) (13 * $width-red) 0 $blue-pill,
+    (11 * $width-red) (13 * $width-red) 0 $blue-pill,
+    (12 * $width-red) (13 * $width-red) 0 $blue-shadow-pill,
+    (13 * $width-red) (13 * $width-red) 0 $blue-shadow-pill,
+    (14 * $width-red) (13 * $width-red) 0 $blue-outline-pill,
+    (1 * $width-red) (14 * $width-red) 0 $blue-outline-pill,
+    (2 * $width-red) (14 * $width-red) 0 $blue-pill,
+    (3 * $width-red) (14 * $width-red) 0 $blue-pill,
+    (4 * $width-red) (14 * $width-red) 0 $blue-pill,
+    (5 * $width-red) (14 * $width-red) 0 $blue-pill,
+    (6 * $width-red) (14 * $width-red) 0 $blue-pill,
+    (7 * $width-red) (14 * $width-red) 0 $blue-pill,
+    (8 * $width-red) (14 * $width-red) 0 $blue-pill,
+    (9 * $width-red) (14 * $width-red) 0 $blue-pill,
+    (10 * $width-red) (14 * $width-red) 0 $blue-pill,
+    (11 * $width-red) (14 * $width-red) 0 $blue-shadow-pill,
+    (12 * $width-red) (14 * $width-red) 0 $blue-shadow-pill,
+    (13 * $width-red) (14 * $width-red) 0 $blue-outline-pill,
+    (1 * $width-red) (15 * $width-red) 0 $blue-outline-pill,
+    (2 * $width-red) (15 * $width-red) 0 $blue-pill,
+    (3 * $width-red) (15 * $width-red) 0 $blue-pill,
+    (4 * $width-red) (15 * $width-red) 0 $blue-pill,
+    (5 * $width-red) (15 * $width-red) 0 $blue-pill,
+    (6 * $width-red) (15 * $width-red) 0 $blue-pill,
+    (7 * $width-red) (15 * $width-red) 0 $blue-pill,
+    (8 * $width-red) (15 * $width-red) 0 $blue-pill,
+    (9 * $width-red) (15 * $width-red) 0 $blue-pill,
+    (10 * $width-red) (15 * $width-red) 0 $blue-shadow-pill,
+    (11 * $width-red) (15 * $width-red) 0 $blue-shadow-pill,
+    (12 * $width-red) (15 * $width-red) 0 $blue-outline-pill,
+    (1 * $width-red) (16 * $width-red) 0 $blue-outline-pill,
+    (2 * $width-red) (16 * $width-red) 0 $blue-pill,
+    (3 * $width-red) (16 * $width-red) 0 $blue-pill,
+    (4 * $width-red) (16 * $width-red) 0 $blue-pill,
+    (5 * $width-red) (16 * $width-red) 0 $blue-pill,
+    (6 * $width-red) (16 * $width-red) 0 $blue-pill,
+    (7 * $width-red) (16 * $width-red) 0 $blue-pill,
+    (8 * $width-red) (16 * $width-red) 0 $blue-shadow-pill,
+    (9 * $width-red) (16 * $width-red) 0 $blue-shadow-pill,
+    (10 * $width-red) (16 * $width-red) 0 $blue-shadow-pill,
+    (11 * $width-red) (16 * $width-red) 0 $blue-outline-pill,
+    (2 * $width-red) (17 * $width-red) 0 $blue-outline-pill,
+    (3 * $width-red) (17 * $width-red) 0 $blue-pill,
+    (4 * $width-red) (17 * $width-red) 0 $blue-pill,
+    (5 * $width-red) (17 * $width-red) 0 $blue-pill,
+    (6 * $width-red) (17 * $width-red) 0 $blue-pill,
+    (7 * $width-red) (17 * $width-red) 0 $blue-shadow-pill,
+    (8 * $width-red) (17 * $width-red) 0 $blue-shadow-pill,
+    (9 * $width-red) (17 * $width-red) 0 $blue-shadow-pill,
+    (10 * $width-red) (17 * $width-red) 0 $blue-outline-pill,
+    (3 * $width-red) (18 * $width-red) 0 $blue-outline-pill,
+    (4 * $width-red) (18 * $width-red) 0 $blue-shadow-pill,
+    (5 * $width-red) (18 * $width-red) 0 $blue-shadow-pill,
+    (6 * $width-red) (18 * $width-red) 0 $blue-shadow-pill,
+    (7 * $width-red) (18 * $width-red) 0 $blue-shadow-pill,
+    (8 * $width-red) (18 * $width-red) 0 $blue-outline-pill,
+    (9 * $width-red) (18 * $width-red) 0 $blue-outline-pill,
+    (4 * $width-red) (19 * $width-red) 0 $blue-outline-pill,
+    (5 * $width-red) (19 * $width-red) 0 $blue-outline-pill,
+    (6 * $width-red) (19 * $width-red) 0 $blue-outline-pill,
+    (7 * $width-red) (19 * $width-red) 0 $blue-outline-pill;
+}
 
 .morpheus {
   width: $width-morpheus;
@@ -27,8 +586,8 @@ $shirt-shadow-morpheus: #251123;
   }
   &__dialog {
     position: absolute;
-    right: 125px;
-    top: -40px;
+    right: 120px;
+    top: -50px;
     // @media (max-width: 1600px) {
     //   left: 335px;
     // }
@@ -169,49 +728,49 @@ $shirt-shadow-morpheus: #251123;
     (3 * $width-morpheus) (10 * $width-morpheus) 0 $skin-morpheus,
     (4 * $width-morpheus) (10 * $width-morpheus) 0 $skin-morpheus,
     (5 * $width-morpheus) (10 * $width-morpheus) 0 $gray-morpheus,
+    (8 * $width-morpheus) (10 * $width-morpheus) 0 $white,
     (6 * $width-morpheus) (10 * $width-morpheus) 0 $black-morpheus,
     (7 * $width-morpheus) (10 * $width-morpheus) 0 $black-morpheus,
-    (8 * $width-morpheus) (10 * $width-morpheus) 0 $white-morpheus,
     (9 * $width-morpheus) (10 * $width-morpheus) 0 $black-morpheus,
     (10 * $width-morpheus) (10 * $width-morpheus) 0 $gray-morpheus,
     (11 * $width-morpheus) (10 * $width-morpheus) 0 $gray-morpheus,
     (12 * $width-morpheus) (10 * $width-morpheus) 0 $gray-morpheus,
+    (15 * $width-morpheus) (10 * $width-morpheus) 0 $white,
     (13 * $width-morpheus) (10 * $width-morpheus) 0 $black-morpheus,
     (14 * $width-morpheus) (10 * $width-morpheus) 0 $black-morpheus,
-    (15 * $width-morpheus) (10 * $width-morpheus) 0 $white-morpheus,
     (16 * $width-morpheus) (10 * $width-morpheus) 0 $black-morpheus,
     (17 * $width-morpheus) (10 * $width-morpheus) 0 $gray-morpheus,
     (18 * $width-morpheus) (10 * $width-morpheus) 0 $skin-morpheus,
     (19 * $width-morpheus) (10 * $width-morpheus) 0 $skin-morpheus,
     (3 * $width-morpheus) (11 * $width-morpheus) 0 $skin-morpheus,
     (4 * $width-morpheus) (11 * $width-morpheus) 0 $skin-morpheus,
+    (7 * $width-morpheus) (11 * $width-morpheus) 0 $white,
     (5 * $width-morpheus) (11 * $width-morpheus) 0 $gray-morpheus,
     (6 * $width-morpheus) (11 * $width-morpheus) 0 $black-morpheus,
-    (7 * $width-morpheus) (11 * $width-morpheus) 0 $white-morpheus,
-    (8 * $width-morpheus) (11 * $width-morpheus) 0 $white-morpheus,
+    (8 * $width-morpheus) (11 * $width-morpheus) 0 $white,
     (9 * $width-morpheus) (11 * $width-morpheus) 0 $black-morpheus,
     (10 * $width-morpheus) (11 * $width-morpheus) 0 $black-morpheus,
     (11 * $width-morpheus) (11 * $width-morpheus) 0 $gray-morpheus,
+    (14 * $width-morpheus) (11 * $width-morpheus) 0 $white,
     (12 * $width-morpheus) (11 * $width-morpheus) 0 $black-morpheus,
     (13 * $width-morpheus) (11 * $width-morpheus) 0 $black-morpheus,
-    (14 * $width-morpheus) (11 * $width-morpheus) 0 $white-morpheus,
-    (15 * $width-morpheus) (11 * $width-morpheus) 0 $white-morpheus,
+    (15 * $width-morpheus) (11 * $width-morpheus) 0 $white,
     (16 * $width-morpheus) (11 * $width-morpheus) 0 $black-morpheus,
     (17 * $width-morpheus) (11 * $width-morpheus) 0 $gray-morpheus,
     (18 * $width-morpheus) (11 * $width-morpheus) 0 $skin-morpheus,
     (19 * $width-morpheus) (11 * $width-morpheus) 0 $skin-morpheus,
     (3 * $width-morpheus) (12 * $width-morpheus) 0 $skin-morpheus,
     (4 * $width-morpheus) (12 * $width-morpheus) 0 $skin-morpheus,
+    (7 * $width-morpheus) (12 * $width-morpheus) 0 $white,
     (5 * $width-morpheus) (12 * $width-morpheus) 0 $skin-morpheus,
     (6 * $width-morpheus) (12 * $width-morpheus) 0 $gray-morpheus,
-    (7 * $width-morpheus) (12 * $width-morpheus) 0 $white-morpheus,
     (8 * $width-morpheus) (12 * $width-morpheus) 0 $gray-morpheus,
     (9 * $width-morpheus) (12 * $width-morpheus) 0 $black-morpheus,
     (10 * $width-morpheus) (12 * $width-morpheus) 0 $skin-morpheus,
     (11 * $width-morpheus) (12 * $width-morpheus) 0 $skin-morpheus,
+    (14 * $width-morpheus) (12 * $width-morpheus) 0 $white,
     (12 * $width-morpheus) (12 * $width-morpheus) 0 $skin-morpheus,
     (13 * $width-morpheus) (12 * $width-morpheus) 0 $black-morpheus,
-    (14 * $width-morpheus) (12 * $width-morpheus) 0 $white-morpheus,
     (15 * $width-morpheus) (12 * $width-morpheus) 0 $gray-morpheus,
     (16 * $width-morpheus) (12 * $width-morpheus) 0 $gray-morpheus,
     (17 * $width-morpheus) (12 * $width-morpheus) 0 $skin-morpheus,
