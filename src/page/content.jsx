@@ -225,6 +225,18 @@ const Content = () => {
             <div className="yoda">
               <div className="yoda__sword" style={yoda ? {} : { height: 0 }} />
             </div>
+            <div className="bubble left yoda__dialog" style={{ width: 256 }}>
+              <div className="content__bit__text">
+                {yoda ? (
+                  <>
+                    Испробовать их все должны вы. Да пребудет с вами
+                    stackoverflow.
+                  </>
+                ) : (
+                  <>Всегда много путей вовремя таски закрыть есть. </>
+                )}
+              </div>
+            </div>
           </div>
         </div>
       </div>

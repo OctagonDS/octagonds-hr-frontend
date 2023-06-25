@@ -16,7 +16,15 @@ $black-yoda: #090504;
   height: $width-yoda;
   position: absolute;
   top: 170px;
-  left: 7em;
+  left: 25%;
+  &__dialog {
+    position: absolute;
+    left: 55%;
+    top: 112px;
+    @media (max-width: 1600px) {
+      left: 335px;
+    }
+  }
   &__sword {
     position: absolute;
     width: $width-yoda * 1;
