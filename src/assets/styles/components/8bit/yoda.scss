@@ -15,12 +15,12 @@ $black-yoda: #090504;
   width: $width-yoda;
   height: $width-yoda;
   position: absolute;
-  top: 170px;
+  top: 130px;
   left: 15%;
   &__dialog {
     position: absolute;
     left: 45%;
-    top: 112px;
+    top: 100px;
     @media (max-width: 1600px) {
       left: 55%;
     }
@@ -165,14 +165,6 @@ $black-yoda: #090504;
       }
     }
   }
-  // &__dialog {
-  //   position: absolute;
-  //   left: 380px;
-  //   top: 178px;
-  //   @media (max-width: 1600px) {
-  //     left: 335px;
-  //   }
-  // }
   box-shadow: (6 * $width-yoda) (1 * $width-yoda) 0 $skin-shadow-yoda,
     (7 * $width-yoda) (1 * $width-yoda) 0 $skin-shadow-yoda,
     (8 * $width-yoda) (1 * $width-yoda) 0 $skin-yoda,
