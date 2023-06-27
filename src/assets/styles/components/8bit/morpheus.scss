@@ -587,10 +587,16 @@ $shirt-shadow-morpheus: #251123;
   &__dialog {
     position: absolute;
     right: 120px;
-    top: -50px;
+    top: -70px;
     // @media (max-width: 1600px) {
     //   left: 335px;
     // }
+    &-right {
+      @extend .morpheus__dialog;
+      width: 250px !important;
+      right: -300px;
+      top: -55px;
+    }
   }
   box-shadow: (5 * $width-morpheus) (1 * $width-morpheus) 0 $skin-morpheus,
     (6 * $width-morpheus) (1 * $width-morpheus) 0 $skin-morpheus,

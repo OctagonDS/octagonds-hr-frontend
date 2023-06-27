@@ -8,6 +8,7 @@ const Content = () => {
   const [morpheus, setMorpheus] = useState(false)
   const [yoda, setYoda] = useState(false)
   const [bmo, setBMO] = useState(false)
+  const [godfather, setGodfather] = useState(false)
 
   useEffect(() => {
     AOS.init({ duration: 1000 })
@@ -196,6 +197,115 @@ const Content = () => {
         data-aos="fade-up"
       >
         <div className="content__title" style={{ marginBottom: 20 }}>
+          devops-инженер
+        </div>
+      </div>
+      <div className="content" data-aos="fade-up">
+        <div
+          className="content__item__row"
+          onMouseOver={() => setGodfather(true)}
+          onMouseOut={() => setGodfather(false)}
+        >
+          <div className="content__item">
+            <p>
+              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+              вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+              на латинице с начала XVI века. В то время некий безымянный
+              печатник создал большую коллекцию размеров и форм шрифтов,
+              используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не
+              только успешно пережил без заметных изменений пять веков, но и
+              перешагнул в электронный дизайн.
+            </p>
+          </div>
+          <div className="content__bit">
+            <div className="godfather">
+              {godfather && <div className="godfather__money" />}
+            </div>
+            <div
+              className="bubble left godfather__dialog"
+              style={godfather ? { width: 276 } : { width: 270 }}
+            >
+              <div className="content__bit__text">
+                {godfather ? (
+                  <>Так-то лучше.</>
+                ) : (
+                  <>
+                    Ты просишь меня настроить докер, но делаешь это без
+                    уважения...
+                  </>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="content"
+        style={{ marginBottom: 20, marginTop: 20 }}
+        data-aos="fade-up"
+      >
+        <div className="content__title" style={{ marginBottom: 20 }}>
+          ios-разработчик
+        </div>
+      </div>
+      <div className="content" data-aos="fade-up">
+        <div
+          className="content__item__row"
+          onMouseOver={() => setBMO(true)}
+          onMouseOut={() => setBMO(false)}
+        >
+          <div className="content__bit">
+            <div className="bmo">
+              <div
+                className="bmo__eye-left"
+                style={bmo ? { background: 'red' } : {}}
+              />
+              <div
+                className="bmo__eye-right"
+                style={bmo ? { background: 'red' } : {}}
+              />
+              <div
+                className="bmo__mouth-left"
+                style={bmo ? { transform: 'translate(95px, 85px)' } : {}}
+              />
+              <div
+                className="bmo__mouth-right"
+                style={bmo ? { transform: 'translate(115px, 85px)' } : {}}
+              />
+            </div>
+            <div className="bubble left bmo__dialog" style={{ width: 256 }}>
+              <div className="content__bit__text">
+                {bmo ? (
+                  <>Или нет...</>
+                ) : (
+                  <>
+                    Мне нужна твоя одежда и мотоцикл.
+                    <div>...</div>
+                    <div>А-ха-ха-ха, я пошутил!</div>
+                  </>
+                )}
+              </div>
+            </div>
+          </div>
+          <div className="content__item">
+            <p>
+              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+              вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+              на латинице с начала XVI века. В то время некий безымянный
+              печатник создал большую коллекцию размеров и форм шрифтов,
+              используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не
+              только успешно пережил без заметных изменений пять веков, но и
+              перешагнул в электронный дизайн.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        className="content"
+        style={{ marginBottom: 20, marginTop: 20 }}
+        data-aos="fade-up"
+      >
+        <div className="content__title" style={{ marginBottom: 20 }}>
           тестировщик
         </div>
       </div>
@@ -268,21 +378,26 @@ const Content = () => {
               <div className="morpheus" />
               <div
                 className="bubble right morpheus__dialog"
-                style={morpheus ? { width: 250 } : { width: 215 }}
+                style={morpheus ? { width: 290 } : { width: 215 }}
               >
                 <div className="content__bit__text">
                   {morpheus ? (
                     <>
-                      Примешь синюю таблетку — и сказке конец.{' '}
-                      <div>
-                        Примешь красную таблетку — войдешь в IT тусовку.
-                      </div>
+                      Примешь красную таблетку — получишь дружный коллектив,
+                      интересные задачи и возможность карьерного роста.
                     </>
                   ) : (
                     <>Ты программист, Гарри.</>
                   )}
                 </div>
               </div>
+              {morpheus && (
+                <div className="bubble left morpheus__dialog-right">
+                  <div className="content__bit__text">
+                    Примешь синюю таблетку — и сказке конец.
+                  </div>
+                </div>
+              )}
             </div>
             {morpheus && (
               <div className="blue__box">
