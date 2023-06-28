@@ -9,6 +9,7 @@ const Content = () => {
   const [yoda, setYoda] = useState(false)
   const [bmo, setBMO] = useState(false)
   const [godfather, setGodfather] = useState(false)
+  const [mcgonagall, setMcgonagall] = useState(false)
 
   useEffect(() => {
     AOS.init({ duration: 1000 })
@@ -97,8 +98,8 @@ const Content = () => {
       <div className="content" data-aos="fade-up">
         <div
           className="content__item__row"
-          onMouseOver={() => setYoda(true)}
-          onMouseOut={() => setYoda(false)}
+          onMouseOver={() => setMcgonagall(true)}
+          onMouseOut={() => setMcgonagall(false)}
         >
           <div className="content__item">
             <p>
@@ -112,21 +113,33 @@ const Content = () => {
             </p>
           </div>
           <div className="content__bit">
-            <div className="yoda">
-              <div className="yoda__sword" style={yoda ? {} : { height: 0 }} />
-            </div>
-            <div className="bubble left yoda__dialog" style={{ width: 256 }}>
-              <div className="content__bit__text">
-                {yoda ? (
-                  <>
-                    Испробовать их все должны вы. Да пребудет с вами
-                    stackoverflow.
-                  </>
-                ) : (
-                  <>Всегда много путей вовремя таски закрыть есть.</>
-                )}
-              </div>
-            </div>
+            {!mcgonagall && (
+              <>
+                <div className="mcgonagall" />
+                <div
+                  className="bubble left mcgonagall__dialog"
+                  style={{ width: 270 }}
+                >
+                  <div className="content__bit__text">
+                    Скажите, почему, когда что-нибудь происходит, вы трое всегда
+                    оказываетесь рядом?
+                  </div>
+                </div>
+              </>
+            )}
+            {mcgonagall && (
+              <>
+                <div className="js">
+                  <div className="js__heir" />
+                </div>
+                <div className="html">
+                  <div className="html__heir" />
+                </div>
+                <div className="css">
+                  <div className="css__heir" />
+                </div>
+              </>
+            )}
           </div>
         </div>
       </div>
@@ -239,7 +252,7 @@ const Content = () => {
           </div>
         </div>
       </div>
-      <div
+      {/* <div
         className="content"
         style={{ marginBottom: 20, marginTop: 20 }}
         data-aos="fade-up"
@@ -299,59 +312,7 @@ const Content = () => {
             </p>
           </div>
         </div>
-      </div>
-      <div
-        className="content"
-        style={{ marginBottom: 20, marginTop: 20 }}
-        data-aos="fade-up"
-      >
-        <div className="content__title" style={{ marginBottom: 20 }}>
-          тестировщик
-        </div>
-      </div>
-      <div className="content" data-aos="fade-up">
-        <div
-          className="content__item__row"
-          onMouseOver={() => setGlados('-open')}
-          onMouseOut={() => setGlados('-close')}
-        >
-          <div className="content__item">
-            <p>
-              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
-              вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
-              на латинице с начала XVI века. В то время некий безымянный
-              печатник создал большую коллекцию размеров и форм шрифтов,
-              используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не
-              только успешно пережил без заметных изменений пять веков, но и
-              перешагнул в электронный дизайн.
-            </p>
-          </div>
-          <div className="content__bit">
-            <div className="glados">
-              <div
-                className="glados__eye"
-                style={
-                  glados === '-open'
-                    ? { transform: 'translate(165px, 234px)' }
-                    : {}
-                }
-              />
-            </div>
-            <div className="bubble left glados__dialog" style={{ width: 270 }}>
-              <div className="content__bit__text">
-                {glados === '-open' ? (
-                  <>
-                    Я серьезно, тут так и сказано: "ужасный код".{' '}
-                    <div>Хотя мы на это даже не тестировали.</div>
-                  </>
-                ) : (
-                  <>Прекрасно. Вот результаты теста: у тебя ужасный код.</>
-                )}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      </div> */}
       <div
         className="content"
         style={{ marginBottom: 20, marginTop: 20 }}
@@ -425,6 +386,59 @@ const Content = () => {
         data-aos="fade-up"
       >
         <div className="content__title" style={{ marginBottom: 20 }}>
+          тестировщик
+        </div>
+      </div>
+      <div className="content" data-aos="fade-up">
+        <div
+          className="content__item__row"
+          onMouseOver={() => setGlados('-open')}
+          onMouseOut={() => setGlados('-close')}
+        >
+          <div className="content__item">
+            <p>
+              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+              вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+              на латинице с начала XVI века. В то время некий безымянный
+              печатник создал большую коллекцию размеров и форм шрифтов,
+              используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не
+              только успешно пережил без заметных изменений пять веков, но и
+              перешагнул в электронный дизайн.
+            </p>
+          </div>
+          <div className="content__bit">
+            <div className="glados">
+              <div
+                className="glados__eye"
+                style={
+                  glados === '-open'
+                    ? { transform: 'translate(165px, 234px)' }
+                    : {}
+                }
+              />
+            </div>
+            <div className="bubble left glados__dialog" style={{ width: 270 }}>
+              <div className="content__bit__text">
+                {glados === '-open' ? (
+                  <>
+                    Я серьезно, тут так и сказано: "ужасный код".{' '}
+                    <div>Хотя мы на это даже не тестировали.</div>
+                  </>
+                ) : (
+                  <>Прекрасно. Вот результаты теста: у тебя ужасный код.</>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* <div
+        className="content"
+        style={{ marginBottom: 20, marginTop: 20 }}
+        data-aos="fade-up"
+      >
+        <div className="content__title" style={{ marginBottom: 20 }}>
           продажник
         </div>
       </div>
@@ -480,8 +494,8 @@ const Content = () => {
             )}
           </div>
         </div>
-      </div>
-      <div
+      </div> */}
+      {/* <div
         className="content"
         style={{ marginBottom: 20, marginTop: 20 }}
         data-aos="fade-up"
@@ -525,7 +539,7 @@ const Content = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
       <div
         className="content"
         style={{ marginBottom: 20, marginTop: 20 }}
@@ -541,17 +555,6 @@ const Content = () => {
           onMouseOver={() => setYoda(true)}
           onMouseOut={() => setYoda(false)}
         >
-          <div className="content__item">
-            <p>
-              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
-              вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
-              на латинице с начала XVI века. В то время некий безымянный
-              печатник создал большую коллекцию размеров и форм шрифтов,
-              используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не
-              только успешно пережил без заметных изменений пять веков, но и
-              перешагнул в электронный дизайн.
-            </p>
-          </div>
           <div className="content__bit">
             <div className="yoda">
               <div className="yoda__sword" style={yoda ? {} : { height: 0 }} />
@@ -568,6 +571,17 @@ const Content = () => {
                 )}
               </div>
             </div>
+          </div>
+          <div className="content__item">
+            <p>
+              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+              вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+              на латинице с начала XVI века. В то время некий безымянный
+              печатник создал большую коллекцию размеров и форм шрифтов,
+              используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не
+              только успешно пережил без заметных изменений пять веков, но и
+              перешагнул в электронный дизайн.
+            </p>
           </div>
         </div>
       </div>
