@@ -246,6 +246,7 @@ const Content = () => {
               <li>TensorFlow</li>
               <li>Keras</li>
               <li>NumPy</li>
+              <li>nltk</li>
               <li>Pandas</li>
               <li>Git</li>
               <li>Jira</li>
@@ -292,12 +293,12 @@ const Content = () => {
           <div className="content__item">
             <h4>Чем ты будешь заниматься:</h4>
             <ul>
-              <li>Разработка бэкенд части</li>
-              <li>Проектирование архитектуры проекта</li>
+              <li>Реализация и оптимизация CI/CD</li>
+              <li>Релиз новых приложений</li>
+              <li>Микросервисная архитектура</li>
               <li>Организация и управление базами данных</li>
               <li>Рефакторинг и оптимизация кода</li>
               <li>Доработка программного кода</li>
-              <li>Подготовка документации</li>
             </ul>
             <h4>Софт-скиллы:</h4>
             <ul>
@@ -307,8 +308,14 @@ const Content = () => {
             </ul>
             <h4>Стек:</h4>
             <ul>
-              <li>Django</li>
-              <li>FastAPI</li>
+              <li>Linux</li>
+              <li>Python</li>
+              <li>Bash</li>
+              <li>Docker</li>
+              <li>Kubernetes</li>
+              <li>RabbitMQ || Kafka</li>
+              <li>Grafana</li>
+              <li>SQL</li>
               <li>REST</li>
               <li>Git</li>
               <li>Jira</li>
@@ -435,12 +442,12 @@ const Content = () => {
           <div className="content__item">
             <h4>Чем ты будешь заниматься:</h4>
             <ul>
-              <li>Разработка бэкенд части</li>
-              <li>Проектирование архитектуры проекта</li>
-              <li>Организация и управление базами данных</li>
-              <li>Рефакторинг и оптимизация кода</li>
-              <li>Доработка программного кода</li>
-              <li>Подготовка документации</li>
+              <li>Поиск и подбор персонала</li>
+              <li>Участие в оценке скиллов</li>
+              <li>Адаптация</li>
+              <li>Развитие персонала</li>
+              <li>Корпоративная культура</li>
+              <li>HR-аналитика</li>
             </ul>
             <h4>Софт-скиллы:</h4>
             <ul>
@@ -450,11 +457,8 @@ const Content = () => {
             </ul>
             <h4>Стек:</h4>
             <ul>
-              <li>Django</li>
-              <li>FastAPI</li>
-              <li>REST</li>
-              <li>Git</li>
-              <li>Jira</li>
+              <li>Разбираться в IT-технологиях (желательно)</li>
+              <li>Digital-инструменты</li>
             </ul>
             <p>*ЗП по результатам собеседования</p>
           </div>
