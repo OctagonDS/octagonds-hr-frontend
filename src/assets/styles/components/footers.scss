@@ -528,6 +528,41 @@ body:active .skyline:before {
     left: -16%;
     bottom: -4%;
   }
+  &__dialog {
+    right: 125%;
+    top: 34%;
+    width: 300px;
+    position: absolute;
+    transition: 1000ms ease-out;
+    &-active {
+      @extend .batman__dialog;
+      opacity: 1;
+    }
+    &-inactive {
+      @extend .batman__dialog;
+      opacity: 0;
+    }
+    &__text {
+      font-family: 'Pixeloid';
+      font-weight: 600;
+      text-align: left;
+      font-size: 14px;
+      color: #393e46;
+      &::selection {
+        background-color: #ffd369;
+        color: #393e46;
+      }
+      & div {
+        &::selection {
+          background-color: #ffd369;
+          color: #393e46;
+        }
+      }
+    }
+  }
+  & svg {
+    position: absolute;
+  }
 }
 
 // body:active .batman {
@@ -535,9 +570,9 @@ body:active .skyline:before {
 //   transition: 1s ease 0.25s;
 // }
 
-.batman * {
-  position: absolute;
-}
+// .batman * {
+//   position: absolute;
+// }
 
 .head {
   background: #000;
@@ -729,6 +764,7 @@ body:active .skyline:before {
 }
 
 .cape {
+  position: absolute;
   width: 34.5vmin;
   height: 25vmin;
   top: 57%;
@@ -749,6 +785,7 @@ body:active .skyline:before {
 }
 
 .cape-shape {
+  position: absolute;
   background: #020202;
   width: 24vmin;
   height: 23.5vmin;
@@ -955,6 +992,7 @@ body:active .skyline:before {
   bottom: -9vmin;
   transform: rotate(0deg);
   right: -6vmin;
+  position: absolute;
 }
 
 .watchtower:before {
@@ -1086,6 +1124,7 @@ body:active .skyline:before {
   }
   & input {
     height: 50px;
+    // width: 337px;
     border: 1.75px solid #eee;
     font-family: -apple-system, BlinkMacSystemFont, 'Qanelas', 'Segoe UI',
       'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',

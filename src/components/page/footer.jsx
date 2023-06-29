@@ -69,9 +69,13 @@ const Footer = () => {
           successForm || errorForm ? '-inactive' : '-active'
         }`}
       >
-        <p>
+        {/* <p>
           Lorem Ipsum - это текст-"рыба", часто используемый в печати и
           вэб-дизайне.
+        </p> */}
+        <p>
+          Вот она, форма обратной связи, которая отделяет тебя от того, чтобы
+          стать частью нашей команды. Просто заполни её, и мы свяжемся с тобой.
         </p>
         <form onSubmit={sendFeedback}>
           <input
@@ -108,6 +112,16 @@ const Footer = () => {
         <BatDuck />
         <div className="cape">
           <div className="cape-shape"></div>
+        </div>
+        <div
+          className={`bubble right batman__dialog${
+            successForm || errorForm ? '-active' : '-inactive'
+          }`}
+        >
+          <div className="batman__dialog__text">
+            Мы скоро свяжемся с тобой. Знаешь откуда я это знаю? <div>...</div>
+            Потому что я Бэтдак!
+          </div>
         </div>
         <div className="watchtower">
           <span></span>
