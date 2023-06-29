@@ -470,7 +470,7 @@ const Content = () => {
         data-aos="fade-up"
       >
         <div className="content__title" style={{ marginBottom: 20 }}>
-          тестировщик
+          aqa-инженер
         </div>
       </div>
       <div className="content" data-aos="fade-up">
@@ -506,11 +506,11 @@ const Content = () => {
           <div className="content__item">
             <h4>Чем ты будешь заниматься:</h4>
             <ul>
-              <li>Разработка бэкенд части</li>
-              <li>Проектирование архитектуры проекта</li>
-              <li>Организация и управление базами данных</li>
-              <li>Рефакторинг и оптимизация кода</li>
-              <li>Доработка программного кода</li>
+              <li>Контроль качества приложения</li>
+              <li>Выявление и анализ ошибок</li>
+              <li>Автоматизация тестирования</li>
+              <li>Тестирование приложения</li>
+              <li>Сопровождение процесса ликвидации ошибок</li>
               <li>Подготовка документации</li>
             </ul>
             <h4>Софт-скиллы:</h4>
@@ -521,8 +521,11 @@ const Content = () => {
             </ul>
             <h4>Стек:</h4>
             <ul>
-              <li>Django</li>
-              <li>FastAPI</li>
+              <li>Python</li>
+              <li>SQL и ORM</li>
+              <li>Selenium</li>
+              <li>Pytest</li>
+              <li>Postman</li>
               <li>REST</li>
               <li>Git</li>
               <li>Jira</li>
