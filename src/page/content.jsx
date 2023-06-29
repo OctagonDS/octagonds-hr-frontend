@@ -48,12 +48,12 @@ const Content = () => {
         </div>
       </div>
       <div className="content" data-aos="fade-up">
-        <div
-          className="content__item__row"
-          onMouseOver={() => setPortal('-open')}
-          onMouseOut={() => setPortal('-close')}
-        >
-          <div className="content__bit">
+        <div className="content__item__row">
+          <div
+            className="content__bit"
+            onMouseOver={() => setPortal('-open')}
+            onMouseOut={() => setPortal('-close')}
+          >
             <div className={`portal__box${portal}`}>
               <div className="portal" />
             </div>
@@ -115,12 +115,12 @@ const Content = () => {
         </div>
       </div>
       <div className="content" data-aos="fade-up">
-        <div
-          className="content__item__row"
-          onMouseOver={() => setMcgonagall(true)}
-          onMouseOut={() => setMcgonagall(false)}
-        >
-          <div className="content__bit">
+        <div className="content__item__row">
+          <div
+            className="content__bit"
+            onMouseOver={() => setMcgonagall(true)}
+            onMouseOut={() => setMcgonagall(false)}
+          >
             {!mcgonagall && (
               <>
                 <div className="mcgonagall" />
@@ -187,12 +187,12 @@ const Content = () => {
         </div>
       </div>
       <div className="content" data-aos="fade-up">
-        <div
-          className="content__item__row"
-          onMouseOver={() => setBMO(true)}
-          onMouseOut={() => setBMO(false)}
-        >
-          <div className="content__bit">
+        <div className="content__item__row">
+          <div
+            className="content__bit"
+            onMouseOver={() => setBMO(true)}
+            onMouseOut={() => setBMO(false)}
+          >
             <div className="bmo">
               <div
                 className="bmo__eye-left"
