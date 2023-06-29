@@ -92,7 +92,7 @@ const Footer = () => {
           <input
             type="tel"
             name="messenger"
-            placeholder="Название мессенджера"
+            placeholder="Название мессенджера для контакта"
           />
           <button type="submit">Хочу в команду</button>
         </form>
