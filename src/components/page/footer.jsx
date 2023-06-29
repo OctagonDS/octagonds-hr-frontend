@@ -120,7 +120,7 @@ const Footer = () => {
         >
           <div className="batman__dialog__text">
             Мы скоро свяжемся с тобой. Знаешь откуда я это знаю? <div>...</div>
-            Потому что я Бэтдак!
+            Потому что я Batduck!
           </div>
         </div>
         <div className="watchtower">
