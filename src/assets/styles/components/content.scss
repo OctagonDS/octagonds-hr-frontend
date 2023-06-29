@@ -47,6 +47,17 @@ $bubble-border: 0 -1 * $px $eee, 0 -2 * $px $black, $px 0 $eee,
       background-color: #ffd369;
       color: #393e46;
     }
+    & p,
+    & b {
+      &::selection {
+        background-color: #ffd369;
+        color: #393e46;
+      }
+    }
+    & b {
+      color: #ffd369;
+      font-weight: 600;
+    }
   }
 
   &__bit {
@@ -77,13 +88,43 @@ $bubble-border: 0 -1 * $px $eee, 0 -2 * $px $black, $px 0 $eee,
     width: 50%;
     transition: 0.4s;
     display: flex;
-    align-items: center;
-    & p {
-      font-size: 16px;
+    justify-content: center;
+    flex-direction: column;
+    & h4 {
+      font-size: 18px;
       text-align: left;
+      margin-bottom: 0;
+    }
+    & p {
+      font-size: 14px;
+      text-align: left;
+      font-weight: 300;
+      color: #ffd369;
       &::selection {
         background-color: #ffd369;
         color: #393e46;
+      }
+    }
+    & ul {
+      list-style: none;
+      font-size: 16px;
+      text-align: left;
+      & li {
+        & span {
+          color: #ffd369;
+          &::selection {
+            background-color: #ffd369;
+            color: #393e46;
+          }
+        }
+        &::before {
+          content: '\25AA';
+          color: #ffd369;
+          font-weight: bold;
+          display: inline-block;
+          width: 1em;
+          margin-left: -1em;
+        }
       }
     }
 
