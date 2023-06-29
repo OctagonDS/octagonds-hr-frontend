@@ -15,12 +15,12 @@ $black-yoda: #090504;
   width: $width-yoda;
   height: $width-yoda;
   position: absolute;
-  top: 130px;
+  top: 90px;
   left: 15%;
   &__dialog {
     position: absolute;
     left: 45%;
-    top: 100px;
+    top: 60px;
     @media (max-width: 1600px) {
       left: 55%;
     }

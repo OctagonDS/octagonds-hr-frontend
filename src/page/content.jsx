@@ -62,7 +62,7 @@ const Content = () => {
               className="bubble bottom rick__dialog"
               style={
                 portal === '-open'
-                  ? { width: 240, top: '-82px' }
+                  ? { width: 240, top: '-83px' }
                   : { width: 240, top: '-41px' }
               }
             >
@@ -226,15 +226,30 @@ const Content = () => {
             </div>
           </div>
           <div className="content__item">
-            <p>
-              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
-              вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
-              на латинице с начала XVI века. В то время некий безымянный
-              печатник создал большую коллекцию размеров и форм шрифтов,
-              используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не
-              только успешно пережил без заметных изменений пять веков, но и
-              перешагнул в электронный дизайн.
-            </p>
+            <h4>Чем ты будешь заниматься:</h4>
+            <ul>
+              <li>Разработка бэкенд части</li>
+              <li>Проектирование архитектуры проекта</li>
+              <li>Организация и управление базами данных</li>
+              <li>Рефакторинг и оптимизация кода</li>
+              <li>Доработка программного кода</li>
+              <li>Подготовка документации</li>
+            </ul>
+            <h4>Софт-скиллы:</h4>
+            <ul>
+              <li>Работа с документацией</li>
+              <li>Креативность и гибкость</li>
+              <li>Ответственность и дисциплина</li>
+            </ul>
+            <h4>Стек:</h4>
+            <ul>
+              <li>Django</li>
+              <li>FastAPI</li>
+              <li>REST</li>
+              <li>Git</li>
+              <li>Jira</li>
+            </ul>
+            <p>*ЗП по результатам собеседования</p>
           </div>
         </div>
       </div>
@@ -248,23 +263,12 @@ const Content = () => {
         </div>
       </div>
       <div className="content" data-aos="fade-up">
-        <div
-          className="content__item__row"
-          onMouseOver={() => setGodfather(true)}
-          onMouseOut={() => setGodfather(false)}
-        >
-          <div className="content__item">
-            <p>
-              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
-              вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
-              на латинице с начала XVI века. В то время некий безымянный
-              печатник создал большую коллекцию размеров и форм шрифтов,
-              используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не
-              только успешно пережил без заметных изменений пять веков, но и
-              перешагнул в электронный дизайн.
-            </p>
-          </div>
-          <div className="content__bit">
+        <div className="content__item__row">
+          <div
+            className="content__bit"
+            onMouseOver={() => setGodfather(true)}
+            onMouseOut={() => setGodfather(false)}
+          >
             <div className="godfather">
               {godfather && <div className="godfather__money" />}
             </div>
@@ -283,6 +287,32 @@ const Content = () => {
                 )}
               </div>
             </div>
+          </div>
+          <div className="content__item">
+            <h4>Чем ты будешь заниматься:</h4>
+            <ul>
+              <li>Разработка бэкенд части</li>
+              <li>Проектирование архитектуры проекта</li>
+              <li>Организация и управление базами данных</li>
+              <li>Рефакторинг и оптимизация кода</li>
+              <li>Доработка программного кода</li>
+              <li>Подготовка документации</li>
+            </ul>
+            <h4>Софт-скиллы:</h4>
+            <ul>
+              <li>Работа с документацией</li>
+              <li>Креативность и гибкость</li>
+              <li>Ответственность и дисциплина</li>
+            </ul>
+            <h4>Стек:</h4>
+            <ul>
+              <li>Django</li>
+              <li>FastAPI</li>
+              <li>REST</li>
+              <li>Git</li>
+              <li>Jira</li>
+            </ul>
+            <p>*ЗП по результатам собеседования</p>
           </div>
         </div>
       </div>
@@ -357,12 +387,12 @@ const Content = () => {
         </div>
       </div>
       <div className="content" data-aos="fade-up">
-        <div
-          className="content__item__row"
-          onMouseOver={() => setMorpheus(true)}
-          onMouseOut={() => setMorpheus(false)}
-        >
-          <div className="content__bit">
+        <div className="content__item__row">
+          <div
+            className="content__bit"
+            onMouseOver={() => setMorpheus(true)}
+            onMouseOut={() => setMorpheus(false)}
+          >
             {morpheus && (
               <div className="red__box">
                 <div className="red" />
@@ -402,15 +432,30 @@ const Content = () => {
             )}
           </div>
           <div className="content__item">
-            <p>
-              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
-              вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
-              на латинице с начала XVI века. В то время некий безымянный
-              печатник создал большую коллекцию размеров и форм шрифтов,
-              используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не
-              только успешно пережил без заметных изменений пять веков, но и
-              перешагнул в электронный дизайн.
-            </p>
+            <h4>Чем ты будешь заниматься:</h4>
+            <ul>
+              <li>Разработка бэкенд части</li>
+              <li>Проектирование архитектуры проекта</li>
+              <li>Организация и управление базами данных</li>
+              <li>Рефакторинг и оптимизация кода</li>
+              <li>Доработка программного кода</li>
+              <li>Подготовка документации</li>
+            </ul>
+            <h4>Софт-скиллы:</h4>
+            <ul>
+              <li>Работа с документацией</li>
+              <li>Креативность и гибкость</li>
+              <li>Ответственность и дисциплина</li>
+            </ul>
+            <h4>Стек:</h4>
+            <ul>
+              <li>Django</li>
+              <li>FastAPI</li>
+              <li>REST</li>
+              <li>Git</li>
+              <li>Jira</li>
+            </ul>
+            <p>*ЗП по результатам собеседования</p>
           </div>
         </div>
       </div>
@@ -424,29 +469,18 @@ const Content = () => {
         </div>
       </div>
       <div className="content" data-aos="fade-up">
-        <div
-          className="content__item__row"
-          onMouseOver={() => setGlados('-open')}
-          onMouseOut={() => setGlados('-close')}
-        >
-          <div className="content__item">
-            <p>
-              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
-              вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
-              на латинице с начала XVI века. В то время некий безымянный
-              печатник создал большую коллекцию размеров и форм шрифтов,
-              используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не
-              только успешно пережил без заметных изменений пять веков, но и
-              перешагнул в электронный дизайн.
-            </p>
-          </div>
-          <div className="content__bit">
+        <div className="content__item__row">
+          <div
+            className="content__bit"
+            onMouseOver={() => setGlados('-open')}
+            onMouseOut={() => setGlados('-close')}
+          >
             <div className="glados">
               <div
                 className="glados__eye"
                 style={
                   glados === '-open'
-                    ? { transform: 'translate(165px, 234px)' }
+                    ? { transform: 'translate(171px, 225px)' }
                     : {}
                 }
               />
@@ -463,6 +497,32 @@ const Content = () => {
                 )}
               </div>
             </div>
+          </div>
+          <div className="content__item">
+            <h4>Чем ты будешь заниматься:</h4>
+            <ul>
+              <li>Разработка бэкенд части</li>
+              <li>Проектирование архитектуры проекта</li>
+              <li>Организация и управление базами данных</li>
+              <li>Рефакторинг и оптимизация кода</li>
+              <li>Доработка программного кода</li>
+              <li>Подготовка документации</li>
+            </ul>
+            <h4>Софт-скиллы:</h4>
+            <ul>
+              <li>Работа с документацией</li>
+              <li>Креативность и гибкость</li>
+              <li>Ответственность и дисциплина</li>
+            </ul>
+            <h4>Стек:</h4>
+            <ul>
+              <li>Django</li>
+              <li>FastAPI</li>
+              <li>REST</li>
+              <li>Git</li>
+              <li>Jira</li>
+            </ul>
+            <p>*ЗП по результатам собеседования</p>
           </div>
         </div>
       </div>
@@ -584,12 +644,12 @@ const Content = () => {
         </div>
       </div>
       <div className="content" data-aos="fade-up">
-        <div
-          className="content__item__row"
-          onMouseOver={() => setYoda(true)}
-          onMouseOut={() => setYoda(false)}
-        >
-          <div className="content__bit">
+        <div className="content__item__row">
+          <div
+            className="content__bit"
+            onMouseOver={() => setYoda(true)}
+            onMouseOut={() => setYoda(false)}
+          >
             <div className="yoda">
               <div className="yoda__sword" style={yoda ? {} : { height: 0 }} />
             </div>
@@ -607,15 +667,30 @@ const Content = () => {
             </div>
           </div>
           <div className="content__item">
-            <p>
-              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
-              вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
-              на латинице с начала XVI века. В то время некий безымянный
-              печатник создал большую коллекцию размеров и форм шрифтов,
-              используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не
-              только успешно пережил без заметных изменений пять веков, но и
-              перешагнул в электронный дизайн.
-            </p>
+            <h4>Чем ты будешь заниматься:</h4>
+            <ul>
+              <li>Разработка бэкенд части</li>
+              <li>Проектирование архитектуры проекта</li>
+              <li>Организация и управление базами данных</li>
+              <li>Рефакторинг и оптимизация кода</li>
+              <li>Доработка программного кода</li>
+              <li>Подготовка документации</li>
+            </ul>
+            <h4>Софт-скиллы:</h4>
+            <ul>
+              <li>Работа с документацией</li>
+              <li>Креативность и гибкость</li>
+              <li>Ответственность и дисциплина</li>
+            </ul>
+            <h4>Стек:</h4>
+            <ul>
+              <li>Django</li>
+              <li>FastAPI</li>
+              <li>REST</li>
+              <li>Git</li>
+              <li>Jira</li>
+            </ul>
+            <p>*ЗП по результатам собеседования</p>
           </div>
         </div>
       </div>
