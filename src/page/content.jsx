@@ -169,7 +169,6 @@ const Content = () => {
               <li>HTML</li>
               <li>Sass</li>
               <li>React</li>
-              <li>Vue</li>
               <li>REST</li>
               <li>Git</li>
               <li>Jira</li>
@@ -229,12 +228,11 @@ const Content = () => {
           <div className="content__item">
             <h4>Чем ты будешь заниматься:</h4>
             <ul>
-              <li>Разработка бэкенд части</li>
-              <li>Проектирование архитектуры проекта</li>
-              <li>Организация и управление базами данных</li>
-              <li>Рефакторинг и оптимизация кода</li>
+              <li>Создание моделей ML</li>
+              <li>Проектирование архитектуры моделей ML</li>
+              <li>Сбор и подготовка данных</li>
               <li>Доработка программного кода</li>
-              <li>Подготовка документации</li>
+              <li>Анализ и тестирование</li>
             </ul>
             <h4>Софт-скиллы:</h4>
             <ul>
@@ -244,9 +242,11 @@ const Content = () => {
             </ul>
             <h4>Стек:</h4>
             <ul>
-              <li>Django</li>
-              <li>FastAPI</li>
-              <li>REST</li>
+              <li>Python</li>
+              <li>TensorFlow</li>
+              <li>Keras</li>
+              <li>NumPy</li>
+              <li>Pandas</li>
               <li>Git</li>
               <li>Jira</li>
             </ul>
