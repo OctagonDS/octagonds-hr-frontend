@@ -51,7 +51,13 @@
     "creatingMLModels": "Создание моделей ML",
     "designingArchitectureMLModels": "Проектирование архитектуры моделей ML",
     "dataCollectionAndPreparation": "Сбор и подготовка данных",
-    "analysisAndTesting": "Анализ и тестирование"
+    "analysisAndTesting": "Анализ и тестирование",
+    "devopsEngineer": "devops-инженер",
+    "youAskMe": "Ты просишь меня настроить докер, но делаешь это без уважения...",
+    "thatsBetter": "Так-то лучше.",
+    "CICDImplemAndOptim": "Реализация и оптимизация CI/CD",
+    "releaseNewApp": "Релиз новых приложений",
+    "microserviceArchitecture": "Микросервисная архитектура"
   },
   "notFound": {
     "unfortunately": "К сожалению",

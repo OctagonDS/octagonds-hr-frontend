@@ -258,7 +258,7 @@ const Content = () => {
         data-aos="fade-up"
       >
         <div className="content__title" style={{ marginBottom: 20 }}>
-          devops-инженер
+          {t('content.devopsEngineer')}
         </div>
       </div>
       <div className="content" data-aos="fade-up">
@@ -273,26 +273,19 @@ const Content = () => {
             </div>
             <div
               className="bubble left godfather__dialog"
-              style={godfather ? { width: 276 } : { width: 270 }}
+              style={{ width: 270 }}
             >
               <div className="content__bit__text">
-                {godfather ? (
-                  <>Так-то лучше.</>
-                ) : (
-                  <>
-                    Ты просишь меня настроить докер, но делаешь это без
-                    уважения...
-                  </>
-                )}
+                {godfather ? t('content.thatsBetter') : t('content.youAskMe')}
               </div>
             </div>
           </div>
           <div className="content__item">
             <h4>{t('content.whatYouGoingToDo')}:</h4>
             <ul>
-              <li>Реализация и оптимизация CI/CD</li>
-              <li>Релиз новых приложений</li>
-              <li>Микросервисная архитектура</li>
+              <li>{t('content.CICDImplemAndOptim')}</li>
+              <li>{t('content.releaseNewApp')}</li>
+              <li>{t('content.microserviceArchitecture')}</li>
               <li>{t('content.databaseOrganizAndManag')}</li>
               <li>{t('content.codeRefactoringAndOptimization')}</li>
               <li>{t('content.refiningProgramCode')}</li>

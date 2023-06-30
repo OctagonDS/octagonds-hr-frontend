@@ -51,7 +51,13 @@
     "creatingMLModels": "Creating ML models",
     "designingArchitectureMLModels": "Designing the architecture of ML models",
     "dataCollectionAndPreparation": "Data collection and preparation",
-    "analysisAndTesting": "Analysis and testing"
+    "analysisAndTesting": "Analysis and testing",
+    "devopsEngineer": "devops engineer",
+    "youAskMe": "You ask me to set up the docker, but you do it without respect...",
+    "thatsBetter": "That's better.",
+    "CICDImplemAndOptim": "CI/CD implementation and optimization",
+    "releaseNewApp": "Release of new applications",
+    "microserviceArchitecture": "Microservice architecture"
   },
   "notFound": {
     "unfortunately": "Unfortunately",
