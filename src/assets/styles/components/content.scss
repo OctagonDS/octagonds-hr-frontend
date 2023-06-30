@@ -52,6 +52,7 @@ $bubble-border: 0 -1 * $px $eee, 0 -2 * $px $black, $px 0 $eee,
     text-align: left;
     @media (max-width: 1200px) {
       font-size: 14px;
+      width: 95%;
     }
     &::selection {
       background-color: #ffd369;
