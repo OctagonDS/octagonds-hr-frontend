@@ -518,7 +518,7 @@ $hair2-css: #2f2f2f;
     position: absolute;
     width: $width-js;
     height: $width-js;
-    left: -7px;
+    left: -8px;
     top: -24px;
     box-shadow: (5 * $width-js) (1 * $width-js) 0 $hair2-css,
       (6 * $width-js) (1 * $width-js) 0 $hair1-css,
@@ -735,12 +735,15 @@ $hair2-css: #2f2f2f;
   position: absolute;
   top: 15px;
   left: 18%;
+  @media (min-width: 3439px) {
+    left: 25%;
+  }
   &__dialog {
     position: absolute;
     left: 50%;
     top: 90px;
-    @media (min-width: 3440px) {
-      left: 45%;
+    @media (min-width: 3439px) {
+      left: 51%;
     }
     @media (max-width: 1600px) {
       left: 55%;

@@ -433,10 +433,10 @@ const Content = () => {
               <li>{t('content.employeeDevelopment')}</li>
               <li>{t('content.corporateCulture')}</li>
               <li>{t('content.HRAnalytics')}</li>
+              <li>{t('content.workingWithDocum')}</li>
             </ul>
             <h4>{t('content.softSkills')}:</h4>
             <ul>
-              <li>{t('content.workingWithDocum')}</li>
               <li>{t('content.creativAndFlex')}</li>
               <li>{t('content.responsAndDiscipline')}</li>
             </ul>

@@ -20,6 +20,9 @@ $yellow-bmo: #f6fc73;
     position: absolute;
     left: 56%;
     top: 69px;
+    @media (min-width: 3439px) {
+      left: 50%;
+    }
     @media (max-width: 1600px) {
       left: 55%;
     }

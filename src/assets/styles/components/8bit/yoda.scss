@@ -17,10 +17,16 @@ $black-yoda: #090504;
   position: absolute;
   top: 90px;
   left: 15%;
+  @media (min-width: 3439px) {
+    left: 25%;
+  }
   &__dialog {
     position: absolute;
     left: 45%;
     top: 60px;
+    @media (min-width: 3439px) {
+      left: 50%;
+    }
     @media (max-width: 1600px) {
       left: 55%;
     }
