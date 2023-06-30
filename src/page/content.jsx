@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { useTranslation, Trans } from 'react-i18next'
 
 const Content = () => {
+  const { t } = useTranslation()
   const [portal, setPortal] = useState('')
   const [glados, setGlados] = useState('')
   const [morpheus, setMorpheus] = useState(false)
@@ -22,29 +24,21 @@ const Content = () => {
     <div className="content_block">
       <div className="content">
         <div className="content__title">
-          этому городу нужен новый{' '}
-          <span className="title_back_color">герой</span>
+          <Trans i18nKey="content.newHero">
+            этому городу нужен новый{' '}
+            <span className="title_back_color">герой</span>
+          </Trans>
         </div>
         <div className="content__desc">
-          <p>
-            Прямо сейчас, скрытая от глаз обычных людей, разворачивается
-            легендарная битва. Таски все увеличивают натиск, а проекты
-            становятся все интереснее, но мы пока держим оборону.
-          </p>
-          <p>
-            Нам нужна твоя помощь, чтобы одержать верх и помочь нашим
-            заказчикам. В общем, некогда объяснять...
-          </p>
-          <b>Становись частью нашей команды!</b>
-          <p>
-            Ознакомься с нашими вакансиями, заполни форму или просто позвони
-            нам:
-          </p>
+          <p>{t('content.newHeroDescOne')}</p>
+          <p>{t('content.newHeroDescTwo')}</p>
+          <b>{t('content.newHeroDescThree')}</b>
+          <p>{t('content.newHeroDescFour')}:</p>
         </div>
       </div>
       <div className="content" style={{ marginBottom: 20 }}>
         <div className="content__title" style={{ marginBottom: 20 }}>
-          python-разработчик
+          {t('content.pythonDeveloper')}
         </div>
       </div>
       <div className="content" data-aos="fade-up">
@@ -78,7 +72,7 @@ const Content = () => {
             </div>
           </div>
           <div className="content__item">
-            <h4>Чем ты будешь заниматься:</h4>
+            <h4>{t('content.whatYouGoingToDo')}:</h4>
             <ul>
               <li>Разработка бэкенд части</li>
               <li>Проектирование архитектуры проекта</li>
@@ -87,13 +81,13 @@ const Content = () => {
               <li>Доработка программного кода</li>
               <li>Подготовка документации</li>
             </ul>
-            <h4>Софт-скиллы:</h4>
+            <h4>{t('content.softSkills')}:</h4>
             <ul>
               <li>Работа с документацией</li>
               <li>Креативность и гибкость</li>
               <li>Ответственность и дисциплина</li>
             </ul>
-            <h4>Стек:</h4>
+            <h4>{t('content.stack')}:</h4>
             <ul>
               <li>Django</li>
               <li>FastAPI</li>
@@ -150,7 +144,7 @@ const Content = () => {
             )}
           </div>
           <div className="content__item">
-            <h4>Чем ты будешь заниматься:</h4>
+            <h4>{t('content.whatYouGoingToDo')}:</h4>
             <ul>
               <li>Разработка логики фронтенд части</li>
               <li>Проектирование архитектуры проекта</li>
@@ -158,13 +152,13 @@ const Content = () => {
               <li>Рефакторинг и оптимизация приложения</li>
               <li>Доработка программного кода</li>
             </ul>
-            <h4>Софт-скиллы:</h4>
+            <h4>{t('content.softSkills')}:</h4>
             <ul>
               <li>Работа с документацией</li>
               <li>Креативность и гибкость</li>
               <li>Ответственность и дисциплина</li>
             </ul>
-            <h4>Стек:</h4>
+            <h4>{t('content.stack')}:</h4>
             <ul>
               <li>HTML</li>
               <li>Sass</li>
@@ -226,7 +220,7 @@ const Content = () => {
             </div>
           </div>
           <div className="content__item">
-            <h4>Чем ты будешь заниматься:</h4>
+            <h4>{t('content.whatYouGoingToDo')}:</h4>
             <ul>
               <li>Создание моделей ML</li>
               <li>Проектирование архитектуры моделей ML</li>
@@ -234,13 +228,13 @@ const Content = () => {
               <li>Доработка программного кода</li>
               <li>Анализ и тестирование</li>
             </ul>
-            <h4>Софт-скиллы:</h4>
+            <h4>{t('content.softSkills')}:</h4>
             <ul>
               <li>Работа с документацией</li>
               <li>Креативность и гибкость</li>
               <li>Ответственность и дисциплина</li>
             </ul>
-            <h4>Стек:</h4>
+            <h4>{t('content.stack')}:</h4>
             <ul>
               <li>Python</li>
               <li>TensorFlow</li>
@@ -291,7 +285,7 @@ const Content = () => {
             </div>
           </div>
           <div className="content__item">
-            <h4>Чем ты будешь заниматься:</h4>
+            <h4>{t('content.whatYouGoingToDo')}:</h4>
             <ul>
               <li>Реализация и оптимизация CI/CD</li>
               <li>Релиз новых приложений</li>
@@ -300,13 +294,13 @@ const Content = () => {
               <li>Рефакторинг и оптимизация кода</li>
               <li>Доработка программного кода</li>
             </ul>
-            <h4>Софт-скиллы:</h4>
+            <h4>{t('content.softSkills')}:</h4>
             <ul>
               <li>Работа с документацией</li>
               <li>Креативность и гибкость</li>
               <li>Ответственность и дисциплина</li>
             </ul>
-            <h4>Стек:</h4>
+            <h4>{t('content.stack')}:</h4>
             <ul>
               <li>Linux</li>
               <li>Python</li>
@@ -440,7 +434,7 @@ const Content = () => {
             )}
           </div>
           <div className="content__item">
-            <h4>Чем ты будешь заниматься:</h4>
+            <h4>{t('content.whatYouGoingToDo')}:</h4>
             <ul>
               <li>Поиск и подбор персонала</li>
               <li>Участие в оценке скиллов</li>
@@ -449,13 +443,13 @@ const Content = () => {
               <li>Корпоративная культура</li>
               <li>HR-аналитика</li>
             </ul>
-            <h4>Софт-скиллы:</h4>
+            <h4>{t('content.softSkills')}:</h4>
             <ul>
               <li>Работа с документацией</li>
               <li>Креативность и гибкость</li>
               <li>Ответственность и дисциплина</li>
             </ul>
-            <h4>Стек:</h4>
+            <h4>{t('content.stack')}:</h4>
             <ul>
               <li>Разбираться в IT-технологиях (желательно)</li>
               <li>Digital-инструменты</li>
@@ -504,7 +498,7 @@ const Content = () => {
             </div>
           </div>
           <div className="content__item">
-            <h4>Чем ты будешь заниматься:</h4>
+            <h4>{t('content.whatYouGoingToDo')}:</h4>
             <ul>
               <li>Контроль качества приложения</li>
               <li>Выявление и анализ ошибок</li>
@@ -513,13 +507,13 @@ const Content = () => {
               <li>Сопровождение процесса ликвидации ошибок</li>
               <li>Подготовка документации</li>
             </ul>
-            <h4>Софт-скиллы:</h4>
+            <h4>{t('content.softSkills')}:</h4>
             <ul>
               <li>Работа с документацией</li>
               <li>Креативность и гибкость</li>
               <li>Ответственность и дисциплина</li>
             </ul>
-            <h4>Стек:</h4>
+            <h4>{t('content.stack')}:</h4>
             <ul>
               <li>Python</li>
               <li>SQL и ORM</li>
@@ -675,7 +669,7 @@ const Content = () => {
             </div>
           </div>
           <div className="content__item">
-            <h4>Чем ты будешь заниматься:</h4>
+            <h4>{t('content.whatYouGoingToDo')}:</h4>
             <ul>
               <li>Оценка задач и сроков всех этапов</li>
               <li>Планирование спринтов</li>
@@ -686,7 +680,7 @@ const Content = () => {
               <li>Участие в подборе команды и оценке скиллов</li>
               <li>Сбор аналитики по работе команды</li>
             </ul>
-            <h4>Софт-скиллы:</h4>
+            <h4>{t('content.softSkills')}:</h4>
             <ul>
               <li>Лидерские навыки</li>
               <li>Тайм-менеджмент</li>
@@ -694,7 +688,7 @@ const Content = () => {
               <li>Креативность и гибкость</li>
               <li>Ответственность и дисциплина</li>
             </ul>
-            <h4>Стек:</h4>
+            <h4>{t('content.stack')}:</h4>
             <ul>
               <li>Python</li>
               <li>SQL</li>

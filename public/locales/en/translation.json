@@ -17,6 +17,17 @@
     "copyright": " All rights reserved © {{year}} <3>Octagon DS</3>",
     "freeСall": "free call"
   },
+  "content": {
+    "newHero": "this city needs a new <2>hero</2>",
+    "newHeroDescOne": "Right now, hidden from the eyes of ordinary people, unfolds a legendary battle is unfolding. The Tuskies are increasing their onslaught, and the projects are getting more and more interesting, but we're on the defensive for now.",
+    "newHeroDescTwo": "We need your help to prevail and help our customers. Anyway, there's no time to explain...",
+    "newHeroDescThree": "Become part of our team!",
+    "newHeroDescFour": "Check out our jobs, fill out the form, or just give us a call",
+    "pythonDeveloper": "python developer",
+    "whatYouGoingToDo": "What are you going to do",
+    "softSkills": "Soft skills",
+    "stack": "Stack"
+  },
   "notFound": {
     "unfortunately": "Unfortunately",
     "sectionNotOperational": "the section does not work yet",
