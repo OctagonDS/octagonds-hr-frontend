@@ -4,7 +4,7 @@ import 'aos/dist/aos.css'
 import { useTranslation, Trans } from 'react-i18next'
 
 const Content = () => {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const [portal, setPortal] = useState('')
   const [glados, setGlados] = useState('')
   const [morpheus, setMorpheus] = useState(false)
@@ -107,7 +107,7 @@ const Content = () => {
         data-aos="fade-up"
       >
         <div className="content__title" style={{ marginBottom: 20 }}>
-          frontend-разработчик
+          {t('content.frontendDeveloper')}
         </div>
       </div>
       <div className="content" data-aos="fade-up">
@@ -122,11 +122,12 @@ const Content = () => {
                 <div className="mcgonagall" />
                 <div
                   className="bubble left mcgonagall__dialog"
-                  style={{ width: 270 }}
+                  style={
+                    i18n.language === 'en' ? { width: 220 } : { width: 270 }
+                  }
                 >
                   <div className="content__bit__text">
-                    Скажите, почему, когда что-нибудь происходит, вы трое всегда
-                    оказываетесь рядом?
+                    {t('content.mcgonagall')}
                   </div>
                 </div>
               </>
@@ -148,10 +149,10 @@ const Content = () => {
           <div className="content__item">
             <h4>{t('content.whatYouGoingToDo')}:</h4>
             <ul>
-              <li>Разработка логики фронтенд части</li>
+              <li>{t('content.devFrontendLogic')}</li>
               <li>{t('content.designingProjectArchitecture')}</li>
-              <li>Верстка приложения</li>
-              <li>Рефакторинг и оптимизация приложения</li>
+              <li>{t('content.appLayout')}</li>
+              <li>{t('content.refactAndOptimApp')}</li>
               <li>{t('content.refiningProgramCode')}</li>
             </ul>
             <h4>{t('content.softSkills')}:</h4>

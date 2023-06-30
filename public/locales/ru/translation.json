@@ -38,7 +38,12 @@
     "preparationDocum": "Подготовка документации",
     "workingWithDocum": "Работа с документацией",
     "creativAndFlex": "Креативность и гибкость",
-    "responsAndDiscipline": "Ответственность и дисциплина"
+    "responsAndDiscipline": "Ответственность и дисциплина",
+    "frontendDeveloper": "frontend-разработчик",
+    "devFrontendLogic": "Разработка логики фронтенд части",
+    "appLayout": "Верстка приложения",
+    "refactAndOptimApp": "Рефакторинг и оптимизация приложения",
+    "mcgonagall": "Скажите, почему, когда что-нибудь происходит, вы трое всегда оказываетесь рядом?"
   },
   "notFound": {
     "unfortunately": "К сожалению",

@@ -38,7 +38,12 @@
     "preparationDocum": "Preparation of documentation",
     "workingWithDocum": "Working with documentation",
     "creativAndFlex": "Creativity and flexibility",
-    "responsAndDiscipline": "Responsibility and discipline"
+    "responsAndDiscipline": "Responsibility and discipline",
+    "frontendDeveloper": "frontend developer",
+    "devFrontendLogic": "Development of frontend logic",
+    "appLayout": "Application layout",
+    "refactAndOptimApp": "Refactoring and optimizing the application",
+    "mcgonagall": "Why is it when something happens, it's always you three?"
   },
   "notFound": {
     "unfortunately": "Unfortunately",
