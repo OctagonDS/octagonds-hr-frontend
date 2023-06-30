@@ -26,7 +26,19 @@
     "pythonDeveloper": "python developer",
     "whatYouGoingToDo": "What are you going to do",
     "softSkills": "Soft skills",
-    "stack": "Stack"
+    "stack": "Stack",
+    "newTasksCameIn": "New tasks came in.",
+    "rick": "Let's go.<br/> In and out.<br/> 20 minute adventure.",
+    "salaryByInterviewResults": "Salary by interview results",
+    "backendDevelopment": "Backend development",
+    "designingProjectArchitecture": "Designing the project architecture",
+    "databaseOrganizAndManag": "Database organization and management",
+    "codeRefactoringAndOptimization": "Code refactoring and optimization",
+    "refiningProgramCode": "Refining the program code",
+    "preparationDocum": "Preparation of documentation",
+    "workingWithDocum": "Working with documentation",
+    "creativAndFlex": "Creativity and flexibility",
+    "responsAndDiscipline": "Responsibility and discipline"
   },
   "notFound": {
     "unfortunately": "Unfortunately",

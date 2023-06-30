@@ -56,17 +56,19 @@ const Content = () => {
               className="bubble bottom rick__dialog"
               style={
                 portal === '-open'
-                  ? { width: 240, top: '-83px' }
-                  : { width: 240, top: '-41px' }
+                  ? { width: 240, top: '-103px' }
+                  : { width: 240, top: '-61px' }
               }
             >
               <div className="content__bit__text">
                 {portal === '-open' ? (
-                  <>
-                    <div>Давай.</div> Вошли и вышли. Приключение на 20 минут.
-                  </>
+                  <Trans i18nKey="content.rick">
+                    Давай.
+                    <br /> Вошли и вышли.
+                    <br /> Приключение на 20 минут.
+                  </Trans>
                 ) : (
-                  <>Пришли новые таски.</>
+                  t('content.newTasksCameIn')
                 )}
               </div>
             </div>
@@ -74,18 +76,18 @@ const Content = () => {
           <div className="content__item">
             <h4>{t('content.whatYouGoingToDo')}:</h4>
             <ul>
-              <li>Разработка бэкенд части</li>
-              <li>Проектирование архитектуры проекта</li>
-              <li>Организация и управление базами данных</li>
-              <li>Рефакторинг и оптимизация кода</li>
-              <li>Доработка программного кода</li>
-              <li>Подготовка документации</li>
+              <li>{t('content.backendDevelopment')}</li>
+              <li>{t('content.designingProjectArchitecture')}</li>
+              <li>{t('content.databaseOrganizAndManag')}</li>
+              <li>{t('content.codeRefactoringAndOptimization')}</li>
+              <li>{t('content.refiningProgramCode')}</li>
+              <li>{t('content.preparationDocum')}</li>
             </ul>
             <h4>{t('content.softSkills')}:</h4>
             <ul>
-              <li>Работа с документацией</li>
-              <li>Креативность и гибкость</li>
-              <li>Ответственность и дисциплина</li>
+              <li>{t('content.workingWithDocum')}</li>
+              <li>{t('content.creativAndFlex')}</li>
+              <li>{t('content.responsAndDiscipline')}</li>
             </ul>
             <h4>{t('content.stack')}:</h4>
             <ul>
@@ -95,7 +97,7 @@ const Content = () => {
               <li>Git</li>
               <li>Jira</li>
             </ul>
-            <p>*ЗП по результатам собеседования</p>
+            <p>*{t('content.salaryByInterviewResults')}</p>
           </div>
         </div>
       </div>
@@ -147,16 +149,16 @@ const Content = () => {
             <h4>{t('content.whatYouGoingToDo')}:</h4>
             <ul>
               <li>Разработка логики фронтенд части</li>
-              <li>Проектирование архитектуры проекта</li>
+              <li>{t('content.designingProjectArchitecture')}</li>
               <li>Верстка приложения</li>
               <li>Рефакторинг и оптимизация приложения</li>
-              <li>Доработка программного кода</li>
+              <li>{t('content.refiningProgramCode')}</li>
             </ul>
             <h4>{t('content.softSkills')}:</h4>
             <ul>
-              <li>Работа с документацией</li>
-              <li>Креативность и гибкость</li>
-              <li>Ответственность и дисциплина</li>
+              <li>{t('content.workingWithDocum')}</li>
+              <li>{t('content.creativAndFlex')}</li>
+              <li>{t('content.responsAndDiscipline')}</li>
             </ul>
             <h4>{t('content.stack')}:</h4>
             <ul>
@@ -167,7 +169,7 @@ const Content = () => {
               <li>Git</li>
               <li>Jira</li>
             </ul>
-            <p>*ЗП по результатам собеседования</p>
+            <p>*{t('content.salaryByInterviewResults')}</p>
           </div>
         </div>
       </div>
@@ -225,14 +227,14 @@ const Content = () => {
               <li>Создание моделей ML</li>
               <li>Проектирование архитектуры моделей ML</li>
               <li>Сбор и подготовка данных</li>
-              <li>Доработка программного кода</li>
+              <li>{t('content.refiningProgramCode')}</li>
               <li>Анализ и тестирование</li>
             </ul>
             <h4>{t('content.softSkills')}:</h4>
             <ul>
-              <li>Работа с документацией</li>
-              <li>Креативность и гибкость</li>
-              <li>Ответственность и дисциплина</li>
+              <li>{t('content.workingWithDocum')}</li>
+              <li>{t('content.creativAndFlex')}</li>
+              <li>{t('content.responsAndDiscipline')}</li>
             </ul>
             <h4>{t('content.stack')}:</h4>
             <ul>
@@ -245,7 +247,7 @@ const Content = () => {
               <li>Git</li>
               <li>Jira</li>
             </ul>
-            <p>*ЗП по результатам собеседования</p>
+            <p>*{t('content.salaryByInterviewResults')}</p>
           </div>
         </div>
       </div>
@@ -290,15 +292,15 @@ const Content = () => {
               <li>Реализация и оптимизация CI/CD</li>
               <li>Релиз новых приложений</li>
               <li>Микросервисная архитектура</li>
-              <li>Организация и управление базами данных</li>
-              <li>Рефакторинг и оптимизация кода</li>
-              <li>Доработка программного кода</li>
+              <li>{t('content.databaseOrganizAndManag')}</li>
+              <li>{t('content.codeRefactoringAndOptimization')}</li>
+              <li>{t('content.refiningProgramCode')}</li>
             </ul>
             <h4>{t('content.softSkills')}:</h4>
             <ul>
-              <li>Работа с документацией</li>
-              <li>Креативность и гибкость</li>
-              <li>Ответственность и дисциплина</li>
+              <li>{t('content.workingWithDocum')}</li>
+              <li>{t('content.creativAndFlex')}</li>
+              <li>{t('content.responsAndDiscipline')}</li>
             </ul>
             <h4>{t('content.stack')}:</h4>
             <ul>
@@ -314,7 +316,7 @@ const Content = () => {
               <li>Git</li>
               <li>Jira</li>
             </ul>
-            <p>*ЗП по результатам собеседования</p>
+            <p>*{t('content.salaryByInterviewResults')}</p>
           </div>
         </div>
       </div>
@@ -445,16 +447,16 @@ const Content = () => {
             </ul>
             <h4>{t('content.softSkills')}:</h4>
             <ul>
-              <li>Работа с документацией</li>
-              <li>Креативность и гибкость</li>
-              <li>Ответственность и дисциплина</li>
+              <li>{t('content.workingWithDocum')}</li>
+              <li>{t('content.creativAndFlex')}</li>
+              <li>{t('content.responsAndDiscipline')}</li>
             </ul>
             <h4>{t('content.stack')}:</h4>
             <ul>
               <li>Разбираться в IT-технологиях (желательно)</li>
               <li>Digital-инструменты</li>
             </ul>
-            <p>*ЗП по результатам собеседования</p>
+            <p>*{t('content.salaryByInterviewResults')}</p>
           </div>
         </div>
       </div>
@@ -505,13 +507,13 @@ const Content = () => {
               <li>Автоматизация тестирования</li>
               <li>Тестирование приложения</li>
               <li>Сопровождение процесса ликвидации ошибок</li>
-              <li>Подготовка документации</li>
+              <li>{t('content.preparationDocum')}</li>
             </ul>
             <h4>{t('content.softSkills')}:</h4>
             <ul>
-              <li>Работа с документацией</li>
-              <li>Креативность и гибкость</li>
-              <li>Ответственность и дисциплина</li>
+              <li>{t('content.workingWithDocum')}</li>
+              <li>{t('content.creativAndFlex')}</li>
+              <li>{t('content.responsAndDiscipline')}</li>
             </ul>
             <h4>{t('content.stack')}:</h4>
             <ul>
@@ -524,7 +526,7 @@ const Content = () => {
               <li>Git</li>
               <li>Jira</li>
             </ul>
-            <p>*ЗП по результатам собеседования</p>
+            <p>*{t('content.salaryByInterviewResults')}</p>
           </div>
         </div>
       </div>
@@ -685,8 +687,8 @@ const Content = () => {
               <li>Лидерские навыки</li>
               <li>Тайм-менеджмент</li>
               <li>Аналитическое мышление</li>
-              <li>Креативность и гибкость</li>
-              <li>Ответственность и дисциплина</li>
+              <li>{t('content.creativAndFlex')}</li>
+              <li>{t('content.responsAndDiscipline')}</li>
             </ul>
             <h4>{t('content.stack')}:</h4>
             <ul>
@@ -697,7 +699,7 @@ const Content = () => {
               <li>SCRUM</li>
               <li>Jira</li>
             </ul>
-            <p>*ЗП по результатам собеседования</p>
+            <p>*{t('content.salaryByInterviewResults')}</p>
           </div>
         </div>
       </div>
