@@ -15,13 +15,8 @@ export function MainPage() {
       <Header />
       <div className="footer-block">
         <Routes>
-          <Route path="/" index={true} element={<Content />} />
-          <Route
-            path="*"
-            element={() => {
-              return <NotFound />
-            }}
-          />
+          <Route path={'/'} index={true} element={<Content />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </div>
