@@ -18,12 +18,16 @@
     no-repeat;
 }
 
-* {
-  transform-style: preserve-3d;
-}
+// * {
+//   transform-style: preserve-3d;
+// }
 .footer-block {
   display: block;
   overflow: hidden;
+  transform-style: preserve-3d;
+  & * {
+    transform-style: preserve-3d;
+  }
 }
 // body {
 //   margin: 0;
