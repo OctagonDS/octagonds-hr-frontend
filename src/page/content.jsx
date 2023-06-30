@@ -180,7 +180,7 @@ const Content = () => {
         data-aos="fade-up"
       >
         <div className="content__title" style={{ marginBottom: 20 }}>
-          ml-разработчик
+          {t('content.mlDeveloper')}
         </div>
       </div>
       <div className="content" data-aos="fade-up">
@@ -211,12 +211,12 @@ const Content = () => {
             <div className="bubble left bmo__dialog" style={{ width: 256 }}>
               <div className="content__bit__text">
                 {bmo ? (
-                  <>Или нет...</>
+                  t('content.orNot')
                 ) : (
                   <>
-                    Мне нужна твоя одежда и мотоцикл.
+                    {t('content.iNeedYourClothesAndYourMotorcycle')}
                     <div>...</div>
-                    <div>А-ха-ха-ха, я пошутил!</div>
+                    <div>{t('content.iWasKidding')}</div>
                   </>
                 )}
               </div>
@@ -225,11 +225,11 @@ const Content = () => {
           <div className="content__item">
             <h4>{t('content.whatYouGoingToDo')}:</h4>
             <ul>
-              <li>Создание моделей ML</li>
-              <li>Проектирование архитектуры моделей ML</li>
-              <li>Сбор и подготовка данных</li>
+              <li>{t('content.creatingMLModels')}</li>
+              <li>{t('content.designingArchitectureMLModels')}</li>
+              <li>{t('content.dataCollectionAndPreparation')}</li>
               <li>{t('content.refiningProgramCode')}</li>
-              <li>Анализ и тестирование</li>
+              <li>{t('content.analysisAndTesting')}</li>
             </ul>
             <h4>{t('content.softSkills')}:</h4>
             <ul>

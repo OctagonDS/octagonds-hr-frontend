@@ -19,7 +19,7 @@
   },
   "content": {
     "newHero": "this city needs a new <2>hero</2>",
-    "newHeroDescOne": "Right now, hidden from the eyes of ordinary people, unfolds a legendary battle is unfolding. The Tuskies are increasing their onslaught, and the projects are getting more and more interesting, but we're on the defensive for now.",
+    "newHeroDescOne": "Right now, hidden from the eyes of ordinary people, unfolds a legendary battle is unfolding. Tasks are increasing their onslaught, and the projects are getting more and more interesting, but we're on the defensive for now.",
     "newHeroDescTwo": "We need your help to prevail and help our customers. Anyway, there's no time to explain...",
     "newHeroDescThree": "Become part of our team!",
     "newHeroDescFour": "Check out our jobs, fill out the form, or just give us a call",
@@ -43,7 +43,15 @@
     "devFrontendLogic": "Development of frontend logic",
     "appLayout": "Application layout",
     "refactAndOptimApp": "Refactoring and optimizing the application",
-    "mcgonagall": "Why is it when something happens, it's always you three?"
+    "mcgonagall": "Why is it when something happens, it's always you three?",
+    "mlDeveloper": "ml developer",
+    "iNeedYourClothesAndYourMotorcycle": "I need your clothes and your motorcycle.",
+    "iWasKidding": "Ah-ha-ha-ha, I was kidding!",
+    "orNot": "Or not...",
+    "creatingMLModels": "Creating ML models",
+    "designingArchitectureMLModels": "Designing the architecture of ML models",
+    "dataCollectionAndPreparation": "Data collection and preparation",
+    "analysisAndTesting": "Analysis and testing"
   },
   "notFound": {
     "unfortunately": "Unfortunately",

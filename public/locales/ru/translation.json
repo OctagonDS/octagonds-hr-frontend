@@ -43,7 +43,15 @@
     "devFrontendLogic": "Разработка логики фронтенд части",
     "appLayout": "Верстка приложения",
     "refactAndOptimApp": "Рефакторинг и оптимизация приложения",
-    "mcgonagall": "Скажите, почему, когда что-нибудь происходит, вы трое всегда оказываетесь рядом?"
+    "mcgonagall": "Скажите, почему, когда что-нибудь происходит, вы трое всегда оказываетесь рядом?",
+    "mlDeveloper": "ml-разработчик",
+    "iNeedYourClothesAndYourMotorcycle": "Мне нужна твоя одежда и мотоцикл.",
+    "iWasKidding": "А-ха-ха-ха, я пошутил!",
+    "orNot": "Или нет...",
+    "creatingMLModels": "Создание моделей ML",
+    "designingArchitectureMLModels": "Проектирование архитектуры моделей ML",
+    "dataCollectionAndPreparation": "Сбор и подготовка данных",
+    "analysisAndTesting": "Анализ и тестирование"
   },
   "notFound": {
     "unfortunately": "К сожалению",
