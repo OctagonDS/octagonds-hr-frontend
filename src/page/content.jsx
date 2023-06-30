@@ -401,23 +401,18 @@ const Content = () => {
               <div className="morpheus" />
               <div
                 className="bubble right morpheus__dialog"
-                style={morpheus ? { width: 290 } : { width: 215 }}
+                style={morpheus ? { width: 290 } : { width: 250 }}
               >
                 <div className="content__bit__text">
-                  {morpheus ? (
-                    <>
-                      Примешь красную таблетку — получишь дружный коллектив,
-                      интересные задачи и возможность карьерного роста.
-                    </>
-                  ) : (
-                    <>Ты программист, Гарри.</>
-                  )}
+                  {morpheus
+                    ? t('content.youTakeRedPill')
+                    : t('content.youreProgrammerHarry')}
                 </div>
               </div>
               {morpheus && (
                 <div className="bubble left morpheus__dialog-right">
                   <div className="content__bit__text">
-                    Примешь синюю таблетку — и сказке конец.
+                    {t('content.youTakeBluePill')}
                   </div>
                 </div>
               )}
@@ -432,12 +427,12 @@ const Content = () => {
           <div className="content__item">
             <h4>{t('content.whatYouGoingToDo')}:</h4>
             <ul>
-              <li>Поиск и подбор персонала</li>
-              <li>Участие в оценке скиллов</li>
-              <li>Адаптация</li>
-              <li>Развитие персонала</li>
-              <li>Корпоративная культура</li>
-              <li>HR-аналитика</li>
+              <li>{t('content.searchAndRecruitment')}</li>
+              <li>{t('content.participationInSkillsAssessment')}</li>
+              <li>{t('content.adaptation')}</li>
+              <li>{t('content.employeeDevelopment')}</li>
+              <li>{t('content.corporateCulture')}</li>
+              <li>{t('content.HRAnalytics')}</li>
             </ul>
             <h4>{t('content.softSkills')}:</h4>
             <ul>
@@ -447,8 +442,8 @@ const Content = () => {
             </ul>
             <h4>{t('content.stack')}:</h4>
             <ul>
-              <li>Разбираться в IT-технологиях (желательно)</li>
-              <li>Digital-инструменты</li>
+              <li>{t('content.understandITTechnology')}</li>
+              <li>{t('content.digitalTools')}</li>
             </ul>
             <p>*{t('content.salaryByInterviewResults')}</p>
           </div>

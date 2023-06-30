@@ -57,7 +57,18 @@
     "thatsBetter": "Так-то лучше.",
     "CICDImplemAndOptim": "Реализация и оптимизация CI/CD",
     "releaseNewApp": "Релиз новых приложений",
-    "microserviceArchitecture": "Микросервисная архитектура"
+    "microserviceArchitecture": "Микросервисная архитектура",
+    "youreProgrammerHarry": "Ты программист, Гарри.",
+    "youTakeRedPill": "Примешь красную таблетку — получишь дружный коллектив, интересные задачи и возможность карьерного роста.",
+    "youTakeBluePill": "Примешь синюю таблетку — и сказке конец.",
+    "searchAndRecruitment": "Поиск и подбор персонала",
+    "participationInSkillsAssessment": "Участие в оценке скиллов",
+    "adaptation": "Адаптация",
+    "employeeDevelopment": "Развитие персонала",
+    "corporateCulture": "Корпоративная культура",
+    "HRAnalytics": "HR-аналитика",
+    "understandITTechnology": "Разбираться в IT-технологиях (желательно)",
+    "digitalTools": "Digital-инструменты"
   },
   "notFound": {
     "unfortunately": "К сожалению",

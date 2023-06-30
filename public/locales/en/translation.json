@@ -57,7 +57,18 @@
     "thatsBetter": "That's better.",
     "CICDImplemAndOptim": "CI/CD implementation and optimization",
     "releaseNewApp": "Release of new applications",
-    "microserviceArchitecture": "Microservice architecture"
+    "microserviceArchitecture": "Microservice architecture",
+    "youreProgrammerHarry": "You're a programmer, Harry.",
+    "youTakeRedPill": "If you take the red pill, you get a friendly team, interesting tasks and the opportunity for career growth.",
+    "youTakeBluePill": "If you take the blue pill, the fairy tale is over.",
+    "searchAndRecruitment": "Search and recruitment",
+    "participationInSkillsAssessment": "Participation in skills assessment",
+    "adaptation": "Adaptation",
+    "employeeDevelopment": "Employee development",
+    "corporateCulture": "Corporate culture",
+    "HRAnalytics": "HR Analytics",
+    "understandITTechnology": "Understand IT technology (desirable)",
+    "digitalTools": "Digital tools"
   },
   "notFound": {
     "unfortunately": "Unfortunately",
