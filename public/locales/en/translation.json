@@ -68,7 +68,15 @@
     "corporateCulture": "Corporate culture",
     "HRAnalytics": "HR Analytics",
     "understandITTechnology": "Understand IT technology (desirable)",
-    "digitalTools": "Digital tools"
+    "digitalTools": "Digital tools",
+    "aqaEngineer": "aqa engineer",
+    "hereResultsTest": "Fine. Here are the results of the test: your code is terrible.",
+    "glados": "I'm serious, that's what it says: \"horrible code\".<br />  Although we didn't even test for it.",
+    "appQualityControl": "Application quality control",
+    "errorDetectionAndAnalysis": "Error detection and analysis",
+    "testAutomation": "Test Automation",
+    "testingApplication": "Testing the application",
+    "accompanyingEliminationErrors": "Accompanying the elimination of errors"
   },
   "notFound": {
     "unfortunately": "Unfortunately",

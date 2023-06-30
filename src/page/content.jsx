@@ -455,7 +455,7 @@ const Content = () => {
         data-aos="fade-up"
       >
         <div className="content__title" style={{ marginBottom: 20 }}>
-          aqa-инженер
+          {t('content.aqaEngineer')}
         </div>
       </div>
       <div className="content" data-aos="fade-up">
@@ -478,12 +478,12 @@ const Content = () => {
             <div className="bubble left glados__dialog" style={{ width: 270 }}>
               <div className="content__bit__text">
                 {glados === '-open' ? (
-                  <>
-                    Я серьезно, тут так и сказано: "ужасный код".{' '}
-                    <div>Хотя мы на это даже не тестировали.</div>
-                  </>
+                  <Trans i18nKey="content.glados">
+                    Я серьезно, тут так и сказано: "ужасный код".
+                    <br /> Хотя мы на это даже не тестировали.
+                  </Trans>
                 ) : (
-                  <>Прекрасно. Вот результаты теста: у тебя ужасный код.</>
+                  t('content.hereResultsTest')
                 )}
               </div>
             </div>
@@ -491,11 +491,11 @@ const Content = () => {
           <div className="content__item">
             <h4>{t('content.whatYouGoingToDo')}:</h4>
             <ul>
-              <li>Контроль качества приложения</li>
-              <li>Выявление и анализ ошибок</li>
-              <li>Автоматизация тестирования</li>
-              <li>Тестирование приложения</li>
-              <li>Сопровождение процесса ликвидации ошибок</li>
+              <li>{t('content.appQualityControl')}</li>
+              <li>{t('content.errorDetectionAndAnalysis')}</li>
+              <li>{t('content.testAutomation')}</li>
+              <li>{t('content.testingApplication')}</li>
+              <li>{t('content.accompanyingEliminationErrors')}</li>
               <li>{t('content.preparationDocum')}</li>
             </ul>
             <h4>{t('content.softSkills')}:</h4>
