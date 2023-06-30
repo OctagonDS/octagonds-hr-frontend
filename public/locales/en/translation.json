@@ -34,5 +34,11 @@
     "timeWork": "Mon - Fri 9:00 to 18:00 MSK",
     "titleWork": "Join the team",
     "freeСall": "free call"
+  },
+  "notFound": {
+    "unfortunately": "Unfortunately",
+    "sectionNotOperational": "the section does not work yet",
+    "pageNotExist": "or this page does not exist",
+    "getInformation": "Get information"
   }
 }

@@ -27,5 +27,11 @@
     "timeWork": "Пн - Пт с 9:00 до 18:00 по Мск",
     "titleWork": "Приходи в команду",
     "freeСall": "звонок бесплатный"
+  },
+  "notFound": {
+    "unfortunately": "К сожалению",
+    "sectionNotOperational": "раздел пока не работает",
+    "pageNotExist": "или такой страницы не существует",
+    "getInformation": "Получить информацию"
   }
 }

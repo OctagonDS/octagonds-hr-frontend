@@ -1,4 +1,8 @@
+import { useTranslation } from 'react-i18next'
+
 const NotFound = () => {
+  const { t } = useTranslation()
+
   return (
     <div className="slide-block">
       <div className="page-404">
@@ -73,7 +77,7 @@ const NotFound = () => {
                 style={{ color: '#777', fontStyle: 'italic' }}
                 className="Text-Selection"
               >
-                К сожалению,
+                {t('notFound.unfortunately')},
               </span>
               <br />
               {'// '}
@@ -81,7 +85,7 @@ const NotFound = () => {
                 style={{ color: '#777', fontStyle: 'italic' }}
                 className="Text-Selection"
               >
-                раздел пока не работает.
+                {t('notFound.sectionNotOperational')}
               </span>
               <br />
               {'// '}
@@ -89,7 +93,7 @@ const NotFound = () => {
                 style={{ color: '#777', fontStyle: 'italic' }}
                 className="Text-Selection"
               >
-                Зато мы работаем над ним.
+                {t('notFound.pageNotExist')}.
               </span>
             </span>
             <br />
@@ -106,7 +110,7 @@ const NotFound = () => {
                 style={{ color: '#777', fontStyle: 'italic' }}
                 className="Text-Selection"
               >
-                Получить информацию
+                {t('notFound.getInformation')}
               </span>
             </span>
             <br />
