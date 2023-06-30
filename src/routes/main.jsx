@@ -15,8 +15,13 @@ export function MainPage() {
       <Header />
       <div className="footer-block">
         <Routes>
-          <Route path={'/'} index={true} element={<Content />} />
-          <Route path="/ss" element={<NotFound />} />
+          <Route path="/" index={true} element={<Content />} />
+          <Route
+            path="*"
+            element={() => {
+              return <NotFound />
+            }}
+          />
         </Routes>
         <Footer />
       </div>
