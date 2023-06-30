@@ -4,9 +4,10 @@ import MiddleRow from '../../assets/img/svg/city/middleRow'
 import LastRow from '../../assets/img/svg/city/lastRow'
 import { useContext } from 'react'
 import PostContext from '../../context/postContext'
-import { Trans } from 'react-i18next'
+import { Trans, useTranslation } from 'react-i18next'
 
 const Footer = () => {
+  const { t } = useTranslation()
   const { sendFeedback, successForm, errorForm } = useContext(PostContext)
   const year = new Date().getFullYear()
 
@@ -73,15 +74,12 @@ const Footer = () => {
           Lorem Ipsum - это текст-"рыба", часто используемый в печати и
           вэб-дизайне.
         </p> */}
-        <p>
-          Вот она, форма обратной связи, которая отделяет тебя от того, чтобы
-          стать частью нашей команды. Просто заполни её, и мы свяжемся с тобой.
-        </p>
+        <p>{t('footer.formDesc')}</p>
         <form onSubmit={sendFeedback}>
           <input
             type="text"
             name="name"
-            placeholder={'Имя'}
+            placeholder={t('footer.name')}
             required
             style={{ borderRight: '2px solid #ff4b55' }}
           />
@@ -89,16 +87,16 @@ const Footer = () => {
           <input
             type="tel"
             name="phone"
-            placeholder="Телефон"
+            placeholder={t('footer.phone')}
             required
             style={{ borderRight: '2px solid #ff4b55' }}
           />
           <input
             type="tel"
             name="messenger"
-            placeholder="Название мессенджера для контакта"
+            placeholder={t('footer.nameMessenger')}
           />
-          <button type="submit">Хочу в команду</button>
+          <button type="submit">{t('footer.iWantTeam')}</button>
         </form>
       </div>
       <div
@@ -119,8 +117,8 @@ const Footer = () => {
           }`}
         >
           <div className="batman__dialog__text">
-            Мы скоро свяжемся с тобой. Знаешь почему я уверен? <div>...</div>
-            Потому что я Batduck!
+            {t('footer.batOne')} <div>...</div>
+            {t('footer.batTwo')}
           </div>
         </div>
         <div className="watchtower">
