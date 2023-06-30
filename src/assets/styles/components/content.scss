@@ -41,7 +41,8 @@ $bubble-border: 0 -1 * $px $eee, 0 -2 * $px $black, $px 0 $eee,
       font-size: 60px;
     }
     @media (max-width: 1200px) {
-      font-size: 45px;
+      font-size: 39px;
+      text-align: left;
     }
   }
   &__desc {
