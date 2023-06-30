@@ -76,7 +76,20 @@
     "errorDetectionAndAnalysis": "Error detection and analysis",
     "testAutomation": "Test Automation",
     "testingApplication": "Testing the application",
-    "accompanyingEliminationErrors": "Accompanying the elimination of errors"
+    "accompanyingEliminationErrors": "Accompanying the elimination of errors",
+    "alwaysALotWaysToClose": "There are always a lot of ways to close a shuffle in time.",
+    "mayStackoverflow": "It is up to you to try them all. May stackoverflow be with you.",
+    "assessmentTasksAndDeadlines": "Assessment of tasks and deadlines of all stages",
+    "sprintPlanning": "Sprint planning",
+    "holdingMeetings": "Holding meetings",
+    "taskControl": "Task control",
+    "helpingTeamSolveProblems": "Helping the team solve problems",
+    "approvalSprintResultsByCustomer": "Approval of the sprint results by the customer",
+    "participateInTeamSelection": "Participate in team selection and evaluation of skills",
+    "collectingAnalyticsTeam": "Collecting analytics on team performance",
+    "leadershipSkills": "Leadership skills",
+    "timeManagement": "Time management",
+    "analyticalThinking": "Analytical thinking"
   },
   "notFound": {
     "unfortunately": "Unfortunately",

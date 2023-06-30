@@ -76,7 +76,20 @@
     "errorDetectionAndAnalysis": "Выявление и анализ ошибок",
     "testAutomation": "Автоматизация тестирования",
     "testingApplication": "Тестирование приложения",
-    "accompanyingEliminationErrors": "Сопровождение процесса ликвидации ошибок"
+    "accompanyingEliminationErrors": "Сопровождение процесса ликвидации ошибок",
+    "alwaysALotWaysToClose": "Всегда много путей вовремя таски закрыть есть.",
+    "mayStackoverflow": "Испробовать их все должны вы. Да пребудет с вами stackoverflow.",
+    "assessmentTasksAndDeadlines": "Оценка задач и сроков всех этапов",
+    "sprintPlanning": "Планирование спринтов",
+    "holdingMeetings": "Проведение митингов",
+    "taskControl": "Контроль выполнения задач",
+    "helpingTeamSolveProblems": "Помощь команде в решении задач",
+    "approvalSprintResultsByCustomer": "Согласование с заказчиком результатов спринта",
+    "participateInTeamSelection": "Участие в подборе команды и оценке скиллов",
+    "collectingAnalyticsTeam": "Сбор аналитики по работе команды",
+    "leadershipSkills": "Лидерские навыки",
+    "timeManagement": "Тайм-менеджмент",
+    "analyticalThinking": "Аналитическое мышление"
   },
   "notFound": {
     "unfortunately": "К сожалению",

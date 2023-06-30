@@ -648,34 +648,29 @@ const Content = () => {
             </div>
             <div className="bubble left yoda__dialog" style={{ width: 256 }}>
               <div className="content__bit__text">
-                {yoda ? (
-                  <>
-                    Испробовать их все должны вы. Да пребудет с вами
-                    stackoverflow.
-                  </>
-                ) : (
-                  <>Всегда много путей вовремя таски закрыть есть.</>
-                )}
+                {yoda
+                  ? t('content.mayStackoverflow')
+                  : t('content.alwaysALotWaysToClose')}
               </div>
             </div>
           </div>
           <div className="content__item">
             <h4>{t('content.whatYouGoingToDo')}:</h4>
             <ul>
-              <li>Оценка задач и сроков всех этапов</li>
-              <li>Планирование спринтов</li>
-              <li>Проведение митингов</li>
-              <li>Контроль выполнения задач</li>
-              <li>Помощь команде в решении задач</li>
-              <li>Согласование с заказчиком результатов спринта</li>
-              <li>Участие в подборе команды и оценке скиллов</li>
-              <li>Сбор аналитики по работе команды</li>
+              <li>{t('content.assessmentTasksAndDeadlines')}</li>
+              <li>{t('content.sprintPlanning')}</li>
+              <li>{t('content.holdingMeetings')}</li>
+              <li>{t('content.taskControl')}</li>
+              <li>{t('content.helpingTeamSolveProblems')}</li>
+              <li>{t('content.approvalSprintResultsByCustomer')}</li>
+              <li>{t('content.participateInTeamSelection')}</li>
+              <li>{t('content.collectingAnalyticsTeam')}</li>
             </ul>
             <h4>{t('content.softSkills')}:</h4>
             <ul>
-              <li>Лидерские навыки</li>
-              <li>Тайм-менеджмент</li>
-              <li>Аналитическое мышление</li>
+              <li>{t('content.leadershipSkills')}</li>
+              <li>{t('content.timeManagement')}</li>
+              <li>{t('content.analyticalThinking')}</li>
               <li>{t('content.creativAndFlex')}</li>
               <li>{t('content.responsAndDiscipline')}</li>
             </ul>
