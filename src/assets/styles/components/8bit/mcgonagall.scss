@@ -31,6 +31,9 @@ $hair2-css: #2f2f2f;
   position: absolute;
   top: 115px;
   left: 12%;
+  @media (max-width: 1366px) {
+    left: 8%;
+  }
   &__heir {
     position: absolute;
     width: $width-js;
@@ -310,6 +313,12 @@ $hair2-css: #2f2f2f;
   position: absolute;
   top: 115px;
   left: 40%;
+  @media (max-width: 1600px) {
+    left: 42%;
+  }
+  @media (max-width: 1366px) {
+    left: 42%;
+  }
   &__heir {
     position: absolute;
     width: $width-js;
@@ -514,6 +523,12 @@ $hair2-css: #2f2f2f;
   position: absolute;
   top: 115px;
   left: 68%;
+  @media (max-width: 1600px) {
+    left: 70%;
+  }
+  @media (max-width: 1366px) {
+    left: 73%;
+  }
   &__heir {
     position: absolute;
     width: $width-js;
@@ -738,6 +753,12 @@ $hair2-css: #2f2f2f;
   @media (min-width: 3439px) {
     left: 25%;
   }
+  @media (max-width: 1600px) {
+    left: 10%;
+  }
+  @media (max-width: 1366px) {
+    left: -2%;
+  }
   &__dialog {
     position: absolute;
     left: 50%;
@@ -746,10 +767,10 @@ $hair2-css: #2f2f2f;
       left: 51%;
     }
     @media (max-width: 1600px) {
-      left: 55%;
+      left: 49%;
     }
     @media (max-width: 1366px) {
-      left: 60%;
+      left: 40%;
     }
   }
   box-shadow: (8 * $width-mcgonagall) (1 * $width-mcgonagall) 0 $hat-mcgonagall,

@@ -33,11 +33,23 @@ $portal-4: #f0f9b6;
   @media (min-width: 3439px) {
     right: 14em;
   }
+  @media (max-width: 1600px) {
+    right: 10em;
+  }
+  @media (max-width: 1366px) {
+    right: 8em;
+  }
   &__dialog {
     position: relative;
     right: -22%;
     @media (min-width: 3439px) {
       right: -12%;
+    }
+    @media (max-width: 1600px) {
+      right: -25%;
+    }
+    @media (max-width: 1366px) {
+      right: -35%;
     }
   }
   box-shadow: (9 * $width-rick) (3 * $width-rick) 0 $blu-head-rick,
@@ -293,6 +305,12 @@ $portal-4: #f0f9b6;
     transform: scaleY(0);
     @media (min-width: 3439px) {
       right: 15em;
+    }
+    @media (max-width: 1600px) {
+      right: 11em;
+    }
+    @media (max-width: 1366px) {
+      right: 9em;
     }
     &-close {
       @extend .portal__box;

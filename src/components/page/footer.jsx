@@ -70,10 +70,6 @@ const Footer = () => {
           successForm || errorForm ? '-inactive' : '-active'
         }`}
       >
-        {/* <p>
-          Lorem Ipsum - это текст-"рыба", часто используемый в печати и
-          вэб-дизайне.
-        </p> */}
         <p>{t('footer.formDesc')}</p>
         <form onSubmit={sendFeedback}>
           <input

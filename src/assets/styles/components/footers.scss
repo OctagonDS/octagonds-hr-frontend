@@ -18,9 +18,6 @@
     no-repeat;
 }
 
-// * {
-//   transform-style: preserve-3d;
-// }
 .footer-block {
   display: block;
   overflow: hidden;
@@ -29,15 +26,6 @@
     transform-style: preserve-3d;
   }
 }
-// body {
-//   margin: 0;
-//   width: 100vw;
-//   height: 100vh;
-//   overflow: hidden;
-//   background-color: #1f1f1f;
-//   background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
-//   cursor: pointer;
-// }
 
 .sky {
   background: linear-gradient(
@@ -45,7 +33,6 @@
     rgb(255 211 105 / 41%),
     rgb(34 40 49 / 58%)
   );
-  // background: linear-gradient(0deg, #673ab78a, #3c3c3c94);
   height: 100vh;
 }
 
@@ -180,16 +167,6 @@
   filter: blur(2px);
 }
 
-// body:hover .light {
-//   animation-iteration-count: 0;
-// }
-
-// body:active .light {
-//   opacity: 1;
-//   animation: start 1s ease 0s 1, blink-on 0.15s ease 0s 2;
-//   cursor: none;
-// }
-
 @keyframes blink-off {
   40% {
     opacity: 1;
@@ -221,37 +198,6 @@
 }
 
 #batman-logo {
-  // filter: contrast(1.5) blur(0.5px);
-  // height: 5.35vmin;
-  // overflow: hidden;
-  // position: absolute;
-  // width: 16vmin;
-  // left: 2.5vmin;
-  // top: 9.75vmin;
-  // background-image: -webkit-gradient(
-  //   linear,
-  //   left bottom,
-  //   right top,
-  //   color-stop(0, rgb(72, 84, 92)),
-  //   color-stop(0.63, rgb(25, 26, 26)),
-  //   color-stop(0.86, rgb(26, 26, 26))
-  // );
-  // background-image: -moz-linear-gradient(
-  //   /* Remember Browser specific prefixes! */ left bottom,
-  //   /* Gradient start point (the angle) */ rgb(72, 84, 92) 0%,
-  //   /* First colour and start point */ rgb(25, 26, 26) 63%,
-  //   /* Second colour and start point */ rgb(26, 26, 26) 86%
-  // );
-  // background-image: -o-linear-gradient(
-  //   left bottom,
-  //   rgb(72, 84, 92) 0%,
-  //   rgb(25, 26, 26) 63%,
-  //   rgb(26, 26, 26) 86%
-  // );
-  // transform: rotateZ(48deg) rotateY(15deg) rotateX(0deg) scaleY(1.75)
-  //   scaleX(1.25);
-  // box-shadow: 0 0 10vmin 2vmin #fff;
-  // border-radius: 5% 5% 100% 100%;
   filter: contrast(1.5) blur(0.5px);
   height: 4.35vmin;
   overflow: hidden;
@@ -269,10 +215,10 @@
     color-stop(0.86, rgb(26, 26, 26))
   );
   background-image: -moz-linear-gradient(
-    /* Remember Browser specific prefixes! */ left bottom,
-    /* Gradient start point (the angle) */ rgb(72, 84, 92) 0%,
-    /* First colour and start point */ rgb(25, 26, 26) 63%,
-    /* Second colour and start point */ rgb(26, 26, 26) 86%
+    left bottom,
+    rgb(72, 84, 92) 0%,
+    rgb(25, 26, 26) 63%,
+    rgb(26, 26, 26) 86%
   );
   background-image: -o-linear-gradient(
     left bottom,
@@ -410,7 +356,7 @@
       drop-shadow(0px 0px 1.5px #ffd369);
     opacity: 0.3;
   }
-  @media (min-width: 3440px) {
+  @media (min-width: 3439px) {
     justify-content: center;
     & svg {
       width: 95vw;
@@ -435,7 +381,7 @@
     position: absolute;
     left: -2px;
   }
-  @media (min-width: 3440px) {
+  @media (min-width: 3439px) {
     justify-content: center;
     & svg {
       width: 97vw;
@@ -478,7 +424,7 @@ body:active .skyline:before {
       fill: #000;
     }
   }
-  @media (min-width: 3440px) {
+  @media (min-width: 3439px) {
     justify-content: center;
     & svg {
       width: 96vw;
@@ -1069,7 +1015,7 @@ body:active .skyline:before {
 .hr_form {
   position: absolute;
   position: absolute;
-  bottom: 56vmin;
+  bottom: 53vmin;
   left: 70%;
   animation-duration: 1s;
   animation-iteration-count: 1;
@@ -1077,6 +1023,9 @@ body:active .skyline:before {
   animation-timing-function: ease-out;
   animation-delay: 0s;
   transform: translateX(-50%);
+  @media (max-width: 1366px) {
+    bottom: 43vmin;
+  }
   &-active {
     @extend .hr_form;
     transform: translateX(-50%);
@@ -1113,6 +1062,9 @@ body:active .skyline:before {
     flex-direction: column;
     gap: 10px;
     width: 70%;
+    @media (max-width: 1366px) {
+      width: 80%;
+    }
   }
   & p {
     font-size: 15px;

@@ -15,16 +15,22 @@ $yellow-bmo: #f6fc73;
   height: $width-bmo;
   position: absolute;
   top: 65px;
-  left: 25%;
+  left: 22%;
+  @media (max-width: 1366px) {
+    left: 2%;
+  }
   &__dialog {
     position: absolute;
-    left: 56%;
+    left: 53%;
     top: 69px;
     @media (min-width: 3439px) {
       left: 50%;
     }
     @media (max-width: 1600px) {
       left: 55%;
+    }
+    @media (max-width: 1366px) {
+      left: 43%;
     }
   }
   &__eye {

@@ -4,7 +4,7 @@
   justify-content: space-between;
   padding-left: 18%;
   padding-right: 10%;
-  @media (min-width: 3440px) {
+  @media (min-width: 3439px) {
     padding-left: 21%;
     padding-right: 17%;
   }
@@ -171,9 +171,13 @@
   justify-content: space-between;
   padding-left: 15%;
   padding-right: 15%;
-  @media (min-width: 3440px) {
+  @media (min-width: 3439px) {
     padding-left: 20%;
     padding-right: 20%;
+  }
+  @media (max-width: 1200px) {
+    padding-left: 10%;
+    padding-right: 10%;
   }
   &__right {
     display: flex;

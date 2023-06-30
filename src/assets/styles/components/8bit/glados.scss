@@ -15,6 +15,9 @@ $gray-blue-glados: #9badb7;
   @media (max-width: 1600px) {
     left: 100px;
   }
+  @media (max-width: 1366px) {
+    left: 50px;
+  }
   &__eye {
     position: relative;
     width: $width-glados * 2;
@@ -31,6 +34,9 @@ $gray-blue-glados: #9badb7;
     top: 178px;
     @media (max-width: 1600px) {
       left: 335px;
+    }
+    @media (max-width: 1366px) {
+      left: 285px;
     }
   }
   box-shadow: (4 * $width-glados) (1 * $width-glados) 0 $black-glados,

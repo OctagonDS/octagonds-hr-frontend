@@ -73,7 +73,7 @@ const Content = () => {
               </div>
             </div>
           </div>
-          <div className="content__item">
+          <div className="content__item-big">
             <h4>{t('content.whatYouGoingToDo')}:</h4>
             <ul>
               <li>{t('content.backendDevelopment')}</li>
@@ -97,6 +97,40 @@ const Content = () => {
               <li>Git</li>
               <li>Jira</li>
             </ul>
+            <p>*{t('content.salaryByInterviewResults')}</p>
+          </div>
+          <div className="content__item-small">
+            <div className="content__item-small-row">
+              <div>
+                <h4>{t('content.whatYouGoingToDo')}:</h4>
+                <ul>
+                  <li>{t('content.backendDevelopment')}</li>
+                  <li>{t('content.designingProjectArchitecture')}</li>
+                  <li>{t('content.databaseOrganizAndManag')}</li>
+                  <li>{t('content.codeRefactoringAndOptimization')}</li>
+                  <li>{t('content.refiningProgramCode')}</li>
+                  <li>{t('content.preparationDocum')}</li>
+                </ul>
+              </div>
+              <div>
+                <h4>{t('content.softSkills')}:</h4>
+                <ul>
+                  <li>{t('content.workingWithDocum')}</li>
+                  <li>{t('content.creativAndFlex')}</li>
+                  <li>{t('content.responsAndDiscipline')}</li>
+                </ul>
+              </div>
+              <div>
+                <h4>{t('content.stack')}:</h4>
+                <ul>
+                  <li>Django</li>
+                  <li>FastAPI</li>
+                  <li>REST</li>
+                  <li>Git</li>
+                  <li>Jira</li>
+                </ul>
+              </div>
+            </div>
             <p>*{t('content.salaryByInterviewResults')}</p>
           </div>
         </div>
@@ -146,7 +180,7 @@ const Content = () => {
               </>
             )}
           </div>
-          <div className="content__item">
+          <div className="content__item-big">
             <h4>{t('content.whatYouGoingToDo')}:</h4>
             <ul>
               <li>{t('content.devFrontendLogic')}</li>
@@ -222,7 +256,7 @@ const Content = () => {
               </div>
             </div>
           </div>
-          <div className="content__item">
+          <div className="content__item-big">
             <h4>{t('content.whatYouGoingToDo')}:</h4>
             <ul>
               <li>{t('content.creatingMLModels')}</li>
@@ -280,7 +314,7 @@ const Content = () => {
               </div>
             </div>
           </div>
-          <div className="content__item">
+          <div className="content__item-big">
             <h4>{t('content.whatYouGoingToDo')}:</h4>
             <ul>
               <li>{t('content.CICDImplemAndOptim')}</li>
@@ -362,7 +396,7 @@ const Content = () => {
               </div>
             </div>
           </div>
-          <div className="content__item">
+          <div className="content__item-big">
             <p>
               Lorem Ipsum - это текст-"рыба", часто используемый в печати и
               вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
@@ -424,7 +458,7 @@ const Content = () => {
               </div>
             )}
           </div>
-          <div className="content__item">
+          <div className="content__item-big">
             <h4>{t('content.whatYouGoingToDo')}:</h4>
             <ul>
               <li>{t('content.searchAndRecruitment')}</li>
@@ -488,7 +522,7 @@ const Content = () => {
               </div>
             </div>
           </div>
-          <div className="content__item">
+          <div className="content__item-big">
             <h4>{t('content.whatYouGoingToDo')}:</h4>
             <ul>
               <li>{t('content.appQualityControl')}</li>
@@ -535,7 +569,7 @@ const Content = () => {
           onMouseOver={() => setMorpheus(true)}
           onMouseOut={() => setMorpheus(false)}
         >
-          <div className="content__item">
+          <div className="content__item-big">
             <p>
               Lorem Ipsum - это текст-"рыба", часто используемый в печати и
               вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
@@ -614,7 +648,7 @@ const Content = () => {
               </div>
             </div>
           </div>
-          <div className="content__item">
+          <div className="content__item-big">
             <p>
               Lorem Ipsum - это текст-"рыба", часто используемый в печати и
               вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
@@ -654,7 +688,7 @@ const Content = () => {
               </div>
             </div>
           </div>
-          <div className="content__item">
+          <div className="content__item-big">
             <h4>{t('content.whatYouGoingToDo')}:</h4>
             <ul>
               <li>{t('content.assessmentTasksAndDeadlines')}</li>

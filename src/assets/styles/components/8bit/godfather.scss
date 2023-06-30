@@ -33,12 +33,18 @@ $doll-money: #8e8b86;
   position: absolute;
   top: 35px;
   left: 23%;
+  @media (max-width: 1366px) {
+    left: 5%;
+  }
   &__dialog {
     position: absolute;
     left: 51%;
     top: 20px;
     @media (max-width: 1600px) {
       left: 55%;
+    }
+    @media (max-width: 1366px) {
+      left: 40%;
     }
   }
   &__money {
