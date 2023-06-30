@@ -47,6 +47,7 @@ const Content = () => {
             className="content__bit"
             onMouseOver={() => setPortal('-open')}
             onMouseOut={() => setPortal('-close')}
+            onClick={() => setPortal(portal !== '-open' ? '-open' : '-close')}
           >
             <div className={`portal__box${portal}`}>
               <div className="portal" />
