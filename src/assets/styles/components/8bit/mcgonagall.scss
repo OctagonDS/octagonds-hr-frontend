@@ -30,9 +30,15 @@ $hair2-css: #2f2f2f;
   height: $width-js;
   position: absolute;
   top: 115px;
-  left: 12%;
+  left: 5%;
+  @media (max-width: 1600px) {
+    left: 10%;
+  }
   @media (max-width: 1366px) {
-    left: 8%;
+    left: 16%;
+  }
+  @media (max-width: 1200px) {
+    left: 6%;
   }
   &__heir {
     position: absolute;
@@ -317,7 +323,10 @@ $hair2-css: #2f2f2f;
     left: 42%;
   }
   @media (max-width: 1366px) {
-    left: 42%;
+    left: 47%;
+  }
+  @media (max-width: 1200px) {
+    left: 41%;
   }
   &__heir {
     position: absolute;
@@ -522,12 +531,15 @@ $hair2-css: #2f2f2f;
   height: $width-js;
   position: absolute;
   top: 115px;
-  left: 68%;
+  left: 74%;
   @media (max-width: 1600px) {
-    left: 70%;
+    left: 72%;
   }
   @media (max-width: 1366px) {
-    left: 73%;
+    left: 76%;
+  }
+  @media (max-width: 1200px) {
+    left: 74%;
   }
   &__heir {
     position: absolute;
@@ -749,28 +761,44 @@ $hair2-css: #2f2f2f;
   height: $width-mcgonagall;
   position: absolute;
   top: 15px;
-  left: 18%;
+  left: 8%;
+  &__box {
+    position: absolute;
+    width: 600px;
+    height: $width-mcgonagall * 32;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
   @media (min-width: 3439px) {
-    left: 25%;
+    left: 5%;
   }
   @media (max-width: 1600px) {
     left: 10%;
   }
   @media (max-width: 1366px) {
-    left: -2%;
+    left: 7%;
+  }
+  @media (max-width: 1200px) {
+    left: 60px;
   }
   &__dialog {
     position: absolute;
-    left: 50%;
+    left: 45%;
     top: 90px;
     @media (min-width: 3439px) {
-      left: 51%;
+      left: 45%;
     }
     @media (max-width: 1600px) {
       left: 49%;
     }
     @media (max-width: 1366px) {
-      left: 40%;
+      left: 44%;
+    }
+    @media (max-width: 1200px) {
+      left: 280px;
     }
   }
   box-shadow: (8 * $width-mcgonagall) (1 * $width-mcgonagall) 0 $hat-mcgonagall,

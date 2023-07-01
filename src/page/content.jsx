@@ -2,9 +2,16 @@ import { useEffect, useState } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useTranslation, Trans } from 'react-i18next'
+import useWindowSize from '../hooks/useWindowSize'
+import ContentItemBig from '../components/contentItemBig'
+import ContentItemSmall from '../components/contentItemSmall'
+import { McgonagallData, RickData } from '../const/listData'
 
 const Content = () => {
   const { t, i18n } = useTranslation()
+  const size = useWindowSize()
+  const rickData = RickData()
+  const mcgonagallData = McgonagallData()
   const [portal, setPortal] = useState('')
   const [glados, setGlados] = useState('')
   const [morpheus, setMorpheus] = useState(false)
@@ -17,8 +24,6 @@ const Content = () => {
     AOS.init({ duration: 1000 })
     return () => {}
   }, [])
-
-  console.log(portal)
 
   return (
     <div className="content_block">
@@ -36,7 +41,14 @@ const Content = () => {
           <p>{t('content.newHeroDescFour')}:</p>
         </div>
       </div>
-      <div className="content" style={{ marginBottom: 20 }}>
+      <div
+        className="content"
+        style={
+          size.tablet || size.mobile
+            ? { marginBottom: 20, marginTop: 10 }
+            : { marginBottom: 20 }
+        }
+      >
         <div className="content__title" style={{ marginBottom: 20 }}>
           {t('content.pythonDeveloper')}
         </div>
@@ -45,95 +57,62 @@ const Content = () => {
         <div className="content__item__row">
           <div
             className="content__bit"
-            onMouseOver={() => setPortal('-open')}
-            onMouseOut={() => setPortal('-close')}
-            onClick={() => setPortal(portal !== '-open' ? '-open' : '-close')}
+            onMouseOver={() => (size.tablet ? {} : setPortal('-open'))}
+            onMouseOut={() => (size.tablet ? {} : setPortal('-close'))}
+            onTouchStart={() => (size.tablet ? setPortal('-open') : {})}
+            onTouchEnd={() => (size.tablet ? setPortal('-close') : {})}
+            onMouseDown={() => (size.tablet ? setPortal('-open') : {})}
+            onMouseUp={() => (size.tablet ? setPortal('-close') : {})}
           >
-            <div className={`portal__box${portal}`}>
-              <div className="portal" />
-            </div>
-            <div className="rick" />
-            <div
-              className="bubble bottom rick__dialog"
-              style={
-                portal === '-open'
-                  ? { width: 240, top: '-103px' }
-                  : { width: 240, top: '-61px' }
-              }
-            >
-              <div className="content__bit__text">
-                {portal === '-open' ? (
-                  <Trans i18nKey="content.rick">
-                    Давай.
-                    <br /> Вошли и вышли.
-                    <br /> Приключение на 20 минут.
-                  </Trans>
-                ) : (
-                  t('content.newTasksCameIn')
-                )}
+            <div className="rick__box">
+              <div className={`portal__box${portal}`}>
+                <div className="portal" />
+              </div>
+              <div className="rick" />
+              <div
+                className="bubble bottom rick__dialog-big"
+                style={
+                  portal === '-open'
+                    ? { width: 240, top: '-103px' }
+                    : { width: 240, top: '-61px' }
+                }
+              >
+                <div className="content__bit__text">
+                  {portal === '-open' ? (
+                    <Trans i18nKey="content.rick">
+                      Давай.
+                      <br /> Вошли и вышли.
+                      <br /> Приключение на 20 минут.
+                    </Trans>
+                  ) : (
+                    t('content.newTasksCameIn')
+                  )}
+                </div>
+              </div>
+              <div
+                className="bubble bottom rick__dialog-small"
+                style={
+                  portal === '-open'
+                    ? { width: 240, top: '-102px' }
+                    : { width: 240, top: '-61px' }
+                }
+              >
+                <div className="content__bit__text">
+                  {portal === '-open' ? (
+                    <Trans i18nKey="content.rick">
+                      Давай.
+                      <br /> Вошли и вышли.
+                      <br /> Приключение на 20 минут.
+                    </Trans>
+                  ) : (
+                    t('content.newTasksCameIn')
+                  )}
+                </div>
               </div>
             </div>
           </div>
-          <div className="content__item-big">
-            <h4>{t('content.whatYouGoingToDo')}:</h4>
-            <ul>
-              <li>{t('content.backendDevelopment')}</li>
-              <li>{t('content.designingProjectArchitecture')}</li>
-              <li>{t('content.databaseOrganizAndManag')}</li>
-              <li>{t('content.codeRefactoringAndOptimization')}</li>
-              <li>{t('content.refiningProgramCode')}</li>
-              <li>{t('content.preparationDocum')}</li>
-            </ul>
-            <h4>{t('content.softSkills')}:</h4>
-            <ul>
-              <li>{t('content.workingWithDocum')}</li>
-              <li>{t('content.creativAndFlex')}</li>
-              <li>{t('content.responsAndDiscipline')}</li>
-            </ul>
-            <h4>{t('content.stack')}:</h4>
-            <ul>
-              <li>Django</li>
-              <li>FastAPI</li>
-              <li>REST</li>
-              <li>Git</li>
-              <li>Jira</li>
-            </ul>
-            <p>*{t('content.salaryByInterviewResults')}</p>
-          </div>
-          <div className="content__item-small">
-            <div className="content__item-small-row">
-              <div>
-                <h4>{t('content.whatYouGoingToDo')}:</h4>
-                <ul>
-                  <li>{t('content.backendDevelopment')}</li>
-                  <li>{t('content.designingProjectArchitecture')}</li>
-                  <li>{t('content.databaseOrganizAndManag')}</li>
-                  <li>{t('content.codeRefactoringAndOptimization')}</li>
-                  <li>{t('content.refiningProgramCode')}</li>
-                  <li>{t('content.preparationDocum')}</li>
-                </ul>
-              </div>
-              <div>
-                <h4>{t('content.softSkills')}:</h4>
-                <ul>
-                  <li>{t('content.workingWithDocum')}</li>
-                  <li>{t('content.creativAndFlex')}</li>
-                  <li>{t('content.responsAndDiscipline')}</li>
-                </ul>
-              </div>
-              <div>
-                <h4>{t('content.stack')}:</h4>
-                <ul>
-                  <li>Django</li>
-                  <li>FastAPI</li>
-                  <li>REST</li>
-                  <li>Git</li>
-                  <li>Jira</li>
-                </ul>
-              </div>
-            </div>
-            <p>*{t('content.salaryByInterviewResults')}</p>
-          </div>
+          <ContentItemBig arr={rickData} />
+          <ContentItemSmall arr={rickData} />
         </div>
       </div>
       <div
@@ -149,64 +128,46 @@ const Content = () => {
         <div className="content__item__row">
           <div
             className="content__bit"
-            onMouseOver={() => setMcgonagall(true)}
-            onMouseOut={() => setMcgonagall(false)}
+            onMouseOver={() => (size.tablet ? {} : setMcgonagall(true))}
+            onMouseOut={() => (size.tablet ? {} : setMcgonagall(false))}
+            onTouchStart={() => (size.tablet ? setMcgonagall(true) : {})}
+            onTouchEnd={() => (size.tablet ? setMcgonagall(false) : {})}
+            onMouseDown={() => (size.tablet ? setMcgonagall(true) : {})}
+            onMouseUp={() => (size.tablet ? setMcgonagall(false) : {})}
           >
-            {!mcgonagall && (
-              <>
-                <div className="mcgonagall" />
-                <div
-                  className="bubble left mcgonagall__dialog"
-                  style={
-                    i18n.language === 'en' ? { width: 220 } : { width: 270 }
-                  }
-                >
-                  <div className="content__bit__text">
-                    {t('content.mcgonagall')}
+            <div className="mcgonagall__box">
+              {!mcgonagall && (
+                <>
+                  <div className="mcgonagall" />
+                  <div
+                    className="bubble left mcgonagall__dialog"
+                    style={
+                      i18n.language === 'en' ? { width: 220 } : { width: 270 }
+                    }
+                  >
+                    <div className="content__bit__text">
+                      {t('content.mcgonagall')}
+                    </div>
                   </div>
-                </div>
-              </>
-            )}
-            {mcgonagall && (
-              <>
-                <div className="js">
-                  <div className="js__heir" />
-                </div>
-                <div className="html">
-                  <div className="html__heir" />
-                </div>
-                <div className="css">
-                  <div className="css__heir" />
-                </div>
-              </>
-            )}
+                </>
+              )}
+              {mcgonagall && (
+                <>
+                  <div className="js">
+                    <div className="js__heir" />
+                  </div>
+                  <div className="html">
+                    <div className="html__heir" />
+                  </div>
+                  <div className="css">
+                    <div className="css__heir" />
+                  </div>
+                </>
+              )}
+            </div>
           </div>
-          <div className="content__item-big">
-            <h4>{t('content.whatYouGoingToDo')}:</h4>
-            <ul>
-              <li>{t('content.devFrontendLogic')}</li>
-              <li>{t('content.designingProjectArchitecture')}</li>
-              <li>{t('content.appLayout')}</li>
-              <li>{t('content.refactAndOptimApp')}</li>
-              <li>{t('content.refiningProgramCode')}</li>
-            </ul>
-            <h4>{t('content.softSkills')}:</h4>
-            <ul>
-              <li>{t('content.workingWithDocum')}</li>
-              <li>{t('content.creativAndFlex')}</li>
-              <li>{t('content.responsAndDiscipline')}</li>
-            </ul>
-            <h4>{t('content.stack')}:</h4>
-            <ul>
-              <li>HTML</li>
-              <li>Sass</li>
-              <li>React</li>
-              <li>REST</li>
-              <li>Git</li>
-              <li>Jira</li>
-            </ul>
-            <p>*{t('content.salaryByInterviewResults')}</p>
-          </div>
+          <ContentItemBig arr={mcgonagallData} />
+          <ContentItemSmall arr={mcgonagallData} />
         </div>
       </div>
       <div

@@ -89,7 +89,8 @@
     "collectingAnalyticsTeam": "Collecting analytics on team performance",
     "leadershipSkills": "Leadership skills",
     "timeManagement": "Time management",
-    "analyticalThinking": "Analytical thinking"
+    "analyticalThinking": "Analytical thinking",
+    "clickableSprite": "Click and hold to bring up a dialog"
   },
   "notFound": {
     "unfortunately": "Unfortunately",

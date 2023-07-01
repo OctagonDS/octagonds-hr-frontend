@@ -29,27 +29,54 @@ $portal-4: #f0f9b6;
   height: $width-rick;
   position: absolute;
   top: 15px;
-  right: 11em;
-  @media (min-width: 3439px) {
-    right: 14em;
+  right: 45%;
+  &__box {
+    position: absolute;
+    width: 600px;
+    height: $width-portal * 40;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
-  @media (max-width: 1600px) {
+  @media (min-width: 3439px) {
     right: 10em;
   }
+  @media (max-width: 1600px) {
+    right: 9em;
+  }
   @media (max-width: 1366px) {
-    right: 8em;
+    right: 11em;
+  }
+  @media (max-width: 1200px) {
+    right: 50%;
   }
   &__dialog {
     position: relative;
-    right: -22%;
+    right: -25%;
     @media (min-width: 3439px) {
-      right: -12%;
+      right: -17%;
     }
     @media (max-width: 1600px) {
       right: -25%;
     }
     @media (max-width: 1366px) {
-      right: -35%;
+      right: -25%;
+    }
+    &-big {
+      @extend .rick__dialog;
+      @media (max-width: 1200px) {
+        display: none !important;
+      }
+    }
+    &-small {
+      @extend .rick__dialog;
+      // right: -20%;
+      right: -13dvh;
+      @media (min-width: 1201px) {
+        display: none !important;
+      }
     }
   }
   box-shadow: (9 * $width-rick) (3 * $width-rick) 0 $blu-head-rick,
@@ -296,7 +323,7 @@ $portal-4: #f0f9b6;
     height: 340px;
     position: absolute;
     top: 15px;
-    right: 12em;
+    right: 10em;
     animation-duration: 100ms;
     animation-iteration-count: 1;
     animation-direction: alternate;
@@ -304,13 +331,16 @@ $portal-4: #f0f9b6;
     animation-delay: 0s;
     transform: scaleY(0);
     @media (min-width: 3439px) {
-      right: 15em;
-    }
-    @media (max-width: 1600px) {
       right: 11em;
     }
+    @media (max-width: 1600px) {
+      right: 10em;
+    }
     @media (max-width: 1366px) {
-      right: 9em;
+      right: 12em;
+    }
+    @media (max-width: 1200px) {
+      right: 55%;
     }
     &-close {
       @extend .portal__box;

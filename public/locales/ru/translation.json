@@ -89,7 +89,8 @@
     "collectingAnalyticsTeam": "Сбор аналитики по работе команды",
     "leadershipSkills": "Лидерские навыки",
     "timeManagement": "Тайм-менеджмент",
-    "analyticalThinking": "Аналитическое мышление"
+    "analyticalThinking": "Аналитическое мышление",
+    "clickableSprite": "Нажми и удержи, чтобы вызвать диалог"
   },
   "notFound": {
     "unfortunately": "К сожалению",
