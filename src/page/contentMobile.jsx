@@ -54,7 +54,7 @@ const ContentMobile = () => {
           <p>{t('content.newHeroDescFour')}:</p>
         </div>
       </div>
-      <div className="content" style={{ marginBottom: 10, marginTop: 10 }}>
+      <div className="content" style={{ marginBottom: 0, marginTop: 10 }}>
         <div className="content__title" style={{ marginBottom: 10 }}>
           {t('content.pythonDeveloper')}
         </div>
@@ -98,7 +98,7 @@ const ContentMobile = () => {
       </div>
       <div
         className="content"
-        style={{ marginBottom: 10, marginTop: 10 }}
+        style={{ marginBottom: 0, marginTop: 10 }}
         data-aos="fade-up"
       >
         <div className="content__title" style={{ marginBottom: 10 }}>
@@ -146,7 +146,7 @@ const ContentMobile = () => {
       </div>
       <div
         className="content"
-        style={{ marginBottom: 10, marginTop: 10 }}
+        style={{ marginBottom: 0, marginTop: 10 }}
         data-aos="fade-up"
       >
         <div className="content__title" style={{ marginBottom: 10 }}>
