@@ -76,6 +76,9 @@ textarea:-webkit-autofill:focus {
   color: #eeeeee;
   display: grid;
   grid-template-rows: 100px 1fr auto;
+  @media (max-width: 480px) {
+    grid-template-rows: 235px 1fr auto;
+  }
 }
 .button-top-custom {
   right: auto !important;
@@ -1040,7 +1043,7 @@ br::selection {
 }
 @media (max-width: 480px) {
   .logo {
-    width: 85%;
+    width: 75%;
   }
 }
 

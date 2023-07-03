@@ -29,6 +29,12 @@ $bubble-border: 0 -1 * $px $eee, 0 -2 * $px $black, $px 0 $eee,
     padding-left: 24%;
     padding-right: 24%;
   }
+  @media (max-width: 480px) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
   &__title {
     font-size: 70px;
     font-weight: 800;
@@ -43,6 +49,10 @@ $bubble-border: 0 -1 * $px $eee, 0 -2 * $px $black, $px 0 $eee,
     @media (max-width: 1200px) {
       font-size: 39px;
       text-align: left;
+    }
+    @media (max-width: 480px) {
+      margin-bottom: 20px;
+      font-size: 30px;
     }
   }
   &__desc {
@@ -201,6 +211,9 @@ $bubble-border: 0 -1 * $px $eee, 0 -2 * $px $black, $px 0 $eee,
   &::selection {
     background-color: #ffd369;
     color: #393e46;
+  }
+  @media (max-width: 480px) {
+    box-shadow: 4px 0 #ffd369, -4px 0 #ffd369;
   }
 }
 

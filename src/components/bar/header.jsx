@@ -21,7 +21,7 @@ const Header = () => {
             <SocialIconMainMini />
           </div>
         </div>
-        <div className="header_flex__right__social">
+        <div className="header_flex__right__social-info">
           <div className="header_flex__mail">
             <a href="mailto:hr@octagonds.tech">hr@octagonds.tech</a>
           </div>

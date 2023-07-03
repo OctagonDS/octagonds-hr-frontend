@@ -265,7 +265,7 @@ const Content = () => {
         data-aos="fade-up"
       >
         <div className="content__title" style={{ marginBottom: 20 }}>
-          HR
+          hr
         </div>
       </div>
       <div className="content" data-aos="fade-up">
