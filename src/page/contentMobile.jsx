@@ -159,6 +159,8 @@ const ContentMobile = () => {
             className="content__bit"
             onTouchStart={() => setBMO(true)}
             onTouchEnd={() => setBMO(false)}
+            onMouseDown={() => setBMO(true)}
+            onMouseUp={() => setBMO(false)}
           >
             <div className="bmo__box">
               <div className="bmo">
