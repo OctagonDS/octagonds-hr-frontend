@@ -63,12 +63,8 @@ const ContentMobile = () => {
         <div className="content__item__row">
           <div
             className="content__bit"
-            onMouseOver={() => (size.mobile ? {} : setPortal('-open'))}
-            onMouseOut={() => (size.mobile ? {} : setPortal('-close'))}
-            onTouchStart={() => (size.mobile ? setPortal('-open') : {})}
-            onTouchEnd={() => (size.mobile ? setPortal('-close') : {})}
-            onMouseDown={() => (size.mobile ? setPortal('-open') : {})}
-            onMouseUp={() => (size.mobile ? setPortal('-close') : {})}
+            onTouchStart={() => setPortal('-open')}
+            onTouchEnd={() => setPortal('-close')}
           >
             <div className="rick__box">
               <div className={`portal__box${portal}`}>
