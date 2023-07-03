@@ -75,7 +75,7 @@ const ContentMobile = () => {
                 className="bubble bottom rick__dialog"
                 style={
                   portal === '-open'
-                    ? { width: 162, top: '-80px' }
+                    ? { width: 162, top: '-70px' }
                     : { width: 162, top: '-40px' }
                 }
               >

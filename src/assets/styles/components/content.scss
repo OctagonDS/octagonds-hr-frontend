@@ -241,6 +241,7 @@ $bubble-border: 0 -1 * $px $eee, 0 -2 * $px $black, $px 0 $eee,
   width: 200px;
   @media (max-width: 480px) {
     padding: 0.5 * $px;
+    line-height: 15px;
   }
   &::after {
     content: '';
