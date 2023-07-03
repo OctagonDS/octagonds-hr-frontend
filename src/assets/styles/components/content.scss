@@ -130,10 +130,17 @@ $bubble-border: 0 -1 * $px $eee, 0 -2 * $px $black, $px 0 $eee,
       @extend .content__item;
       width: 100%;
       gap: 50px;
+      @media (max-width: 480px) {
+        gap: 20px;
+      }
       &-row {
         display: flex;
         flex-direction: row;
         gap: 50px;
+        @media (max-width: 480px) {
+          flex-direction: column;
+          gap: 20px;
+        }
       }
       & h5 {
         text-transform: uppercase;
