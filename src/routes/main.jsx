@@ -6,9 +6,13 @@ import { useTranslation, Trans } from 'react-i18next'
 import { Route, Routes } from 'react-router-dom'
 import NotFound from '../page/notFound.jsx'
 import Footer from '../components/page/footer.jsx'
+import useWindowSize from '../hooks/useWindowSize.jsx'
+import FooterTablet from '../components/page/footerTablet.jsx'
+import FooterMobile from '../components/page/footerMobile.jsx'
 
 export function MainPage() {
   const { t } = useTranslation()
+  const size = useWindowSize()
 
   return (
     <div className="body-page" style={{ position: 'relative' }}>
@@ -18,7 +22,13 @@ export function MainPage() {
           <Route path={'/'} index={true} element={<Content />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-        <Footer />
+        {size.tablet ? (
+          <FooterTablet />
+        ) : size.mobile ? (
+          <FooterMobile />
+        ) : (
+          <Footer />
+        )}
       </div>
       <CookieConsent
         location="bottom"
