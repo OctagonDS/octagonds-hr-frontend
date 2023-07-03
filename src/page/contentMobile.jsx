@@ -16,7 +16,7 @@ import {
 } from '../const/listData'
 
 const ContentMobile = () => {
-  const { t, i18n } = useTranslation()
+  const { t } = useTranslation()
   const size = useWindowSize()
   const rickData = RickData()
   const mcgonagallData = McgonagallData()
@@ -93,13 +93,12 @@ const ContentMobile = () => {
               </div>
             </div>
           </div>
-          <ContentItemBig arr={rickData} />
           <ContentItemSmall arr={rickData} />
         </div>
       </div>
       <div
         className="content"
-        style={{ marginBottom: 20, marginTop: 20 }}
+        style={{ marginBottom: 10, marginTop: 10 }}
         data-aos="fade-up"
       >
         <div className="content__title" style={{ marginBottom: 20 }}>
@@ -110,12 +109,8 @@ const ContentMobile = () => {
         <div className="content__item__row">
           <div
             className="content__bit"
-            onMouseOver={() => (size.mobile ? {} : setMcgonagall(true))}
-            onMouseOut={() => (size.mobile ? {} : setMcgonagall(false))}
-            onTouchStart={() => (size.mobile ? setMcgonagall(true) : {})}
-            onTouchEnd={() => (size.mobile ? setMcgonagall(false) : {})}
-            onMouseDown={() => (size.mobile ? setMcgonagall(true) : {})}
-            onMouseUp={() => (size.mobile ? setMcgonagall(false) : {})}
+            onTouchStart={() => setMcgonagall(true)}
+            onTouchEnd={() => setMcgonagall(false)}
           >
             <div className="mcgonagall__box">
               {!mcgonagall && (
@@ -123,9 +118,7 @@ const ContentMobile = () => {
                   <div className="mcgonagall" />
                   <div
                     className="bubble left mcgonagall__dialog"
-                    style={
-                      i18n.language === 'en' ? { width: 220 } : { width: 270 }
-                    }
+                    style={{ width: 160 }}
                   >
                     <div className="content__bit__text">
                       {t('content.mcgonagall')}
@@ -148,7 +141,6 @@ const ContentMobile = () => {
               )}
             </div>
           </div>
-          <ContentItemBig arr={mcgonagallData} />
           <ContentItemSmall arr={mcgonagallData} />
         </div>
       </div>

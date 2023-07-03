@@ -1,6 +1,9 @@
 $width-mcgonagall: 10px;
 $width-js: 8px;
 
+$width-mcgonagall-mobile: 7px;
+$width-js-mobile: 6px;
+
 $hat-mcgonagall: #000000;
 $hair-mcgonagall: #62483a;
 $skin-mcgonagall: #e4c597;
@@ -39,6 +42,10 @@ $hair2-css: #2f2f2f;
   }
   @media (max-width: 1200px) {
     left: 6%;
+  }
+  @media (max-width: 480px) {
+    left: 0;
+    top: 80px;
   }
   &__heir {
     position: absolute;
@@ -312,6 +319,279 @@ $hair2-css: #2f2f2f;
     (7 * $width-js) (12 * $width-js) 0 $back-js,
     (8 * $width-js) (12 * $width-js) 0 $back-js,
     (9 * $width-js) (12 * $width-js) 0 $back-js;
+  @media (max-width: 480px) {
+    &__heir {
+      width: $width-js-mobile;
+      height: $width-js-mobile;
+      left: -22px;
+      top: -16px;
+      box-shadow: (7 * $width-js-mobile) (1 * $width-js-mobile) 0 $hair1-js,
+        (8 * $width-js-mobile) (1 * $width-js-mobile) 0 $hair1-js,
+        (9 * $width-js-mobile) (1 * $width-js-mobile) 0 $hair1-js,
+        (10 * $width-js-mobile) (1 * $width-js-mobile) 0 $hair1-js,
+        (11 * $width-js-mobile) (1 * $width-js-mobile) 0 $hair1-js,
+        (12 * $width-js-mobile) (1 * $width-js-mobile) 0 $hair1-js,
+        (11 * $width-js-mobile) (1 * $width-js-mobile) 0 $hair1-js,
+        (12 * $width-js-mobile) (1 * $width-js-mobile) 0 $hair1-js,
+        (13 * $width-js-mobile) (1 * $width-js-mobile) 0 $hair1-js,
+        (6 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair1-js,
+        (7 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair1-js,
+        (8 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair1-js,
+        (9 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair2-js,
+        (10 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair2-js,
+        (11 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair2-js,
+        (12 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair2-js,
+        (13 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair2-js,
+        (14 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair2-js,
+        (15 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair1-js,
+        (16 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair1-js,
+        (17 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair1-js,
+        (5 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair1-js,
+        (6 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair1-js,
+        (7 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair1-js,
+        (8 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair2-js,
+        (7 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair2-js,
+        (8 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair2-js,
+        (9 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair2-js,
+        (10 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair2-js,
+        (11 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair2-js,
+        (12 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair2-js,
+        (13 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair2-js,
+        (14 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair2-js,
+        (15 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair2-js,
+        (16 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair1-js,
+        (17 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair1-js,
+        (18 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair1-js,
+        (4 * $width-js-mobile) (4 * $width-js-mobile) 0 $hair1-js,
+        (5 * $width-js-mobile) (4 * $width-js-mobile) 0 $hair1-js,
+        (6 * $width-js-mobile) (4 * $width-js-mobile) 0 $hair1-js,
+        (7 * $width-js-mobile) (4 * $width-js-mobile) 0 $hair2-js,
+        (13 * $width-js-mobile) (4 * $width-js-mobile) 0 $hair2-js,
+        (14 * $width-js-mobile) (4 * $width-js-mobile) 0 $hair2-js,
+        (15 * $width-js-mobile) (4 * $width-js-mobile) 0 $hair2-js,
+        (16 * $width-js-mobile) (4 * $width-js-mobile) 0 $hair2-js,
+        (17 * $width-js-mobile) (4 * $width-js-mobile) 0 $hair1-js,
+        (18 * $width-js-mobile) (4 * $width-js-mobile) 0 $hair1-js,
+        (19 * $width-js-mobile) (4 * $width-js-mobile) 0 $hair1-js,
+        (4 * $width-js-mobile) (5 * $width-js-mobile) 0 $hair1-js,
+        (5 * $width-js-mobile) (5 * $width-js-mobile) 0 $hair1-js,
+        (6 * $width-js-mobile) (5 * $width-js-mobile) 0 $hair1-js,
+        (14 * $width-js-mobile) (5 * $width-js-mobile) 0 $hair2-js,
+        (15 * $width-js-mobile) (5 * $width-js-mobile) 0 $hair2-js,
+        (16 * $width-js-mobile) (5 * $width-js-mobile) 0 $hair2-js,
+        (17 * $width-js-mobile) (5 * $width-js-mobile) 0 $hair2-js,
+        (18 * $width-js-mobile) (5 * $width-js-mobile) 0 $hair1-js,
+        (19 * $width-js-mobile) (5 * $width-js-mobile) 0 $hair1-js,
+        (3 * $width-js-mobile) (6 * $width-js-mobile) 0 $hair1-js,
+        (4 * $width-js-mobile) (6 * $width-js-mobile) 0 $hair1-js,
+        (5 * $width-js-mobile) (6 * $width-js-mobile) 0 $hair2-js,
+        (6 * $width-js-mobile) (6 * $width-js-mobile) 0 $hair2-js,
+        (16 * $width-js-mobile) (6 * $width-js-mobile) 0 $hair3-js,
+        (17 * $width-js-mobile) (6 * $width-js-mobile) 0 $hair2-js,
+        (18 * $width-js-mobile) (6 * $width-js-mobile) 0 $hair2-js,
+        (19 * $width-js-mobile) (6 * $width-js-mobile) 0 $hair1-js,
+        (20 * $width-js-mobile) (6 * $width-js-mobile) 0 $hair1-js,
+        (3 * $width-js-mobile) (7 * $width-js-mobile) 0 $hair1-js,
+        (4 * $width-js-mobile) (7 * $width-js-mobile) 0 $hair2-js,
+        (5 * $width-js-mobile) (7 * $width-js-mobile) 0 $hair2-js,
+        (6 * $width-js-mobile) (7 * $width-js-mobile) 0 $hair2-js,
+        (17 * $width-js-mobile) (7 * $width-js-mobile) 0 $hair2-js,
+        (18 * $width-js-mobile) (7 * $width-js-mobile) 0 $hair1-js,
+        (19 * $width-js-mobile) (7 * $width-js-mobile) 0 $hair1-js,
+        (20 * $width-js-mobile) (7 * $width-js-mobile) 0 $hair1-js,
+        (21 * $width-js-mobile) (7 * $width-js-mobile) 0 $hair1-js,
+        (2 * $width-js-mobile) (8 * $width-js-mobile) 0 $hair1-js,
+        (3 * $width-js-mobile) (8 * $width-js-mobile) 0 $hair1-js,
+        (4 * $width-js-mobile) (8 * $width-js-mobile) 0 $hair1-js,
+        (5 * $width-js-mobile) (8 * $width-js-mobile) 0 $hair2-js,
+        (17 * $width-js-mobile) (8 * $width-js-mobile) 0 $hair2-js,
+        (18 * $width-js-mobile) (8 * $width-js-mobile) 0 $hair2-js,
+        (19 * $width-js-mobile) (8 * $width-js-mobile) 0 $hair2-js,
+        (20 * $width-js-mobile) (8 * $width-js-mobile) 0 $hair1-js,
+        (21 * $width-js-mobile) (8 * $width-js-mobile) 0 $hair2-js,
+        (2 * $width-js-mobile) (9 * $width-js-mobile) 0 $hair1-js,
+        (3 * $width-js-mobile) (9 * $width-js-mobile) 0 $hair2-js,
+        (4 * $width-js-mobile) (9 * $width-js-mobile) 0 $hair2-js,
+        (5 * $width-js-mobile) (9 * $width-js-mobile) 0 $hair2-js,
+        (6 * $width-js-mobile) (9 * $width-js-mobile) 0 $hair3-js,
+        (16 * $width-js-mobile) (9 * $width-js-mobile) 0 $hair2-js,
+        (17 * $width-js-mobile) (9 * $width-js-mobile) 0 $hair2-js,
+        (18 * $width-js-mobile) (9 * $width-js-mobile) 0 $hair2-js,
+        (19 * $width-js-mobile) (9 * $width-js-mobile) 0 $hair2-js,
+        (20 * $width-js-mobile) (9 * $width-js-mobile) 0 $hair2-js,
+        (21 * $width-js-mobile) (9 * $width-js-mobile) 0 $hair1-js,
+        (2 * $width-js-mobile) (10 * $width-js-mobile) 0 $hair1-js,
+        (3 * $width-js-mobile) (10 * $width-js-mobile) 0 $hair3-js,
+        (4 * $width-js-mobile) (10 * $width-js-mobile) 0 $hair1-js,
+        (5 * $width-js-mobile) (10 * $width-js-mobile) 0 $hair3-js,
+        (6 * $width-js-mobile) (10 * $width-js-mobile) 0 $hair3-js,
+        (16 * $width-js-mobile) (10 * $width-js-mobile) 0 $hair2-js,
+        (17 * $width-js-mobile) (10 * $width-js-mobile) 0 $hair1-js,
+        (18 * $width-js-mobile) (10 * $width-js-mobile) 0 $hair2-js,
+        (19 * $width-js-mobile) (10 * $width-js-mobile) 0 $hair3-js,
+        (20 * $width-js-mobile) (10 * $width-js-mobile) 0 $hair1-js,
+        (21 * $width-js-mobile) (10 * $width-js-mobile) 0 $hair1-js,
+        (2 * $width-js-mobile) (11 * $width-js-mobile) 0 $hair1-js,
+        (3 * $width-js-mobile) (11 * $width-js-mobile) 0 $hair2-js,
+        (4 * $width-js-mobile) (11 * $width-js-mobile) 0 $hair2-js,
+        (5 * $width-js-mobile) (11 * $width-js-mobile) 0 $hair3-js,
+        (17 * $width-js-mobile) (11 * $width-js-mobile) 0 $hair2-js,
+        (18 * $width-js-mobile) (11 * $width-js-mobile) 0 $hair2-js,
+        (19 * $width-js-mobile) (11 * $width-js-mobile) 0 $hair2-js,
+        (20 * $width-js-mobile) (11 * $width-js-mobile) 0 $hair1-js,
+        (21 * $width-js-mobile) (11 * $width-js-mobile) 0 $hair1-js,
+        (2 * $width-js-mobile) (12 * $width-js-mobile) 0 $hair1-js,
+        (3 * $width-js-mobile) (12 * $width-js-mobile) 0 $hair2-js,
+        (4 * $width-js-mobile) (12 * $width-js-mobile) 0 $hair1-js,
+        (5 * $width-js-mobile) (12 * $width-js-mobile) 0 $hair2-js,
+        (17 * $width-js-mobile) (12 * $width-js-mobile) 0 $hair1-js,
+        (18 * $width-js-mobile) (12 * $width-js-mobile) 0 $hair2-js,
+        (19 * $width-js-mobile) (12 * $width-js-mobile) 0 $hair1-js,
+        (20 * $width-js-mobile) (12 * $width-js-mobile) 0 $hair1-js,
+        (3 * $width-js-mobile) (13 * $width-js-mobile) 0 $hair2-js,
+        (4 * $width-js-mobile) (13 * $width-js-mobile) 0 $hair2-js,
+        (5 * $width-js-mobile) (13 * $width-js-mobile) 0 $hair3-js,
+        (17 * $width-js-mobile) (13 * $width-js-mobile) 0 $hair2-js,
+        (18 * $width-js-mobile) (13 * $width-js-mobile) 0 $hair2-js,
+        (19 * $width-js-mobile) (13 * $width-js-mobile) 0 $hair1-js,
+        (20 * $width-js-mobile) (13 * $width-js-mobile) 0 $hair1-js,
+        (4 * $width-js-mobile) (14 * $width-js-mobile) 0 $hair2-js,
+        (5 * $width-js-mobile) (14 * $width-js-mobile) 0 $hair2-js,
+        (17 * $width-js-mobile) (14 * $width-js-mobile) 0 $hair1-js,
+        (18 * $width-js-mobile) (14 * $width-js-mobile) 0 $hair2-js,
+        (19 * $width-js-mobile) (14 * $width-js-mobile) 0 $hair2-js,
+        (4 * $width-js-mobile) (15 * $width-js-mobile) 0 $hair2-js,
+        (17 * $width-js-mobile) (15 * $width-js-mobile) 0 $hair1-js,
+        (18 * $width-js-mobile) (15 * $width-js-mobile) 0 $hair2-js,
+        (17 * $width-js-mobile) (16 * $width-js-mobile) 0 $hair2-js;
+    }
+    box-shadow: (1 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-js,
+      (2 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-js,
+      (3 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-js,
+      (4 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-js,
+      (5 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-js,
+      (6 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-js,
+      (7 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-js,
+      (8 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-js,
+      (9 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-js,
+      (10 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-js,
+      (11 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-js,
+      (12 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-js,
+      (13 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-js,
+      (14 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-js,
+      (1 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-js,
+      (2 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-js,
+      (3 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-js,
+      (4 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-js,
+      (5 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-js,
+      (6 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-js,
+      (7 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-js,
+      (8 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-right-js,
+      (9 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-right-js,
+      (10 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-right-js,
+      (11 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-right-js,
+      (12 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-right-js,
+      (13 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-js,
+      (14 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-js,
+      (1 * $width-js-mobile) (3 * $width-js-mobile) 0 $back-js,
+      (2 * $width-js-mobile) (3 * $width-js-mobile) 0 $back-js,
+      (3 * $width-js-mobile) (3 * $width-js-mobile) 0 $back-js,
+      (4 * $width-js-mobile) (3 * $width-js-mobile) 0 #fff,
+      (5 * $width-js-mobile) (3 * $width-js-mobile) 0 #fff,
+      (6 * $width-js-mobile) (3 * $width-js-mobile) 0 #fff,
+      (7 * $width-js-mobile) (3 * $width-js-mobile) 0 $back-js,
+      (8 * $width-js-mobile) (3 * $width-js-mobile) 0 $back-right-js,
+      (9 * $width-js-mobile) (3 * $width-js-mobile) 0 $back-right-js,
+      (10 * $width-js-mobile) (3 * $width-js-mobile) 0 #fff,
+      (11 * $width-js-mobile) (3 * $width-js-mobile) 0 #fff,
+      (12 * $width-js-mobile) (3 * $width-js-mobile) 0 $back-right-js,
+      (13 * $width-js-mobile) (3 * $width-js-mobile) 0 $back-js,
+      (14 * $width-js-mobile) (3 * $width-js-mobile) 0 $back-js,
+      (2 * $width-js-mobile) (4 * $width-js-mobile) 0 $back-js,
+      (3 * $width-js-mobile) (4 * $width-js-mobile) 0 $back-js,
+      (4 * $width-js-mobile) (4 * $width-js-mobile) 0 $back-js,
+      (5 * $width-js-mobile) (4 * $width-js-mobile) 0 #fff,
+      (6 * $width-js-mobile) (4 * $width-js-mobile) 0 $back-js,
+      (7 * $width-js-mobile) (4 * $width-js-mobile) 0 $back-js,
+      (8 * $width-js-mobile) (4 * $width-js-mobile) 0 $back-right-js,
+      (9 * $width-js-mobile) (4 * $width-js-mobile) 0 #fff,
+      (10 * $width-js-mobile) (4 * $width-js-mobile) 0 $back-right-js,
+      (11 * $width-js-mobile) (4 * $width-js-mobile) 0 $back-right-js,
+      (12 * $width-js-mobile) (4 * $width-js-mobile) 0 $back-js,
+      (13 * $width-js-mobile) (4 * $width-js-mobile) 0 $back-js,
+      (2 * $width-js-mobile) (5 * $width-js-mobile) 0 $back-js,
+      (3 * $width-js-mobile) (5 * $width-js-mobile) 0 $back-js,
+      (4 * $width-js-mobile) (5 * $width-js-mobile) 0 $back-js,
+      (5 * $width-js-mobile) (5 * $width-js-mobile) 0 #fff,
+      (6 * $width-js-mobile) (5 * $width-js-mobile) 0 $back-js,
+      (7 * $width-js-mobile) (5 * $width-js-mobile) 0 $back-js,
+      (8 * $width-js-mobile) (5 * $width-js-mobile) 0 $back-right-js,
+      (9 * $width-js-mobile) (5 * $width-js-mobile) 0 $back-right-js,
+      (10 * $width-js-mobile) (5 * $width-js-mobile) 0 #fff,
+      (11 * $width-js-mobile) (5 * $width-js-mobile) 0 $back-right-js,
+      (12 * $width-js-mobile) (5 * $width-js-mobile) 0 $back-js,
+      (13 * $width-js-mobile) (5 * $width-js-mobile) 0 $back-js,
+      (2 * $width-js-mobile) (6 * $width-js-mobile) 0 $back-js,
+      (3 * $width-js-mobile) (6 * $width-js-mobile) 0 $back-js,
+      (4 * $width-js-mobile) (6 * $width-js-mobile) 0 $back-js,
+      (5 * $width-js-mobile) (6 * $width-js-mobile) 0 #fff,
+      (6 * $width-js-mobile) (6 * $width-js-mobile) 0 $back-js,
+      (7 * $width-js-mobile) (6 * $width-js-mobile) 0 $back-js,
+      (8 * $width-js-mobile) (6 * $width-js-mobile) 0 $back-right-js,
+      (9 * $width-js-mobile) (6 * $width-js-mobile) 0 $back-right-js,
+      (10 * $width-js-mobile) (6 * $width-js-mobile) 0 $back-right-js,
+      (11 * $width-js-mobile) (6 * $width-js-mobile) 0 #fff,
+      (12 * $width-js-mobile) (6 * $width-js-mobile) 0 $back-js,
+      (13 * $width-js-mobile) (6 * $width-js-mobile) 0 $back-js,
+      (3 * $width-js-mobile) (7 * $width-js-mobile) 0 $back-js,
+      (4 * $width-js-mobile) (7 * $width-js-mobile) 0 #fff,
+      (5 * $width-js-mobile) (7 * $width-js-mobile) 0 #fff,
+      (6 * $width-js-mobile) (7 * $width-js-mobile) 0 $back-js,
+      (7 * $width-js-mobile) (7 * $width-js-mobile) 0 $back-js,
+      (8 * $width-js-mobile) (7 * $width-js-mobile) 0 $back-right-js,
+      (9 * $width-js-mobile) (7 * $width-js-mobile) 0 #fff,
+      (10 * $width-js-mobile) (7 * $width-js-mobile) 0 #fff,
+      (11 * $width-js-mobile) (7 * $width-js-mobile) 0 $back-right-js,
+      (12 * $width-js-mobile) (7 * $width-js-mobile) 0 $back-js,
+      (3 * $width-js-mobile) (8 * $width-js-mobile) 0 $back-js,
+      (4 * $width-js-mobile) (8 * $width-js-mobile) 0 $back-js,
+      (5 * $width-js-mobile) (8 * $width-js-mobile) 0 $back-js,
+      (6 * $width-js-mobile) (8 * $width-js-mobile) 0 $back-js,
+      (7 * $width-js-mobile) (8 * $width-js-mobile) 0 $back-js,
+      (8 * $width-js-mobile) (8 * $width-js-mobile) 0 $back-right-js,
+      (9 * $width-js-mobile) (8 * $width-js-mobile) 0 $back-right-js,
+      (10 * $width-js-mobile) (8 * $width-js-mobile) 0 $back-right-js,
+      (11 * $width-js-mobile) (8 * $width-js-mobile) 0 $back-js,
+      (12 * $width-js-mobile) (8 * $width-js-mobile) 0 $back-js,
+      (3 * $width-js-mobile) (9 * $width-js-mobile) 0 $back-js,
+      (4 * $width-js-mobile) (9 * $width-js-mobile) 0 $back-js,
+      (5 * $width-js-mobile) (9 * $width-js-mobile) 0 $back-js,
+      (6 * $width-js-mobile) (9 * $width-js-mobile) 0 $back-js,
+      (7 * $width-js-mobile) (9 * $width-js-mobile) 0 $back-js,
+      (8 * $width-js-mobile) (9 * $width-js-mobile) 0 $back-right-js,
+      (9 * $width-js-mobile) (9 * $width-js-mobile) 0 $back-right-js,
+      (10 * $width-js-mobile) (9 * $width-js-mobile) 0 $back-right-js,
+      (11 * $width-js-mobile) (9 * $width-js-mobile) 0 $back-js,
+      (12 * $width-js-mobile) (9 * $width-js-mobile) 0 $back-js,
+      (4 * $width-js-mobile) (10 * $width-js-mobile) 0 $back-js,
+      (5 * $width-js-mobile) (10 * $width-js-mobile) 0 $back-js,
+      (6 * $width-js-mobile) (10 * $width-js-mobile) 0 $back-js,
+      (7 * $width-js-mobile) (10 * $width-js-mobile) 0 $back-js,
+      (8 * $width-js-mobile) (10 * $width-js-mobile) 0 $back-right-js,
+      (9 * $width-js-mobile) (10 * $width-js-mobile) 0 $back-right-js,
+      (10 * $width-js-mobile) (10 * $width-js-mobile) 0 $back-js,
+      (11 * $width-js-mobile) (10 * $width-js-mobile) 0 $back-js,
+      (5 * $width-js-mobile) (11 * $width-js-mobile) 0 $back-js,
+      (6 * $width-js-mobile) (11 * $width-js-mobile) 0 $back-js,
+      (7 * $width-js-mobile) (11 * $width-js-mobile) 0 $back-js,
+      (8 * $width-js-mobile) (11 * $width-js-mobile) 0 $back-right-js,
+      (9 * $width-js-mobile) (11 * $width-js-mobile) 0 $back-js,
+      (10 * $width-js-mobile) (11 * $width-js-mobile) 0 $back-js,
+      (6 * $width-js-mobile) (12 * $width-js-mobile) 0 $back-js,
+      (7 * $width-js-mobile) (12 * $width-js-mobile) 0 $back-js,
+      (8 * $width-js-mobile) (12 * $width-js-mobile) 0 $back-js,
+      (9 * $width-js-mobile) (12 * $width-js-mobile) 0 $back-js;
+  }
 }
 .html {
   width: $width-js;
@@ -327,6 +607,11 @@ $hair2-css: #2f2f2f;
   }
   @media (max-width: 1200px) {
     left: 41%;
+  }
+  @media (max-width: 480px) {
+    left: 50vw;
+    transform: translateX(-15.5vw);
+    top: 80px;
   }
   &__heir {
     position: absolute;
@@ -525,6 +810,204 @@ $hair2-css: #2f2f2f;
     (7 * $width-js) (12 * $width-js) 0 $back-html,
     (8 * $width-js) (12 * $width-js) 0 $back-html,
     (9 * $width-js) (12 * $width-js) 0 $back-html;
+  @media (max-width: 480px) {
+    &__heir {
+      width: $width-js-mobile;
+      height: $width-js-mobile;
+      left: -4px;
+      top: -15px;
+      box-shadow: (4 * $width-js-mobile) (1 * $width-js-mobile) 0 $hair1-html,
+        (5 * $width-js-mobile) (1 * $width-js-mobile) 0 $hair1-html,
+        (6 * $width-js-mobile) (1 * $width-js-mobile) 0 $hair1-html,
+        (7 * $width-js-mobile) (1 * $width-js-mobile) 0 $hair1-html,
+        (8 * $width-js-mobile) (1 * $width-js-mobile) 0 $hair2-html,
+        (9 * $width-js-mobile) (1 * $width-js-mobile) 0 $hair2-html,
+        (10 * $width-js-mobile) (1 * $width-js-mobile) 0 $hair2-html,
+        (11 * $width-js-mobile) (1 * $width-js-mobile) 0 $hair2-html,
+        (12 * $width-js-mobile) (1 * $width-js-mobile) 0 $hair2-html,
+        (13 * $width-js-mobile) (1 * $width-js-mobile) 0 $hair2-html,
+        (1 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair2-html,
+        (2 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair2-html,
+        (3 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair1-html,
+        (4 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair1-html,
+        (5 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair1-html,
+        (6 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair1-html,
+        (7 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair1-html,
+        (8 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair1-html,
+        (9 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair1-html,
+        (10 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair1-html,
+        (11 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair1-html,
+        (12 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair1-html,
+        (13 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair2-html,
+        (14 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair2-html,
+        (15 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair2-html,
+        (1 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair1-html,
+        (2 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair1-html,
+        (3 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair1-html,
+        (4 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair1-html,
+        (5 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair1-html,
+        (6 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair1-html,
+        (7 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair1-html,
+        (8 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair1-html,
+        (9 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair1-html,
+        (10 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair1-html,
+        (11 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair1-html,
+        (12 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair1-html,
+        (13 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair1-html,
+        (14 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair2-html,
+        (15 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair2-html,
+        (16 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair2-html,
+        (1 * $width-js-mobile) (4 * $width-js-mobile) 0 $hair1-html,
+        (2 * $width-js-mobile) (4 * $width-js-mobile) 0 $hair1-html,
+        (11 * $width-js-mobile) (4 * $width-js-mobile) 0 $hair3-html,
+        (12 * $width-js-mobile) (4 * $width-js-mobile) 0 $hair3-html,
+        (13 * $width-js-mobile) (4 * $width-js-mobile) 0 $hair1-html,
+        (14 * $width-js-mobile) (4 * $width-js-mobile) 0 $hair1-html,
+        (15 * $width-js-mobile) (4 * $width-js-mobile) 0 $hair2-html,
+        (16 * $width-js-mobile) (4 * $width-js-mobile) 0 $hair2-html,
+        (1 * $width-js-mobile) (5 * $width-js-mobile) 0 $hair3-html,
+        (12 * $width-js-mobile) (5 * $width-js-mobile) 0 $hair1-html,
+        (13 * $width-js-mobile) (5 * $width-js-mobile) 0 $hair1-html,
+        (14 * $width-js-mobile) (5 * $width-js-mobile) 0 $hair1-html,
+        (15 * $width-js-mobile) (5 * $width-js-mobile) 0 $hair2-html,
+        (16 * $width-js-mobile) (5 * $width-js-mobile) 0 $hair1-html,
+        (1 * $width-js-mobile) (6 * $width-js-mobile) 0 $hair3-html,
+        (12 * $width-js-mobile) (6 * $width-js-mobile) 0 $hair1-html,
+        (13 * $width-js-mobile) (6 * $width-js-mobile) 0 $hair1-html,
+        (14 * $width-js-mobile) (6 * $width-js-mobile) 0 $hair1-html,
+        (15 * $width-js-mobile) (6 * $width-js-mobile) 0 $hair1-html,
+        (16 * $width-js-mobile) (6 * $width-js-mobile) 0 $hair3-html,
+        (13 * $width-js-mobile) (7 * $width-js-mobile) 0 $hair3-html,
+        (14 * $width-js-mobile) (7 * $width-js-mobile) 0 $hair3-html,
+        (15 * $width-js-mobile) (7 * $width-js-mobile) 0 $hair3-html;
+    }
+    box-shadow: (1 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-html,
+      (2 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-html,
+      (3 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-html,
+      (4 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-html,
+      (5 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-html,
+      (6 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-html,
+      (7 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-html,
+      (8 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-html,
+      (9 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-html,
+      (10 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-html,
+      (11 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-html,
+      (12 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-html,
+      (13 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-html,
+      (14 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-html,
+      (1 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-html,
+      (2 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-html,
+      (3 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-html,
+      (4 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-html,
+      (5 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-html,
+      (6 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-html,
+      (7 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-html,
+      (8 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-right-html,
+      (9 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-right-html,
+      (10 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-right-html,
+      (11 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-right-html,
+      (12 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-right-html,
+      (13 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-html,
+      (14 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-html,
+      (1 * $width-js-mobile) (3 * $width-js-mobile) 0 $back-html,
+      (2 * $width-js-mobile) (3 * $width-js-mobile) 0 $back-html,
+      (3 * $width-js-mobile) (3 * $width-js-mobile) 0 $back-html,
+      (4 * $width-js-mobile) (3 * $width-js-mobile) 0 $back-html,
+      (5 * $width-js-mobile) (3 * $width-js-mobile) 0 #fff,
+      (6 * $width-js-mobile) (3 * $width-js-mobile) 0 #fff,
+      (7 * $width-js-mobile) (3 * $width-js-mobile) 0 #fff,
+      (8 * $width-js-mobile) (3 * $width-js-mobile) 0 #fff,
+      (9 * $width-js-mobile) (3 * $width-js-mobile) 0 #fff,
+      (10 * $width-js-mobile) (3 * $width-js-mobile) 0 #fff,
+      (11 * $width-js-mobile) (3 * $width-js-mobile) 0 $back-right-html,
+      (12 * $width-js-mobile) (3 * $width-js-mobile) 0 $back-right-html,
+      (13 * $width-js-mobile) (3 * $width-js-mobile) 0 $back-html,
+      (14 * $width-js-mobile) (3 * $width-js-mobile) 0 $back-html,
+      (2 * $width-js-mobile) (4 * $width-js-mobile) 0 $back-html,
+      (3 * $width-js-mobile) (4 * $width-js-mobile) 0 $back-html,
+      (4 * $width-js-mobile) (4 * $width-js-mobile) 0 $back-html,
+      (5 * $width-js-mobile) (4 * $width-js-mobile) 0 #fff,
+      (6 * $width-js-mobile) (4 * $width-js-mobile) 0 $back-html,
+      (7 * $width-js-mobile) (4 * $width-js-mobile) 0 $back-html,
+      (8 * $width-js-mobile) (4 * $width-js-mobile) 0 $back-right-html,
+      (9 * $width-js-mobile) (4 * $width-js-mobile) 0 $back-right-html,
+      (10 * $width-js-mobile) (4 * $width-js-mobile) 0 $back-right-html,
+      (11 * $width-js-mobile) (4 * $width-js-mobile) 0 $back-right-html,
+      (12 * $width-js-mobile) (4 * $width-js-mobile) 0 $back-html,
+      (13 * $width-js-mobile) (4 * $width-js-mobile) 0 $back-html,
+      (2 * $width-js-mobile) (5 * $width-js-mobile) 0 $back-html,
+      (3 * $width-js-mobile) (5 * $width-js-mobile) 0 $back-html,
+      (4 * $width-js-mobile) (5 * $width-js-mobile) 0 $back-html,
+      (5 * $width-js-mobile) (5 * $width-js-mobile) 0 #fff,
+      (6 * $width-js-mobile) (5 * $width-js-mobile) 0 #fff,
+      (7 * $width-js-mobile) (5 * $width-js-mobile) 0 #fff,
+      (8 * $width-js-mobile) (5 * $width-js-mobile) 0 #fff,
+      (9 * $width-js-mobile) (5 * $width-js-mobile) 0 #fff,
+      (10 * $width-js-mobile) (5 * $width-js-mobile) 0 #fff,
+      (11 * $width-js-mobile) (5 * $width-js-mobile) 0 $back-right-html,
+      (12 * $width-js-mobile) (5 * $width-js-mobile) 0 $back-html,
+      (13 * $width-js-mobile) (5 * $width-js-mobile) 0 $back-html,
+      (2 * $width-js-mobile) (6 * $width-js-mobile) 0 $back-html,
+      (3 * $width-js-mobile) (6 * $width-js-mobile) 0 $back-html,
+      (4 * $width-js-mobile) (6 * $width-js-mobile) 0 $back-html,
+      (5 * $width-js-mobile) (6 * $width-js-mobile) 0 $back-html,
+      (6 * $width-js-mobile) (6 * $width-js-mobile) 0 $back-html,
+      (7 * $width-js-mobile) (6 * $width-js-mobile) 0 $back-html,
+      (8 * $width-js-mobile) (6 * $width-js-mobile) 0 $back-right-html,
+      (9 * $width-js-mobile) (6 * $width-js-mobile) 0 $back-right-html,
+      (10 * $width-js-mobile) (6 * $width-js-mobile) 0 #fff,
+      (11 * $width-js-mobile) (6 * $width-js-mobile) 0 $back-right-html,
+      (12 * $width-js-mobile) (6 * $width-js-mobile) 0 $back-html,
+      (13 * $width-js-mobile) (6 * $width-js-mobile) 0 $back-html,
+      (3 * $width-js-mobile) (7 * $width-js-mobile) 0 $back-html,
+      (4 * $width-js-mobile) (7 * $width-js-mobile) 0 $back-html,
+      (5 * $width-js-mobile) (7 * $width-js-mobile) 0 $back-html,
+      (6 * $width-js-mobile) (7 * $width-js-mobile) 0 #fff,
+      (7 * $width-js-mobile) (7 * $width-js-mobile) 0 $back-html,
+      (8 * $width-js-mobile) (7 * $width-js-mobile) 0 $back-right-html,
+      (9 * $width-js-mobile) (7 * $width-js-mobile) 0 #fff,
+      (10 * $width-js-mobile) (7 * $width-js-mobile) 0 $back-right-html,
+      (11 * $width-js-mobile) (7 * $width-js-mobile) 0 $back-right-html,
+      (12 * $width-js-mobile) (7 * $width-js-mobile) 0 $back-html,
+      (3 * $width-js-mobile) (8 * $width-js-mobile) 0 $back-html,
+      (4 * $width-js-mobile) (8 * $width-js-mobile) 0 $back-html,
+      (5 * $width-js-mobile) (8 * $width-js-mobile) 0 $back-html,
+      (6 * $width-js-mobile) (8 * $width-js-mobile) 0 #fff,
+      (7 * $width-js-mobile) (8 * $width-js-mobile) 0 #fff,
+      (8 * $width-js-mobile) (8 * $width-js-mobile) 0 #fff,
+      (9 * $width-js-mobile) (8 * $width-js-mobile) 0 $back-right-html,
+      (10 * $width-js-mobile) (8 * $width-js-mobile) 0 $back-right-html,
+      (11 * $width-js-mobile) (8 * $width-js-mobile) 0 $back-html,
+      (12 * $width-js-mobile) (8 * $width-js-mobile) 0 $back-html,
+      (3 * $width-js-mobile) (9 * $width-js-mobile) 0 $back-html,
+      (4 * $width-js-mobile) (9 * $width-js-mobile) 0 $back-html,
+      (5 * $width-js-mobile) (9 * $width-js-mobile) 0 $back-html,
+      (6 * $width-js-mobile) (9 * $width-js-mobile) 0 $back-html,
+      (7 * $width-js-mobile) (9 * $width-js-mobile) 0 $back-html,
+      (8 * $width-js-mobile) (9 * $width-js-mobile) 0 $back-right-html,
+      (9 * $width-js-mobile) (9 * $width-js-mobile) 0 $back-right-html,
+      (10 * $width-js-mobile) (9 * $width-js-mobile) 0 $back-right-html,
+      (11 * $width-js-mobile) (9 * $width-js-mobile) 0 $back-html,
+      (12 * $width-js-mobile) (9 * $width-js-mobile) 0 $back-html,
+      (4 * $width-js-mobile) (10 * $width-js-mobile) 0 $back-html,
+      (5 * $width-js-mobile) (10 * $width-js-mobile) 0 $back-html,
+      (6 * $width-js-mobile) (10 * $width-js-mobile) 0 $back-html,
+      (7 * $width-js-mobile) (10 * $width-js-mobile) 0 $back-html,
+      (8 * $width-js-mobile) (10 * $width-js-mobile) 0 $back-right-html,
+      (9 * $width-js-mobile) (10 * $width-js-mobile) 0 $back-right-html,
+      (10 * $width-js-mobile) (10 * $width-js-mobile) 0 $back-html,
+      (11 * $width-js-mobile) (10 * $width-js-mobile) 0 $back-html,
+      (5 * $width-js-mobile) (11 * $width-js-mobile) 0 $back-html,
+      (6 * $width-js-mobile) (11 * $width-js-mobile) 0 $back-html,
+      (7 * $width-js-mobile) (11 * $width-js-mobile) 0 $back-html,
+      (8 * $width-js-mobile) (11 * $width-js-mobile) 0 $back-right-html,
+      (9 * $width-js-mobile) (11 * $width-js-mobile) 0 $back-html,
+      (10 * $width-js-mobile) (11 * $width-js-mobile) 0 $back-html,
+      (6 * $width-js-mobile) (12 * $width-js-mobile) 0 $back-html,
+      (7 * $width-js-mobile) (12 * $width-js-mobile) 0 $back-html,
+      (8 * $width-js-mobile) (12 * $width-js-mobile) 0 $back-html,
+      (9 * $width-js-mobile) (12 * $width-js-mobile) 0 $back-html;
+  }
 }
 .css {
   width: $width-js;
@@ -540,6 +1023,11 @@ $hair2-css: #2f2f2f;
   }
   @media (max-width: 1200px) {
     left: 73.5%;
+  }
+  @media (max-width: 480px) {
+    left: none;
+    right: 0;
+    top: 80px;
   }
   &__heir {
     position: absolute;
@@ -755,6 +1243,221 @@ $hair2-css: #2f2f2f;
     (7 * $width-js) (12 * $width-js) 0 $back-css,
     (8 * $width-js) (12 * $width-js) 0 $back-css,
     (9 * $width-js) (12 * $width-js) 0 $back-css;
+  @media (max-width: 480px) {
+    &__heir {
+      width: $width-js-mobile;
+      height: $width-js-mobile;
+      left: -5px;
+      top: -18px;
+      box-shadow: (5 * $width-js-mobile) (1 * $width-js-mobile) 0 $hair2-css,
+        (6 * $width-js-mobile) (1 * $width-js-mobile) 0 $hair1-css,
+        (7 * $width-js-mobile) (1 * $width-js-mobile) 0 $hair1-css,
+        (8 * $width-js-mobile) (1 * $width-js-mobile) 0 $hair1-css,
+        (9 * $width-js-mobile) (1 * $width-js-mobile) 0 $hair1-css,
+        (10 * $width-js-mobile) (1 * $width-js-mobile) 0 $hair1-css,
+        (11 * $width-js-mobile) (1 * $width-js-mobile) 0 $hair2-css,
+        (12 * $width-js-mobile) (1 * $width-js-mobile) 0 $hair2-css,
+        (13 * $width-js-mobile) (1 * $width-js-mobile) 0 $hair1-css,
+        (2 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair1-css,
+        (3 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair2-css,
+        (4 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair1-css,
+        (5 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair1-css,
+        (6 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair1-css,
+        (7 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair1-css,
+        (8 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair1-css,
+        (9 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair1-css,
+        (10 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair1-css,
+        (11 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair1-css,
+        (12 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair1-css,
+        (13 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair2-css,
+        (14 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair1-css,
+        (15 * $width-js-mobile) (2 * $width-js-mobile) 0 $hair2-css,
+        (1 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair2-css,
+        (2 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair1-css,
+        (3 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair1-css,
+        (4 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair1-css,
+        (5 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair1-css,
+        (6 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair1-css,
+        (7 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair1-css,
+        (8 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair1-css,
+        (9 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair1-css,
+        (10 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair1-css,
+        (11 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair1-css,
+        (12 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair1-css,
+        (13 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair1-css,
+        (14 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair1-css,
+        (15 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair1-css,
+        (16 * $width-js-mobile) (3 * $width-js-mobile) 0 $hair2-css,
+        (1 * $width-js-mobile) (4 * $width-js-mobile) 0 $hair1-css,
+        (2 * $width-js-mobile) (4 * $width-js-mobile) 0 $hair1-css,
+        (14 * $width-js-mobile) (4 * $width-js-mobile) 0 $hair1-css,
+        (15 * $width-js-mobile) (4 * $width-js-mobile) 0 $hair1-css,
+        (16 * $width-js-mobile) (4 * $width-js-mobile) 0 $hair2-css,
+        (1 * $width-js-mobile) (5 * $width-js-mobile) 0 $hair1-css,
+        (15 * $width-js-mobile) (5 * $width-js-mobile) 0 $hair1-css,
+        (16 * $width-js-mobile) (5 * $width-js-mobile) 0 $hair1-css,
+        (1 * $width-js-mobile) (6 * $width-js-mobile) 0 $hair1-css,
+        (15 * $width-js-mobile) (6 * $width-js-mobile) 0 $hair1-css,
+        (16 * $width-js-mobile) (6 * $width-js-mobile) 0 $hair1-css,
+        (4 * $width-js-mobile) (7 * $width-js-mobile) 0 $hair1-css,
+        (5 * $width-js-mobile) (7 * $width-js-mobile) 0 $hair1-css,
+        (6 * $width-js-mobile) (7 * $width-js-mobile) 0 $hair1-css,
+        (11 * $width-js-mobile) (7 * $width-js-mobile) 0 $hair1-css,
+        (12 * $width-js-mobile) (7 * $width-js-mobile) 0 $hair1-css,
+        (13 * $width-js-mobile) (7 * $width-js-mobile) 0 $hair1-css,
+        (16 * $width-js-mobile) (7 * $width-js-mobile) 0 $hair2-css,
+        (3 * $width-js-mobile) (8 * $width-js-mobile) 0 $hair1-css,
+        (7 * $width-js-mobile) (8 * $width-js-mobile) 0 $hair1-css,
+        (10 * $width-js-mobile) (8 * $width-js-mobile) 0 $hair1-css,
+        (14 * $width-js-mobile) (8 * $width-js-mobile) 0 $hair1-css,
+        (3 * $width-js-mobile) (9 * $width-js-mobile) 0 $hair1-css,
+        (7 * $width-js-mobile) (9 * $width-js-mobile) 0 $hair1-css,
+        (8 * $width-js-mobile) (9 * $width-js-mobile) 0 $hair1-css,
+        (9 * $width-js-mobile) (9 * $width-js-mobile) 0 $hair1-css,
+        (10 * $width-js-mobile) (9 * $width-js-mobile) 0 $hair1-css,
+        (14 * $width-js-mobile) (9 * $width-js-mobile) 0 $hair1-css,
+        (3 * $width-js-mobile) (10 * $width-js-mobile) 0 $hair1-css,
+        (7 * $width-js-mobile) (10 * $width-js-mobile) 0 $hair1-css,
+        (10 * $width-js-mobile) (10 * $width-js-mobile) 0 $hair1-css,
+        (14 * $width-js-mobile) (10 * $width-js-mobile) 0 $hair1-css,
+        (3 * $width-js-mobile) (10 * $width-js-mobile) 0 $hair1-css,
+        (7 * $width-js-mobile) (10 * $width-js-mobile) 0 $hair1-css,
+        (10 * $width-js-mobile) (10 * $width-js-mobile) 0 $hair1-css,
+        (14 * $width-js-mobile) (10 * $width-js-mobile) 0 $hair1-css,
+        (4 * $width-js-mobile) (11 * $width-js-mobile) 0 $hair1-css,
+        (5 * $width-js-mobile) (11 * $width-js-mobile) 0 $hair1-css,
+        (6 * $width-js-mobile) (11 * $width-js-mobile) 0 $hair1-css,
+        (11 * $width-js-mobile) (11 * $width-js-mobile) 0 $hair1-css,
+        (12 * $width-js-mobile) (11 * $width-js-mobile) 0 $hair1-css,
+        (13 * $width-js-mobile) (11 * $width-js-mobile) 0 $hair1-css;
+    }
+    box-shadow: (1 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-css,
+      (2 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-css,
+      (3 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-css,
+      (4 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-css,
+      (5 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-css,
+      (6 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-css,
+      (7 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-css,
+      (8 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-css,
+      (9 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-css,
+      (10 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-css,
+      (11 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-css,
+      (12 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-css,
+      (13 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-css,
+      (14 * $width-js-mobile) (1 * $width-js-mobile) 0 $back-css,
+      (1 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-css,
+      (2 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-css,
+      (3 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-css,
+      (4 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-css,
+      (5 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-css,
+      (6 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-css,
+      (7 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-css,
+      (8 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-right-css,
+      (9 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-right-css,
+      (10 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-right-css,
+      (11 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-right-css,
+      (12 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-right-css,
+      (13 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-css,
+      (14 * $width-js-mobile) (2 * $width-js-mobile) 0 $back-css,
+      (1 * $width-js-mobile) (3 * $width-js-mobile) 0 $back-css,
+      (2 * $width-js-mobile) (3 * $width-js-mobile) 0 $back-css,
+      (3 * $width-js-mobile) (3 * $width-js-mobile) 0 $back-css,
+      (4 * $width-js-mobile) (3 * $width-js-mobile) 0 $back-css,
+      (5 * $width-js-mobile) (3 * $width-js-mobile) 0 $back-css,
+      (6 * $width-js-mobile) (3 * $width-js-mobile) 0 #fff,
+      (7 * $width-js-mobile) (3 * $width-js-mobile) 0 #fff,
+      (8 * $width-js-mobile) (3 * $width-js-mobile) 0 #fff,
+      (9 * $width-js-mobile) (3 * $width-js-mobile) 0 $back-right-css,
+      (10 * $width-js-mobile) (3 * $width-js-mobile) 0 $back-right-css,
+      (11 * $width-js-mobile) (3 * $width-js-mobile) 0 $back-right-css,
+      (12 * $width-js-mobile) (3 * $width-js-mobile) 0 $back-right-css,
+      (13 * $width-js-mobile) (3 * $width-js-mobile) 0 $back-css,
+      (14 * $width-js-mobile) (3 * $width-js-mobile) 0 $back-css,
+      (2 * $width-js-mobile) (4 * $width-js-mobile) 0 $back-css,
+      (3 * $width-js-mobile) (4 * $width-js-mobile) 0 $back-css,
+      (4 * $width-js-mobile) (4 * $width-js-mobile) 0 $back-css,
+      (5 * $width-js-mobile) (4 * $width-js-mobile) 0 $back-css,
+      (6 * $width-js-mobile) (4 * $width-js-mobile) 0 $back-css,
+      (7 * $width-js-mobile) (4 * $width-js-mobile) 0 $back-css,
+      (8 * $width-js-mobile) (4 * $width-js-mobile) 0 $back-right-css,
+      (9 * $width-js-mobile) (4 * $width-js-mobile) 0 #fff,
+      (10 * $width-js-mobile) (4 * $width-js-mobile) 0 $back-right-css,
+      (11 * $width-js-mobile) (4 * $width-js-mobile) 0 $back-right-css,
+      (12 * $width-js-mobile) (4 * $width-js-mobile) 0 $back-css,
+      (13 * $width-js-mobile) (4 * $width-js-mobile) 0 $back-css,
+      (2 * $width-js-mobile) (5 * $width-js-mobile) 0 $back-css,
+      (3 * $width-js-mobile) (5 * $width-js-mobile) 0 $back-css,
+      (4 * $width-js-mobile) (5 * $width-js-mobile) 0 $back-css,
+      (5 * $width-js-mobile) (5 * $width-js-mobile) 0 $back-css,
+      (6 * $width-js-mobile) (5 * $width-js-mobile) 0 $back-css,
+      (7 * $width-js-mobile) (5 * $width-js-mobile) 0 $back-css,
+      (8 * $width-js-mobile) (5 * $width-js-mobile) 0 $back-right-css,
+      (9 * $width-js-mobile) (5 * $width-js-mobile) 0 #fff,
+      (10 * $width-js-mobile) (5 * $width-js-mobile) 0 $back-right-css,
+      (11 * $width-js-mobile) (5 * $width-js-mobile) 0 $back-right-css,
+      (12 * $width-js-mobile) (5 * $width-js-mobile) 0 $back-css,
+      (13 * $width-js-mobile) (5 * $width-js-mobile) 0 $back-css,
+      (2 * $width-js-mobile) (6 * $width-js-mobile) 0 $back-css,
+      (3 * $width-js-mobile) (6 * $width-js-mobile) 0 $back-css,
+      (4 * $width-js-mobile) (6 * $width-js-mobile) 0 $back-css,
+      (5 * $width-js-mobile) (6 * $width-js-mobile) 0 $back-css,
+      (6 * $width-js-mobile) (6 * $width-js-mobile) 0 $back-css,
+      (7 * $width-js-mobile) (6 * $width-js-mobile) 0 #fff,
+      (8 * $width-js-mobile) (6 * $width-js-mobile) 0 #fff,
+      (9 * $width-js-mobile) (6 * $width-js-mobile) 0 $back-right-css,
+      (10 * $width-js-mobile) (6 * $width-js-mobile) 0 $back-right-css,
+      (11 * $width-js-mobile) (6 * $width-js-mobile) 0 $back-right-css,
+      (12 * $width-js-mobile) (6 * $width-js-mobile) 0 $back-css,
+      (13 * $width-js-mobile) (6 * $width-js-mobile) 0 $back-css,
+      (3 * $width-js-mobile) (7 * $width-js-mobile) 0 $back-css,
+      (4 * $width-js-mobile) (7 * $width-js-mobile) 0 $back-css,
+      (5 * $width-js-mobile) (7 * $width-js-mobile) 0 $back-css,
+      (6 * $width-js-mobile) (7 * $width-js-mobile) 0 $back-css,
+      (7 * $width-js-mobile) (7 * $width-js-mobile) 0 $back-css,
+      (8 * $width-js-mobile) (7 * $width-js-mobile) 0 $back-right-css,
+      (9 * $width-js-mobile) (7 * $width-js-mobile) 0 #fff,
+      (10 * $width-js-mobile) (7 * $width-js-mobile) 0 $back-right-css,
+      (11 * $width-js-mobile) (7 * $width-js-mobile) 0 $back-right-css,
+      (12 * $width-js-mobile) (7 * $width-js-mobile) 0 $back-css,
+      (3 * $width-js-mobile) (8 * $width-js-mobile) 0 $back-css,
+      (4 * $width-js-mobile) (8 * $width-js-mobile) 0 $back-css,
+      (5 * $width-js-mobile) (8 * $width-js-mobile) 0 $back-css,
+      (6 * $width-js-mobile) (8 * $width-js-mobile) 0 $back-css,
+      (7 * $width-js-mobile) (8 * $width-js-mobile) 0 $back-css,
+      (8 * $width-js-mobile) (8 * $width-js-mobile) 0 $back-right-css,
+      (9 * $width-js-mobile) (8 * $width-js-mobile) 0 #fff,
+      (10 * $width-js-mobile) (8 * $width-js-mobile) 0 $back-right-css,
+      (11 * $width-js-mobile) (8 * $width-js-mobile) 0 $back-css,
+      (12 * $width-js-mobile) (8 * $width-js-mobile) 0 $back-css,
+      (3 * $width-js-mobile) (9 * $width-js-mobile) 0 $back-css,
+      (4 * $width-js-mobile) (9 * $width-js-mobile) 0 $back-css,
+      (5 * $width-js-mobile) (9 * $width-js-mobile) 0 $back-css,
+      (6 * $width-js-mobile) (9 * $width-js-mobile) 0 #fff,
+      (7 * $width-js-mobile) (9 * $width-js-mobile) 0 #fff,
+      (8 * $width-js-mobile) (9 * $width-js-mobile) 0 #fff,
+      (9 * $width-js-mobile) (9 * $width-js-mobile) 0 $back-right-css,
+      (10 * $width-js-mobile) (9 * $width-js-mobile) 0 $back-right-css,
+      (11 * $width-js-mobile) (9 * $width-js-mobile) 0 $back-css,
+      (12 * $width-js-mobile) (9 * $width-js-mobile) 0 $back-css,
+      (4 * $width-js-mobile) (10 * $width-js-mobile) 0 $back-css,
+      (5 * $width-js-mobile) (10 * $width-js-mobile) 0 $back-css,
+      (6 * $width-js-mobile) (10 * $width-js-mobile) 0 $back-css,
+      (7 * $width-js-mobile) (10 * $width-js-mobile) 0 $back-css,
+      (8 * $width-js-mobile) (10 * $width-js-mobile) 0 $back-right-css,
+      (9 * $width-js-mobile) (10 * $width-js-mobile) 0 $back-right-css,
+      (10 * $width-js-mobile) (10 * $width-js-mobile) 0 $back-css,
+      (11 * $width-js-mobile) (10 * $width-js-mobile) 0 $back-css,
+      (5 * $width-js-mobile) (11 * $width-js-mobile) 0 $back-css,
+      (6 * $width-js-mobile) (11 * $width-js-mobile) 0 $back-css,
+      (7 * $width-js-mobile) (11 * $width-js-mobile) 0 $back-css,
+      (8 * $width-js-mobile) (11 * $width-js-mobile) 0 $back-right-css,
+      (9 * $width-js-mobile) (11 * $width-js-mobile) 0 $back-css,
+      (10 * $width-js-mobile) (11 * $width-js-mobile) 0 $back-css,
+      (6 * $width-js-mobile) (12 * $width-js-mobile) 0 $back-css,
+      (7 * $width-js-mobile) (12 * $width-js-mobile) 0 $back-css,
+      (8 * $width-js-mobile) (12 * $width-js-mobile) 0 $back-css,
+      (9 * $width-js-mobile) (12 * $width-js-mobile) 0 $back-css;
+  }
 }
 .mcgonagall {
   width: $width-mcgonagall;
@@ -764,7 +1467,7 @@ $hair2-css: #2f2f2f;
   left: 8%;
   &__box {
     position: absolute;
-    width: 600px;
+    width: 100%;
     height: $width-mcgonagall * 32;
     top: 50%;
     left: 50%;
@@ -784,6 +1487,9 @@ $hair2-css: #2f2f2f;
   @media (max-width: 1200px) {
     left: 60px;
   }
+  @media (max-width: 480px) {
+    left: 10px;
+  }
   &__dialog {
     position: absolute;
     left: 45%;
@@ -799,6 +1505,9 @@ $hair2-css: #2f2f2f;
     }
     @media (max-width: 1200px) {
       left: 280px;
+    }
+    @media (max-width: 480px) {
+      left: 150px;
     }
   }
   box-shadow: (8 * $width-mcgonagall) (1 * $width-mcgonagall) 0 $hat-mcgonagall,
@@ -1097,4 +1806,602 @@ $hair2-css: #2f2f2f;
     (11 * $width-mcgonagall) (29 * $width-mcgonagall) 0 $shirt-mcgonagall,
     (12 * $width-mcgonagall) (29 * $width-mcgonagall) 0 $cape-mcgonagall,
     (13 * $width-mcgonagall) (29 * $width-mcgonagall) 0 $cape-mcgonagall;
+  @media (max-width: 480px) {
+    width: $width-mcgonagall-mobile;
+    height: $width-mcgonagall-mobile;
+    &__box {
+      height: $width-mcgonagall-mobile * 32;
+    }
+    box-shadow: (8 * $width-mcgonagall-mobile) (1 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (9 * $width-mcgonagall-mobile) (1 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (8 * $width-mcgonagall-mobile) (2 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (9 * $width-mcgonagall-mobile) (2 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (10 * $width-mcgonagall-mobile) (2 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (7 * $width-mcgonagall-mobile) (3 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (8 * $width-mcgonagall-mobile) (3 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (9 * $width-mcgonagall-mobile) (3 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (10 * $width-mcgonagall-mobile) (3 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (11 * $width-mcgonagall-mobile) (3 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (7 * $width-mcgonagall-mobile) (4 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (8 * $width-mcgonagall-mobile) (4 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (9 * $width-mcgonagall-mobile) (4 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (10 * $width-mcgonagall-mobile) (4 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (11 * $width-mcgonagall-mobile) (4 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (12 * $width-mcgonagall-mobile) (4 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (6 * $width-mcgonagall-mobile) (5 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (7 * $width-mcgonagall-mobile) (5 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (8 * $width-mcgonagall-mobile) (5 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (9 * $width-mcgonagall-mobile) (5 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (10 * $width-mcgonagall-mobile) (5 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (11 * $width-mcgonagall-mobile) (5 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (12 * $width-mcgonagall-mobile) (5 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (13 * $width-mcgonagall-mobile) (5 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (5 * $width-mcgonagall-mobile) (6 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (6 * $width-mcgonagall-mobile) (6 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (7 * $width-mcgonagall-mobile) (6 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (8 * $width-mcgonagall-mobile) (6 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (9 * $width-mcgonagall-mobile) (6 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (10 * $width-mcgonagall-mobile) (6 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (11 * $width-mcgonagall-mobile) (6 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (12 * $width-mcgonagall-mobile) (6 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (13 * $width-mcgonagall-mobile) (6 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (14 * $width-mcgonagall-mobile) (6 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (5 * $width-mcgonagall-mobile) (7 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (6 * $width-mcgonagall-mobile) (7 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (7 * $width-mcgonagall-mobile) (7 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (8 * $width-mcgonagall-mobile) (7 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (9 * $width-mcgonagall-mobile) (7 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (10 * $width-mcgonagall-mobile) (7 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (11 * $width-mcgonagall-mobile) (7 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (12 * $width-mcgonagall-mobile) (7 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (13 * $width-mcgonagall-mobile) (7 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (14 * $width-mcgonagall-mobile) (7 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (15 * $width-mcgonagall-mobile) (7 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (4 * $width-mcgonagall-mobile) (8 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (5 * $width-mcgonagall-mobile) (8 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (6 * $width-mcgonagall-mobile) (8 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (7 * $width-mcgonagall-mobile) (8 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (8 * $width-mcgonagall-mobile) (8 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (9 * $width-mcgonagall-mobile) (8 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (10 * $width-mcgonagall-mobile) (8 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (11 * $width-mcgonagall-mobile) (8 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (12 * $width-mcgonagall-mobile) (8 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (13 * $width-mcgonagall-mobile) (8 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (14 * $width-mcgonagall-mobile) (8 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (15 * $width-mcgonagall-mobile) (8 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (16 * $width-mcgonagall-mobile) (8 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (17 * $width-mcgonagall-mobile) (8 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (18 * $width-mcgonagall-mobile) (8 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (3 * $width-mcgonagall-mobile) (9 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (4 * $width-mcgonagall-mobile) (9 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (5 * $width-mcgonagall-mobile) (9 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (6 * $width-mcgonagall-mobile) (9 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (7 * $width-mcgonagall-mobile) (9 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (8 * $width-mcgonagall-mobile) (9 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (9 * $width-mcgonagall-mobile) (9 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (10 * $width-mcgonagall-mobile) (9 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (11 * $width-mcgonagall-mobile) (9 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (12 * $width-mcgonagall-mobile) (9 * $width-mcgonagall-mobile) 0
+        $hair-mcgonagall,
+      (13 * $width-mcgonagall-mobile) (9 * $width-mcgonagall-mobile) 0
+        $hair-mcgonagall,
+      (14 * $width-mcgonagall-mobile) (9 * $width-mcgonagall-mobile) 0
+        $hair-mcgonagall,
+      (15 * $width-mcgonagall-mobile) (9 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (16 * $width-mcgonagall-mobile) (9 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (17 * $width-mcgonagall-mobile) (9 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (18 * $width-mcgonagall-mobile) (9 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (19 * $width-mcgonagall-mobile) (9 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (2 * $width-mcgonagall-mobile) (10 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (3 * $width-mcgonagall-mobile) (10 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (4 * $width-mcgonagall-mobile) (10 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (5 * $width-mcgonagall-mobile) (10 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (6 * $width-mcgonagall-mobile) (10 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (7 * $width-mcgonagall-mobile) (10 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (8 * $width-mcgonagall-mobile) (10 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (9 * $width-mcgonagall-mobile) (10 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (10 * $width-mcgonagall-mobile) (10 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (11 * $width-mcgonagall-mobile) (10 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (12 * $width-mcgonagall-mobile) (10 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (13 * $width-mcgonagall-mobile) (10 * $width-mcgonagall-mobile) 0
+        $hair-mcgonagall,
+      (14 * $width-mcgonagall-mobile) (10 * $width-mcgonagall-mobile) 0
+        $hair-mcgonagall,
+      (15 * $width-mcgonagall-mobile) (10 * $width-mcgonagall-mobile) 0
+        $hair-mcgonagall,
+      (16 * $width-mcgonagall-mobile) (10 * $width-mcgonagall-mobile) 0
+        $hair-mcgonagall,
+      (17 * $width-mcgonagall-mobile) (10 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (18 * $width-mcgonagall-mobile) (10 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (19 * $width-mcgonagall-mobile) (10 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (1 * $width-mcgonagall-mobile) (11 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (2 * $width-mcgonagall-mobile) (11 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (3 * $width-mcgonagall-mobile) (11 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (4 * $width-mcgonagall-mobile) (11 * $width-mcgonagall-mobile) 0
+        $hair-mcgonagall,
+      (5 * $width-mcgonagall-mobile) (11 * $width-mcgonagall-mobile) 0
+        $hair-mcgonagall,
+      (6 * $width-mcgonagall-mobile) (11 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (7 * $width-mcgonagall-mobile) (11 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (8 * $width-mcgonagall-mobile) (11 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (9 * $width-mcgonagall-mobile) (11 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (10 * $width-mcgonagall-mobile) (11 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (11 * $width-mcgonagall-mobile) (11 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (12 * $width-mcgonagall-mobile) (11 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (13 * $width-mcgonagall-mobile) (11 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (14 * $width-mcgonagall-mobile) (11 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (15 * $width-mcgonagall-mobile) (11 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (16 * $width-mcgonagall-mobile) (11 * $width-mcgonagall-mobile) 0
+        $hair-mcgonagall,
+      (17 * $width-mcgonagall-mobile) (11 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (18 * $width-mcgonagall-mobile) (11 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (19 * $width-mcgonagall-mobile) (11 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (1 * $width-mcgonagall-mobile) (12 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (2 * $width-mcgonagall-mobile) (12 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (3 * $width-mcgonagall-mobile) (12 * $width-mcgonagall-mobile) 0
+        $hair-mcgonagall,
+      (4 * $width-mcgonagall-mobile) (12 * $width-mcgonagall-mobile) 0
+        $hair-mcgonagall,
+      (5 * $width-mcgonagall-mobile) (12 * $width-mcgonagall-mobile) 0
+        $brows-mcgonagall,
+      (6 * $width-mcgonagall-mobile) (12 * $width-mcgonagall-mobile) 0
+        $brows-mcgonagall,
+      (7 * $width-mcgonagall-mobile) (12 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (8 * $width-mcgonagall-mobile) (12 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (9 * $width-mcgonagall-mobile) (12 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (10 * $width-mcgonagall-mobile) (12 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (11 * $width-mcgonagall-mobile) (12 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (12 * $width-mcgonagall-mobile) (12 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (13 * $width-mcgonagall-mobile) (12 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (14 * $width-mcgonagall-mobile) (12 * $width-mcgonagall-mobile) 0
+        $brows-mcgonagall,
+      (15 * $width-mcgonagall-mobile) (12 * $width-mcgonagall-mobile) 0
+        $brows-mcgonagall,
+      (16 * $width-mcgonagall-mobile) (12 * $width-mcgonagall-mobile) 0
+        $hair-mcgonagall,
+      (17 * $width-mcgonagall-mobile) (12 * $width-mcgonagall-mobile) 0
+        $hair-mcgonagall,
+      (18 * $width-mcgonagall-mobile) (12 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (1 * $width-mcgonagall-mobile) (13 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (2 * $width-mcgonagall-mobile) (13 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (3 * $width-mcgonagall-mobile) (13 * $width-mcgonagall-mobile) 0
+        $hair-mcgonagall,
+      (4 * $width-mcgonagall-mobile) (13 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (5 * $width-mcgonagall-mobile) (13 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (6 * $width-mcgonagall-mobile) (13 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (7 * $width-mcgonagall-mobile) (13 * $width-mcgonagall-mobile) 0
+        $brows-mcgonagall,
+      (8 * $width-mcgonagall-mobile) (13 * $width-mcgonagall-mobile) 0
+        $brows-mcgonagall,
+      (9 * $width-mcgonagall-mobile) (13 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (10 * $width-mcgonagall-mobile) (13 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (11 * $width-mcgonagall-mobile) (13 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (12 * $width-mcgonagall-mobile) (13 * $width-mcgonagall-mobile) 0
+        $brows-mcgonagall,
+      (13 * $width-mcgonagall-mobile) (13 * $width-mcgonagall-mobile) 0
+        $brows-mcgonagall,
+      (14 * $width-mcgonagall-mobile) (13 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (15 * $width-mcgonagall-mobile) (13 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (16 * $width-mcgonagall-mobile) (13 * $width-mcgonagall-mobile) 0
+        $hair-mcgonagall,
+      (17 * $width-mcgonagall-mobile) (13 * $width-mcgonagall-mobile) 0
+        $hair-mcgonagall,
+      (1 * $width-mcgonagall-mobile) (14 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (2 * $width-mcgonagall-mobile) (14 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (3 * $width-mcgonagall-mobile) (14 * $width-mcgonagall-mobile) 0
+        $hair-mcgonagall,
+      (4 * $width-mcgonagall-mobile) (14 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (5 * $width-mcgonagall-mobile) (14 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (6 * $width-mcgonagall-mobile) (14 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (7 * $width-mcgonagall-mobile) (14 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (8 * $width-mcgonagall-mobile) (14 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (9 * $width-mcgonagall-mobile) (14 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (10 * $width-mcgonagall-mobile) (14 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (11 * $width-mcgonagall-mobile) (14 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (12 * $width-mcgonagall-mobile) (14 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (13 * $width-mcgonagall-mobile) (14 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (14 * $width-mcgonagall-mobile) (14 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (15 * $width-mcgonagall-mobile) (14 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (16 * $width-mcgonagall-mobile) (14 * $width-mcgonagall-mobile) 0
+        $hair-mcgonagall,
+      (17 * $width-mcgonagall-mobile) (14 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (2 * $width-mcgonagall-mobile) (15 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (3 * $width-mcgonagall-mobile) (15 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (4 * $width-mcgonagall-mobile) (15 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (5 * $width-mcgonagall-mobile) (15 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (6 * $width-mcgonagall-mobile) (15 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (7 * $width-mcgonagall-mobile) (15 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (8 * $width-mcgonagall-mobile) (15 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (9 * $width-mcgonagall-mobile) (15 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (10 * $width-mcgonagall-mobile) (15 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (11 * $width-mcgonagall-mobile) (15 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (12 * $width-mcgonagall-mobile) (15 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (13 * $width-mcgonagall-mobile) (15 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (14 * $width-mcgonagall-mobile) (15 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (15 * $width-mcgonagall-mobile) (15 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (16 * $width-mcgonagall-mobile) (15 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (17 * $width-mcgonagall-mobile) (15 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (4 * $width-mcgonagall-mobile) (16 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (5 * $width-mcgonagall-mobile) (16 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (6 * $width-mcgonagall-mobile) (16 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (7 * $width-mcgonagall-mobile) (16 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (8 * $width-mcgonagall-mobile) (16 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (9 * $width-mcgonagall-mobile) (16 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (10 * $width-mcgonagall-mobile) (16 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (11 * $width-mcgonagall-mobile) (16 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (12 * $width-mcgonagall-mobile) (16 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (13 * $width-mcgonagall-mobile) (16 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (14 * $width-mcgonagall-mobile) (16 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (15 * $width-mcgonagall-mobile) (16 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (16 * $width-mcgonagall-mobile) (16 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (4 * $width-mcgonagall-mobile) (17 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (5 * $width-mcgonagall-mobile) (17 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (6 * $width-mcgonagall-mobile) (17 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (7 * $width-mcgonagall-mobile) (17 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (8 * $width-mcgonagall-mobile) (17 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (9 * $width-mcgonagall-mobile) (17 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (10 * $width-mcgonagall-mobile) (17 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (11 * $width-mcgonagall-mobile) (17 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (12 * $width-mcgonagall-mobile) (17 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (13 * $width-mcgonagall-mobile) (17 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (14 * $width-mcgonagall-mobile) (17 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (15 * $width-mcgonagall-mobile) (17 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (16 * $width-mcgonagall-mobile) (17 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (5 * $width-mcgonagall-mobile) (18 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (6 * $width-mcgonagall-mobile) (18 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (7 * $width-mcgonagall-mobile) (18 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (8 * $width-mcgonagall-mobile) (18 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (9 * $width-mcgonagall-mobile) (18 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (10 * $width-mcgonagall-mobile) (18 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (11 * $width-mcgonagall-mobile) (18 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (12 * $width-mcgonagall-mobile) (18 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (13 * $width-mcgonagall-mobile) (18 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (14 * $width-mcgonagall-mobile) (18 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (15 * $width-mcgonagall-mobile) (18 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (8 * $width-mcgonagall-mobile) (19 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (9 * $width-mcgonagall-mobile) (19 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (10 * $width-mcgonagall-mobile) (19 * $width-mcgonagall-mobile) 0
+        $shirt-mcgonagall,
+      (11 * $width-mcgonagall-mobile) (19 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (12 * $width-mcgonagall-mobile) (19 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (7 * $width-mcgonagall-mobile) (20 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (8 * $width-mcgonagall-mobile) (20 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (9 * $width-mcgonagall-mobile) (20 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (10 * $width-mcgonagall-mobile) (20 * $width-mcgonagall-mobile) 0 #fff,
+      (11 * $width-mcgonagall-mobile) (20 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (12 * $width-mcgonagall-mobile) (20 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (13 * $width-mcgonagall-mobile) (20 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (7 * $width-mcgonagall-mobile) (21 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (8 * $width-mcgonagall-mobile) (21 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (9 * $width-mcgonagall-mobile) (21 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (10 * $width-mcgonagall-mobile) (21 * $width-mcgonagall-mobile) 0
+        $shirt-mcgonagall,
+      (11 * $width-mcgonagall-mobile) (21 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (12 * $width-mcgonagall-mobile) (21 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (13 * $width-mcgonagall-mobile) (21 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (6 * $width-mcgonagall-mobile) (22 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (7 * $width-mcgonagall-mobile) (22 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (8 * $width-mcgonagall-mobile) (22 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (9 * $width-mcgonagall-mobile) (22 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (10 * $width-mcgonagall-mobile) (22 * $width-mcgonagall-mobile) 0
+        $shirt-mcgonagall,
+      (11 * $width-mcgonagall-mobile) (22 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (12 * $width-mcgonagall-mobile) (22 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (13 * $width-mcgonagall-mobile) (22 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (6 * $width-mcgonagall-mobile) (23 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (7 * $width-mcgonagall-mobile) (23 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (8 * $width-mcgonagall-mobile) (23 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (9 * $width-mcgonagall-mobile) (23 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (10 * $width-mcgonagall-mobile) (23 * $width-mcgonagall-mobile) 0
+        $shirt-mcgonagall,
+      (11 * $width-mcgonagall-mobile) (23 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (12 * $width-mcgonagall-mobile) (23 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (6 * $width-mcgonagall-mobile) (24 * $width-mcgonagall-mobile) 0
+        $skin-mcgonagall,
+      (7 * $width-mcgonagall-mobile) (24 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (8 * $width-mcgonagall-mobile) (24 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (9 * $width-mcgonagall-mobile) (24 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (10 * $width-mcgonagall-mobile) (24 * $width-mcgonagall-mobile) 0
+        $shirt-mcgonagall,
+      (11 * $width-mcgonagall-mobile) (24 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (12 * $width-mcgonagall-mobile) (24 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (7 * $width-mcgonagall-mobile) (25 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (8 * $width-mcgonagall-mobile) (25 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (9 * $width-mcgonagall-mobile) (25 * $width-mcgonagall-mobile) 0
+        $shirt-mcgonagall,
+      (10 * $width-mcgonagall-mobile) (25 * $width-mcgonagall-mobile) 0
+        $shirt-mcgonagall,
+      (11 * $width-mcgonagall-mobile) (25 * $width-mcgonagall-mobile) 0
+        $shirt-mcgonagall,
+      (12 * $width-mcgonagall-mobile) (25 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (7 * $width-mcgonagall-mobile) (26 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (8 * $width-mcgonagall-mobile) (26 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (9 * $width-mcgonagall-mobile) (26 * $width-mcgonagall-mobile) 0
+        $hat-mcgonagall,
+      (10 * $width-mcgonagall-mobile) (26 * $width-mcgonagall-mobile) 0
+        $shirt-mcgonagall,
+      (11 * $width-mcgonagall-mobile) (26 * $width-mcgonagall-mobile) 0
+        $shirt-mcgonagall,
+      (12 * $width-mcgonagall-mobile) (26 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (13 * $width-mcgonagall-mobile) (26 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (7 * $width-mcgonagall-mobile) (27 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (8 * $width-mcgonagall-mobile) (27 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (9 * $width-mcgonagall-mobile) (27 * $width-mcgonagall-mobile) 0
+        $shirt-mcgonagall,
+      (10 * $width-mcgonagall-mobile) (27 * $width-mcgonagall-mobile) 0
+        $shirt-mcgonagall,
+      (11 * $width-mcgonagall-mobile) (27 * $width-mcgonagall-mobile) 0
+        $shirt-mcgonagall,
+      (12 * $width-mcgonagall-mobile) (27 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (13 * $width-mcgonagall-mobile) (27 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (6 * $width-mcgonagall-mobile) (28 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (7 * $width-mcgonagall-mobile) (28 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (8 * $width-mcgonagall-mobile) (28 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (9 * $width-mcgonagall-mobile) (28 * $width-mcgonagall-mobile) 0
+        $shirt-mcgonagall,
+      (10 * $width-mcgonagall-mobile) (28 * $width-mcgonagall-mobile) 0
+        $shirt-mcgonagall,
+      (11 * $width-mcgonagall-mobile) (28 * $width-mcgonagall-mobile) 0
+        $shirt-mcgonagall,
+      (12 * $width-mcgonagall-mobile) (28 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (13 * $width-mcgonagall-mobile) (28 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (6 * $width-mcgonagall-mobile) (29 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (7 * $width-mcgonagall-mobile) (29 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (8 * $width-mcgonagall-mobile) (29 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (9 * $width-mcgonagall-mobile) (29 * $width-mcgonagall-mobile) 0
+        $shirt-mcgonagall,
+      (10 * $width-mcgonagall-mobile) (29 * $width-mcgonagall-mobile) 0
+        $shirt-mcgonagall,
+      (11 * $width-mcgonagall-mobile) (29 * $width-mcgonagall-mobile) 0
+        $shirt-mcgonagall,
+      (12 * $width-mcgonagall-mobile) (29 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall,
+      (13 * $width-mcgonagall-mobile) (29 * $width-mcgonagall-mobile) 0
+        $cape-mcgonagall;
+  }
 }
