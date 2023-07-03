@@ -65,6 +65,8 @@ const ContentMobile = () => {
             className="content__bit"
             onTouchStart={() => setPortal('-open')}
             onTouchEnd={() => setPortal('-close')}
+            onMouseDown={() => setPortal('-open')}
+            onMouseUp={() => setPortal('-close')}
           >
             <div className="rick__box">
               <div className={`portal__box${portal}`}>
@@ -111,6 +113,8 @@ const ContentMobile = () => {
             className="content__bit"
             onTouchStart={() => setMcgonagall(true)}
             onTouchEnd={() => setMcgonagall(false)}
+            onMouseDown={() => setMcgonagall(true)}
+            onMouseUp={() => setMcgonagall(false)}
           >
             <div className="mcgonagall__box">
               {!mcgonagall && (
