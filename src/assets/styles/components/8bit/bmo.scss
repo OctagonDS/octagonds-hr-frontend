@@ -14,23 +14,30 @@ $yellow-bmo: #f6fc73;
   width: $width-bmo;
   height: $width-bmo;
   position: absolute;
-  top: 65px;
-  left: 22%;
-  @media (max-width: 1366px) {
-    left: 2%;
+  top: 50px;
+  left: 12%;
+  @media (max-width: 1600px) {
+    left: 14%;
+  }
+  @media (max-width: 1200px) {
+    left: 10%;
+  }
+  &__box {
+    position: absolute;
+    width: 600px;
+    height: $width-bmo * 65;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
   &__dialog {
     position: absolute;
-    left: 53%;
+    left: 50%;
     top: 69px;
-    @media (min-width: 3439px) {
-      left: 50%;
-    }
-    @media (max-width: 1600px) {
-      left: 55%;
-    }
-    @media (max-width: 1366px) {
-      left: 43%;
+    @media (max-width: 1200px) {
+      left: 45%;
     }
   }
   &__eye {

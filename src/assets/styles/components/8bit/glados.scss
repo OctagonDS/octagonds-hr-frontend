@@ -11,12 +11,19 @@ $gray-blue-glados: #9badb7;
   height: $width-glados;
   position: absolute;
   top: 0;
-  left: 150px;
-  @media (max-width: 1600px) {
-    left: 100px;
-  }
+  left: 100px;
   @media (max-width: 1366px) {
     left: 50px;
+  }
+  &__box {
+    position: absolute;
+    width: 600px;
+    height: $width-glados * 50;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
   &__eye {
     position: relative;
@@ -30,11 +37,8 @@ $gray-blue-glados: #9badb7;
   }
   &__dialog {
     position: absolute;
-    left: 380px;
+    left: 340px;
     top: 178px;
-    @media (max-width: 1600px) {
-      left: 335px;
-    }
     @media (max-width: 1366px) {
       left: 285px;
     }

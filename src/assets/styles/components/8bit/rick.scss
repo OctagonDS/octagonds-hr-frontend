@@ -56,7 +56,7 @@ $portal-4: #f0f9b6;
     position: relative;
     right: -25%;
     @media (min-width: 3439px) {
-      right: -17%;
+      right: -12%;
     }
     @media (max-width: 1600px) {
       right: -25%;
@@ -64,19 +64,8 @@ $portal-4: #f0f9b6;
     @media (max-width: 1366px) {
       right: -25%;
     }
-    &-big {
-      @extend .rick__dialog;
-      @media (max-width: 1200px) {
-        display: none !important;
-      }
-    }
-    &-small {
-      @extend .rick__dialog;
-      // right: -20%;
+    @media (max-width: 1200px) {
       right: -13dvh;
-      @media (min-width: 1201px) {
-        display: none !important;
-      }
     }
   }
   box-shadow: (9 * $width-rick) (3 * $width-rick) 0 $blu-head-rick,
