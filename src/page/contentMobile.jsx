@@ -15,7 +15,7 @@ import {
   YodaData,
 } from '../const/listData'
 
-const Content = () => {
+const ContentMobile = () => {
   const { t, i18n } = useTranslation()
   const size = useWindowSize()
   const rickData = RickData()
@@ -54,14 +54,7 @@ const Content = () => {
           <p>{t('content.newHeroDescFour')}:</p>
         </div>
       </div>
-      <div
-        className="content"
-        style={
-          size.tablet
-            ? { marginBottom: 20, marginTop: 10 }
-            : { marginBottom: 20 }
-        }
-      >
+      <div className="content" style={{ marginBottom: 20, marginTop: 10 }}>
         <div className="content__title" style={{ marginBottom: 20 }}>
           {t('content.pythonDeveloper')}
         </div>
@@ -70,12 +63,12 @@ const Content = () => {
         <div className="content__item__row">
           <div
             className="content__bit"
-            onMouseOver={() => (size.tablet ? {} : setPortal('-open'))}
-            onMouseOut={() => (size.tablet ? {} : setPortal('-close'))}
-            onTouchStart={() => (size.tablet ? setPortal('-open') : {})}
-            onTouchEnd={() => (size.tablet ? setPortal('-close') : {})}
-            onMouseDown={() => (size.tablet ? setPortal('-open') : {})}
-            onMouseUp={() => (size.tablet ? setPortal('-close') : {})}
+            onMouseOver={() => (size.mobile ? {} : setPortal('-open'))}
+            onMouseOut={() => (size.mobile ? {} : setPortal('-close'))}
+            onTouchStart={() => (size.mobile ? setPortal('-open') : {})}
+            onTouchEnd={() => (size.mobile ? setPortal('-close') : {})}
+            onMouseDown={() => (size.mobile ? setPortal('-open') : {})}
+            onMouseUp={() => (size.mobile ? setPortal('-close') : {})}
           >
             <div className="rick__box">
               <div className={`portal__box${portal}`}>
@@ -121,12 +114,12 @@ const Content = () => {
         <div className="content__item__row">
           <div
             className="content__bit"
-            onMouseOver={() => (size.tablet ? {} : setMcgonagall(true))}
-            onMouseOut={() => (size.tablet ? {} : setMcgonagall(false))}
-            onTouchStart={() => (size.tablet ? setMcgonagall(true) : {})}
-            onTouchEnd={() => (size.tablet ? setMcgonagall(false) : {})}
-            onMouseDown={() => (size.tablet ? setMcgonagall(true) : {})}
-            onMouseUp={() => (size.tablet ? setMcgonagall(false) : {})}
+            onMouseOver={() => (size.mobile ? {} : setMcgonagall(true))}
+            onMouseOut={() => (size.mobile ? {} : setMcgonagall(false))}
+            onTouchStart={() => (size.mobile ? setMcgonagall(true) : {})}
+            onTouchEnd={() => (size.mobile ? setMcgonagall(false) : {})}
+            onMouseDown={() => (size.mobile ? setMcgonagall(true) : {})}
+            onMouseUp={() => (size.mobile ? setMcgonagall(false) : {})}
           >
             <div className="mcgonagall__box">
               {!mcgonagall && (
@@ -176,12 +169,12 @@ const Content = () => {
         <div className="content__item__row">
           <div
             className="content__bit"
-            onMouseOver={() => (size.tablet ? {} : setBMO(true))}
-            onMouseOut={() => (size.tablet ? {} : setBMO(false))}
-            onTouchStart={() => (size.tablet ? setBMO(true) : {})}
-            onTouchEnd={() => (size.tablet ? setBMO(false) : {})}
-            onMouseDown={() => (size.tablet ? setBMO(true) : {})}
-            onMouseUp={() => (size.tablet ? setBMO(false) : {})}
+            onMouseOver={() => (size.mobile ? {} : setBMO(true))}
+            onMouseOut={() => (size.mobile ? {} : setBMO(false))}
+            onTouchStart={() => (size.mobile ? setBMO(true) : {})}
+            onTouchEnd={() => (size.mobile ? setBMO(false) : {})}
+            onMouseDown={() => (size.mobile ? setBMO(true) : {})}
+            onMouseUp={() => (size.mobile ? setBMO(false) : {})}
           >
             <div className="bmo__box">
               <div className="bmo">
@@ -234,12 +227,12 @@ const Content = () => {
         <div className="content__item__row">
           <div
             className="content__bit"
-            onMouseOver={() => (size.tablet ? {} : setGodfather(true))}
-            onMouseOut={() => (size.tablet ? {} : setGodfather(false))}
-            onTouchStart={() => (size.tablet ? setGodfather(true) : {})}
-            onTouchEnd={() => (size.tablet ? setGodfather(false) : {})}
-            onMouseDown={() => (size.tablet ? setGodfather(true) : {})}
-            onMouseUp={() => (size.tablet ? setGodfather(false) : {})}
+            onMouseOver={() => (size.mobile ? {} : setGodfather(true))}
+            onMouseOut={() => (size.mobile ? {} : setGodfather(false))}
+            onTouchStart={() => (size.mobile ? setGodfather(true) : {})}
+            onTouchEnd={() => (size.mobile ? setGodfather(false) : {})}
+            onMouseDown={() => (size.mobile ? setGodfather(true) : {})}
+            onMouseUp={() => (size.mobile ? setGodfather(false) : {})}
           >
             <div className="godfather__box">
               <div className="godfather">
@@ -272,12 +265,12 @@ const Content = () => {
         <div className="content__item__row">
           <div
             className="content__bit"
-            onMouseOver={() => (size.tablet ? {} : setMorpheus(true))}
-            onMouseOut={() => (size.tablet ? {} : setMorpheus(false))}
-            onTouchStart={() => (size.tablet ? setMorpheus(true) : {})}
-            onTouchEnd={() => (size.tablet ? setMorpheus(false) : {})}
-            onMouseDown={() => (size.tablet ? setMorpheus(true) : {})}
-            onMouseUp={() => (size.tablet ? setMorpheus(false) : {})}
+            onMouseOver={() => (size.mobile ? {} : setMorpheus(true))}
+            onMouseOut={() => (size.mobile ? {} : setMorpheus(false))}
+            onTouchStart={() => (size.mobile ? setMorpheus(true) : {})}
+            onTouchEnd={() => (size.mobile ? setMorpheus(false) : {})}
+            onMouseDown={() => (size.mobile ? setMorpheus(true) : {})}
+            onMouseUp={() => (size.mobile ? setMorpheus(false) : {})}
           >
             {morpheus && (
               <div className="red__box">
@@ -329,12 +322,12 @@ const Content = () => {
         <div className="content__item__row">
           <div
             className="content__bit"
-            onMouseOver={() => (size.tablet ? {} : setGlados('-open'))}
-            onMouseOut={() => (size.tablet ? {} : setGlados('-close'))}
-            onTouchStart={() => (size.tablet ? setGlados('-open') : {})}
-            onTouchEnd={() => (size.tablet ? setGlados('-close') : {})}
-            onMouseDown={() => (size.tablet ? setGlados('-open') : {})}
-            onMouseUp={() => (size.tablet ? setGlados('-close') : {})}
+            onMouseOver={() => (size.mobile ? {} : setGlados('-open'))}
+            onMouseOut={() => (size.mobile ? {} : setGlados('-close'))}
+            onTouchStart={() => (size.mobile ? setGlados('-open') : {})}
+            onTouchEnd={() => (size.mobile ? setGlados('-close') : {})}
+            onMouseDown={() => (size.mobile ? setGlados('-open') : {})}
+            onMouseUp={() => (size.mobile ? setGlados('-close') : {})}
           >
             <div className="glados__box">
               <div className="glados">
@@ -381,12 +374,12 @@ const Content = () => {
         <div className="content__item__row">
           <div
             className="content__bit"
-            onMouseOver={() => (size.tablet ? {} : setYoda(true))}
-            onMouseOut={() => (size.tablet ? {} : setYoda(false))}
-            onTouchStart={() => (size.tablet ? setYoda(true) : {})}
-            onTouchEnd={() => (size.tablet ? setYoda(false) : {})}
-            onMouseDown={() => (size.tablet ? setYoda(true) : {})}
-            onMouseUp={() => (size.tablet ? setYoda(false) : {})}
+            onMouseOver={() => (size.mobile ? {} : setYoda(true))}
+            onMouseOut={() => (size.mobile ? {} : setYoda(false))}
+            onTouchStart={() => (size.mobile ? setYoda(true) : {})}
+            onTouchEnd={() => (size.mobile ? setYoda(false) : {})}
+            onMouseDown={() => (size.mobile ? setYoda(true) : {})}
+            onMouseUp={() => (size.mobile ? setYoda(false) : {})}
           >
             <div className="yoda__box">
               <div className="yoda">
@@ -412,4 +405,4 @@ const Content = () => {
   )
 }
 
-export default Content
+export default ContentMobile

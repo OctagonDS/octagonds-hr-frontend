@@ -9,6 +9,7 @@ import Footer from '../components/page/footer.jsx'
 import useWindowSize from '../hooks/useWindowSize.jsx'
 import FooterTablet from '../components/page/footerTablet.jsx'
 import FooterMobile from '../components/page/footerMobile.jsx'
+import ContentMobile from '../page/contentMobile.jsx'
 
 export function MainPage() {
   const { t } = useTranslation()
@@ -19,7 +20,11 @@ export function MainPage() {
       <Header />
       <div className="footer-block">
         <Routes>
-          <Route path={'/'} index={true} element={<Content />} />
+          <Route
+            path={'/'}
+            index={true}
+            element={size.mobile ? <ContentMobile /> : <Content />}
+          />
           <Route path="*" element={<NotFound />} />
         </Routes>
         {size.tablet ? (
