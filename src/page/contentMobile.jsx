@@ -55,7 +55,7 @@ const ContentMobile = () => {
         </div>
       </div>
       <div className="content" style={{ marginBottom: 10, marginTop: 10 }}>
-        <div className="content__title" style={{ marginBottom: 20 }}>
+        <div className="content__title" style={{ marginBottom: 10 }}>
           {t('content.pythonDeveloper')}
         </div>
       </div>
@@ -101,7 +101,7 @@ const ContentMobile = () => {
         style={{ marginBottom: 10, marginTop: 10 }}
         data-aos="fade-up"
       >
-        <div className="content__title" style={{ marginBottom: 20 }}>
+        <div className="content__title" style={{ marginBottom: 10 }}>
           {t('content.frontendDeveloper')}
         </div>
       </div>
@@ -146,10 +146,10 @@ const ContentMobile = () => {
       </div>
       <div
         className="content"
-        style={{ marginBottom: 20, marginTop: 20 }}
+        style={{ marginBottom: 10, marginTop: 10 }}
         data-aos="fade-up"
       >
-        <div className="content__title" style={{ marginBottom: 20 }}>
+        <div className="content__title" style={{ marginBottom: 10 }}>
           {t('content.mlDeveloper')}
         </div>
       </div>
@@ -157,12 +157,8 @@ const ContentMobile = () => {
         <div className="content__item__row">
           <div
             className="content__bit"
-            onMouseOver={() => (size.mobile ? {} : setBMO(true))}
-            onMouseOut={() => (size.mobile ? {} : setBMO(false))}
-            onTouchStart={() => (size.mobile ? setBMO(true) : {})}
-            onTouchEnd={() => (size.mobile ? setBMO(false) : {})}
-            onMouseDown={() => (size.mobile ? setBMO(true) : {})}
-            onMouseUp={() => (size.mobile ? setBMO(false) : {})}
+            onTouchStart={() => setBMO(true)}
+            onTouchEnd={() => setBMO(false)}
           >
             <div className="bmo__box">
               <div className="bmo">
@@ -176,14 +172,14 @@ const ContentMobile = () => {
                 />
                 <div
                   className="bmo__mouth-left"
-                  style={bmo ? { transform: 'translate(95px, 85px)' } : {}}
+                  style={bmo ? { transform: 'translate(57px, 51px)' } : {}}
                 />
                 <div
                   className="bmo__mouth-right"
-                  style={bmo ? { transform: 'translate(115px, 85px)' } : {}}
+                  style={bmo ? { transform: 'translate(69px, 51px)' } : {}}
                 />
               </div>
-              <div className="bubble left bmo__dialog" style={{ width: 256 }}>
+              <div className="bubble left bmo__dialog" style={{ width: 170 }}>
                 <div className="content__bit__text">
                   {bmo ? (
                     t('content.orNot')
