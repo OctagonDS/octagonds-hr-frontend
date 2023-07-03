@@ -54,7 +54,7 @@ const ContentMobile = () => {
           <p>{t('content.newHeroDescFour')}:</p>
         </div>
       </div>
-      <div className="content" style={{ marginBottom: 20, marginTop: 10 }}>
+      <div className="content" style={{ marginBottom: 10, marginTop: 10 }}>
         <div className="content__title" style={{ marginBottom: 20 }}>
           {t('content.pythonDeveloper')}
         </div>
@@ -79,8 +79,8 @@ const ContentMobile = () => {
                 className="bubble bottom rick__dialog"
                 style={
                   portal === '-open'
-                    ? { width: 240, top: '-101px' }
-                    : { width: 240, top: '-61px' }
+                    ? { width: 162, top: '-80px' }
+                    : { width: 162, top: '-40px' }
                 }
               >
                 <div className="content__bit__text">
