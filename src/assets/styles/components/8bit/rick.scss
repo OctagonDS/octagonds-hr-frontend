@@ -72,7 +72,7 @@ $portal-4: #f0f9b6;
       right: -13dvh;
     }
     @media (max-width: 480px) {
-      right: -25%;
+      right: -20%;
     }
   }
   box-shadow: (9 * $width-rick) (3 * $width-rick) 0 $blu-head-rick,
@@ -312,7 +312,7 @@ $portal-4: #f0f9b6;
   @media (max-width: 480px) {
     width: $width-rick-mobile;
     height: $width-rick-mobile;
-    right: 45%;
+    right: 50%;
     &__box {
       width: 100%;
       height: $width-portal * 25;
@@ -997,7 +997,7 @@ $portal-4: #f0f9b6;
       width: $width-portal-mobile * 25;
       height: $width-portal-mobile * 34;
       top: 15px;
-      right: 12em;
+      right: 12.5em;
     }
     box-shadow: (9 * $width-portal-mobile) (0 * $width-portal-mobile) 0
         $portal-1,

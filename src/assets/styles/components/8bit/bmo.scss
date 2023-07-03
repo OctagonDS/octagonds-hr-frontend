@@ -43,6 +43,7 @@ $yellow-bmo: #f6fc73;
     }
     @media (max-width: 480px) {
       top: 60px;
+      left: 42%;
     }
   }
   &__eye {
@@ -78,7 +79,7 @@ $yellow-bmo: #f6fc73;
     }
   }
   @media (max-width: 480px) {
-    left: 9%;
+    left: 5%;
     &__box {
       width: 100%;
       height: $width-bmo-mobile * 70;
