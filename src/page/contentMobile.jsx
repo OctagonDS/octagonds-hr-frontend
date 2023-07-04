@@ -56,7 +56,7 @@ const ContentMobile = () => {
           {t('content.pythonDeveloper')}
         </div>
       </div>
-      <div className="content" data-aos="fade-up">
+      <div className="content">
         <div className="content__item__row">
           <div
             className="content__bit"
@@ -95,16 +95,12 @@ const ContentMobile = () => {
           <ContentItemSmall arr={rickData} />
         </div>
       </div>
-      <div
-        className="content"
-        style={{ marginBottom: 0, marginTop: 10 }}
-        data-aos="fade-up"
-      >
+      <div className="content" style={{ marginBottom: 0, marginTop: 10 }}>
         <div className="content__title" style={{ marginBottom: 10 }}>
           {t('content.frontendDeveloper')}
         </div>
       </div>
-      <div className="content" data-aos="fade-up">
+      <div className="content">
         <div className="content__item__row">
           <div
             className="content__bit"
@@ -145,16 +141,12 @@ const ContentMobile = () => {
           <ContentItemSmall arr={mcgonagallData} />
         </div>
       </div>
-      <div
-        className="content"
-        style={{ marginBottom: 0, marginTop: 10 }}
-        data-aos="fade-up"
-      >
+      <div className="content" style={{ marginBottom: 0, marginTop: 10 }}>
         <div className="content__title" style={{ marginBottom: 10 }}>
           {t('content.mlDeveloper')}
         </div>
       </div>
-      <div className="content" data-aos="fade-up">
+      <div className="content">
         <div className="content__item__row">
           <div
             className="content__bit"
@@ -200,16 +192,12 @@ const ContentMobile = () => {
           <ContentItemSmall arr={bmoData} />
         </div>
       </div>
-      <div
-        className="content"
-        style={{ marginBottom: 10, marginTop: 10 }}
-        data-aos="fade-up"
-      >
+      <div className="content" style={{ marginBottom: 10, marginTop: 10 }}>
         <div className="content__title" style={{ marginBottom: 10 }}>
           {t('content.devopsEngineer')}
         </div>
       </div>
-      <div className="content" data-aos="fade-up">
+      <div className="content">
         <div className="content__item__row">
           <div
             className="content__bit"
@@ -235,16 +223,12 @@ const ContentMobile = () => {
           <ContentItemSmall arr={godfatherData} />
         </div>
       </div>
-      <div
-        className="content"
-        style={{ marginBottom: 10, marginTop: 10 }}
-        data-aos="fade-up"
-      >
+      <div className="content" style={{ marginBottom: 10, marginTop: 10 }}>
         <div className="content__title" style={{ marginBottom: 10 }}>
           hr
         </div>
       </div>
-      <div className="content" data-aos="fade-up">
+      <div className="content">
         <div className="content__item__row">
           <div
             className="content__bit"
@@ -295,16 +279,12 @@ const ContentMobile = () => {
           <ContentItemSmall arr={morpheusData} />
         </div>
       </div>
-      <div
-        className="content"
-        style={{ marginBottom: 10, marginTop: 10 }}
-        data-aos="fade-up"
-      >
+      <div className="content" style={{ marginBottom: 10, marginTop: 10 }}>
         <div className="content__title" style={{ marginBottom: 10 }}>
           {t('content.aqaEngineer')}
         </div>
       </div>
-      <div className="content" data-aos="fade-up">
+      <div className="content">
         <div className="content__item__row">
           <div
             className="content__bit"
@@ -344,16 +324,12 @@ const ContentMobile = () => {
           <ContentItemSmall arr={gladosData} />
         </div>
       </div>
-      <div
-        className="content"
-        style={{ marginBottom: 20, marginTop: 20 }}
-        data-aos="fade-up"
-      >
+      <div className="content" style={{ marginBottom: 20, marginTop: 20 }}>
         <div className="content__title" style={{ marginBottom: 20 }}>
           team lead
         </div>
       </div>
-      <div className="content" data-aos="fade-up">
+      <div className="content">
         <div className="content__item__row">
           <div
             className="content__bit"
