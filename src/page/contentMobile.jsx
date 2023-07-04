@@ -239,10 +239,10 @@ const ContentMobile = () => {
       </div>
       <div
         className="content"
-        style={{ marginBottom: 20, marginTop: 20 }}
+        style={{ marginBottom: 10, marginTop: 10 }}
         data-aos="fade-up"
       >
-        <div className="content__title" style={{ marginBottom: 20 }}>
+        <div className="content__title" style={{ marginBottom: 10 }}>
           hr
         </div>
       </div>
@@ -250,12 +250,10 @@ const ContentMobile = () => {
         <div className="content__item__row">
           <div
             className="content__bit"
-            onMouseOver={() => (size.mobile ? {} : setMorpheus(true))}
-            onMouseOut={() => (size.mobile ? {} : setMorpheus(false))}
-            onTouchStart={() => (size.mobile ? setMorpheus(true) : {})}
-            onTouchEnd={() => (size.mobile ? setMorpheus(false) : {})}
-            onMouseDown={() => (size.mobile ? setMorpheus(true) : {})}
-            onMouseUp={() => (size.mobile ? setMorpheus(false) : {})}
+            onTouchStart={() => setMorpheus(true)}
+            onTouchEnd={() => setMorpheus(false)}
+            onMouseDown={() => setMorpheus(true)}
+            onMouseUp={() => setMorpheus(false)}
           >
             {morpheus && (
               <div className="red__box">
@@ -266,8 +264,14 @@ const ContentMobile = () => {
             <div className="morpheus__box">
               <div className="morpheus" />
               <div
-                className="bubble right morpheus__dialog"
-                style={morpheus ? { width: 290 } : { width: 250 }}
+                className={`bubble left_red_morf${
+                  morpheus ? '-open' : ''
+                } morpheus__dialog`}
+                style={
+                  morpheus
+                    ? { width: 120, top: -101 }
+                    : { width: 120, top: -13 }
+                }
               >
                 <div className="content__bit__text">
                   {morpheus
@@ -276,7 +280,7 @@ const ContentMobile = () => {
                 </div>
               </div>
               {morpheus && (
-                <div className="bubble left morpheus__dialog-right">
+                <div className="bubble left_morf morpheus__dialog-right">
                   <div className="content__bit__text">
                     {t('content.youTakeBluePill')}
                   </div>

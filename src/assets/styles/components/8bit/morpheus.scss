@@ -1,6 +1,9 @@
 $width-morpheus: 5px;
 $width-red: 4px;
 
+$width-morpheus-mobile: 3px;
+$width-red-mobile: 2px;
+
 $red-pill: #ce1127;
 $red-shadow-pill: #a50e1f;
 $red-shadow2-pill: #840c18;
@@ -62,6 +65,27 @@ $shirt-shadow-morpheus: #251123;
         transform: translate(-260%, -40%);
       }
     }
+    @media (max-width: 480px) {
+      height: $width-red-mobile * 20;
+      width: $width-red-mobile * 20;
+      transform: translate(260%, -10%);
+      @-webkit-keyframes float-animate-red {
+        0% {
+          transform: translate(-260%, -10%);
+        }
+        100% {
+          transform: translate(-260%, 0%);
+        }
+      }
+      @keyframes float-animate-red {
+        0% {
+          transform: translate(-260%, -10%);
+        }
+        100% {
+          transform: translate(-260%, 0%);
+        }
+      }
+    }
   }
   &__neon {
     width: 8px;
@@ -79,6 +103,11 @@ $shirt-shadow-morpheus: #251123;
           0 0 10px $red-shadow-pill, 0 0 15px $red-pill, 0 0 22px $red-pill,
           0 0 30px $red-pill, 0 0 35px $red-pill, 0 0 50px $red-pill;
       }
+    }
+    @media (max-width: 480px) {
+      width: 5px;
+      height: 40px;
+      transform: translate(19px, 0px) rotate(45deg);
     }
   }
   box-shadow: (13 * $width-red) (1 * $width-red) 0 $red-outline-pill,
@@ -294,6 +323,224 @@ $shirt-shadow-morpheus: #251123;
     (5 * $width-red) (19 * $width-red) 0 $red-outline-pill,
     (6 * $width-red) (19 * $width-red) 0 $red-outline-pill,
     (7 * $width-red) (19 * $width-red) 0 $red-outline-pill;
+  @media (max-width: 480px) {
+    width: $width-red-mobile;
+    height: $width-red-mobile;
+    box-shadow: (13 * $width-red-mobile) (1 * $width-red-mobile) 0
+        $red-outline-pill,
+      (14 * $width-red-mobile) (1 * $width-red-mobile) 0 $red-outline-pill,
+      (15 * $width-red-mobile) (1 * $width-red-mobile) 0 $red-outline-pill,
+      (16 * $width-red-mobile) (1 * $width-red-mobile) 0 $red-outline-pill,
+      (11 * $width-red-mobile) (2 * $width-red-mobile) 0 $red-outline-pill,
+      (12 * $width-red-mobile) (2 * $width-red-mobile) 0 $red-outline-pill,
+      (13 * $width-red-mobile) (2 * $width-red-mobile) 0 $red-shadow-pill,
+      (14 * $width-red-mobile) (2 * $width-red-mobile) 0 $red-shadow-pill,
+      (15 * $width-red-mobile) (2 * $width-red-mobile) 0 $red-shadow-pill,
+      (16 * $width-red-mobile) (2 * $width-red-mobile) 0 $red-shadow-pill,
+      (17 * $width-red-mobile) (2 * $width-red-mobile) 0 $red-outline-pill,
+      (10 * $width-red-mobile) (3 * $width-red-mobile) 0 $red-outline-pill,
+      (11 * $width-red-mobile) (3 * $width-red-mobile) 0 $red-shadow-pill,
+      (12 * $width-red-mobile) (3 * $width-red-mobile) 0 $red-shadow-pill,
+      (13 * $width-red-mobile) (3 * $width-red-mobile) 0 $white,
+      (14 * $width-red-mobile) (3 * $width-red-mobile) 0 $red-shadow-pill,
+      (15 * $width-red-mobile) (3 * $width-red-mobile) 0 $red-shadow-pill,
+      (16 * $width-red-mobile) (3 * $width-red-mobile) 0 $red-shadow-pill,
+      (17 * $width-red-mobile) (3 * $width-red-mobile) 0 $red-shadow-pill,
+      (18 * $width-red-mobile) (3 * $width-red-mobile) 0 $red-outline-pill,
+      (9 * $width-red-mobile) (4 * $width-red-mobile) 0 $red-outline-pill,
+      (10 * $width-red-mobile) (4 * $width-red-mobile) 0 $red-shadow-pill,
+      (11 * $width-red-mobile) (4 * $width-red-mobile) 0 $white,
+      (12 * $width-red-mobile) (4 * $width-red-mobile) 0 $white,
+      (13 * $width-red-mobile) (4 * $width-red-mobile) 0 $red-shadow-pill,
+      (14 * $width-red-mobile) (4 * $width-red-mobile) 0 $red-shadow-pill,
+      (15 * $width-red-mobile) (4 * $width-red-mobile) 0 $red-shadow-pill,
+      (16 * $width-red-mobile) (4 * $width-red-mobile) 0 $red-shadow-pill,
+      (17 * $width-red-mobile) (4 * $width-red-mobile) 0 $red-shadow-pill,
+      (18 * $width-red-mobile) (4 * $width-red-mobile) 0 $red-shadow2-pill,
+      (19 * $width-red-mobile) (4 * $width-red-mobile) 0 $red-outline-pill,
+      (8 * $width-red-mobile) (5 * $width-red-mobile) 0 $red-outline-pill,
+      (9 * $width-red-mobile) (5 * $width-red-mobile) 0 $red-shadow-pill,
+      (10 * $width-red-mobile) (5 * $width-red-mobile) 0 $white,
+      (11 * $width-red-mobile) (5 * $width-red-mobile) 0 $red-shadow-pill,
+      (12 * $width-red-mobile) (5 * $width-red-mobile) 0 $red-shadow-pill,
+      (13 * $width-red-mobile) (5 * $width-red-mobile) 0 $red-shadow-pill,
+      (14 * $width-red-mobile) (5 * $width-red-mobile) 0 $red-shadow-pill,
+      (15 * $width-red-mobile) (5 * $width-red-mobile) 0 $red-shadow-pill,
+      (16 * $width-red-mobile) (5 * $width-red-mobile) 0 $red-shadow-pill,
+      (17 * $width-red-mobile) (5 * $width-red-mobile) 0 $red-shadow-pill,
+      (18 * $width-red-mobile) (5 * $width-red-mobile) 0 $red-shadow2-pill,
+      (19 * $width-red-mobile) (5 * $width-red-mobile) 0 $red-outline-pill,
+      (7 * $width-red-mobile) (6 * $width-red-mobile) 0 $red-outline-pill,
+      (8 * $width-red-mobile) (6 * $width-red-mobile) 0 $red-shadow-pill,
+      (9 * $width-red-mobile) (6 * $width-red-mobile) 0 $white,
+      (10 * $width-red-mobile) (6 * $width-red-mobile) 0 $red-shadow-pill,
+      (11 * $width-red-mobile) (6 * $width-red-mobile) 0 $red-shadow-pill,
+      (12 * $width-red-mobile) (6 * $width-red-mobile) 0 $red-shadow-pill,
+      (13 * $width-red-mobile) (6 * $width-red-mobile) 0 $red-shadow-pill,
+      (14 * $width-red-mobile) (6 * $width-red-mobile) 0 $red-shadow-pill,
+      (15 * $width-red-mobile) (6 * $width-red-mobile) 0 $red-shadow-pill,
+      (16 * $width-red-mobile) (6 * $width-red-mobile) 0 $red-shadow-pill,
+      (17 * $width-red-mobile) (6 * $width-red-mobile) 0 $red-shadow-pill,
+      (18 * $width-red-mobile) (6 * $width-red-mobile) 0 $red-shadow2-pill,
+      (19 * $width-red-mobile) (6 * $width-red-mobile) 0 $red-outline-pill,
+      (6 * $width-red-mobile) (7 * $width-red-mobile) 0 $red-outline-pill,
+      (7 * $width-red-mobile) (7 * $width-red-mobile) 0 $red-pill,
+      (8 * $width-red-mobile) (7 * $width-red-mobile) 0 $white,
+      (9 * $width-red-mobile) (7 * $width-red-mobile) 0 $red-shadow-pill,
+      (10 * $width-red-mobile) (7 * $width-red-mobile) 0 $red-shadow-pill,
+      (11 * $width-red-mobile) (7 * $width-red-mobile) 0 $red-shadow-pill,
+      (12 * $width-red-mobile) (7 * $width-red-mobile) 0 $red-shadow-pill,
+      (13 * $width-red-mobile) (7 * $width-red-mobile) 0 $red-shadow-pill,
+      (14 * $width-red-mobile) (7 * $width-red-mobile) 0 $red-shadow-pill,
+      (15 * $width-red-mobile) (7 * $width-red-mobile) 0 $red-shadow-pill,
+      (16 * $width-red-mobile) (7 * $width-red-mobile) 0 $red-shadow-pill,
+      (17 * $width-red-mobile) (7 * $width-red-mobile) 0 $red-shadow2-pill,
+      (18 * $width-red-mobile) (7 * $width-red-mobile) 0 $red-shadow2-pill,
+      (19 * $width-red-mobile) (7 * $width-red-mobile) 0 $red-outline-pill,
+      (5 * $width-red-mobile) (8 * $width-red-mobile) 0 $red-outline-pill,
+      (6 * $width-red-mobile) (8 * $width-red-mobile) 0 $red-pill,
+      (7 * $width-red-mobile) (8 * $width-red-mobile) 0 $white,
+      (8 * $width-red-mobile) (8 * $width-red-mobile) 0 $red-pill,
+      (9 * $width-red-mobile) (8 * $width-red-mobile) 0 $red-pill,
+      (10 * $width-red-mobile) (8 * $width-red-mobile) 0 $red-pill,
+      (11 * $width-red-mobile) (8 * $width-red-mobile) 0 $red-pill,
+      (12 * $width-red-mobile) (8 * $width-red-mobile) 0 $red-shadow-pill,
+      (13 * $width-red-mobile) (8 * $width-red-mobile) 0 $red-shadow-pill,
+      (14 * $width-red-mobile) (8 * $width-red-mobile) 0 $red-shadow-pill,
+      (15 * $width-red-mobile) (8 * $width-red-mobile) 0 $red-shadow-pill,
+      (16 * $width-red-mobile) (8 * $width-red-mobile) 0 $red-shadow2-pill,
+      (17 * $width-red-mobile) (8 * $width-red-mobile) 0 $red-shadow2-pill,
+      (18 * $width-red-mobile) (8 * $width-red-mobile) 0 $red-outline-pill,
+      (4 * $width-red-mobile) (9 * $width-red-mobile) 0 $red-outline-pill,
+      (5 * $width-red-mobile) (9 * $width-red-mobile) 0 $red-pill,
+      (6 * $width-red-mobile) (9 * $width-red-mobile) 0 $white,
+      (7 * $width-red-mobile) (9 * $width-red-mobile) 0 $red-pill,
+      (8 * $width-red-mobile) (9 * $width-red-mobile) 0 $red-pill,
+      (9 * $width-red-mobile) (9 * $width-red-mobile) 0 $red-pill,
+      (10 * $width-red-mobile) (9 * $width-red-mobile) 0 $red-pill,
+      (11 * $width-red-mobile) (9 * $width-red-mobile) 0 $red-pill,
+      (12 * $width-red-mobile) (9 * $width-red-mobile) 0 $red-pill,
+      (13 * $width-red-mobile) (9 * $width-red-mobile) 0 $red-shadow-pill,
+      (14 * $width-red-mobile) (9 * $width-red-mobile) 0 $red-shadow-pill,
+      (15 * $width-red-mobile) (9 * $width-red-mobile) 0 $red-shadow-pill,
+      (16 * $width-red-mobile) (9 * $width-red-mobile) 0 $red-shadow2-pill,
+      (17 * $width-red-mobile) (9 * $width-red-mobile) 0 $red-shadow2-pill,
+      (18 * $width-red-mobile) (9 * $width-red-mobile) 0 $red-outline-pill,
+      (3 * $width-red-mobile) (10 * $width-red-mobile) 0 $red-outline-pill,
+      (4 * $width-red-mobile) (10 * $width-red-mobile) 0 $red-pill,
+      (5 * $width-red-mobile) (10 * $width-red-mobile) 0 $white,
+      (6 * $width-red-mobile) (10 * $width-red-mobile) 0 $red-pill,
+      (7 * $width-red-mobile) (10 * $width-red-mobile) 0 $red-pill,
+      (8 * $width-red-mobile) (10 * $width-red-mobile) 0 $red-pill,
+      (9 * $width-red-mobile) (10 * $width-red-mobile) 0 $red-pill,
+      (10 * $width-red-mobile) (10 * $width-red-mobile) 0 $red-pill,
+      (11 * $width-red-mobile) (10 * $width-red-mobile) 0 $red-pill,
+      (12 * $width-red-mobile) (10 * $width-red-mobile) 0 $red-pill,
+      (13 * $width-red-mobile) (10 * $width-red-mobile) 0 $red-shadow-pill,
+      (14 * $width-red-mobile) (10 * $width-red-mobile) 0 $red-shadow-pill,
+      (15 * $width-red-mobile) (10 * $width-red-mobile) 0 $red-shadow2-pill,
+      (16 * $width-red-mobile) (10 * $width-red-mobile) 0 $red-shadow2-pill,
+      (17 * $width-red-mobile) (10 * $width-red-mobile) 0 $red-outline-pill,
+      (2 * $width-red-mobile) (11 * $width-red-mobile) 0 $red-outline-pill,
+      (3 * $width-red-mobile) (11 * $width-red-mobile) 0 $red-pill,
+      (4 * $width-red-mobile) (11 * $width-red-mobile) 0 $white,
+      (5 * $width-red-mobile) (11 * $width-red-mobile) 0 $red-pill,
+      (6 * $width-red-mobile) (11 * $width-red-mobile) 0 $red-pill,
+      (7 * $width-red-mobile) (11 * $width-red-mobile) 0 $red-pill,
+      (8 * $width-red-mobile) (11 * $width-red-mobile) 0 $red-pill,
+      (9 * $width-red-mobile) (11 * $width-red-mobile) 0 $red-pill,
+      (10 * $width-red-mobile) (11 * $width-red-mobile) 0 $red-pill,
+      (11 * $width-red-mobile) (11 * $width-red-mobile) 0 $red-pill,
+      (12 * $width-red-mobile) (11 * $width-red-mobile) 0 $red-pill,
+      (13 * $width-red-mobile) (11 * $width-red-mobile) 0 $red-shadow-pill,
+      (14 * $width-red-mobile) (11 * $width-red-mobile) 0 $red-shadow2-pill,
+      (15 * $width-red-mobile) (11 * $width-red-mobile) 0 $red-shadow2-pill,
+      (16 * $width-red-mobile) (11 * $width-red-mobile) 0 $red-outline-pill,
+      (2 * $width-red-mobile) (12 * $width-red-mobile) 0 $red-outline-pill,
+      (3 * $width-red-mobile) (12 * $width-red-mobile) 0 $red-pill,
+      (4 * $width-red-mobile) (12 * $width-red-mobile) 0 $white,
+      (5 * $width-red-mobile) (12 * $width-red-mobile) 0 $red-pill,
+      (6 * $width-red-mobile) (12 * $width-red-mobile) 0 $red-pill,
+      (7 * $width-red-mobile) (12 * $width-red-mobile) 0 $red-pill,
+      (8 * $width-red-mobile) (12 * $width-red-mobile) 0 $red-pill,
+      (9 * $width-red-mobile) (12 * $width-red-mobile) 0 $red-pill,
+      (10 * $width-red-mobile) (12 * $width-red-mobile) 0 $red-pill,
+      (11 * $width-red-mobile) (12 * $width-red-mobile) 0 $red-pill,
+      (12 * $width-red-mobile) (12 * $width-red-mobile) 0 $red-pill,
+      (13 * $width-red-mobile) (12 * $width-red-mobile) 0 $red-shadow2-pill,
+      (14 * $width-red-mobile) (12 * $width-red-mobile) 0 $red-shadow2-pill,
+      (15 * $width-red-mobile) (12 * $width-red-mobile) 0 $red-outline-pill,
+      (1 * $width-red-mobile) (13 * $width-red-mobile) 0 $red-outline-pill,
+      (2 * $width-red-mobile) (13 * $width-red-mobile) 0 $red-pill,
+      (3 * $width-red-mobile) (13 * $width-red-mobile) 0 $white,
+      (4 * $width-red-mobile) (13 * $width-red-mobile) 0 $red-pill,
+      (5 * $width-red-mobile) (13 * $width-red-mobile) 0 $red-pill,
+      (6 * $width-red-mobile) (13 * $width-red-mobile) 0 $red-pill,
+      (7 * $width-red-mobile) (13 * $width-red-mobile) 0 $red-pill,
+      (8 * $width-red-mobile) (13 * $width-red-mobile) 0 $red-pill,
+      (9 * $width-red-mobile) (13 * $width-red-mobile) 0 $red-pill,
+      (10 * $width-red-mobile) (13 * $width-red-mobile) 0 $red-pill,
+      (11 * $width-red-mobile) (13 * $width-red-mobile) 0 $red-pill,
+      (12 * $width-red-mobile) (13 * $width-red-mobile) 0 $red-shadow-pill,
+      (13 * $width-red-mobile) (13 * $width-red-mobile) 0 $red-shadow-pill,
+      (14 * $width-red-mobile) (13 * $width-red-mobile) 0 $red-outline-pill,
+      (1 * $width-red-mobile) (14 * $width-red-mobile) 0 $red-outline-pill,
+      (2 * $width-red-mobile) (14 * $width-red-mobile) 0 $red-pill,
+      (3 * $width-red-mobile) (14 * $width-red-mobile) 0 $red-pill,
+      (4 * $width-red-mobile) (14 * $width-red-mobile) 0 $red-pill,
+      (5 * $width-red-mobile) (14 * $width-red-mobile) 0 $red-pill,
+      (6 * $width-red-mobile) (14 * $width-red-mobile) 0 $red-pill,
+      (7 * $width-red-mobile) (14 * $width-red-mobile) 0 $red-pill,
+      (8 * $width-red-mobile) (14 * $width-red-mobile) 0 $red-pill,
+      (9 * $width-red-mobile) (14 * $width-red-mobile) 0 $red-pill,
+      (10 * $width-red-mobile) (14 * $width-red-mobile) 0 $red-pill,
+      (11 * $width-red-mobile) (14 * $width-red-mobile) 0 $red-shadow-pill,
+      (12 * $width-red-mobile) (14 * $width-red-mobile) 0 $red-shadow-pill,
+      (13 * $width-red-mobile) (14 * $width-red-mobile) 0 $red-outline-pill,
+      (1 * $width-red-mobile) (15 * $width-red-mobile) 0 $red-outline-pill,
+      (2 * $width-red-mobile) (15 * $width-red-mobile) 0 $red-pill,
+      (3 * $width-red-mobile) (15 * $width-red-mobile) 0 $red-pill,
+      (4 * $width-red-mobile) (15 * $width-red-mobile) 0 $red-pill,
+      (5 * $width-red-mobile) (15 * $width-red-mobile) 0 $red-pill,
+      (6 * $width-red-mobile) (15 * $width-red-mobile) 0 $red-pill,
+      (7 * $width-red-mobile) (15 * $width-red-mobile) 0 $red-pill,
+      (8 * $width-red-mobile) (15 * $width-red-mobile) 0 $red-pill,
+      (9 * $width-red-mobile) (15 * $width-red-mobile) 0 $red-pill,
+      (10 * $width-red-mobile) (15 * $width-red-mobile) 0 $red-shadow-pill,
+      (11 * $width-red-mobile) (15 * $width-red-mobile) 0 $red-shadow-pill,
+      (12 * $width-red-mobile) (15 * $width-red-mobile) 0 $red-outline-pill,
+      (1 * $width-red-mobile) (16 * $width-red-mobile) 0 $red-outline-pill,
+      (2 * $width-red-mobile) (16 * $width-red-mobile) 0 $red-pill,
+      (3 * $width-red-mobile) (16 * $width-red-mobile) 0 $red-pill,
+      (4 * $width-red-mobile) (16 * $width-red-mobile) 0 $red-pill,
+      (5 * $width-red-mobile) (16 * $width-red-mobile) 0 $red-pill,
+      (6 * $width-red-mobile) (16 * $width-red-mobile) 0 $red-pill,
+      (7 * $width-red-mobile) (16 * $width-red-mobile) 0 $red-pill,
+      (8 * $width-red-mobile) (16 * $width-red-mobile) 0 $red-shadow-pill,
+      (9 * $width-red-mobile) (16 * $width-red-mobile) 0 $red-shadow-pill,
+      (10 * $width-red-mobile) (16 * $width-red-mobile) 0 $red-shadow-pill,
+      (11 * $width-red-mobile) (16 * $width-red-mobile) 0 $red-outline-pill,
+      (2 * $width-red-mobile) (17 * $width-red-mobile) 0 $red-outline-pill,
+      (3 * $width-red-mobile) (17 * $width-red-mobile) 0 $red-pill,
+      (4 * $width-red-mobile) (17 * $width-red-mobile) 0 $red-pill,
+      (5 * $width-red-mobile) (17 * $width-red-mobile) 0 $red-pill,
+      (6 * $width-red-mobile) (17 * $width-red-mobile) 0 $red-pill,
+      (7 * $width-red-mobile) (17 * $width-red-mobile) 0 $red-shadow-pill,
+      (8 * $width-red-mobile) (17 * $width-red-mobile) 0 $red-shadow-pill,
+      (9 * $width-red-mobile) (17 * $width-red-mobile) 0 $red-shadow-pill,
+      (10 * $width-red-mobile) (17 * $width-red-mobile) 0 $red-outline-pill,
+      (3 * $width-red-mobile) (18 * $width-red-mobile) 0 $red-outline-pill,
+      (4 * $width-red-mobile) (18 * $width-red-mobile) 0 $red-shadow-pill,
+      (5 * $width-red-mobile) (18 * $width-red-mobile) 0 $red-shadow-pill,
+      (6 * $width-red-mobile) (18 * $width-red-mobile) 0 $red-shadow-pill,
+      (7 * $width-red-mobile) (18 * $width-red-mobile) 0 $red-shadow-pill,
+      (8 * $width-red-mobile) (18 * $width-red-mobile) 0 $red-outline-pill,
+      (9 * $width-red-mobile) (18 * $width-red-mobile) 0 $red-outline-pill,
+      (4 * $width-red-mobile) (19 * $width-red-mobile) 0 $red-outline-pill,
+      (5 * $width-red-mobile) (19 * $width-red-mobile) 0 $red-outline-pill,
+      (6 * $width-red-mobile) (19 * $width-red-mobile) 0 $red-outline-pill,
+      (7 * $width-red-mobile) (19 * $width-red-mobile) 0 $red-outline-pill;
+  }
 }
 
 .blue {
@@ -336,6 +583,27 @@ $shirt-shadow-morpheus: #251123;
         transform: translate(160%, -40%);
       }
     }
+    @media (max-width: 480px) {
+      height: $width-red-mobile * 20;
+      width: $width-red-mobile * 20;
+      transform: translate(160%, -10%);
+      @-webkit-keyframes float-animate {
+        0% {
+          transform: translate(160%, -10%);
+        }
+        100% {
+          transform: translate(160%, 0%);
+        }
+      }
+      @keyframes float-animate {
+        0% {
+          transform: translate(160%, -10%);
+        }
+        100% {
+          transform: translate(160%, 0%);
+        }
+      }
+    }
   }
   &__neon {
     width: 8px;
@@ -353,6 +621,11 @@ $shirt-shadow-morpheus: #251123;
           0 0 15px $blue-shadow-pill, 0 0 20px $blue-pill, 0 0 35px $blue-pill,
           0 0 40px $blue-pill, 0 0 50px $blue-pill, 0 0 75px $blue-pill;
       }
+    }
+    @media (max-width: 480px) {
+      width: 5px;
+      height: 40px;
+      transform: translate(19px, 0px) rotate(45deg);
     }
   }
   box-shadow: (13 * $width-red) (1 * $width-red) 0 $blue-outline-pill,
@@ -568,34 +841,260 @@ $shirt-shadow-morpheus: #251123;
     (5 * $width-red) (19 * $width-red) 0 $blue-outline-pill,
     (6 * $width-red) (19 * $width-red) 0 $blue-outline-pill,
     (7 * $width-red) (19 * $width-red) 0 $blue-outline-pill;
+  @media (max-width: 480px) {
+    width: $width-red-mobile;
+    height: $width-red-mobile;
+    box-shadow: (13 * $width-red-mobile) (1 * $width-red-mobile) 0
+        $blue-outline-pill,
+      (14 * $width-red-mobile) (1 * $width-red-mobile) 0 $blue-outline-pill,
+      (15 * $width-red-mobile) (1 * $width-red-mobile) 0 $blue-outline-pill,
+      (16 * $width-red-mobile) (1 * $width-red-mobile) 0 $blue-outline-pill,
+      (11 * $width-red-mobile) (2 * $width-red-mobile) 0 $blue-outline-pill,
+      (12 * $width-red-mobile) (2 * $width-red-mobile) 0 $blue-outline-pill,
+      (13 * $width-red-mobile) (2 * $width-red-mobile) 0 $blue-shadow-pill,
+      (14 * $width-red-mobile) (2 * $width-red-mobile) 0 $blue-shadow-pill,
+      (15 * $width-red-mobile) (2 * $width-red-mobile) 0 $blue-shadow-pill,
+      (16 * $width-red-mobile) (2 * $width-red-mobile) 0 $blue-shadow-pill,
+      (17 * $width-red-mobile) (2 * $width-red-mobile) 0 $blue-outline-pill,
+      (10 * $width-red-mobile) (3 * $width-red-mobile) 0 $blue-outline-pill,
+      (11 * $width-red-mobile) (3 * $width-red-mobile) 0 $blue-shadow-pill,
+      (12 * $width-red-mobile) (3 * $width-red-mobile) 0 $blue-shadow-pill,
+      (13 * $width-red-mobile) (3 * $width-red-mobile) 0 $white,
+      (14 * $width-red-mobile) (3 * $width-red-mobile) 0 $blue-shadow-pill,
+      (15 * $width-red-mobile) (3 * $width-red-mobile) 0 $blue-shadow-pill,
+      (16 * $width-red-mobile) (3 * $width-red-mobile) 0 $blue-shadow-pill,
+      (17 * $width-red-mobile) (3 * $width-red-mobile) 0 $blue-shadow-pill,
+      (18 * $width-red-mobile) (3 * $width-red-mobile) 0 $blue-outline-pill,
+      (9 * $width-red-mobile) (4 * $width-red-mobile) 0 $blue-outline-pill,
+      (10 * $width-red-mobile) (4 * $width-red-mobile) 0 $blue-shadow-pill,
+      (11 * $width-red-mobile) (4 * $width-red-mobile) 0 $white,
+      (12 * $width-red-mobile) (4 * $width-red-mobile) 0 $white,
+      (13 * $width-red-mobile) (4 * $width-red-mobile) 0 $blue-shadow-pill,
+      (14 * $width-red-mobile) (4 * $width-red-mobile) 0 $blue-shadow-pill,
+      (15 * $width-red-mobile) (4 * $width-red-mobile) 0 $blue-shadow-pill,
+      (16 * $width-red-mobile) (4 * $width-red-mobile) 0 $blue-shadow-pill,
+      (17 * $width-red-mobile) (4 * $width-red-mobile) 0 $blue-shadow-pill,
+      (18 * $width-red-mobile) (4 * $width-red-mobile) 0 $blue-shadow2-pill,
+      (19 * $width-red-mobile) (4 * $width-red-mobile) 0 $blue-outline-pill,
+      (8 * $width-red-mobile) (5 * $width-red-mobile) 0 $blue-outline-pill,
+      (9 * $width-red-mobile) (5 * $width-red-mobile) 0 $blue-shadow-pill,
+      (10 * $width-red-mobile) (5 * $width-red-mobile) 0 $white,
+      (11 * $width-red-mobile) (5 * $width-red-mobile) 0 $blue-shadow-pill,
+      (12 * $width-red-mobile) (5 * $width-red-mobile) 0 $blue-shadow-pill,
+      (13 * $width-red-mobile) (5 * $width-red-mobile) 0 $blue-shadow-pill,
+      (14 * $width-red-mobile) (5 * $width-red-mobile) 0 $blue-shadow-pill,
+      (15 * $width-red-mobile) (5 * $width-red-mobile) 0 $blue-shadow-pill,
+      (16 * $width-red-mobile) (5 * $width-red-mobile) 0 $blue-shadow-pill,
+      (17 * $width-red-mobile) (5 * $width-red-mobile) 0 $blue-shadow-pill,
+      (18 * $width-red-mobile) (5 * $width-red-mobile) 0 $blue-shadow2-pill,
+      (19 * $width-red-mobile) (5 * $width-red-mobile) 0 $blue-outline-pill,
+      (7 * $width-red-mobile) (6 * $width-red-mobile) 0 $blue-outline-pill,
+      (8 * $width-red-mobile) (6 * $width-red-mobile) 0 $blue-shadow-pill,
+      (9 * $width-red-mobile) (6 * $width-red-mobile) 0 $white,
+      (10 * $width-red-mobile) (6 * $width-red-mobile) 0 $blue-shadow-pill,
+      (11 * $width-red-mobile) (6 * $width-red-mobile) 0 $blue-shadow-pill,
+      (12 * $width-red-mobile) (6 * $width-red-mobile) 0 $blue-shadow-pill,
+      (13 * $width-red-mobile) (6 * $width-red-mobile) 0 $blue-shadow-pill,
+      (14 * $width-red-mobile) (6 * $width-red-mobile) 0 $blue-shadow-pill,
+      (15 * $width-red-mobile) (6 * $width-red-mobile) 0 $blue-shadow-pill,
+      (16 * $width-red-mobile) (6 * $width-red-mobile) 0 $blue-shadow-pill,
+      (17 * $width-red-mobile) (6 * $width-red-mobile) 0 $blue-shadow-pill,
+      (18 * $width-red-mobile) (6 * $width-red-mobile) 0 $blue-shadow2-pill,
+      (19 * $width-red-mobile) (6 * $width-red-mobile) 0 $blue-outline-pill,
+      (6 * $width-red-mobile) (7 * $width-red-mobile) 0 $blue-outline-pill,
+      (7 * $width-red-mobile) (7 * $width-red-mobile) 0 $blue-pill,
+      (8 * $width-red-mobile) (7 * $width-red-mobile) 0 $white,
+      (9 * $width-red-mobile) (7 * $width-red-mobile) 0 $blue-shadow-pill,
+      (10 * $width-red-mobile) (7 * $width-red-mobile) 0 $blue-shadow-pill,
+      (11 * $width-red-mobile) (7 * $width-red-mobile) 0 $blue-shadow-pill,
+      (12 * $width-red-mobile) (7 * $width-red-mobile) 0 $blue-shadow-pill,
+      (13 * $width-red-mobile) (7 * $width-red-mobile) 0 $blue-shadow-pill,
+      (14 * $width-red-mobile) (7 * $width-red-mobile) 0 $blue-shadow-pill,
+      (15 * $width-red-mobile) (7 * $width-red-mobile) 0 $blue-shadow-pill,
+      (16 * $width-red-mobile) (7 * $width-red-mobile) 0 $blue-shadow-pill,
+      (17 * $width-red-mobile) (7 * $width-red-mobile) 0 $blue-shadow2-pill,
+      (18 * $width-red-mobile) (7 * $width-red-mobile) 0 $blue-shadow2-pill,
+      (19 * $width-red-mobile) (7 * $width-red-mobile) 0 $blue-outline-pill,
+      (5 * $width-red-mobile) (8 * $width-red-mobile) 0 $blue-outline-pill,
+      (6 * $width-red-mobile) (8 * $width-red-mobile) 0 $blue-pill,
+      (7 * $width-red-mobile) (8 * $width-red-mobile) 0 $white,
+      (8 * $width-red-mobile) (8 * $width-red-mobile) 0 $blue-pill,
+      (9 * $width-red-mobile) (8 * $width-red-mobile) 0 $blue-pill,
+      (10 * $width-red-mobile) (8 * $width-red-mobile) 0 $blue-pill,
+      (11 * $width-red-mobile) (8 * $width-red-mobile) 0 $blue-pill,
+      (12 * $width-red-mobile) (8 * $width-red-mobile) 0 $blue-shadow-pill,
+      (13 * $width-red-mobile) (8 * $width-red-mobile) 0 $blue-shadow-pill,
+      (14 * $width-red-mobile) (8 * $width-red-mobile) 0 $blue-shadow-pill,
+      (15 * $width-red-mobile) (8 * $width-red-mobile) 0 $blue-shadow-pill,
+      (16 * $width-red-mobile) (8 * $width-red-mobile) 0 $blue-shadow2-pill,
+      (17 * $width-red-mobile) (8 * $width-red-mobile) 0 $blue-shadow2-pill,
+      (18 * $width-red-mobile) (8 * $width-red-mobile) 0 $blue-outline-pill,
+      (4 * $width-red-mobile) (9 * $width-red-mobile) 0 $blue-outline-pill,
+      (5 * $width-red-mobile) (9 * $width-red-mobile) 0 $blue-pill,
+      (6 * $width-red-mobile) (9 * $width-red-mobile) 0 $white,
+      (7 * $width-red-mobile) (9 * $width-red-mobile) 0 $blue-pill,
+      (8 * $width-red-mobile) (9 * $width-red-mobile) 0 $blue-pill,
+      (9 * $width-red-mobile) (9 * $width-red-mobile) 0 $blue-pill,
+      (10 * $width-red-mobile) (9 * $width-red-mobile) 0 $blue-pill,
+      (11 * $width-red-mobile) (9 * $width-red-mobile) 0 $blue-pill,
+      (12 * $width-red-mobile) (9 * $width-red-mobile) 0 $blue-pill,
+      (13 * $width-red-mobile) (9 * $width-red-mobile) 0 $blue-shadow-pill,
+      (14 * $width-red-mobile) (9 * $width-red-mobile) 0 $blue-shadow-pill,
+      (15 * $width-red-mobile) (9 * $width-red-mobile) 0 $blue-shadow-pill,
+      (16 * $width-red-mobile) (9 * $width-red-mobile) 0 $blue-shadow2-pill,
+      (17 * $width-red-mobile) (9 * $width-red-mobile) 0 $blue-shadow2-pill,
+      (18 * $width-red-mobile) (9 * $width-red-mobile) 0 $blue-outline-pill,
+      (3 * $width-red-mobile) (10 * $width-red-mobile) 0 $blue-outline-pill,
+      (4 * $width-red-mobile) (10 * $width-red-mobile) 0 $blue-pill,
+      (5 * $width-red-mobile) (10 * $width-red-mobile) 0 $white,
+      (6 * $width-red-mobile) (10 * $width-red-mobile) 0 $blue-pill,
+      (7 * $width-red-mobile) (10 * $width-red-mobile) 0 $blue-pill,
+      (8 * $width-red-mobile) (10 * $width-red-mobile) 0 $blue-pill,
+      (9 * $width-red-mobile) (10 * $width-red-mobile) 0 $blue-pill,
+      (10 * $width-red-mobile) (10 * $width-red-mobile) 0 $blue-pill,
+      (11 * $width-red-mobile) (10 * $width-red-mobile) 0 $blue-pill,
+      (12 * $width-red-mobile) (10 * $width-red-mobile) 0 $blue-pill,
+      (13 * $width-red-mobile) (10 * $width-red-mobile) 0 $blue-shadow-pill,
+      (14 * $width-red-mobile) (10 * $width-red-mobile) 0 $blue-shadow-pill,
+      (15 * $width-red-mobile) (10 * $width-red-mobile) 0 $blue-shadow2-pill,
+      (16 * $width-red-mobile) (10 * $width-red-mobile) 0 $blue-shadow2-pill,
+      (17 * $width-red-mobile) (10 * $width-red-mobile) 0 $blue-outline-pill,
+      (2 * $width-red-mobile) (11 * $width-red-mobile) 0 $blue-outline-pill,
+      (3 * $width-red-mobile) (11 * $width-red-mobile) 0 $blue-pill,
+      (4 * $width-red-mobile) (11 * $width-red-mobile) 0 $white,
+      (5 * $width-red-mobile) (11 * $width-red-mobile) 0 $blue-pill,
+      (6 * $width-red-mobile) (11 * $width-red-mobile) 0 $blue-pill,
+      (7 * $width-red-mobile) (11 * $width-red-mobile) 0 $blue-pill,
+      (8 * $width-red-mobile) (11 * $width-red-mobile) 0 $blue-pill,
+      (9 * $width-red-mobile) (11 * $width-red-mobile) 0 $blue-pill,
+      (10 * $width-red-mobile) (11 * $width-red-mobile) 0 $blue-pill,
+      (11 * $width-red-mobile) (11 * $width-red-mobile) 0 $blue-pill,
+      (12 * $width-red-mobile) (11 * $width-red-mobile) 0 $blue-pill,
+      (13 * $width-red-mobile) (11 * $width-red-mobile) 0 $blue-shadow-pill,
+      (14 * $width-red-mobile) (11 * $width-red-mobile) 0 $blue-shadow2-pill,
+      (15 * $width-red-mobile) (11 * $width-red-mobile) 0 $blue-shadow2-pill,
+      (16 * $width-red-mobile) (11 * $width-red-mobile) 0 $blue-outline-pill,
+      (2 * $width-red-mobile) (12 * $width-red-mobile) 0 $blue-outline-pill,
+      (3 * $width-red-mobile) (12 * $width-red-mobile) 0 $blue-pill,
+      (4 * $width-red-mobile) (12 * $width-red-mobile) 0 $white,
+      (5 * $width-red-mobile) (12 * $width-red-mobile) 0 $blue-pill,
+      (6 * $width-red-mobile) (12 * $width-red-mobile) 0 $blue-pill,
+      (7 * $width-red-mobile) (12 * $width-red-mobile) 0 $blue-pill,
+      (8 * $width-red-mobile) (12 * $width-red-mobile) 0 $blue-pill,
+      (9 * $width-red-mobile) (12 * $width-red-mobile) 0 $blue-pill,
+      (10 * $width-red-mobile) (12 * $width-red-mobile) 0 $blue-pill,
+      (11 * $width-red-mobile) (12 * $width-red-mobile) 0 $blue-pill,
+      (12 * $width-red-mobile) (12 * $width-red-mobile) 0 $blue-pill,
+      (13 * $width-red-mobile) (12 * $width-red-mobile) 0 $blue-shadow2-pill,
+      (14 * $width-red-mobile) (12 * $width-red-mobile) 0 $blue-shadow2-pill,
+      (15 * $width-red-mobile) (12 * $width-red-mobile) 0 $blue-outline-pill,
+      (1 * $width-red-mobile) (13 * $width-red-mobile) 0 $blue-outline-pill,
+      (2 * $width-red-mobile) (13 * $width-red-mobile) 0 $blue-pill,
+      (3 * $width-red-mobile) (13 * $width-red-mobile) 0 $white,
+      (4 * $width-red-mobile) (13 * $width-red-mobile) 0 $blue-pill,
+      (5 * $width-red-mobile) (13 * $width-red-mobile) 0 $blue-pill,
+      (6 * $width-red-mobile) (13 * $width-red-mobile) 0 $blue-pill,
+      (7 * $width-red-mobile) (13 * $width-red-mobile) 0 $blue-pill,
+      (8 * $width-red-mobile) (13 * $width-red-mobile) 0 $blue-pill,
+      (9 * $width-red-mobile) (13 * $width-red-mobile) 0 $blue-pill,
+      (10 * $width-red-mobile) (13 * $width-red-mobile) 0 $blue-pill,
+      (11 * $width-red-mobile) (13 * $width-red-mobile) 0 $blue-pill,
+      (12 * $width-red-mobile) (13 * $width-red-mobile) 0 $blue-shadow-pill,
+      (13 * $width-red-mobile) (13 * $width-red-mobile) 0 $blue-shadow-pill,
+      (14 * $width-red-mobile) (13 * $width-red-mobile) 0 $blue-outline-pill,
+      (1 * $width-red-mobile) (14 * $width-red-mobile) 0 $blue-outline-pill,
+      (2 * $width-red-mobile) (14 * $width-red-mobile) 0 $blue-pill,
+      (3 * $width-red-mobile) (14 * $width-red-mobile) 0 $blue-pill,
+      (4 * $width-red-mobile) (14 * $width-red-mobile) 0 $blue-pill,
+      (5 * $width-red-mobile) (14 * $width-red-mobile) 0 $blue-pill,
+      (6 * $width-red-mobile) (14 * $width-red-mobile) 0 $blue-pill,
+      (7 * $width-red-mobile) (14 * $width-red-mobile) 0 $blue-pill,
+      (8 * $width-red-mobile) (14 * $width-red-mobile) 0 $blue-pill,
+      (9 * $width-red-mobile) (14 * $width-red-mobile) 0 $blue-pill,
+      (10 * $width-red-mobile) (14 * $width-red-mobile) 0 $blue-pill,
+      (11 * $width-red-mobile) (14 * $width-red-mobile) 0 $blue-shadow-pill,
+      (12 * $width-red-mobile) (14 * $width-red-mobile) 0 $blue-shadow-pill,
+      (13 * $width-red-mobile) (14 * $width-red-mobile) 0 $blue-outline-pill,
+      (1 * $width-red-mobile) (15 * $width-red-mobile) 0 $blue-outline-pill,
+      (2 * $width-red-mobile) (15 * $width-red-mobile) 0 $blue-pill,
+      (3 * $width-red-mobile) (15 * $width-red-mobile) 0 $blue-pill,
+      (4 * $width-red-mobile) (15 * $width-red-mobile) 0 $blue-pill,
+      (5 * $width-red-mobile) (15 * $width-red-mobile) 0 $blue-pill,
+      (6 * $width-red-mobile) (15 * $width-red-mobile) 0 $blue-pill,
+      (7 * $width-red-mobile) (15 * $width-red-mobile) 0 $blue-pill,
+      (8 * $width-red-mobile) (15 * $width-red-mobile) 0 $blue-pill,
+      (9 * $width-red-mobile) (15 * $width-red-mobile) 0 $blue-pill,
+      (10 * $width-red-mobile) (15 * $width-red-mobile) 0 $blue-shadow-pill,
+      (11 * $width-red-mobile) (15 * $width-red-mobile) 0 $blue-shadow-pill,
+      (12 * $width-red-mobile) (15 * $width-red-mobile) 0 $blue-outline-pill,
+      (1 * $width-red-mobile) (16 * $width-red-mobile) 0 $blue-outline-pill,
+      (2 * $width-red-mobile) (16 * $width-red-mobile) 0 $blue-pill,
+      (3 * $width-red-mobile) (16 * $width-red-mobile) 0 $blue-pill,
+      (4 * $width-red-mobile) (16 * $width-red-mobile) 0 $blue-pill,
+      (5 * $width-red-mobile) (16 * $width-red-mobile) 0 $blue-pill,
+      (6 * $width-red-mobile) (16 * $width-red-mobile) 0 $blue-pill,
+      (7 * $width-red-mobile) (16 * $width-red-mobile) 0 $blue-pill,
+      (8 * $width-red-mobile) (16 * $width-red-mobile) 0 $blue-shadow-pill,
+      (9 * $width-red-mobile) (16 * $width-red-mobile) 0 $blue-shadow-pill,
+      (10 * $width-red-mobile) (16 * $width-red-mobile) 0 $blue-shadow-pill,
+      (11 * $width-red-mobile) (16 * $width-red-mobile) 0 $blue-outline-pill,
+      (2 * $width-red-mobile) (17 * $width-red-mobile) 0 $blue-outline-pill,
+      (3 * $width-red-mobile) (17 * $width-red-mobile) 0 $blue-pill,
+      (4 * $width-red-mobile) (17 * $width-red-mobile) 0 $blue-pill,
+      (5 * $width-red-mobile) (17 * $width-red-mobile) 0 $blue-pill,
+      (6 * $width-red-mobile) (17 * $width-red-mobile) 0 $blue-pill,
+      (7 * $width-red-mobile) (17 * $width-red-mobile) 0 $blue-shadow-pill,
+      (8 * $width-red-mobile) (17 * $width-red-mobile) 0 $blue-shadow-pill,
+      (9 * $width-red-mobile) (17 * $width-red-mobile) 0 $blue-shadow-pill,
+      (10 * $width-red-mobile) (17 * $width-red-mobile) 0 $blue-outline-pill,
+      (3 * $width-red-mobile) (18 * $width-red-mobile) 0 $blue-outline-pill,
+      (4 * $width-red-mobile) (18 * $width-red-mobile) 0 $blue-shadow-pill,
+      (5 * $width-red-mobile) (18 * $width-red-mobile) 0 $blue-shadow-pill,
+      (6 * $width-red-mobile) (18 * $width-red-mobile) 0 $blue-shadow-pill,
+      (7 * $width-red-mobile) (18 * $width-red-mobile) 0 $blue-shadow-pill,
+      (8 * $width-red-mobile) (18 * $width-red-mobile) 0 $blue-outline-pill,
+      (9 * $width-red-mobile) (18 * $width-red-mobile) 0 $blue-outline-pill,
+      (4 * $width-red-mobile) (19 * $width-red-mobile) 0 $blue-outline-pill,
+      (5 * $width-red-mobile) (19 * $width-red-mobile) 0 $blue-outline-pill,
+      (6 * $width-red-mobile) (19 * $width-red-mobile) 0 $blue-outline-pill,
+      (7 * $width-red-mobile) (19 * $width-red-mobile) 0 $blue-outline-pill;
+  }
 }
 
 .morpheus {
   width: $width-morpheus;
   height: $width-morpheus;
-
   &__box {
     position: absolute;
     height: $width-morpheus * 58;
     width: $width-morpheus * 22;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -35%);
+    -ms-transform: translate(-50%, -35%);
+    transform: translate(-50%, -35%);
+    @media (max-width: 480px) {
+      height: $width-morpheus-mobile * 58;
+      width: $width-morpheus-mobile * 22;
+    }
   }
   &__dialog {
     position: absolute;
     right: 120px;
     top: -70px;
-    // @media (max-width: 1600px) {
-    //   left: 335px;
-    // }
+    @media (max-width: 480px) {
+      right: 65px;
+    }
     &-right {
       @extend .morpheus__dialog;
       width: 250px !important;
       right: -300px;
       top: -55px;
+      @media (max-width: 480px) {
+        top: -25px;
+        right: -155px;
+        width: 110px !important;
+      }
     }
   }
   box-shadow: (5 * $width-morpheus) (1 * $width-morpheus) 0 $skin-morpheus,
@@ -1469,4 +1968,1693 @@ $shirt-shadow-morpheus: #251123;
     (17 * $width-morpheus) (56 * $width-morpheus) 0 $jacket-morpheus,
     (18 * $width-morpheus) (56 * $width-morpheus) 0 $jacket-morpheus,
     (19 * $width-morpheus) (56 * $width-morpheus) 0 $jacket-morpheus;
+  @media (max-width: 480px) {
+    width: $width-morpheus-mobile;
+    height: $width-morpheus-mobile;
+    box-shadow: (5 * $width-morpheus-mobile) (1 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (6 * $width-morpheus-mobile) (1 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (7 * $width-morpheus-mobile) (1 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (8 * $width-morpheus-mobile) (1 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (9 * $width-morpheus-mobile) (1 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (10 * $width-morpheus-mobile) (1 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (11 * $width-morpheus-mobile) (1 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (12 * $width-morpheus-mobile) (1 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (13 * $width-morpheus-mobile) (1 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (14 * $width-morpheus-mobile) (1 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (15 * $width-morpheus-mobile) (1 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (16 * $width-morpheus-mobile) (1 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (17 * $width-morpheus-mobile) (1 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (5 * $width-morpheus-mobile) (2 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (6 * $width-morpheus-mobile) (2 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (7 * $width-morpheus-mobile) (2 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (8 * $width-morpheus-mobile) (2 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (9 * $width-morpheus-mobile) (2 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (10 * $width-morpheus-mobile) (2 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (11 * $width-morpheus-mobile) (2 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (12 * $width-morpheus-mobile) (2 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (13 * $width-morpheus-mobile) (2 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (14 * $width-morpheus-mobile) (2 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (15 * $width-morpheus-mobile) (2 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (16 * $width-morpheus-mobile) (2 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (17 * $width-morpheus-mobile) (2 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (4 * $width-morpheus-mobile) (3 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (5 * $width-morpheus-mobile) (3 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (6 * $width-morpheus-mobile) (3 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (7 * $width-morpheus-mobile) (3 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (8 * $width-morpheus-mobile) (3 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (9 * $width-morpheus-mobile) (3 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (10 * $width-morpheus-mobile) (3 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (11 * $width-morpheus-mobile) (3 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (12 * $width-morpheus-mobile) (3 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (13 * $width-morpheus-mobile) (3 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (14 * $width-morpheus-mobile) (3 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (15 * $width-morpheus-mobile) (3 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (16 * $width-morpheus-mobile) (3 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (17 * $width-morpheus-mobile) (3 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (18 * $width-morpheus-mobile) (3 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (4 * $width-morpheus-mobile) (4 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (5 * $width-morpheus-mobile) (4 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (6 * $width-morpheus-mobile) (4 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (7 * $width-morpheus-mobile) (4 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (8 * $width-morpheus-mobile) (4 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (9 * $width-morpheus-mobile) (4 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (10 * $width-morpheus-mobile) (4 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (11 * $width-morpheus-mobile) (4 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (12 * $width-morpheus-mobile) (4 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (13 * $width-morpheus-mobile) (4 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (14 * $width-morpheus-mobile) (4 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (15 * $width-morpheus-mobile) (4 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (16 * $width-morpheus-mobile) (4 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (17 * $width-morpheus-mobile) (4 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (18 * $width-morpheus-mobile) (4 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (4 * $width-morpheus-mobile) (5 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (5 * $width-morpheus-mobile) (5 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (6 * $width-morpheus-mobile) (5 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (7 * $width-morpheus-mobile) (5 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (8 * $width-morpheus-mobile) (5 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (9 * $width-morpheus-mobile) (5 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (10 * $width-morpheus-mobile) (5 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (11 * $width-morpheus-mobile) (5 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (12 * $width-morpheus-mobile) (5 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (13 * $width-morpheus-mobile) (5 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (14 * $width-morpheus-mobile) (5 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (15 * $width-morpheus-mobile) (5 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (16 * $width-morpheus-mobile) (5 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (17 * $width-morpheus-mobile) (5 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (18 * $width-morpheus-mobile) (5 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (4 * $width-morpheus-mobile) (6 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (5 * $width-morpheus-mobile) (6 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (6 * $width-morpheus-mobile) (6 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (7 * $width-morpheus-mobile) (6 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (8 * $width-morpheus-mobile) (6 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (9 * $width-morpheus-mobile) (6 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (10 * $width-morpheus-mobile) (6 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (11 * $width-morpheus-mobile) (6 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (12 * $width-morpheus-mobile) (6 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (13 * $width-morpheus-mobile) (6 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (14 * $width-morpheus-mobile) (6 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (15 * $width-morpheus-mobile) (6 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (16 * $width-morpheus-mobile) (6 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (17 * $width-morpheus-mobile) (6 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (18 * $width-morpheus-mobile) (6 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (4 * $width-morpheus-mobile) (7 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (5 * $width-morpheus-mobile) (7 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (6 * $width-morpheus-mobile) (7 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (7 * $width-morpheus-mobile) (7 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (8 * $width-morpheus-mobile) (7 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (9 * $width-morpheus-mobile) (7 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (10 * $width-morpheus-mobile) (7 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (11 * $width-morpheus-mobile) (7 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (12 * $width-morpheus-mobile) (7 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (13 * $width-morpheus-mobile) (7 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (14 * $width-morpheus-mobile) (7 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (15 * $width-morpheus-mobile) (7 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (16 * $width-morpheus-mobile) (7 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (17 * $width-morpheus-mobile) (7 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (18 * $width-morpheus-mobile) (7 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (4 * $width-morpheus-mobile) (8 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (5 * $width-morpheus-mobile) (8 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (6 * $width-morpheus-mobile) (8 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (7 * $width-morpheus-mobile) (8 * $width-morpheus-mobile) 0
+        $black-morpheus,
+      (8 * $width-morpheus-mobile) (8 * $width-morpheus-mobile) 0
+        $black-morpheus,
+      (9 * $width-morpheus-mobile) (8 * $width-morpheus-mobile) 0
+        $black-morpheus,
+      (10 * $width-morpheus-mobile) (8 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (11 * $width-morpheus-mobile) (8 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (12 * $width-morpheus-mobile) (8 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (13 * $width-morpheus-mobile) (8 * $width-morpheus-mobile) 0
+        $black-morpheus,
+      (14 * $width-morpheus-mobile) (8 * $width-morpheus-mobile) 0
+        $black-morpheus,
+      (15 * $width-morpheus-mobile) (8 * $width-morpheus-mobile) 0
+        $black-morpheus,
+      (16 * $width-morpheus-mobile) (8 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (17 * $width-morpheus-mobile) (8 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (18 * $width-morpheus-mobile) (8 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (3 * $width-morpheus-mobile) (9 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (4 * $width-morpheus-mobile) (9 * $width-morpheus-mobile) 0 $skin-morpheus,
+      (5 * $width-morpheus-mobile) (9 * $width-morpheus-mobile) 0 $gray-morpheus,
+      (6 * $width-morpheus-mobile) (9 * $width-morpheus-mobile) 0 $gray-morpheus,
+      (7 * $width-morpheus-mobile) (9 * $width-morpheus-mobile) 0 $gray-morpheus,
+      (8 * $width-morpheus-mobile) (9 * $width-morpheus-mobile) 0 $gray-morpheus,
+      (9 * $width-morpheus-mobile) (9 * $width-morpheus-mobile) 0 $gray-morpheus,
+      (10 * $width-morpheus-mobile) (9 * $width-morpheus-mobile) 0
+        $black-morpheus,
+      (11 * $width-morpheus-mobile) (9 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (12 * $width-morpheus-mobile) (9 * $width-morpheus-mobile) 0
+        $black-morpheus,
+      (13 * $width-morpheus-mobile) (9 * $width-morpheus-mobile) 0
+        $gray-morpheus,
+      (14 * $width-morpheus-mobile) (9 * $width-morpheus-mobile) 0
+        $gray-morpheus,
+      (15 * $width-morpheus-mobile) (9 * $width-morpheus-mobile) 0
+        $gray-morpheus,
+      (16 * $width-morpheus-mobile) (9 * $width-morpheus-mobile) 0
+        $gray-morpheus,
+      (17 * $width-morpheus-mobile) (9 * $width-morpheus-mobile) 0
+        $gray-morpheus,
+      (18 * $width-morpheus-mobile) (9 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (19 * $width-morpheus-mobile) (9 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (3 * $width-morpheus-mobile) (10 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (4 * $width-morpheus-mobile) (10 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (5 * $width-morpheus-mobile) (10 * $width-morpheus-mobile) 0
+        $gray-morpheus,
+      (8 * $width-morpheus-mobile) (10 * $width-morpheus-mobile) 0 $white,
+      (6 * $width-morpheus-mobile) (10 * $width-morpheus-mobile) 0
+        $black-morpheus,
+      (7 * $width-morpheus-mobile) (10 * $width-morpheus-mobile) 0
+        $black-morpheus,
+      (9 * $width-morpheus-mobile) (10 * $width-morpheus-mobile) 0
+        $black-morpheus,
+      (10 * $width-morpheus-mobile) (10 * $width-morpheus-mobile) 0
+        $gray-morpheus,
+      (11 * $width-morpheus-mobile) (10 * $width-morpheus-mobile) 0
+        $gray-morpheus,
+      (12 * $width-morpheus-mobile) (10 * $width-morpheus-mobile) 0
+        $gray-morpheus,
+      (15 * $width-morpheus-mobile) (10 * $width-morpheus-mobile) 0 $white,
+      (13 * $width-morpheus-mobile) (10 * $width-morpheus-mobile) 0
+        $black-morpheus,
+      (14 * $width-morpheus-mobile) (10 * $width-morpheus-mobile) 0
+        $black-morpheus,
+      (16 * $width-morpheus-mobile) (10 * $width-morpheus-mobile) 0
+        $black-morpheus,
+      (17 * $width-morpheus-mobile) (10 * $width-morpheus-mobile) 0
+        $gray-morpheus,
+      (18 * $width-morpheus-mobile) (10 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (19 * $width-morpheus-mobile) (10 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (3 * $width-morpheus-mobile) (11 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (4 * $width-morpheus-mobile) (11 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (7 * $width-morpheus-mobile) (11 * $width-morpheus-mobile) 0 $white,
+      (5 * $width-morpheus-mobile) (11 * $width-morpheus-mobile) 0
+        $gray-morpheus,
+      (6 * $width-morpheus-mobile) (11 * $width-morpheus-mobile) 0
+        $black-morpheus,
+      (8 * $width-morpheus-mobile) (11 * $width-morpheus-mobile) 0 $white,
+      (9 * $width-morpheus-mobile) (11 * $width-morpheus-mobile) 0
+        $black-morpheus,
+      (10 * $width-morpheus-mobile) (11 * $width-morpheus-mobile) 0
+        $black-morpheus,
+      (11 * $width-morpheus-mobile) (11 * $width-morpheus-mobile) 0
+        $gray-morpheus,
+      (14 * $width-morpheus-mobile) (11 * $width-morpheus-mobile) 0 $white,
+      (12 * $width-morpheus-mobile) (11 * $width-morpheus-mobile) 0
+        $black-morpheus,
+      (13 * $width-morpheus-mobile) (11 * $width-morpheus-mobile) 0
+        $black-morpheus,
+      (15 * $width-morpheus-mobile) (11 * $width-morpheus-mobile) 0 $white,
+      (16 * $width-morpheus-mobile) (11 * $width-morpheus-mobile) 0
+        $black-morpheus,
+      (17 * $width-morpheus-mobile) (11 * $width-morpheus-mobile) 0
+        $gray-morpheus,
+      (18 * $width-morpheus-mobile) (11 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (19 * $width-morpheus-mobile) (11 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (3 * $width-morpheus-mobile) (12 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (4 * $width-morpheus-mobile) (12 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (7 * $width-morpheus-mobile) (12 * $width-morpheus-mobile) 0 $white,
+      (5 * $width-morpheus-mobile) (12 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (6 * $width-morpheus-mobile) (12 * $width-morpheus-mobile) 0
+        $gray-morpheus,
+      (8 * $width-morpheus-mobile) (12 * $width-morpheus-mobile) 0
+        $gray-morpheus,
+      (9 * $width-morpheus-mobile) (12 * $width-morpheus-mobile) 0
+        $black-morpheus,
+      (10 * $width-morpheus-mobile) (12 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (11 * $width-morpheus-mobile) (12 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (14 * $width-morpheus-mobile) (12 * $width-morpheus-mobile) 0 $white,
+      (12 * $width-morpheus-mobile) (12 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (13 * $width-morpheus-mobile) (12 * $width-morpheus-mobile) 0
+        $black-morpheus,
+      (15 * $width-morpheus-mobile) (12 * $width-morpheus-mobile) 0
+        $gray-morpheus,
+      (16 * $width-morpheus-mobile) (12 * $width-morpheus-mobile) 0
+        $gray-morpheus,
+      (17 * $width-morpheus-mobile) (12 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (18 * $width-morpheus-mobile) (12 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (19 * $width-morpheus-mobile) (12 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (4 * $width-morpheus-mobile) (13 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (5 * $width-morpheus-mobile) (13 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (6 * $width-morpheus-mobile) (13 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (7 * $width-morpheus-mobile) (13 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (8 * $width-morpheus-mobile) (13 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (9 * $width-morpheus-mobile) (13 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (10 * $width-morpheus-mobile) (13 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (11 * $width-morpheus-mobile) (13 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (12 * $width-morpheus-mobile) (13 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (13 * $width-morpheus-mobile) (13 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (14 * $width-morpheus-mobile) (13 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (15 * $width-morpheus-mobile) (13 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (16 * $width-morpheus-mobile) (13 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (17 * $width-morpheus-mobile) (13 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (18 * $width-morpheus-mobile) (13 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (4 * $width-morpheus-mobile) (14 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (5 * $width-morpheus-mobile) (14 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (6 * $width-morpheus-mobile) (14 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (7 * $width-morpheus-mobile) (14 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (8 * $width-morpheus-mobile) (14 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (9 * $width-morpheus-mobile) (14 * $width-morpheus-mobile) 0
+        $skin-shadow-morpheus,
+      (10 * $width-morpheus-mobile) (14 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (11 * $width-morpheus-mobile) (14 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (12 * $width-morpheus-mobile) (14 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (13 * $width-morpheus-mobile) (14 * $width-morpheus-mobile) 0
+        $skin-shadow-morpheus,
+      (14 * $width-morpheus-mobile) (14 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (15 * $width-morpheus-mobile) (14 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (16 * $width-morpheus-mobile) (14 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (17 * $width-morpheus-mobile) (14 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (18 * $width-morpheus-mobile) (14 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (4 * $width-morpheus-mobile) (15 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (5 * $width-morpheus-mobile) (15 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (6 * $width-morpheus-mobile) (15 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (7 * $width-morpheus-mobile) (15 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (8 * $width-morpheus-mobile) (15 * $width-morpheus-mobile) 0
+        $skin-shadow-morpheus,
+      (9 * $width-morpheus-mobile) (15 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (10 * $width-morpheus-mobile) (15 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (11 * $width-morpheus-mobile) (15 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (12 * $width-morpheus-mobile) (15 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (13 * $width-morpheus-mobile) (15 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (14 * $width-morpheus-mobile) (15 * $width-morpheus-mobile) 0
+        $skin-shadow-morpheus,
+      (15 * $width-morpheus-mobile) (15 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (16 * $width-morpheus-mobile) (15 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (17 * $width-morpheus-mobile) (15 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (18 * $width-morpheus-mobile) (15 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (4 * $width-morpheus-mobile) (16 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (5 * $width-morpheus-mobile) (16 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (6 * $width-morpheus-mobile) (16 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (7 * $width-morpheus-mobile) (16 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (8 * $width-morpheus-mobile) (16 * $width-morpheus-mobile) 0
+        $skin-shadow-morpheus,
+      (9 * $width-morpheus-mobile) (16 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (10 * $width-morpheus-mobile) (16 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (11 * $width-morpheus-mobile) (16 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (12 * $width-morpheus-mobile) (16 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (13 * $width-morpheus-mobile) (16 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (14 * $width-morpheus-mobile) (16 * $width-morpheus-mobile) 0
+        $skin-shadow-morpheus,
+      (15 * $width-morpheus-mobile) (16 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (16 * $width-morpheus-mobile) (16 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (17 * $width-morpheus-mobile) (16 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (18 * $width-morpheus-mobile) (16 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (4 * $width-morpheus-mobile) (17 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (5 * $width-morpheus-mobile) (17 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (6 * $width-morpheus-mobile) (17 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (7 * $width-morpheus-mobile) (17 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (8 * $width-morpheus-mobile) (17 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (9 * $width-morpheus-mobile) (17 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (10 * $width-morpheus-mobile) (17 * $width-morpheus-mobile) 0
+        $skin-shadow-morpheus,
+      (11 * $width-morpheus-mobile) (17 * $width-morpheus-mobile) 0
+        $skin-shadow-morpheus,
+      (12 * $width-morpheus-mobile) (17 * $width-morpheus-mobile) 0
+        $skin-shadow-morpheus,
+      (13 * $width-morpheus-mobile) (17 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (14 * $width-morpheus-mobile) (17 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (15 * $width-morpheus-mobile) (17 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (16 * $width-morpheus-mobile) (17 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (17 * $width-morpheus-mobile) (17 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (18 * $width-morpheus-mobile) (17 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (4 * $width-morpheus-mobile) (18 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (5 * $width-morpheus-mobile) (18 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (6 * $width-morpheus-mobile) (18 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (7 * $width-morpheus-mobile) (18 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (8 * $width-morpheus-mobile) (18 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (9 * $width-morpheus-mobile) (18 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (10 * $width-morpheus-mobile) (18 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (11 * $width-morpheus-mobile) (18 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (12 * $width-morpheus-mobile) (18 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (13 * $width-morpheus-mobile) (18 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (14 * $width-morpheus-mobile) (18 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (15 * $width-morpheus-mobile) (18 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (16 * $width-morpheus-mobile) (18 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (17 * $width-morpheus-mobile) (18 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (18 * $width-morpheus-mobile) (18 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (6 * $width-morpheus-mobile) (19 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (7 * $width-morpheus-mobile) (19 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (8 * $width-morpheus-mobile) (19 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (9 * $width-morpheus-mobile) (19 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (10 * $width-morpheus-mobile) (19 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (11 * $width-morpheus-mobile) (19 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (12 * $width-morpheus-mobile) (19 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (13 * $width-morpheus-mobile) (19 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (14 * $width-morpheus-mobile) (19 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (15 * $width-morpheus-mobile) (19 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (16 * $width-morpheus-mobile) (19 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (6 * $width-morpheus-mobile) (20 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (7 * $width-morpheus-mobile) (20 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (8 * $width-morpheus-mobile) (20 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (9 * $width-morpheus-mobile) (20 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (10 * $width-morpheus-mobile) (20 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (11 * $width-morpheus-mobile) (20 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (12 * $width-morpheus-mobile) (20 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (13 * $width-morpheus-mobile) (20 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (14 * $width-morpheus-mobile) (20 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (15 * $width-morpheus-mobile) (20 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (16 * $width-morpheus-mobile) (20 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (4 * $width-morpheus-mobile) (21 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (5 * $width-morpheus-mobile) (21 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (6 * $width-morpheus-mobile) (21 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (7 * $width-morpheus-mobile) (21 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (8 * $width-morpheus-mobile) (21 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (9 * $width-morpheus-mobile) (21 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (10 * $width-morpheus-mobile) (21 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (11 * $width-morpheus-mobile) (21 * $width-morpheus-mobile) 0
+        $tie-morpheus,
+      (12 * $width-morpheus-mobile) (21 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (13 * $width-morpheus-mobile) (21 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (14 * $width-morpheus-mobile) (21 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (15 * $width-morpheus-mobile) (21 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (16 * $width-morpheus-mobile) (21 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (17 * $width-morpheus-mobile) (21 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (18 * $width-morpheus-mobile) (21 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (4 * $width-morpheus-mobile) (22 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (5 * $width-morpheus-mobile) (22 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (6 * $width-morpheus-mobile) (22 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (7 * $width-morpheus-mobile) (22 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (8 * $width-morpheus-mobile) (22 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (9 * $width-morpheus-mobile) (22 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (10 * $width-morpheus-mobile) (22 * $width-morpheus-mobile) 0
+        $tie-morpheus,
+      (11 * $width-morpheus-mobile) (22 * $width-morpheus-mobile) 0
+        $tie-morpheus,
+      (12 * $width-morpheus-mobile) (22 * $width-morpheus-mobile) 0
+        $tie-morpheus,
+      (13 * $width-morpheus-mobile) (22 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (14 * $width-morpheus-mobile) (22 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (15 * $width-morpheus-mobile) (22 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (16 * $width-morpheus-mobile) (22 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (17 * $width-morpheus-mobile) (22 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (18 * $width-morpheus-mobile) (22 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (2 * $width-morpheus-mobile) (23 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (3 * $width-morpheus-mobile) (23 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (4 * $width-morpheus-mobile) (23 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (5 * $width-morpheus-mobile) (23 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (6 * $width-morpheus-mobile) (23 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (7 * $width-morpheus-mobile) (23 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (8 * $width-morpheus-mobile) (23 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (9 * $width-morpheus-mobile) (23 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (10 * $width-morpheus-mobile) (23 * $width-morpheus-mobile) 0
+        $tie-morpheus,
+      (11 * $width-morpheus-mobile) (23 * $width-morpheus-mobile) 0
+        $tie-morpheus,
+      (12 * $width-morpheus-mobile) (23 * $width-morpheus-mobile) 0
+        $tie-morpheus,
+      (13 * $width-morpheus-mobile) (23 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (14 * $width-morpheus-mobile) (23 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (15 * $width-morpheus-mobile) (23 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (16 * $width-morpheus-mobile) (23 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (17 * $width-morpheus-mobile) (23 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (18 * $width-morpheus-mobile) (23 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (19 * $width-morpheus-mobile) (23 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (20 * $width-morpheus-mobile) (23 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (2 * $width-morpheus-mobile) (24 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (3 * $width-morpheus-mobile) (24 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (4 * $width-morpheus-mobile) (24 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (5 * $width-morpheus-mobile) (24 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (6 * $width-morpheus-mobile) (24 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (7 * $width-morpheus-mobile) (24 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (8 * $width-morpheus-mobile) (24 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (9 * $width-morpheus-mobile) (24 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (10 * $width-morpheus-mobile) (24 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (11 * $width-morpheus-mobile) (24 * $width-morpheus-mobile) 0
+        $tie-morpheus,
+      (12 * $width-morpheus-mobile) (24 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (13 * $width-morpheus-mobile) (24 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (14 * $width-morpheus-mobile) (24 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (15 * $width-morpheus-mobile) (24 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (16 * $width-morpheus-mobile) (24 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (17 * $width-morpheus-mobile) (24 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (18 * $width-morpheus-mobile) (24 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (19 * $width-morpheus-mobile) (24 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (20 * $width-morpheus-mobile) (24 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (2 * $width-morpheus-mobile) (25 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (3 * $width-morpheus-mobile) (25 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (4 * $width-morpheus-mobile) (25 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (5 * $width-morpheus-mobile) (25 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (6 * $width-morpheus-mobile) (25 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (7 * $width-morpheus-mobile) (25 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (8 * $width-morpheus-mobile) (25 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (9 * $width-morpheus-mobile) (25 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (10 * $width-morpheus-mobile) (25 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (11 * $width-morpheus-mobile) (25 * $width-morpheus-mobile) 0
+        $tie-morpheus,
+      (12 * $width-morpheus-mobile) (25 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (13 * $width-morpheus-mobile) (25 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (14 * $width-morpheus-mobile) (25 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (15 * $width-morpheus-mobile) (25 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (16 * $width-morpheus-mobile) (25 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (17 * $width-morpheus-mobile) (25 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (18 * $width-morpheus-mobile) (25 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (19 * $width-morpheus-mobile) (25 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (20 * $width-morpheus-mobile) (25 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (2 * $width-morpheus-mobile) (26 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (3 * $width-morpheus-mobile) (26 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (4 * $width-morpheus-mobile) (26 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (5 * $width-morpheus-mobile) (26 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (6 * $width-morpheus-mobile) (26 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (7 * $width-morpheus-mobile) (26 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (8 * $width-morpheus-mobile) (26 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (9 * $width-morpheus-mobile) (26 * $width-morpheus-mobile) 0
+        $shirt-shadow-morpheus,
+      (10 * $width-morpheus-mobile) (26 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (11 * $width-morpheus-mobile) (26 * $width-morpheus-mobile) 0
+        $tie-morpheus,
+      (12 * $width-morpheus-mobile) (26 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (13 * $width-morpheus-mobile) (26 * $width-morpheus-mobile) 0
+        $shirt-shadow-morpheus,
+      (14 * $width-morpheus-mobile) (26 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (15 * $width-morpheus-mobile) (26 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (16 * $width-morpheus-mobile) (26 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (17 * $width-morpheus-mobile) (26 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (18 * $width-morpheus-mobile) (26 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (19 * $width-morpheus-mobile) (26 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (20 * $width-morpheus-mobile) (26 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (2 * $width-morpheus-mobile) (27 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (3 * $width-morpheus-mobile) (27 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (4 * $width-morpheus-mobile) (27 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (5 * $width-morpheus-mobile) (27 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (6 * $width-morpheus-mobile) (27 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (7 * $width-morpheus-mobile) (27 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (8 * $width-morpheus-mobile) (27 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (9 * $width-morpheus-mobile) (27 * $width-morpheus-mobile) 0
+        $shirt-shadow-morpheus,
+      (10 * $width-morpheus-mobile) (27 * $width-morpheus-mobile) 0
+        $shirt-shadow-morpheus,
+      (11 * $width-morpheus-mobile) (27 * $width-morpheus-mobile) 0
+        $tie-morpheus,
+      (12 * $width-morpheus-mobile) (27 * $width-morpheus-mobile) 0
+        $shirt-shadow-morpheus,
+      (13 * $width-morpheus-mobile) (27 * $width-morpheus-mobile) 0
+        $shirt-shadow-morpheus,
+      (14 * $width-morpheus-mobile) (27 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (15 * $width-morpheus-mobile) (27 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (16 * $width-morpheus-mobile) (27 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (17 * $width-morpheus-mobile) (27 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (18 * $width-morpheus-mobile) (27 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (19 * $width-morpheus-mobile) (27 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (20 * $width-morpheus-mobile) (27 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (2 * $width-morpheus-mobile) (28 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (3 * $width-morpheus-mobile) (28 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (4 * $width-morpheus-mobile) (28 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (5 * $width-morpheus-mobile) (28 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (6 * $width-morpheus-mobile) (28 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (7 * $width-morpheus-mobile) (28 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (8 * $width-morpheus-mobile) (28 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (9 * $width-morpheus-mobile) (28 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (10 * $width-morpheus-mobile) (28 * $width-morpheus-mobile) 0
+        $shirt-shadow-morpheus,
+      (11 * $width-morpheus-mobile) (28 * $width-morpheus-mobile) 0
+        $tie-morpheus,
+      (12 * $width-morpheus-mobile) (28 * $width-morpheus-mobile) 0
+        $shirt-shadow-morpheus,
+      (13 * $width-morpheus-mobile) (28 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (14 * $width-morpheus-mobile) (28 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (15 * $width-morpheus-mobile) (28 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (16 * $width-morpheus-mobile) (28 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (17 * $width-morpheus-mobile) (28 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (18 * $width-morpheus-mobile) (28 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (19 * $width-morpheus-mobile) (28 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (20 * $width-morpheus-mobile) (28 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (2 * $width-morpheus-mobile) (29 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (3 * $width-morpheus-mobile) (29 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (4 * $width-morpheus-mobile) (29 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (5 * $width-morpheus-mobile) (29 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (6 * $width-morpheus-mobile) (29 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (7 * $width-morpheus-mobile) (29 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (8 * $width-morpheus-mobile) (29 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (9 * $width-morpheus-mobile) (29 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (10 * $width-morpheus-mobile) (29 * $width-morpheus-mobile) 0
+        $shirt-shadow-morpheus,
+      (11 * $width-morpheus-mobile) (29 * $width-morpheus-mobile) 0
+        $shirt-shadow-morpheus,
+      (12 * $width-morpheus-mobile) (29 * $width-morpheus-mobile) 0
+        $shirt-shadow-morpheus,
+      (13 * $width-morpheus-mobile) (29 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (14 * $width-morpheus-mobile) (29 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (15 * $width-morpheus-mobile) (29 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (16 * $width-morpheus-mobile) (29 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (17 * $width-morpheus-mobile) (29 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (18 * $width-morpheus-mobile) (29 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (19 * $width-morpheus-mobile) (29 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (20 * $width-morpheus-mobile) (29 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (2 * $width-morpheus-mobile) (30 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (3 * $width-morpheus-mobile) (30 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (4 * $width-morpheus-mobile) (30 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (5 * $width-morpheus-mobile) (30 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (6 * $width-morpheus-mobile) (30 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (7 * $width-morpheus-mobile) (30 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (8 * $width-morpheus-mobile) (30 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (9 * $width-morpheus-mobile) (30 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (10 * $width-morpheus-mobile) (30 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (11 * $width-morpheus-mobile) (30 * $width-morpheus-mobile) 0
+        $shirt-shadow-morpheus,
+      (12 * $width-morpheus-mobile) (30 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (13 * $width-morpheus-mobile) (30 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (14 * $width-morpheus-mobile) (30 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (15 * $width-morpheus-mobile) (30 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (16 * $width-morpheus-mobile) (30 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (17 * $width-morpheus-mobile) (30 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (18 * $width-morpheus-mobile) (30 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (19 * $width-morpheus-mobile) (30 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (20 * $width-morpheus-mobile) (30 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (2 * $width-morpheus-mobile) (31 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (3 * $width-morpheus-mobile) (31 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (4 * $width-morpheus-mobile) (31 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (5 * $width-morpheus-mobile) (31 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (6 * $width-morpheus-mobile) (31 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (7 * $width-morpheus-mobile) (31 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (8 * $width-morpheus-mobile) (31 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (9 * $width-morpheus-mobile) (31 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (10 * $width-morpheus-mobile) (31 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (11 * $width-morpheus-mobile) (31 * $width-morpheus-mobile) 0
+        $shirt-shadow-morpheus,
+      (12 * $width-morpheus-mobile) (31 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (13 * $width-morpheus-mobile) (31 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (14 * $width-morpheus-mobile) (31 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (15 * $width-morpheus-mobile) (31 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (16 * $width-morpheus-mobile) (31 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (17 * $width-morpheus-mobile) (31 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (18 * $width-morpheus-mobile) (31 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (19 * $width-morpheus-mobile) (31 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (20 * $width-morpheus-mobile) (31 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (2 * $width-morpheus-mobile) (32 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (3 * $width-morpheus-mobile) (32 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (4 * $width-morpheus-mobile) (32 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (5 * $width-morpheus-mobile) (32 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (6 * $width-morpheus-mobile) (32 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (7 * $width-morpheus-mobile) (32 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (8 * $width-morpheus-mobile) (32 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (9 * $width-morpheus-mobile) (32 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (10 * $width-morpheus-mobile) (32 * $width-morpheus-mobile) 0
+        $shirt-shadow-morpheus,
+      (11 * $width-morpheus-mobile) (32 * $width-morpheus-mobile) 0
+        $shirt-shadow-morpheus,
+      (12 * $width-morpheus-mobile) (32 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (13 * $width-morpheus-mobile) (32 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (14 * $width-morpheus-mobile) (32 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (15 * $width-morpheus-mobile) (32 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (16 * $width-morpheus-mobile) (32 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (17 * $width-morpheus-mobile) (32 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (18 * $width-morpheus-mobile) (32 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (19 * $width-morpheus-mobile) (32 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (20 * $width-morpheus-mobile) (32 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (2 * $width-morpheus-mobile) (33 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (3 * $width-morpheus-mobile) (33 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (4 * $width-morpheus-mobile) (33 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (5 * $width-morpheus-mobile) (33 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (6 * $width-morpheus-mobile) (33 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (7 * $width-morpheus-mobile) (33 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (8 * $width-morpheus-mobile) (33 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (9 * $width-morpheus-mobile) (33 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (10 * $width-morpheus-mobile) (33 * $width-morpheus-mobile) 0
+        $shirt-shadow-morpheus,
+      (11 * $width-morpheus-mobile) (33 * $width-morpheus-mobile) 0
+        $shirt-shadow-morpheus,
+      (12 * $width-morpheus-mobile) (33 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (13 * $width-morpheus-mobile) (33 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (14 * $width-morpheus-mobile) (33 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (15 * $width-morpheus-mobile) (33 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (16 * $width-morpheus-mobile) (33 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (17 * $width-morpheus-mobile) (33 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (18 * $width-morpheus-mobile) (33 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (19 * $width-morpheus-mobile) (33 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (20 * $width-morpheus-mobile) (33 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (2 * $width-morpheus-mobile) (34 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (3 * $width-morpheus-mobile) (34 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (4 * $width-morpheus-mobile) (34 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (5 * $width-morpheus-mobile) (34 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (6 * $width-morpheus-mobile) (34 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (7 * $width-morpheus-mobile) (34 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (8 * $width-morpheus-mobile) (34 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (9 * $width-morpheus-mobile) (34 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (10 * $width-morpheus-mobile) (34 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (11 * $width-morpheus-mobile) (34 * $width-morpheus-mobile) 0
+        $shirt-shadow-morpheus,
+      (12 * $width-morpheus-mobile) (34 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (13 * $width-morpheus-mobile) (34 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (14 * $width-morpheus-mobile) (34 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (15 * $width-morpheus-mobile) (34 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (16 * $width-morpheus-mobile) (34 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (17 * $width-morpheus-mobile) (34 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (18 * $width-morpheus-mobile) (34 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (19 * $width-morpheus-mobile) (34 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (20 * $width-morpheus-mobile) (34 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (2 * $width-morpheus-mobile) (35 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (3 * $width-morpheus-mobile) (35 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (4 * $width-morpheus-mobile) (35 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (5 * $width-morpheus-mobile) (35 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (6 * $width-morpheus-mobile) (35 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (7 * $width-morpheus-mobile) (35 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (8 * $width-morpheus-mobile) (35 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (9 * $width-morpheus-mobile) (35 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (10 * $width-morpheus-mobile) (35 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (11 * $width-morpheus-mobile) (35 * $width-morpheus-mobile) 0
+        $shirt-shadow-morpheus,
+      (12 * $width-morpheus-mobile) (35 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (13 * $width-morpheus-mobile) (35 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (14 * $width-morpheus-mobile) (35 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (15 * $width-morpheus-mobile) (35 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (16 * $width-morpheus-mobile) (35 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (17 * $width-morpheus-mobile) (35 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (18 * $width-morpheus-mobile) (35 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (19 * $width-morpheus-mobile) (35 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (20 * $width-morpheus-mobile) (35 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (2 * $width-morpheus-mobile) (36 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (3 * $width-morpheus-mobile) (36 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (4 * $width-morpheus-mobile) (36 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (5 * $width-morpheus-mobile) (36 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (6 * $width-morpheus-mobile) (36 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (7 * $width-morpheus-mobile) (36 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (8 * $width-morpheus-mobile) (36 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (9 * $width-morpheus-mobile) (36 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (10 * $width-morpheus-mobile) (36 * $width-morpheus-mobile) 0
+        $shirt-shadow-morpheus,
+      (11 * $width-morpheus-mobile) (36 * $width-morpheus-mobile) 0
+        $shirt-shadow-morpheus,
+      (12 * $width-morpheus-mobile) (36 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (13 * $width-morpheus-mobile) (36 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (14 * $width-morpheus-mobile) (36 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (15 * $width-morpheus-mobile) (36 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (16 * $width-morpheus-mobile) (36 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (17 * $width-morpheus-mobile) (36 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (18 * $width-morpheus-mobile) (36 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (19 * $width-morpheus-mobile) (36 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (20 * $width-morpheus-mobile) (36 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (1 * $width-morpheus-mobile) (37 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (2 * $width-morpheus-mobile) (37 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (3 * $width-morpheus-mobile) (37 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (4 * $width-morpheus-mobile) (37 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (5 * $width-morpheus-mobile) (37 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (6 * $width-morpheus-mobile) (37 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (7 * $width-morpheus-mobile) (37 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (8 * $width-morpheus-mobile) (37 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (9 * $width-morpheus-mobile) (37 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (10 * $width-morpheus-mobile) (37 * $width-morpheus-mobile) 0
+        $shirt-shadow-morpheus,
+      (11 * $width-morpheus-mobile) (37 * $width-morpheus-mobile) 0
+        $shirt-shadow-morpheus,
+      (12 * $width-morpheus-mobile) (37 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (13 * $width-morpheus-mobile) (37 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (14 * $width-morpheus-mobile) (37 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (15 * $width-morpheus-mobile) (37 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (16 * $width-morpheus-mobile) (37 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (17 * $width-morpheus-mobile) (37 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (18 * $width-morpheus-mobile) (37 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (19 * $width-morpheus-mobile) (37 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (20 * $width-morpheus-mobile) (37 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (21 * $width-morpheus-mobile) (37 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (1 * $width-morpheus-mobile) (38 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (2 * $width-morpheus-mobile) (38 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (3 * $width-morpheus-mobile) (38 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (4 * $width-morpheus-mobile) (38 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (5 * $width-morpheus-mobile) (38 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (6 * $width-morpheus-mobile) (38 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (7 * $width-morpheus-mobile) (38 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (8 * $width-morpheus-mobile) (38 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (9 * $width-morpheus-mobile) (38 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (10 * $width-morpheus-mobile) (38 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (11 * $width-morpheus-mobile) (38 * $width-morpheus-mobile) 0
+        $shirt-shadow-morpheus,
+      (12 * $width-morpheus-mobile) (38 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (13 * $width-morpheus-mobile) (38 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (14 * $width-morpheus-mobile) (38 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (15 * $width-morpheus-mobile) (38 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (16 * $width-morpheus-mobile) (38 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (17 * $width-morpheus-mobile) (38 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (18 * $width-morpheus-mobile) (38 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (19 * $width-morpheus-mobile) (38 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (20 * $width-morpheus-mobile) (38 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (21 * $width-morpheus-mobile) (38 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (2 * $width-morpheus-mobile) (39 * $width-morpheus-mobile) 0
+        $skin-shadow-morpheus,
+      (3 * $width-morpheus-mobile) (39 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (4 * $width-morpheus-mobile) (39 * $width-morpheus-mobile) 0
+        $skin-shadow-morpheus,
+      (5 * $width-morpheus-mobile) (39 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (6 * $width-morpheus-mobile) (39 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (7 * $width-morpheus-mobile) (39 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (8 * $width-morpheus-mobile) (39 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (9 * $width-morpheus-mobile) (39 * $width-morpheus-mobile) 0
+        $shirt-shadow-morpheus,
+      (10 * $width-morpheus-mobile) (39 * $width-morpheus-mobile) 0
+        $shirt-shadow-morpheus,
+      (11 * $width-morpheus-mobile) (39 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (12 * $width-morpheus-mobile) (39 * $width-morpheus-mobile) 0
+        $shirt-shadow-morpheus,
+      (13 * $width-morpheus-mobile) (39 * $width-morpheus-mobile) 0
+        $shirt-shadow-morpheus,
+      (14 * $width-morpheus-mobile) (39 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (15 * $width-morpheus-mobile) (39 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (16 * $width-morpheus-mobile) (39 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (17 * $width-morpheus-mobile) (39 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (18 * $width-morpheus-mobile) (39 * $width-morpheus-mobile) 0
+        $skin-shadow-morpheus,
+      (19 * $width-morpheus-mobile) (39 * $width-morpheus-mobile) 0
+        $skin-morpheus,
+      (20 * $width-morpheus-mobile) (39 * $width-morpheus-mobile) 0
+        $skin-shadow-morpheus,
+      (5 * $width-morpheus-mobile) (40 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (6 * $width-morpheus-mobile) (40 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (7 * $width-morpheus-mobile) (40 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (8 * $width-morpheus-mobile) (40 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (9 * $width-morpheus-mobile) (40 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (10 * $width-morpheus-mobile) (40 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (11 * $width-morpheus-mobile) (40 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (12 * $width-morpheus-mobile) (40 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (13 * $width-morpheus-mobile) (40 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (14 * $width-morpheus-mobile) (40 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (15 * $width-morpheus-mobile) (40 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (16 * $width-morpheus-mobile) (40 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (17 * $width-morpheus-mobile) (40 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (5 * $width-morpheus-mobile) (41 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (6 * $width-morpheus-mobile) (41 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (7 * $width-morpheus-mobile) (41 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (8 * $width-morpheus-mobile) (41 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (9 * $width-morpheus-mobile) (41 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (10 * $width-morpheus-mobile) (41 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (11 * $width-morpheus-mobile) (41 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (12 * $width-morpheus-mobile) (41 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (13 * $width-morpheus-mobile) (41 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (14 * $width-morpheus-mobile) (41 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (15 * $width-morpheus-mobile) (41 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (16 * $width-morpheus-mobile) (41 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (17 * $width-morpheus-mobile) (41 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (5 * $width-morpheus-mobile) (42 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (6 * $width-morpheus-mobile) (42 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (7 * $width-morpheus-mobile) (42 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (8 * $width-morpheus-mobile) (42 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (9 * $width-morpheus-mobile) (42 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (10 * $width-morpheus-mobile) (42 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (11 * $width-morpheus-mobile) (42 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (12 * $width-morpheus-mobile) (42 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (13 * $width-morpheus-mobile) (42 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (14 * $width-morpheus-mobile) (42 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (15 * $width-morpheus-mobile) (42 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (16 * $width-morpheus-mobile) (42 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (17 * $width-morpheus-mobile) (42 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (5 * $width-morpheus-mobile) (43 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (6 * $width-morpheus-mobile) (43 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (7 * $width-morpheus-mobile) (43 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (8 * $width-morpheus-mobile) (43 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (9 * $width-morpheus-mobile) (43 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (10 * $width-morpheus-mobile) (43 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (11 * $width-morpheus-mobile) (43 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (12 * $width-morpheus-mobile) (43 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (13 * $width-morpheus-mobile) (43 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (14 * $width-morpheus-mobile) (43 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (15 * $width-morpheus-mobile) (43 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (16 * $width-morpheus-mobile) (43 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (17 * $width-morpheus-mobile) (43 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (5 * $width-morpheus-mobile) (44 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (6 * $width-morpheus-mobile) (44 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (7 * $width-morpheus-mobile) (44 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (8 * $width-morpheus-mobile) (44 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (9 * $width-morpheus-mobile) (44 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (10 * $width-morpheus-mobile) (44 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (11 * $width-morpheus-mobile) (44 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (12 * $width-morpheus-mobile) (44 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (13 * $width-morpheus-mobile) (44 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (14 * $width-morpheus-mobile) (44 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (15 * $width-morpheus-mobile) (44 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (16 * $width-morpheus-mobile) (44 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (17 * $width-morpheus-mobile) (44 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (5 * $width-morpheus-mobile) (45 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (6 * $width-morpheus-mobile) (45 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (7 * $width-morpheus-mobile) (45 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (8 * $width-morpheus-mobile) (45 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (9 * $width-morpheus-mobile) (45 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (10 * $width-morpheus-mobile) (45 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (11 * $width-morpheus-mobile) (45 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (12 * $width-morpheus-mobile) (45 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (13 * $width-morpheus-mobile) (45 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (14 * $width-morpheus-mobile) (45 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (15 * $width-morpheus-mobile) (45 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (16 * $width-morpheus-mobile) (45 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (17 * $width-morpheus-mobile) (45 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (5 * $width-morpheus-mobile) (46 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (6 * $width-morpheus-mobile) (46 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (7 * $width-morpheus-mobile) (46 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (8 * $width-morpheus-mobile) (46 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (9 * $width-morpheus-mobile) (46 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (10 * $width-morpheus-mobile) (46 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (11 * $width-morpheus-mobile) (46 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (12 * $width-morpheus-mobile) (46 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (13 * $width-morpheus-mobile) (46 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (14 * $width-morpheus-mobile) (46 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (15 * $width-morpheus-mobile) (46 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (16 * $width-morpheus-mobile) (46 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (17 * $width-morpheus-mobile) (46 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (5 * $width-morpheus-mobile) (47 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (6 * $width-morpheus-mobile) (47 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (7 * $width-morpheus-mobile) (47 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (8 * $width-morpheus-mobile) (47 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (9 * $width-morpheus-mobile) (47 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (10 * $width-morpheus-mobile) (47 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (11 * $width-morpheus-mobile) (47 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (12 * $width-morpheus-mobile) (47 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (13 * $width-morpheus-mobile) (47 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (14 * $width-morpheus-mobile) (47 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (15 * $width-morpheus-mobile) (47 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (16 * $width-morpheus-mobile) (47 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (17 * $width-morpheus-mobile) (47 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (5 * $width-morpheus-mobile) (48 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (6 * $width-morpheus-mobile) (48 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (7 * $width-morpheus-mobile) (48 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (8 * $width-morpheus-mobile) (48 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (9 * $width-morpheus-mobile) (48 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (10 * $width-morpheus-mobile) (48 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (11 * $width-morpheus-mobile) (48 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (12 * $width-morpheus-mobile) (48 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (13 * $width-morpheus-mobile) (48 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (14 * $width-morpheus-mobile) (48 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (15 * $width-morpheus-mobile) (48 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (16 * $width-morpheus-mobile) (48 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (17 * $width-morpheus-mobile) (48 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (5 * $width-morpheus-mobile) (49 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (6 * $width-morpheus-mobile) (49 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (7 * $width-morpheus-mobile) (49 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (8 * $width-morpheus-mobile) (49 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (9 * $width-morpheus-mobile) (49 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (10 * $width-morpheus-mobile) (49 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (11 * $width-morpheus-mobile) (49 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (12 * $width-morpheus-mobile) (49 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (13 * $width-morpheus-mobile) (49 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (14 * $width-morpheus-mobile) (49 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (15 * $width-morpheus-mobile) (49 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (16 * $width-morpheus-mobile) (49 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (17 * $width-morpheus-mobile) (49 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (5 * $width-morpheus-mobile) (50 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (6 * $width-morpheus-mobile) (50 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (7 * $width-morpheus-mobile) (50 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (8 * $width-morpheus-mobile) (50 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (9 * $width-morpheus-mobile) (50 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (10 * $width-morpheus-mobile) (50 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (11 * $width-morpheus-mobile) (50 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (12 * $width-morpheus-mobile) (50 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (13 * $width-morpheus-mobile) (50 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (14 * $width-morpheus-mobile) (50 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (15 * $width-morpheus-mobile) (50 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (16 * $width-morpheus-mobile) (50 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (17 * $width-morpheus-mobile) (50 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (5 * $width-morpheus-mobile) (51 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (6 * $width-morpheus-mobile) (51 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (7 * $width-morpheus-mobile) (51 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (8 * $width-morpheus-mobile) (51 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (9 * $width-morpheus-mobile) (51 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (10 * $width-morpheus-mobile) (51 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (11 * $width-morpheus-mobile) (51 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (12 * $width-morpheus-mobile) (51 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (13 * $width-morpheus-mobile) (51 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (14 * $width-morpheus-mobile) (51 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (15 * $width-morpheus-mobile) (51 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (16 * $width-morpheus-mobile) (51 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (17 * $width-morpheus-mobile) (51 * $width-morpheus-mobile) 0
+        $jacket-gray-morpheus,
+      (5 * $width-morpheus-mobile) (52 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (6 * $width-morpheus-mobile) (52 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (7 * $width-morpheus-mobile) (52 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (8 * $width-morpheus-mobile) (52 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (9 * $width-morpheus-mobile) (52 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (13 * $width-morpheus-mobile) (52 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (14 * $width-morpheus-mobile) (52 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (15 * $width-morpheus-mobile) (52 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (16 * $width-morpheus-mobile) (52 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (17 * $width-morpheus-mobile) (52 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (5 * $width-morpheus-mobile) (53 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (6 * $width-morpheus-mobile) (53 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (7 * $width-morpheus-mobile) (53 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (8 * $width-morpheus-mobile) (53 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (9 * $width-morpheus-mobile) (53 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (13 * $width-morpheus-mobile) (53 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (14 * $width-morpheus-mobile) (53 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (15 * $width-morpheus-mobile) (53 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (16 * $width-morpheus-mobile) (53 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (17 * $width-morpheus-mobile) (53 * $width-morpheus-mobile) 0
+        $shirt-morpheus,
+      (3 * $width-morpheus-mobile) (54 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (4 * $width-morpheus-mobile) (54 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (5 * $width-morpheus-mobile) (54 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (6 * $width-morpheus-mobile) (54 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (7 * $width-morpheus-mobile) (54 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (8 * $width-morpheus-mobile) (54 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (9 * $width-morpheus-mobile) (54 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (13 * $width-morpheus-mobile) (54 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (14 * $width-morpheus-mobile) (54 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (15 * $width-morpheus-mobile) (54 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (16 * $width-morpheus-mobile) (54 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (17 * $width-morpheus-mobile) (54 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (18 * $width-morpheus-mobile) (54 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (19 * $width-morpheus-mobile) (54 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (3 * $width-morpheus-mobile) (55 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (4 * $width-morpheus-mobile) (55 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (5 * $width-morpheus-mobile) (55 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (6 * $width-morpheus-mobile) (55 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (7 * $width-morpheus-mobile) (55 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (8 * $width-morpheus-mobile) (55 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (9 * $width-morpheus-mobile) (55 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (13 * $width-morpheus-mobile) (55 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (14 * $width-morpheus-mobile) (55 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (15 * $width-morpheus-mobile) (55 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (16 * $width-morpheus-mobile) (55 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (17 * $width-morpheus-mobile) (55 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (18 * $width-morpheus-mobile) (55 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (19 * $width-morpheus-mobile) (55 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (3 * $width-morpheus-mobile) (56 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (4 * $width-morpheus-mobile) (56 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (5 * $width-morpheus-mobile) (56 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (6 * $width-morpheus-mobile) (56 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (7 * $width-morpheus-mobile) (56 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (8 * $width-morpheus-mobile) (56 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (9 * $width-morpheus-mobile) (56 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (13 * $width-morpheus-mobile) (56 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (14 * $width-morpheus-mobile) (56 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (15 * $width-morpheus-mobile) (56 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (16 * $width-morpheus-mobile) (56 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (17 * $width-morpheus-mobile) (56 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (18 * $width-morpheus-mobile) (56 * $width-morpheus-mobile) 0
+        $jacket-morpheus,
+      (19 * $width-morpheus-mobile) (56 * $width-morpheus-mobile) 0
+        $jacket-morpheus;
+  }
 }

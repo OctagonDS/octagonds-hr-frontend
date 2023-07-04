@@ -299,6 +299,9 @@ $bubble-border: 0 -1 * $px $eee, 0 -2 * $px $black, $px 0 $eee,
       0 -2 * $px $eee, 1 * $px 1 * $px $black, 2 * $px 1 * $px $black,
       3 * $px 1 * $px $black, 4 * $px 1 * $px $black, 3 * $px 0 $black,
       2 * $px -1 * $px $black, 1 * $px -2 * $px $black, 0 -1 * $px $eee;
+    @media (max-width: 480px) {
+      top: 3 * $px;
+    }
   }
 
   &.bottom::after {
@@ -325,5 +328,39 @@ $bubble-border: 0 -1 * $px $eee, 0 -2 * $px $black, $px 0 $eee,
     @media (max-width: 480px) {
       top: 3 * $px;
     }
+  }
+
+  &.left_morf::after {
+    height: $px;
+    width: $px;
+    top: 10 * $px;
+    left: -2 * $px;
+    background: white;
+    box-shadow: -1 * $px -1 * $px $eee, -1 * $px 0 $eee, -2 * $px 0 $eee,
+      0 -2 * $px $eee, -1 * $px 1 * $px $black, -2 * $px 1 * $px $black,
+      -3 * $px 1 * $px $black, -4 * $px 1 * $px $black, -3 * $px 0 $black,
+      -2 * $px -1 * $px $black, -1 * $px -2 * $px $black, 0 -1 * $px $eee;
+  }
+  &.left_red_morf::after {
+    height: $px;
+    width: $px;
+    top: 7 * $px;
+    right: -2 * $px;
+    background: white;
+    box-shadow: 1 * $px -1 * $px $eee, 1 * $px 0 $eee, 2 * $px 0 $eee,
+      0 -2 * $px $eee, 1 * $px 1 * $px $black, 2 * $px 1 * $px $black,
+      3 * $px 1 * $px $black, 4 * $px 1 * $px $black, 3 * $px 0 $black,
+      2 * $px -1 * $px $black, 1 * $px -2 * $px $black, 0 -1 * $px $eee;
+  }
+  &.left_red_morf-open::after {
+    height: $px;
+    width: $px;
+    top: 29 * $px;
+    right: -2 * $px;
+    background: white;
+    box-shadow: 1 * $px -1 * $px $eee, 1 * $px 0 $eee, 2 * $px 0 $eee,
+      0 -2 * $px $eee, 1 * $px 1 * $px $black, 2 * $px 1 * $px $black,
+      3 * $px 1 * $px $black, 4 * $px 1 * $px $black, 3 * $px 0 $black,
+      2 * $px -1 * $px $black, 1 * $px -2 * $px $black, 0 -1 * $px $eee;
   }
 }
