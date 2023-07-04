@@ -15,7 +15,10 @@ const FooterMobile = () => {
     <>
       <div></div>
       <div className="sky">
-        <div className="moon"></div>
+        <div
+          className="moon_mobile"
+          style={successForm ? { bottom: 400 } : {}}
+        />
       </div>
       <div
         className="last_city"
@@ -38,13 +41,14 @@ const FooterMobile = () => {
         <MiddleRow />
       </div>
       <div
-        className="light"
+        className="light_mobile"
         style={
           successForm
             ? {
                 opacity: 1,
                 animation: 'start 1s ease 0s 1, blink-on 0.15s ease 0s 2',
                 cursor: 'none',
+                bottom: 411.5,
               }
             : { animationIterationCount: 0 }
         }
@@ -66,7 +70,7 @@ const FooterMobile = () => {
         <FirstRow />
       </div>
       <div
-        className={`hr_form${
+        className={`hr_form_mobile${
           successForm || errorForm ? '-inactive' : '-active'
         }`}
       >
