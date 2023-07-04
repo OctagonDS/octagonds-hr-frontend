@@ -1489,6 +1489,7 @@ $hair2-css: #2f2f2f;
   }
   @media (max-width: 480px) {
     left: 10px;
+    top: 0;
   }
   &__dialog {
     position: absolute;
@@ -1508,6 +1509,7 @@ $hair2-css: #2f2f2f;
     }
     @media (max-width: 480px) {
       left: 150px;
+      top: 75px;
     }
   }
   box-shadow: (8 * $width-mcgonagall) (1 * $width-mcgonagall) 0 $hat-mcgonagall,
