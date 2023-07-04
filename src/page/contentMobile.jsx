@@ -3,7 +3,6 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useTranslation, Trans } from 'react-i18next'
 import useWindowSize from '../hooks/useWindowSize'
-import ContentItemBig from '../components/contentItemBig'
 import ContentItemSmall from '../components/contentItemSmall'
 import {
   BmoData,
@@ -200,16 +199,15 @@ const ContentMobile = () => {
               </div>
             </div>
           </div>
-          <ContentItemBig arr={bmoData} />
           <ContentItemSmall arr={bmoData} />
         </div>
       </div>
       <div
         className="content"
-        style={{ marginBottom: 20, marginTop: 20 }}
+        style={{ marginBottom: 10, marginTop: 10 }}
         data-aos="fade-up"
       >
-        <div className="content__title" style={{ marginBottom: 20 }}>
+        <div className="content__title" style={{ marginBottom: 10 }}>
           {t('content.devopsEngineer')}
         </div>
       </div>
@@ -217,12 +215,10 @@ const ContentMobile = () => {
         <div className="content__item__row">
           <div
             className="content__bit"
-            onMouseOver={() => (size.mobile ? {} : setGodfather(true))}
-            onMouseOut={() => (size.mobile ? {} : setGodfather(false))}
-            onTouchStart={() => (size.mobile ? setGodfather(true) : {})}
-            onTouchEnd={() => (size.mobile ? setGodfather(false) : {})}
-            onMouseDown={() => (size.mobile ? setGodfather(true) : {})}
-            onMouseUp={() => (size.mobile ? setGodfather(false) : {})}
+            onTouchStart={() => setGodfather(true)}
+            onTouchEnd={() => setGodfather(false)}
+            onMouseDown={() => setGodfather(true)}
+            onMouseUp={() => setGodfather(false)}
           >
             <div className="godfather__box">
               <div className="godfather">
@@ -230,7 +226,7 @@ const ContentMobile = () => {
               </div>
               <div
                 className="bubble left godfather__dialog"
-                style={{ width: 270 }}
+                style={{ width: 150 }}
               >
                 <div className="content__bit__text">
                   {godfather ? t('content.thatsBetter') : t('content.youAskMe')}
@@ -238,7 +234,6 @@ const ContentMobile = () => {
               </div>
             </div>
           </div>
-          <ContentItemBig arr={godfatherData} />
           <ContentItemSmall arr={godfatherData} />
         </div>
       </div>
@@ -295,7 +290,6 @@ const ContentMobile = () => {
               </div>
             )}
           </div>
-          <ContentItemBig arr={morpheusData} />
           <ContentItemSmall arr={morpheusData} />
         </div>
       </div>
@@ -347,7 +341,6 @@ const ContentMobile = () => {
               </div>
             </div>
           </div>
-          <ContentItemBig arr={gladosData} />
           <ContentItemSmall arr={gladosData} />
         </div>
       </div>
@@ -387,7 +380,6 @@ const ContentMobile = () => {
               </div>
             </div>
           </div>
-          <ContentItemBig arr={yodaData} />
           <ContentItemSmall arr={yodaData} />
         </div>
       </div>

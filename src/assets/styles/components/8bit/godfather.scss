@@ -1,6 +1,9 @@
 $width-godfather: 10px;
 $width-money: 6px;
 
+$width-godfather-mobile: 6px;
+$width-money-mobile: 4px;
+
 $hair1-godfather: #c4cbcf;
 $hair2-godfather: #96afaf;
 $hair3-godfather: #7d9394;
@@ -45,6 +48,10 @@ $doll-money: #8e8b86;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    @media (max-width: 480px) {
+      width: 100%;
+      height: $width-godfather-mobile * 35;
+    }
   }
   &__dialog {
     position: absolute;
@@ -52,6 +59,9 @@ $doll-money: #8e8b86;
     top: 20px;
     @media (max-width: 1200px) {
       left: 42%;
+    }
+    @media (max-width: 480px) {
+      left: 140px;
     }
   }
   &__money {
@@ -573,6 +583,526 @@ $doll-money: #8e8b86;
       (23 * $width-money) (25 * $width-money) 0 $bag3-money,
       (24 * $width-money) (25 * $width-money) 0 $bag3-money,
       (25 * $width-money) (25 * $width-money) 0 $bag3-money;
+    @media (max-width: 480px) {
+      width: $width-money-mobile;
+      height: $width-money-mobile;
+      left: 65px;
+      top: 51px;
+      box-shadow: (8 * $width-money-mobile) (1 * $width-money-mobile) 0
+          $green-money,
+        (9 * $width-money-mobile) (1 * $width-money-mobile) 0 $green-money,
+        (15 * $width-money-mobile) (1 * $width-money-mobile) 0 $green2-money,
+        (20 * $width-money-mobile) (1 * $width-money-mobile) 0 $green-money,
+        (6 * $width-money-mobile) (2 * $width-money-mobile) 0 $green-money,
+        (7 * $width-money-mobile) (2 * $width-money-mobile) 0 $green-money,
+        (8 * $width-money-mobile) (2 * $width-money-mobile) 0 $green2-money,
+        (9 * $width-money-mobile) (2 * $width-money-mobile) 0 $green-money,
+        (10 * $width-money-mobile) (2 * $width-money-mobile) 0 $green-money,
+        (13 * $width-money-mobile) (2 * $width-money-mobile) 0 $green2-money,
+        (14 * $width-money-mobile) (2 * $width-money-mobile) 0 $green-money,
+        (15 * $width-money-mobile) (2 * $width-money-mobile) 0 $green-money,
+        (16 * $width-money-mobile) (2 * $width-money-mobile) 0 $green2-money,
+        (18 * $width-money-mobile) (2 * $width-money-mobile) 0 $green-money,
+        (19 * $width-money-mobile) (2 * $width-money-mobile) 0 $green-money,
+        (20 * $width-money-mobile) (2 * $width-money-mobile) 0 $green-money,
+        (21 * $width-money-mobile) (2 * $width-money-mobile) 0 $green-money,
+        (5 * $width-money-mobile) (3 * $width-money-mobile) 0 $green-money,
+        (6 * $width-money-mobile) (3 * $width-money-mobile) 0 $green-money,
+        (7 * $width-money-mobile) (3 * $width-money-mobile) 0 $green2-money,
+        (8 * $width-money-mobile) (3 * $width-money-mobile) 0 $green3-money,
+        (9 * $width-money-mobile) (3 * $width-money-mobile) 0 $green-money,
+        (10 * $width-money-mobile) (3 * $width-money-mobile) 0 $green-money,
+        (11 * $width-money-mobile) (3 * $width-money-mobile) 0 $green-money,
+        (12 * $width-money-mobile) (3 * $width-money-mobile) 0 $green3-money,
+        (13 * $width-money-mobile) (3 * $width-money-mobile) 0 $green-money,
+        (14 * $width-money-mobile) (3 * $width-money-mobile) 0 $green2-money,
+        (15 * $width-money-mobile) (3 * $width-money-mobile) 0 $green3-money,
+        (16 * $width-money-mobile) (3 * $width-money-mobile) 0 $green2-money,
+        (17 * $width-money-mobile) (3 * $width-money-mobile) 0 $green2-money,
+        (18 * $width-money-mobile) (3 * $width-money-mobile) 0 $green-money,
+        (19 * $width-money-mobile) (3 * $width-money-mobile) 0 $green2-money,
+        (20 * $width-money-mobile) (3 * $width-money-mobile) 0 $green2-money,
+        (21 * $width-money-mobile) (3 * $width-money-mobile) 0 $green2-money,
+        (22 * $width-money-mobile) (3 * $width-money-mobile) 0 $green-money,
+        (23 * $width-money-mobile) (3 * $width-money-mobile) 0 $bag4-money,
+        (4 * $width-money-mobile) (4 * $width-money-mobile) 0 $bag2-money,
+        (5 * $width-money-mobile) (4 * $width-money-mobile) 0 $green-money,
+        (6 * $width-money-mobile) (4 * $width-money-mobile) 0 $green2-money,
+        (7 * $width-money-mobile) (4 * $width-money-mobile) 0 $green3-money,
+        (8 * $width-money-mobile) (4 * $width-money-mobile) 0 $green-money,
+        (9 * $width-money-mobile) (4 * $width-money-mobile) 0 $green-money,
+        (10 * $width-money-mobile) (4 * $width-money-mobile) 0 $green3-money,
+        (11 * $width-money-mobile) (4 * $width-money-mobile) 0 $green2-money,
+        (12 * $width-money-mobile) (4 * $width-money-mobile) 0 $green3-money,
+        (13 * $width-money-mobile) (4 * $width-money-mobile) 0 $green-money,
+        (14 * $width-money-mobile) (4 * $width-money-mobile) 0 $green3-money,
+        (15 * $width-money-mobile) (4 * $width-money-mobile) 0 $green2-money,
+        (16 * $width-money-mobile) (4 * $width-money-mobile) 0 $green3-money,
+        (17 * $width-money-mobile) (4 * $width-money-mobile) 0 $green-money,
+        (18 * $width-money-mobile) (4 * $width-money-mobile) 0 $green2-money,
+        (19 * $width-money-mobile) (4 * $width-money-mobile) 0 $green3-money,
+        (20 * $width-money-mobile) (4 * $width-money-mobile) 0 $green2-money,
+        (21 * $width-money-mobile) (4 * $width-money-mobile) 0 $green3-money,
+        (22 * $width-money-mobile) (4 * $width-money-mobile) 0 $green2-money,
+        (23 * $width-money-mobile) (4 * $width-money-mobile) 0 $green-money,
+        (24 * $width-money-mobile) (4 * $width-money-mobile) 0 $bag4-money,
+        (3 * $width-money-mobile) (5 * $width-money-mobile) 0 $bag2-money,
+        (4 * $width-money-mobile) (5 * $width-money-mobile) 0 $bag2-money,
+        (5 * $width-money-mobile) (5 * $width-money-mobile) 0 $green2-money,
+        (6 * $width-money-mobile) (5 * $width-money-mobile) 0 $green3-money,
+        (7 * $width-money-mobile) (5 * $width-money-mobile) 0 $green3-money,
+        (8 * $width-money-mobile) (5 * $width-money-mobile) 0 $green-money,
+        (9 * $width-money-mobile) (5 * $width-money-mobile) 0 $green3-money,
+        (10 * $width-money-mobile) (5 * $width-money-mobile) 0 $green2-money,
+        (11 * $width-money-mobile) (5 * $width-money-mobile) 0 $green3-money,
+        (12 * $width-money-mobile) (5 * $width-money-mobile) 0 $green2-money,
+        (13 * $width-money-mobile) (5 * $width-money-mobile) 0 $green3-money,
+        (14 * $width-money-mobile) (5 * $width-money-mobile) 0 $green-money,
+        (15 * $width-money-mobile) (5 * $width-money-mobile) 0 $green2-money,
+        (16 * $width-money-mobile) (5 * $width-money-mobile) 0 $green2-money,
+        (17 * $width-money-mobile) (5 * $width-money-mobile) 0 $green3-money,
+        (18 * $width-money-mobile) (5 * $width-money-mobile) 0 $green-money,
+        (19 * $width-money-mobile) (5 * $width-money-mobile) 0 $green3-money,
+        (20 * $width-money-mobile) (5 * $width-money-mobile) 0 $green3-money,
+        (21 * $width-money-mobile) (5 * $width-money-mobile) 0 $green2-money,
+        (22 * $width-money-mobile) (5 * $width-money-mobile) 0 $bag1-money,
+        (23 * $width-money-mobile) (5 * $width-money-mobile) 0 $bag1-money,
+        (24 * $width-money-mobile) (5 * $width-money-mobile) 0 $bag1-money,
+        (25 * $width-money-mobile) (5 * $width-money-mobile) 0 $bag3-money,
+        (3 * $width-money-mobile) (6 * $width-money-mobile) 0 $bag2-money,
+        (4 * $width-money-mobile) (6 * $width-money-mobile) 0 $bag1-money,
+        (5 * $width-money-mobile) (6 * $width-money-mobile) 0 $bag2-money,
+        (6 * $width-money-mobile) (6 * $width-money-mobile) 0 $bag2-money,
+        (7 * $width-money-mobile) (6 * $width-money-mobile) 0 $bag2-money,
+        (8 * $width-money-mobile) (6 * $width-money-mobile) 0 $green3-money,
+        (9 * $width-money-mobile) (6 * $width-money-mobile) 0 $green2-money,
+        (10 * $width-money-mobile) (6 * $width-money-mobile) 0 $green3-money,
+        (11 * $width-money-mobile) (6 * $width-money-mobile) 0 $green3-money,
+        (12 * $width-money-mobile) (6 * $width-money-mobile) 0 $green2-money,
+        (13 * $width-money-mobile) (6 * $width-money-mobile) 0 $green3-money,
+        (14 * $width-money-mobile) (6 * $width-money-mobile) 0 $green3-money,
+        (15 * $width-money-mobile) (6 * $width-money-mobile) 0 $green-money,
+        (16 * $width-money-mobile) (6 * $width-money-mobile) 0 $green3-money,
+        (17 * $width-money-mobile) (6 * $width-money-mobile) 0 $green2-money,
+        (18 * $width-money-mobile) (6 * $width-money-mobile) 0 $bag2-money,
+        (19 * $width-money-mobile) (6 * $width-money-mobile) 0 $bag2-money,
+        (20 * $width-money-mobile) (6 * $width-money-mobile) 0 $bag2-money,
+        (21 * $width-money-mobile) (6 * $width-money-mobile) 0 $bag2-money,
+        (22 * $width-money-mobile) (6 * $width-money-mobile) 0 $bag1-money,
+        (23 * $width-money-mobile) (6 * $width-money-mobile) 0 $bag4-money,
+        (24 * $width-money-mobile) (6 * $width-money-mobile) 0 $bag1-money,
+        (25 * $width-money-mobile) (6 * $width-money-mobile) 0 $bag4-money,
+        (3 * $width-money-mobile) (7 * $width-money-mobile) 0 $bag2-money,
+        (4 * $width-money-mobile) (7 * $width-money-mobile) 0 $bag2-money,
+        (5 * $width-money-mobile) (7 * $width-money-mobile) 0 $bag1-money,
+        (6 * $width-money-mobile) (7 * $width-money-mobile) 0 $bag1-money,
+        (7 * $width-money-mobile) (7 * $width-money-mobile) 0 $bag4-money,
+        (8 * $width-money-mobile) (7 * $width-money-mobile) 0 $bag2-money,
+        (9 * $width-money-mobile) (7 * $width-money-mobile) 0 $bag2-money,
+        (10 * $width-money-mobile) (7 * $width-money-mobile) 0 $bag2-money,
+        (11 * $width-money-mobile) (7 * $width-money-mobile) 0 $bag2-money,
+        (12 * $width-money-mobile) (7 * $width-money-mobile) 0 $bag2-money,
+        (13 * $width-money-mobile) (7 * $width-money-mobile) 0 $bag2-money,
+        (14 * $width-money-mobile) (7 * $width-money-mobile) 0 $bag2-money,
+        (15 * $width-money-mobile) (7 * $width-money-mobile) 0 $bag2-money,
+        (16 * $width-money-mobile) (7 * $width-money-mobile) 0 $bag2-money,
+        (17 * $width-money-mobile) (7 * $width-money-mobile) 0 $bag2-money,
+        (18 * $width-money-mobile) (7 * $width-money-mobile) 0 $bag2-money,
+        (19 * $width-money-mobile) (7 * $width-money-mobile) 0 $bag1-money,
+        (20 * $width-money-mobile) (7 * $width-money-mobile) 0 $bag4-money,
+        (21 * $width-money-mobile) (7 * $width-money-mobile) 0 $bag1-money,
+        (22 * $width-money-mobile) (7 * $width-money-mobile) 0 $bag1-money,
+        (23 * $width-money-mobile) (7 * $width-money-mobile) 0 $bag1-money,
+        (24 * $width-money-mobile) (7 * $width-money-mobile) 0 $bag4-money,
+        (25 * $width-money-mobile) (7 * $width-money-mobile) 0 $bag3-money,
+        (3 * $width-money-mobile) (8 * $width-money-mobile) 0 $bag2-money,
+        (4 * $width-money-mobile) (8 * $width-money-mobile) 0 $bag2-money,
+        (5 * $width-money-mobile) (8 * $width-money-mobile) 0 $bag2-money,
+        (6 * $width-money-mobile) (8 * $width-money-mobile) 0 $bag2-money,
+        (7 * $width-money-mobile) (8 * $width-money-mobile) 0 $bag2-money,
+        (8 * $width-money-mobile) (8 * $width-money-mobile) 0 $bag1-money,
+        (9 * $width-money-mobile) (8 * $width-money-mobile) 0 $bag1-money,
+        (10 * $width-money-mobile) (8 * $width-money-mobile) 0 $bag1-money,
+        (11 * $width-money-mobile) (8 * $width-money-mobile) 0 $bag1-money,
+        (12 * $width-money-mobile) (8 * $width-money-mobile) 0 $bag1-money,
+        (13 * $width-money-mobile) (8 * $width-money-mobile) 0 $bag1-money,
+        (14 * $width-money-mobile) (8 * $width-money-mobile) 0 $bag1-money,
+        (15 * $width-money-mobile) (8 * $width-money-mobile) 0 $bag1-money,
+        (16 * $width-money-mobile) (8 * $width-money-mobile) 0 $bag1-money,
+        (17 * $width-money-mobile) (8 * $width-money-mobile) 0 $bag1-money,
+        (18 * $width-money-mobile) (8 * $width-money-mobile) 0 $bag1-money,
+        (19 * $width-money-mobile) (8 * $width-money-mobile) 0 $bag4-money,
+        (20 * $width-money-mobile) (8 * $width-money-mobile) 0 $bag1-money,
+        (21 * $width-money-mobile) (8 * $width-money-mobile) 0 $bag2-money,
+        (22 * $width-money-mobile) (8 * $width-money-mobile) 0 $bag1-money,
+        (23 * $width-money-mobile) (8 * $width-money-mobile) 0 $bag4-money,
+        (24 * $width-money-mobile) (8 * $width-money-mobile) 0 $bag3-money,
+        (4 * $width-money-mobile) (9 * $width-money-mobile) 0 $bag2-money,
+        (5 * $width-money-mobile) (9 * $width-money-mobile) 0 $bag2-money,
+        (6 * $width-money-mobile) (9 * $width-money-mobile) 0 $bag2-money,
+        (7 * $width-money-mobile) (9 * $width-money-mobile) 0 $bag2-money,
+        (8 * $width-money-mobile) (9 * $width-money-mobile) 0 $bag2-money,
+        (9 * $width-money-mobile) (9 * $width-money-mobile) 0 $bag2-money,
+        (10 * $width-money-mobile) (9 * $width-money-mobile) 0 $bag2-money,
+        (11 * $width-money-mobile) (9 * $width-money-mobile) 0 $bag2-money,
+        (12 * $width-money-mobile) (9 * $width-money-mobile) 0 $bag2-money,
+        (13 * $width-money-mobile) (9 * $width-money-mobile) 0 $bag2-money,
+        (14 * $width-money-mobile) (9 * $width-money-mobile) 0 $bag2-money,
+        (15 * $width-money-mobile) (9 * $width-money-mobile) 0 $bag2-money,
+        (16 * $width-money-mobile) (9 * $width-money-mobile) 0 $bag2-money,
+        (17 * $width-money-mobile) (9 * $width-money-mobile) 0 $bag2-money,
+        (18 * $width-money-mobile) (9 * $width-money-mobile) 0 $bag2-money,
+        (19 * $width-money-mobile) (9 * $width-money-mobile) 0 $bag2-money,
+        (20 * $width-money-mobile) (9 * $width-money-mobile) 0 $bag2-money,
+        (21 * $width-money-mobile) (9 * $width-money-mobile) 0 $bag1-money,
+        (22 * $width-money-mobile) (9 * $width-money-mobile) 0 $bag2-money,
+        (23 * $width-money-mobile) (9 * $width-money-mobile) 0 $bag4-money,
+        (4 * $width-money-mobile) (10 * $width-money-mobile) 0 $bag1-money,
+        (5 * $width-money-mobile) (10 * $width-money-mobile) 0 $bag2-money,
+        (6 * $width-money-mobile) (10 * $width-money-mobile) 0 $bag2-money,
+        (7 * $width-money-mobile) (10 * $width-money-mobile) 0 $bag2-money,
+        (8 * $width-money-mobile) (10 * $width-money-mobile) 0 $bag2-money,
+        (9 * $width-money-mobile) (10 * $width-money-mobile) 0 $bag2-money,
+        (10 * $width-money-mobile) (10 * $width-money-mobile) 0 $bag2-money,
+        (11 * $width-money-mobile) (10 * $width-money-mobile) 0 $bag2-money,
+        (12 * $width-money-mobile) (10 * $width-money-mobile) 0 $bag2-money,
+        (13 * $width-money-mobile) (10 * $width-money-mobile) 0 $bag2-money,
+        (14 * $width-money-mobile) (10 * $width-money-mobile) 0 $bag2-money,
+        (15 * $width-money-mobile) (10 * $width-money-mobile) 0 $bag2-money,
+        (16 * $width-money-mobile) (10 * $width-money-mobile) 0 $bag2-money,
+        (17 * $width-money-mobile) (10 * $width-money-mobile) 0 $bag2-money,
+        (18 * $width-money-mobile) (10 * $width-money-mobile) 0 $bag2-money,
+        (19 * $width-money-mobile) (10 * $width-money-mobile) 0 $bag1-money,
+        (20 * $width-money-mobile) (10 * $width-money-mobile) 0 $bag2-money,
+        (21 * $width-money-mobile) (10 * $width-money-mobile) 0 $bag1-money,
+        (22 * $width-money-mobile) (10 * $width-money-mobile) 0 $bag1-money,
+        (23 * $width-money-mobile) (10 * $width-money-mobile) 0 $bag3-money,
+        (5 * $width-money-mobile) (11 * $width-money-mobile) 0 $bag1-money,
+        (6 * $width-money-mobile) (11 * $width-money-mobile) 0 $bag2-money,
+        (7 * $width-money-mobile) (11 * $width-money-mobile) 0 $bag2-money,
+        (8 * $width-money-mobile) (11 * $width-money-mobile) 0 $bag2-money,
+        (9 * $width-money-mobile) (11 * $width-money-mobile) 0 $bag2-money,
+        (10 * $width-money-mobile) (11 * $width-money-mobile) 0 $bag2-money,
+        (11 * $width-money-mobile) (11 * $width-money-mobile) 0 $doll-money,
+        (12 * $width-money-mobile) (11 * $width-money-mobile) 0 $bag2-money,
+        (13 * $width-money-mobile) (11 * $width-money-mobile) 0 $bag2-money,
+        (14 * $width-money-mobile) (11 * $width-money-mobile) 0 $doll-money,
+        (15 * $width-money-mobile) (11 * $width-money-mobile) 0 $bag2-money,
+        (16 * $width-money-mobile) (11 * $width-money-mobile) 0 $bag2-money,
+        (17 * $width-money-mobile) (11 * $width-money-mobile) 0 $bag2-money,
+        (18 * $width-money-mobile) (11 * $width-money-mobile) 0 $bag2-money,
+        (19 * $width-money-mobile) (11 * $width-money-mobile) 0 $bag2-money,
+        (20 * $width-money-mobile) (11 * $width-money-mobile) 0 $bag1-money,
+        (21 * $width-money-mobile) (11 * $width-money-mobile) 0 $bag2-money,
+        (22 * $width-money-mobile) (11 * $width-money-mobile) 0 $bag4-money,
+        (5 * $width-money-mobile) (12 * $width-money-mobile) 0 $bag2-money,
+        (6 * $width-money-mobile) (12 * $width-money-mobile) 0 $bag2-money,
+        (7 * $width-money-mobile) (12 * $width-money-mobile) 0 $bag2-money,
+        (8 * $width-money-mobile) (12 * $width-money-mobile) 0 $bag2-money,
+        (9 * $width-money-mobile) (12 * $width-money-mobile) 0 $bag2-money,
+        (10 * $width-money-mobile) (12 * $width-money-mobile) 0 $doll-money,
+        (11 * $width-money-mobile) (12 * $width-money-mobile) 0 $doll-money,
+        (12 * $width-money-mobile) (12 * $width-money-mobile) 0 $doll-money,
+        (13 * $width-money-mobile) (12 * $width-money-mobile) 0 $doll-money,
+        (14 * $width-money-mobile) (12 * $width-money-mobile) 0 $doll-money,
+        (15 * $width-money-mobile) (12 * $width-money-mobile) 0 $doll-money,
+        (16 * $width-money-mobile) (12 * $width-money-mobile) 0 $bag2-money,
+        (17 * $width-money-mobile) (12 * $width-money-mobile) 0 $bag2-money,
+        (18 * $width-money-mobile) (12 * $width-money-mobile) 0 $bag2-money,
+        (19 * $width-money-mobile) (12 * $width-money-mobile) 0 $bag2-money,
+        (20 * $width-money-mobile) (12 * $width-money-mobile) 0 $bag1-money,
+        (21 * $width-money-mobile) (12 * $width-money-mobile) 0 $bag1-money,
+        (22 * $width-money-mobile) (12 * $width-money-mobile) 0 $bag4-money,
+        (4 * $width-money-mobile) (13 * $width-money-mobile) 0 $bag2-money,
+        (5 * $width-money-mobile) (13 * $width-money-mobile) 0 $bag2-money,
+        (6 * $width-money-mobile) (13 * $width-money-mobile) 0 $bag2-money,
+        (7 * $width-money-mobile) (13 * $width-money-mobile) 0 $bag2-money,
+        (8 * $width-money-mobile) (13 * $width-money-mobile) 0 $bag2-money,
+        (9 * $width-money-mobile) (13 * $width-money-mobile) 0 $doll-money,
+        (10 * $width-money-mobile) (13 * $width-money-mobile) 0 $bag1-money,
+        (11 * $width-money-mobile) (13 * $width-money-mobile) 0 $doll-money,
+        (12 * $width-money-mobile) (13 * $width-money-mobile) 0 $bag1-money,
+        (13 * $width-money-mobile) (13 * $width-money-mobile) 0 $bag1-money,
+        (14 * $width-money-mobile) (13 * $width-money-mobile) 0 $doll-money,
+        (15 * $width-money-mobile) (13 * $width-money-mobile) 0 $bag1-money,
+        (16 * $width-money-mobile) (13 * $width-money-mobile) 0 $doll-money,
+        (17 * $width-money-mobile) (13 * $width-money-mobile) 0 $bag2-money,
+        (18 * $width-money-mobile) (13 * $width-money-mobile) 0 $bag2-money,
+        (19 * $width-money-mobile) (13 * $width-money-mobile) 0 $bag1-money,
+        (20 * $width-money-mobile) (13 * $width-money-mobile) 0 $bag1-money,
+        (21 * $width-money-mobile) (13 * $width-money-mobile) 0 $bag1-money,
+        (22 * $width-money-mobile) (13 * $width-money-mobile) 0 $bag4-money,
+        (3 * $width-money-mobile) (14 * $width-money-mobile) 0 $bag1-money,
+        (4 * $width-money-mobile) (14 * $width-money-mobile) 0 $bag2-money,
+        (5 * $width-money-mobile) (14 * $width-money-mobile) 0 $bag2-money,
+        (6 * $width-money-mobile) (14 * $width-money-mobile) 0 $bag2-money,
+        (7 * $width-money-mobile) (14 * $width-money-mobile) 0 $bag2-money,
+        (8 * $width-money-mobile) (14 * $width-money-mobile) 0 $bag2-money,
+        (9 * $width-money-mobile) (14 * $width-money-mobile) 0 $doll-money,
+        (10 * $width-money-mobile) (14 * $width-money-mobile) 0 $bag2-money,
+        (11 * $width-money-mobile) (14 * $width-money-mobile) 0 $doll-money,
+        (12 * $width-money-mobile) (14 * $width-money-mobile) 0 $bag2-money,
+        (13 * $width-money-mobile) (14 * $width-money-mobile) 0 $bag2-money,
+        (14 * $width-money-mobile) (14 * $width-money-mobile) 0 $doll-money,
+        (15 * $width-money-mobile) (14 * $width-money-mobile) 0 $bag2-money,
+        (16 * $width-money-mobile) (14 * $width-money-mobile) 0 $bag1-money,
+        (17 * $width-money-mobile) (14 * $width-money-mobile) 0 $bag2-money,
+        (18 * $width-money-mobile) (14 * $width-money-mobile) 0 $bag2-money,
+        (19 * $width-money-mobile) (14 * $width-money-mobile) 0 $bag2-money,
+        (20 * $width-money-mobile) (14 * $width-money-mobile) 0 $bag1-money,
+        (21 * $width-money-mobile) (14 * $width-money-mobile) 0 $bag2-money,
+        (22 * $width-money-mobile) (14 * $width-money-mobile) 0 $bag4-money,
+        (23 * $width-money-mobile) (14 * $width-money-mobile) 0 $bag3-money,
+        (3 * $width-money-mobile) (15 * $width-money-mobile) 0 $bag2-money,
+        (4 * $width-money-mobile) (15 * $width-money-mobile) 0 $bag2-money,
+        (5 * $width-money-mobile) (15 * $width-money-mobile) 0 $bag2-money,
+        (6 * $width-money-mobile) (15 * $width-money-mobile) 0 $bag2-money,
+        (7 * $width-money-mobile) (15 * $width-money-mobile) 0 $bag2-money,
+        (8 * $width-money-mobile) (15 * $width-money-mobile) 0 $bag2-money,
+        (9 * $width-money-mobile) (15 * $width-money-mobile) 0 $bag1-money,
+        (10 * $width-money-mobile) (15 * $width-money-mobile) 0 $doll-money,
+        (11 * $width-money-mobile) (15 * $width-money-mobile) 0 $doll-money,
+        (12 * $width-money-mobile) (15 * $width-money-mobile) 0 $bag2-money,
+        (13 * $width-money-mobile) (15 * $width-money-mobile) 0 $bag2-money,
+        (14 * $width-money-mobile) (15 * $width-money-mobile) 0 $doll-money,
+        (15 * $width-money-mobile) (15 * $width-money-mobile) 0 $bag2-money,
+        (16 * $width-money-mobile) (15 * $width-money-mobile) 0 $bag2-money,
+        (17 * $width-money-mobile) (15 * $width-money-mobile) 0 $bag2-money,
+        (18 * $width-money-mobile) (15 * $width-money-mobile) 0 $bag2-money,
+        (19 * $width-money-mobile) (15 * $width-money-mobile) 0 $bag2-money,
+        (20 * $width-money-mobile) (15 * $width-money-mobile) 0 $bag1-money,
+        (21 * $width-money-mobile) (15 * $width-money-mobile) 0 $bag1-money,
+        (22 * $width-money-mobile) (15 * $width-money-mobile) 0 $bag1-money,
+        (23 * $width-money-mobile) (15 * $width-money-mobile) 0 $bag4-money,
+        (24 * $width-money-mobile) (15 * $width-money-mobile) 0 $bag3-money,
+        (3 * $width-money-mobile) (16 * $width-money-mobile) 0 $bag2-money,
+        (4 * $width-money-mobile) (16 * $width-money-mobile) 0 $bag2-money,
+        (5 * $width-money-mobile) (16 * $width-money-mobile) 0 $bag2-money,
+        (6 * $width-money-mobile) (16 * $width-money-mobile) 0 $bag2-money,
+        (7 * $width-money-mobile) (16 * $width-money-mobile) 0 $bag2-money,
+        (8 * $width-money-mobile) (16 * $width-money-mobile) 0 $bag2-money,
+        (9 * $width-money-mobile) (16 * $width-money-mobile) 0 $bag2-money,
+        (10 * $width-money-mobile) (16 * $width-money-mobile) 0 $bag1-money,
+        (11 * $width-money-mobile) (16 * $width-money-mobile) 0 $doll-money,
+        (12 * $width-money-mobile) (16 * $width-money-mobile) 0 $doll-money,
+        (13 * $width-money-mobile) (16 * $width-money-mobile) 0 $doll-money,
+        (14 * $width-money-mobile) (16 * $width-money-mobile) 0 $doll-money,
+        (15 * $width-money-mobile) (16 * $width-money-mobile) 0 $doll-money,
+        (16 * $width-money-mobile) (16 * $width-money-mobile) 0 $bag2-money,
+        (17 * $width-money-mobile) (16 * $width-money-mobile) 0 $bag2-money,
+        (18 * $width-money-mobile) (16 * $width-money-mobile) 0 $bag2-money,
+        (19 * $width-money-mobile) (16 * $width-money-mobile) 0 $bag1-money,
+        (20 * $width-money-mobile) (16 * $width-money-mobile) 0 $bag2-money,
+        (21 * $width-money-mobile) (16 * $width-money-mobile) 0 $bag4-money,
+        (22 * $width-money-mobile) (16 * $width-money-mobile) 0 $bag1-money,
+        (23 * $width-money-mobile) (16 * $width-money-mobile) 0 $bag4-money,
+        (24 * $width-money-mobile) (16 * $width-money-mobile) 0 $bag4-money,
+        (3 * $width-money-mobile) (17 * $width-money-mobile) 0 $bag2-money,
+        (4 * $width-money-mobile) (17 * $width-money-mobile) 0 $bag2-money,
+        (5 * $width-money-mobile) (17 * $width-money-mobile) 0 $bag2-money,
+        (6 * $width-money-mobile) (17 * $width-money-mobile) 0 $bag2-money,
+        (7 * $width-money-mobile) (17 * $width-money-mobile) 0 $bag2-money,
+        (8 * $width-money-mobile) (17 * $width-money-mobile) 0 $bag2-money,
+        (9 * $width-money-mobile) (17 * $width-money-mobile) 0 $bag2-money,
+        (10 * $width-money-mobile) (17 * $width-money-mobile) 0 $bag2-money,
+        (11 * $width-money-mobile) (17 * $width-money-mobile) 0 $doll-money,
+        (12 * $width-money-mobile) (17 * $width-money-mobile) 0 $bag1-money,
+        (13 * $width-money-mobile) (17 * $width-money-mobile) 0 $bag1-money,
+        (14 * $width-money-mobile) (17 * $width-money-mobile) 0 $doll-money,
+        (15 * $width-money-mobile) (17 * $width-money-mobile) 0 $bag1-money,
+        (16 * $width-money-mobile) (17 * $width-money-mobile) 0 $doll-money,
+        (17 * $width-money-mobile) (17 * $width-money-mobile) 0 $bag2-money,
+        (18 * $width-money-mobile) (17 * $width-money-mobile) 0 $bag2-money,
+        (19 * $width-money-mobile) (17 * $width-money-mobile) 0 $bag2-money,
+        (20 * $width-money-mobile) (17 * $width-money-mobile) 0 $bag2-money,
+        (21 * $width-money-mobile) (17 * $width-money-mobile) 0 $bag1-money,
+        (22 * $width-money-mobile) (17 * $width-money-mobile) 0 $bag4-money,
+        (23 * $width-money-mobile) (17 * $width-money-mobile) 0 $bag4-money,
+        (24 * $width-money-mobile) (17 * $width-money-mobile) 0 $bag3-money,
+        (3 * $width-money-mobile) (18 * $width-money-mobile) 0 $bag1-money,
+        (4 * $width-money-mobile) (18 * $width-money-mobile) 0 $bag2-money,
+        (5 * $width-money-mobile) (18 * $width-money-mobile) 0 $bag2-money,
+        (6 * $width-money-mobile) (18 * $width-money-mobile) 0 $bag2-money,
+        (7 * $width-money-mobile) (18 * $width-money-mobile) 0 $bag2-money,
+        (8 * $width-money-mobile) (18 * $width-money-mobile) 0 $bag2-money,
+        (9 * $width-money-mobile) (18 * $width-money-mobile) 0 $bag2-money,
+        (10 * $width-money-mobile) (18 * $width-money-mobile) 0 $bag2-money,
+        (11 * $width-money-mobile) (18 * $width-money-mobile) 0 $doll-money,
+        (12 * $width-money-mobile) (18 * $width-money-mobile) 0 $bag2-money,
+        (13 * $width-money-mobile) (18 * $width-money-mobile) 0 $bag2-money,
+        (14 * $width-money-mobile) (18 * $width-money-mobile) 0 $doll-money,
+        (15 * $width-money-mobile) (18 * $width-money-mobile) 0 $bag2-money,
+        (16 * $width-money-mobile) (18 * $width-money-mobile) 0 $doll-money,
+        (17 * $width-money-mobile) (18 * $width-money-mobile) 0 $bag2-money,
+        (18 * $width-money-mobile) (18 * $width-money-mobile) 0 $bag2-money,
+        (19 * $width-money-mobile) (18 * $width-money-mobile) 0 $bag1-money,
+        (20 * $width-money-mobile) (18 * $width-money-mobile) 0 $bag2-money,
+        (21 * $width-money-mobile) (18 * $width-money-mobile) 0 $bag1-money,
+        (22 * $width-money-mobile) (18 * $width-money-mobile) 0 $bag1-money,
+        (23 * $width-money-mobile) (18 * $width-money-mobile) 0 $bag4-money,
+        (24 * $width-money-mobile) (18 * $width-money-mobile) 0 $bag4-money,
+        (25 * $width-money-mobile) (18 * $width-money-mobile) 0 $bag3-money,
+        (4 * $width-money-mobile) (19 * $width-money-mobile) 0 $bag1-money,
+        (5 * $width-money-mobile) (19 * $width-money-mobile) 0 $bag1-money,
+        (6 * $width-money-mobile) (19 * $width-money-mobile) 0 $bag2-money,
+        (7 * $width-money-mobile) (19 * $width-money-mobile) 0 $bag2-money,
+        (8 * $width-money-mobile) (19 * $width-money-mobile) 0 $bag2-money,
+        (9 * $width-money-mobile) (19 * $width-money-mobile) 0 $doll-money,
+        (10 * $width-money-mobile) (19 * $width-money-mobile) 0 $bag2-money,
+        (11 * $width-money-mobile) (19 * $width-money-mobile) 0 $doll-money,
+        (12 * $width-money-mobile) (19 * $width-money-mobile) 0 $bag2-money,
+        (13 * $width-money-mobile) (19 * $width-money-mobile) 0 $bag2-money,
+        (14 * $width-money-mobile) (19 * $width-money-mobile) 0 $doll-money,
+        (15 * $width-money-mobile) (19 * $width-money-mobile) 0 $doll-money,
+        (16 * $width-money-mobile) (19 * $width-money-mobile) 0 $bag1-money,
+        (17 * $width-money-mobile) (19 * $width-money-mobile) 0 $bag2-money,
+        (18 * $width-money-mobile) (19 * $width-money-mobile) 0 $bag1-money,
+        (19 * $width-money-mobile) (19 * $width-money-mobile) 0 $bag2-money,
+        (20 * $width-money-mobile) (19 * $width-money-mobile) 0 $bag1-money,
+        (21 * $width-money-mobile) (19 * $width-money-mobile) 0 $bag1-money,
+        (22 * $width-money-mobile) (19 * $width-money-mobile) 0 $bag4-money,
+        (23 * $width-money-mobile) (19 * $width-money-mobile) 0 $bag1-money,
+        (24 * $width-money-mobile) (19 * $width-money-mobile) 0 $bag4-money,
+        (25 * $width-money-mobile) (19 * $width-money-mobile) 0 $bag3-money,
+        (4 * $width-money-mobile) (20 * $width-money-mobile) 0 $bag2-money,
+        (5 * $width-money-mobile) (20 * $width-money-mobile) 0 $bag2-money,
+        (6 * $width-money-mobile) (20 * $width-money-mobile) 0 $bag2-money,
+        (7 * $width-money-mobile) (20 * $width-money-mobile) 0 $bag2-money,
+        (8 * $width-money-mobile) (20 * $width-money-mobile) 0 $bag2-money,
+        (9 * $width-money-mobile) (20 * $width-money-mobile) 0 $bag1-money,
+        (10 * $width-money-mobile) (20 * $width-money-mobile) 0 $doll-money,
+        (11 * $width-money-mobile) (20 * $width-money-mobile) 0 $doll-money,
+        (12 * $width-money-mobile) (20 * $width-money-mobile) 0 $doll-money,
+        (13 * $width-money-mobile) (20 * $width-money-mobile) 0 $doll-money,
+        (14 * $width-money-mobile) (20 * $width-money-mobile) 0 $doll-money,
+        (15 * $width-money-mobile) (20 * $width-money-mobile) 0 $bag1-money,
+        (16 * $width-money-mobile) (20 * $width-money-mobile) 0 $bag2-money,
+        (17 * $width-money-mobile) (20 * $width-money-mobile) 0 $bag2-money,
+        (18 * $width-money-mobile) (20 * $width-money-mobile) 0 $bag2-money,
+        (19 * $width-money-mobile) (20 * $width-money-mobile) 0 $bag1-money,
+        (20 * $width-money-mobile) (20 * $width-money-mobile) 0 $bag2-money,
+        (21 * $width-money-mobile) (20 * $width-money-mobile) 0 $bag1-money,
+        (22 * $width-money-mobile) (20 * $width-money-mobile) 0 $bag4-money,
+        (23 * $width-money-mobile) (20 * $width-money-mobile) 0 $bag4-money,
+        (24 * $width-money-mobile) (20 * $width-money-mobile) 0 $bag3-money,
+        (3 * $width-money-mobile) (21 * $width-money-mobile) 0 $bag2-money,
+        (4 * $width-money-mobile) (21 * $width-money-mobile) 0 $bag1-money,
+        (5 * $width-money-mobile) (21 * $width-money-mobile) 0 $bag2-money,
+        (6 * $width-money-mobile) (21 * $width-money-mobile) 0 $bag2-money,
+        (7 * $width-money-mobile) (21 * $width-money-mobile) 0 $bag1-money,
+        (8 * $width-money-mobile) (21 * $width-money-mobile) 0 $bag2-money,
+        (9 * $width-money-mobile) (21 * $width-money-mobile) 0 $bag2-money,
+        (10 * $width-money-mobile) (21 * $width-money-mobile) 0 $bag1-money,
+        (11 * $width-money-mobile) (21 * $width-money-mobile) 0 $doll-money,
+        (12 * $width-money-mobile) (21 * $width-money-mobile) 0 $bag1-money,
+        (13 * $width-money-mobile) (21 * $width-money-mobile) 0 $bag1-money,
+        (14 * $width-money-mobile) (21 * $width-money-mobile) 0 $doll-money,
+        (15 * $width-money-mobile) (21 * $width-money-mobile) 0 $bag2-money,
+        (16 * $width-money-mobile) (21 * $width-money-mobile) 0 $bag2-money,
+        (17 * $width-money-mobile) (21 * $width-money-mobile) 0 $bag1-money,
+        (18 * $width-money-mobile) (21 * $width-money-mobile) 0 $bag1-money,
+        (19 * $width-money-mobile) (21 * $width-money-mobile) 0 $bag1-money,
+        (20 * $width-money-mobile) (21 * $width-money-mobile) 0 $bag1-money,
+        (21 * $width-money-mobile) (21 * $width-money-mobile) 0 $bag4-money,
+        (22 * $width-money-mobile) (21 * $width-money-mobile) 0 $bag1-money,
+        (23 * $width-money-mobile) (21 * $width-money-mobile) 0 $bag4-money,
+        (24 * $width-money-mobile) (21 * $width-money-mobile) 0 $bag3-money,
+        (2 * $width-money-mobile) (22 * $width-money-mobile) 0 $bag1-money,
+        (3 * $width-money-mobile) (22 * $width-money-mobile) 0 $bag1-money,
+        (4 * $width-money-mobile) (22 * $width-money-mobile) 0 $bag2-money,
+        (5 * $width-money-mobile) (22 * $width-money-mobile) 0 $bag1-money,
+        (6 * $width-money-mobile) (22 * $width-money-mobile) 0 $bag1-money,
+        (7 * $width-money-mobile) (22 * $width-money-mobile) 0 $bag2-money,
+        (8 * $width-money-mobile) (22 * $width-money-mobile) 0 $bag2-money,
+        (9 * $width-money-mobile) (22 * $width-money-mobile) 0 $bag2-money,
+        (10 * $width-money-mobile) (22 * $width-money-mobile) 0 $bag2-money,
+        (11 * $width-money-mobile) (22 * $width-money-mobile) 0 $bag2-money,
+        (12 * $width-money-mobile) (22 * $width-money-mobile) 0 $bag2-money,
+        (13 * $width-money-mobile) (22 * $width-money-mobile) 0 $bag2-money,
+        (14 * $width-money-mobile) (22 * $width-money-mobile) 0 $bag2-money,
+        (15 * $width-money-mobile) (22 * $width-money-mobile) 0 $bag2-money,
+        (16 * $width-money-mobile) (22 * $width-money-mobile) 0 $bag1-money,
+        (17 * $width-money-mobile) (22 * $width-money-mobile) 0 $bag1-money,
+        (18 * $width-money-mobile) (22 * $width-money-mobile) 0 $bag2-money,
+        (19 * $width-money-mobile) (22 * $width-money-mobile) 0 $bag1-money,
+        (20 * $width-money-mobile) (22 * $width-money-mobile) 0 $bag4-money,
+        (21 * $width-money-mobile) (22 * $width-money-mobile) 0 $bag4-money,
+        (22 * $width-money-mobile) (22 * $width-money-mobile) 0 $bag4-money,
+        (23 * $width-money-mobile) (22 * $width-money-mobile) 0 $bag3-money,
+        (2 * $width-money-mobile) (23 * $width-money-mobile) 0 $bag4-money,
+        (3 * $width-money-mobile) (23 * $width-money-mobile) 0 $bag1-money,
+        (4 * $width-money-mobile) (23 * $width-money-mobile) 0 $bag1-money,
+        (5 * $width-money-mobile) (23 * $width-money-mobile) 0 $bag1-money,
+        (6 * $width-money-mobile) (23 * $width-money-mobile) 0 $bag1-money,
+        (7 * $width-money-mobile) (23 * $width-money-mobile) 0 $bag2-money,
+        (8 * $width-money-mobile) (23 * $width-money-mobile) 0 $bag1-money,
+        (9 * $width-money-mobile) (23 * $width-money-mobile) 0 $bag1-money,
+        (10 * $width-money-mobile) (23 * $width-money-mobile) 0 $bag1-money,
+        (11 * $width-money-mobile) (23 * $width-money-mobile) 0 $bag1-money,
+        (12 * $width-money-mobile) (23 * $width-money-mobile) 0 $bag2-money,
+        (13 * $width-money-mobile) (23 * $width-money-mobile) 0 $bag1-money,
+        (14 * $width-money-mobile) (23 * $width-money-mobile) 0 $bag1-money,
+        (15 * $width-money-mobile) (23 * $width-money-mobile) 0 $bag1-money,
+        (16 * $width-money-mobile) (23 * $width-money-mobile) 0 $bag4-money,
+        (17 * $width-money-mobile) (23 * $width-money-mobile) 0 $bag4-money,
+        (18 * $width-money-mobile) (23 * $width-money-mobile) 0 $bag4-money,
+        (19 * $width-money-mobile) (23 * $width-money-mobile) 0 $bag4-money,
+        (20 * $width-money-mobile) (23 * $width-money-mobile) 0 $bag1-money,
+        (21 * $width-money-mobile) (23 * $width-money-mobile) 0 $bag3-money,
+        (22 * $width-money-mobile) (23 * $width-money-mobile) 0 $bag1-money,
+        (23 * $width-money-mobile) (23 * $width-money-mobile) 0 $bag3-money,
+        (24 * $width-money-mobile) (23 * $width-money-mobile) 0 $bag3-money,
+        (1 * $width-money-mobile) (24 * $width-money-mobile) 0 $bag3-money,
+        (2 * $width-money-mobile) (24 * $width-money-mobile) 0 $bag4-money,
+        (3 * $width-money-mobile) (24 * $width-money-mobile) 0 $bag4-money,
+        (4 * $width-money-mobile) (24 * $width-money-mobile) 0 $bag4-money,
+        (5 * $width-money-mobile) (24 * $width-money-mobile) 0 $bag4-money,
+        (6 * $width-money-mobile) (24 * $width-money-mobile) 0 $bag4-money,
+        (7 * $width-money-mobile) (24 * $width-money-mobile) 0 $bag1-money,
+        (8 * $width-money-mobile) (24 * $width-money-mobile) 0 $bag1-money,
+        (9 * $width-money-mobile) (24 * $width-money-mobile) 0 $bag4-money,
+        (10 * $width-money-mobile) (24 * $width-money-mobile) 0 $bag1-money,
+        (11 * $width-money-mobile) (24 * $width-money-mobile) 0 $bag4-money,
+        (12 * $width-money-mobile) (24 * $width-money-mobile) 0 $bag4-money,
+        (13 * $width-money-mobile) (24 * $width-money-mobile) 0 $bag4-money,
+        (14 * $width-money-mobile) (24 * $width-money-mobile) 0 $bag4-money,
+        (15 * $width-money-mobile) (24 * $width-money-mobile) 0 $bag4-money,
+        (16 * $width-money-mobile) (24 * $width-money-mobile) 0 $bag1-money,
+        (17 * $width-money-mobile) (24 * $width-money-mobile) 0 $bag4-money,
+        (18 * $width-money-mobile) (24 * $width-money-mobile) 0 $bag4-money,
+        (19 * $width-money-mobile) (24 * $width-money-mobile) 0 $bag4-money,
+        (20 * $width-money-mobile) (24 * $width-money-mobile) 0 $bag3-money,
+        (21 * $width-money-mobile) (24 * $width-money-mobile) 0 $bag4-money,
+        (22 * $width-money-mobile) (24 * $width-money-mobile) 0 $bag3-money,
+        (23 * $width-money-mobile) (24 * $width-money-mobile) 0 $bag4-money,
+        (24 * $width-money-mobile) (24 * $width-money-mobile) 0 $bag3-money,
+        (25 * $width-money-mobile) (24 * $width-money-mobile) 0 $bag3-money,
+        (1 * $width-money-mobile) (25 * $width-money-mobile) 0 $bag3-money,
+        (2 * $width-money-mobile) (25 * $width-money-mobile) 0 $bag3-money,
+        (3 * $width-money-mobile) (25 * $width-money-mobile) 0 $bag3-money,
+        (4 * $width-money-mobile) (25 * $width-money-mobile) 0 $bag3-money,
+        (5 * $width-money-mobile) (25 * $width-money-mobile) 0 $bag4-money,
+        (6 * $width-money-mobile) (25 * $width-money-mobile) 0 $bag3-money,
+        (7 * $width-money-mobile) (25 * $width-money-mobile) 0 $bag4-money,
+        (8 * $width-money-mobile) (25 * $width-money-mobile) 0 $bag4-money,
+        (9 * $width-money-mobile) (25 * $width-money-mobile) 0 $bag3-money,
+        (10 * $width-money-mobile) (25 * $width-money-mobile) 0 $bag4-money,
+        (11 * $width-money-mobile) (25 * $width-money-mobile) 0 $bag4-money,
+        (12 * $width-money-mobile) (25 * $width-money-mobile) 0 $bag4-money,
+        (13 * $width-money-mobile) (25 * $width-money-mobile) 0 $bag4-money,
+        (14 * $width-money-mobile) (25 * $width-money-mobile) 0 $bag4-money,
+        (15 * $width-money-mobile) (25 * $width-money-mobile) 0 $bag3-money,
+        (16 * $width-money-mobile) (25 * $width-money-mobile) 0 $bag4-money,
+        (17 * $width-money-mobile) (25 * $width-money-mobile) 0 $bag3-money,
+        (18 * $width-money-mobile) (25 * $width-money-mobile) 0 $bag3-money,
+        (19 * $width-money-mobile) (25 * $width-money-mobile) 0 $bag3-money,
+        (20 * $width-money-mobile) (25 * $width-money-mobile) 0 $bag3-money,
+        (21 * $width-money-mobile) (25 * $width-money-mobile) 0 $bag3-money,
+        (22 * $width-money-mobile) (25 * $width-money-mobile) 0 $bag3-money,
+        (23 * $width-money-mobile) (25 * $width-money-mobile) 0 $bag3-money,
+        (24 * $width-money-mobile) (25 * $width-money-mobile) 0 $bag3-money,
+        (25 * $width-money-mobile) (25 * $width-money-mobile) 0 $bag3-money;
+    }
   }
   box-shadow: (8 * $width-godfather) (1 * $width-godfather) 0 $hair1-godfather,
     (9 * $width-godfather) (1 * $width-godfather) 0 $hair2-godfather,
@@ -804,4 +1334,469 @@ $doll-money: #8e8b86;
     (12 * $width-godfather) (25 * $width-godfather) 0 $jaket-shadow-godfather,
     (13 * $width-godfather) (25 * $width-godfather) 0 $jaket-shadow-godfather,
     (14 * $width-godfather) (25 * $width-godfather) 0 $jaket-shadow-godfather;
+  @media (max-width: 480px) {
+    width: $width-godfather-mobile;
+    height: $width-godfather-mobile;
+    left: 35px;
+    box-shadow: (8 * $width-godfather-mobile) (1 * $width-godfather-mobile) 0
+        $hair1-godfather,
+      (9 * $width-godfather-mobile) (1 * $width-godfather-mobile) 0
+        $hair2-godfather,
+      (10 * $width-godfather-mobile) (1 * $width-godfather-mobile) 0
+        $hair1-godfather,
+      (11 * $width-godfather-mobile) (1 * $width-godfather-mobile) 0
+        $hair2-godfather,
+      (12 * $width-godfather-mobile) (1 * $width-godfather-mobile) 0
+        $hair3-godfather,
+      (7 * $width-godfather-mobile) (2 * $width-godfather-mobile) 0
+        $skin-godfather,
+      (8 * $width-godfather-mobile) (2 * $width-godfather-mobile) 0
+        $hair2-godfather,
+      (9 * $width-godfather-mobile) (2 * $width-godfather-mobile) 0
+        $skin-godfather,
+      (10 * $width-godfather-mobile) (2 * $width-godfather-mobile) 0
+        $skin-godfather,
+      (11 * $width-godfather-mobile) (2 * $width-godfather-mobile) 0
+        $skin-godfather,
+      (12 * $width-godfather-mobile) (2 * $width-godfather-mobile) 0
+        $hair2-godfather,
+      (13 * $width-godfather-mobile) (2 * $width-godfather-mobile) 0
+        $hair3-godfather,
+      (7 * $width-godfather-mobile) (3 * $width-godfather-mobile) 0
+        $skin-godfather,
+      (8 * $width-godfather-mobile) (3 * $width-godfather-mobile) 0
+        $skin-godfather,
+      (9 * $width-godfather-mobile) (3 * $width-godfather-mobile) 0
+        $skin-godfather,
+      (10 * $width-godfather-mobile) (3 * $width-godfather-mobile) 0
+        $skin-godfather,
+      (11 * $width-godfather-mobile) (3 * $width-godfather-mobile) 0
+        $hair2-godfather,
+      (12 * $width-godfather-mobile) (3 * $width-godfather-mobile) 0
+        $hair3-godfather,
+      (13 * $width-godfather-mobile) (3 * $width-godfather-mobile) 0
+        $hair2-godfather,
+      (7 * $width-godfather-mobile) (4 * $width-godfather-mobile) 0
+        $skin-godfather,
+      (8 * $width-godfather-mobile) (4 * $width-godfather-mobile) 0
+        $skin-shadow-godfather,
+      (9 * $width-godfather-mobile) (4 * $width-godfather-mobile) 0
+        $skin-shadow-godfather,
+      (10 * $width-godfather-mobile) (4 * $width-godfather-mobile) 0
+        $skin-godfather,
+      (11 * $width-godfather-mobile) (4 * $width-godfather-mobile) 0
+        $skin-shadow-godfather,
+      (12 * $width-godfather-mobile) (4 * $width-godfather-mobile) 0
+        $hair2-godfather,
+      (13 * $width-godfather-mobile) (4 * $width-godfather-mobile) 0
+        $hair3-godfather,
+      (7 * $width-godfather-mobile) (5 * $width-godfather-mobile) 0
+        $black-godfather,
+      (8 * $width-godfather-mobile) (5 * $width-godfather-mobile) 0
+        $nose-godfather,
+      (9 * $width-godfather-mobile) (5 * $width-godfather-mobile) 0
+        $skin-shadow-godfather,
+      (10 * $width-godfather-mobile) (5 * $width-godfather-mobile) 0
+        $black-godfather,
+      (11 * $width-godfather-mobile) (5 * $width-godfather-mobile) 0
+        $skin-shadow-godfather,
+      (12 * $width-godfather-mobile) (5 * $width-godfather-mobile) 0
+        $hair3-godfather,
+      (13 * $width-godfather-mobile) (5 * $width-godfather-mobile) 0
+        $skin-shadow-godfather,
+      (7 * $width-godfather-mobile) (6 * $width-godfather-mobile) 0
+        $skin-godfather,
+      (8 * $width-godfather-mobile) (6 * $width-godfather-mobile) 0
+        $nose-godfather,
+      (9 * $width-godfather-mobile) (6 * $width-godfather-mobile) 0
+        $skin-godfather,
+      (10 * $width-godfather-mobile) (6 * $width-godfather-mobile) 0
+        $skin-godfather,
+      (11 * $width-godfather-mobile) (6 * $width-godfather-mobile) 0
+        $skin-shadow-godfather,
+      (12 * $width-godfather-mobile) (6 * $width-godfather-mobile) 0
+        $hair1-godfather,
+      (13 * $width-godfather-mobile) (6 * $width-godfather-mobile) 0
+        $skin-shadow-godfather,
+      (7 * $width-godfather-mobile) (7 * $width-godfather-mobile) 0
+        $skin-godfather,
+      (8 * $width-godfather-mobile) (7 * $width-godfather-mobile) 0
+        $black-godfather,
+      (9 * $width-godfather-mobile) (7 * $width-godfather-mobile) 0
+        $black-godfather,
+      (10 * $width-godfather-mobile) (7 * $width-godfather-mobile) 0
+        $skin-shadow-godfather,
+      (11 * $width-godfather-mobile) (7 * $width-godfather-mobile) 0
+        $skin-shadow-godfather,
+      (12 * $width-godfather-mobile) (7 * $width-godfather-mobile) 0
+        $skin-shadow-godfather,
+      (1 * $width-godfather-mobile) (8 * $width-godfather-mobile) 0
+        $cat1-godfather,
+      (4 * $width-godfather-mobile) (8 * $width-godfather-mobile) 0
+        $cat1-godfather,
+      (8 * $width-godfather-mobile) (8 * $width-godfather-mobile) 0
+        $skin-godfather,
+      (9 * $width-godfather-mobile) (8 * $width-godfather-mobile) 0
+        $skin-godfather,
+      (10 * $width-godfather-mobile) (8 * $width-godfather-mobile) 0
+        $skin-godfather,
+      (11 * $width-godfather-mobile) (8 * $width-godfather-mobile) 0
+        $skin-shadow-godfather,
+      (12 * $width-godfather-mobile) (8 * $width-godfather-mobile) 0
+        $skin-shadow-godfather,
+      (1 * $width-godfather-mobile) (9 * $width-godfather-mobile) 0
+        $cat1-godfather,
+      (2 * $width-godfather-mobile) (9 * $width-godfather-mobile) 0
+        $cat1-godfather,
+      (3 * $width-godfather-mobile) (9 * $width-godfather-mobile) 0
+        $cat1-godfather,
+      (4 * $width-godfather-mobile) (9 * $width-godfather-mobile) 0
+        $cat1-godfather,
+      (8 * $width-godfather-mobile) (9 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (9 * $width-godfather-mobile) (9 * $width-godfather-mobile) 0
+        $shirt-shadow-godfather,
+      (10 * $width-godfather-mobile) (9 * $width-godfather-mobile) 0
+        $tie-godfather,
+      (11 * $width-godfather-mobile) (9 * $width-godfather-mobile) 0
+        $shirt-shadow-godfather,
+      (12 * $width-godfather-mobile) (9 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (13 * $width-godfather-mobile) (9 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (14 * $width-godfather-mobile) (9 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (15 * $width-godfather-mobile) (9 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (1 * $width-godfather-mobile) (10 * $width-godfather-mobile) 0
+        $cat-eye-godfather,
+      (2 * $width-godfather-mobile) (10 * $width-godfather-mobile) 0
+        $cat1-godfather,
+      (3 * $width-godfather-mobile) (10 * $width-godfather-mobile) 0
+        $cat-eye-godfather,
+      (4 * $width-godfather-mobile) (10 * $width-godfather-mobile) 0
+        $cat1-godfather,
+      (5 * $width-godfather-mobile) (10 * $width-godfather-mobile) 0
+        $cat2-godfather,
+      (6 * $width-godfather-mobile) (10 * $width-godfather-mobile) 0
+        $cat1-godfather,
+      (7 * $width-godfather-mobile) (10 * $width-godfather-mobile) 0
+        $cat2-godfather,
+      (8 * $width-godfather-mobile) (10 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (9 * $width-godfather-mobile) (10 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (10 * $width-godfather-mobile) (10 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (11 * $width-godfather-mobile) (10 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (12 * $width-godfather-mobile) (10 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (13 * $width-godfather-mobile) (10 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (14 * $width-godfather-mobile) (10 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (15 * $width-godfather-mobile) (10 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (16 * $width-godfather-mobile) (10 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (1 * $width-godfather-mobile) (11 * $width-godfather-mobile) 0
+        $shirt-godfather,
+      (2 * $width-godfather-mobile) (11 * $width-godfather-mobile) 0
+        $black-godfather,
+      (3 * $width-godfather-mobile) (11 * $width-godfather-mobile) 0
+        $shirt-godfather,
+      (4 * $width-godfather-mobile) (11 * $width-godfather-mobile) 0
+        $cat2-godfather,
+      (5 * $width-godfather-mobile) (11 * $width-godfather-mobile) 0
+        $cat1-godfather,
+      (6 * $width-godfather-mobile) (11 * $width-godfather-mobile) 0
+        $cat2-godfather,
+      (7 * $width-godfather-mobile) (11 * $width-godfather-mobile) 0
+        $cat1-godfather,
+      (8 * $width-godfather-mobile) (11 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (9 * $width-godfather-mobile) (11 * $width-godfather-mobile) 0
+        $shirt-shadow-godfather,
+      (10 * $width-godfather-mobile) (11 * $width-godfather-mobile) 0
+        $shirt-godfather,
+      (11 * $width-godfather-mobile) (11 * $width-godfather-mobile) 0
+        $shirt-godfather,
+      (12 * $width-godfather-mobile) (11 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (13 * $width-godfather-mobile) (11 * $width-godfather-mobile) 0
+        $red-godfather,
+      (14 * $width-godfather-mobile) (11 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (15 * $width-godfather-mobile) (11 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (16 * $width-godfather-mobile) (11 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (3 * $width-godfather-mobile) (12 * $width-godfather-mobile) 0
+        $cat1-godfather,
+      (4 * $width-godfather-mobile) (12 * $width-godfather-mobile) 0
+        $cat1-godfather,
+      (5 * $width-godfather-mobile) (12 * $width-godfather-mobile) 0
+        $cat2-godfather,
+      (6 * $width-godfather-mobile) (12 * $width-godfather-mobile) 0
+        $cat1-godfather,
+      (7 * $width-godfather-mobile) (12 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (8 * $width-godfather-mobile) (12 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (9 * $width-godfather-mobile) (12 * $width-godfather-mobile) 0
+        $shirt-shadow-godfather,
+      (10 * $width-godfather-mobile) (12 * $width-godfather-mobile) 0
+        $shirt-shadow-godfather,
+      (11 * $width-godfather-mobile) (12 * $width-godfather-mobile) 0
+        $shirt-godfather,
+      (12 * $width-godfather-mobile) (12 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (13 * $width-godfather-mobile) (12 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (14 * $width-godfather-mobile) (12 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (15 * $width-godfather-mobile) (12 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (16 * $width-godfather-mobile) (12 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (2 * $width-godfather-mobile) (13 * $width-godfather-mobile) 0
+        $skin-godfather,
+      (3 * $width-godfather-mobile) (13 * $width-godfather-mobile) 0
+        $cat1-godfather,
+      (4 * $width-godfather-mobile) (13 * $width-godfather-mobile) 0
+        $cat2-godfather,
+      (5 * $width-godfather-mobile) (13 * $width-godfather-mobile) 0
+        $cat1-godfather,
+      (6 * $width-godfather-mobile) (13 * $width-godfather-mobile) 0
+        $cat2-godfather,
+      (7 * $width-godfather-mobile) (13 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (8 * $width-godfather-mobile) (13 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (9 * $width-godfather-mobile) (13 * $width-godfather-mobile) 0
+        $shirt-shadow-godfather,
+      (10 * $width-godfather-mobile) (13 * $width-godfather-mobile) 0
+        $shirt-godfather,
+      (11 * $width-godfather-mobile) (13 * $width-godfather-mobile) 0
+        $shirt-godfather,
+      (12 * $width-godfather-mobile) (13 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (13 * $width-godfather-mobile) (13 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (14 * $width-godfather-mobile) (13 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (15 * $width-godfather-mobile) (13 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (16 * $width-godfather-mobile) (13 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (2 * $width-godfather-mobile) (14 * $width-godfather-mobile) 0
+        $skin-godfather,
+      (3 * $width-godfather-mobile) (14 * $width-godfather-mobile) 0
+        $skin-shadow-godfather,
+      (4 * $width-godfather-mobile) (14 * $width-godfather-mobile) 0
+        $cat2-godfather,
+      (5 * $width-godfather-mobile) (14 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (6 * $width-godfather-mobile) (14 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (7 * $width-godfather-mobile) (14 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (8 * $width-godfather-mobile) (14 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (9 * $width-godfather-mobile) (14 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (10 * $width-godfather-mobile) (14 * $width-godfather-mobile) 0
+        $shirt-shadow-godfather,
+      (11 * $width-godfather-mobile) (14 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (12 * $width-godfather-mobile) (14 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (13 * $width-godfather-mobile) (14 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (14 * $width-godfather-mobile) (14 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (15 * $width-godfather-mobile) (14 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (16 * $width-godfather-mobile) (14 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (3 * $width-godfather-mobile) (15 * $width-godfather-mobile) 0
+        $skin-godfather,
+      (4 * $width-godfather-mobile) (15 * $width-godfather-mobile) 0
+        $shirt-godfather,
+      (5 * $width-godfather-mobile) (15 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (6 * $width-godfather-mobile) (15 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (7 * $width-godfather-mobile) (15 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (8 * $width-godfather-mobile) (15 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (9 * $width-godfather-mobile) (15 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (10 * $width-godfather-mobile) (15 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (11 * $width-godfather-mobile) (15 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (12 * $width-godfather-mobile) (15 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (13 * $width-godfather-mobile) (15 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (14 * $width-godfather-mobile) (15 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (15 * $width-godfather-mobile) (15 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (16 * $width-godfather-mobile) (15 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (4 * $width-godfather-mobile) (16 * $width-godfather-mobile) 0
+        $shirt-godfather,
+      (7 * $width-godfather-mobile) (16 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (8 * $width-godfather-mobile) (16 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (9 * $width-godfather-mobile) (16 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (10 * $width-godfather-mobile) (16 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (11 * $width-godfather-mobile) (16 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (12 * $width-godfather-mobile) (16 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (13 * $width-godfather-mobile) (16 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (14 * $width-godfather-mobile) (16 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (15 * $width-godfather-mobile) (16 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (16 * $width-godfather-mobile) (16 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (7 * $width-godfather-mobile) (17 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (8 * $width-godfather-mobile) (17 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (9 * $width-godfather-mobile) (17 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (10 * $width-godfather-mobile) (17 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (11 * $width-godfather-mobile) (17 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (12 * $width-godfather-mobile) (17 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (13 * $width-godfather-mobile) (17 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (14 * $width-godfather-mobile) (17 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (15 * $width-godfather-mobile) (17 * $width-godfather-mobile) 0
+        $skin-godfather,
+      (16 * $width-godfather-mobile) (17 * $width-godfather-mobile) 0
+        $skin-shadow-godfather,
+      (8 * $width-godfather-mobile) (18 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (9 * $width-godfather-mobile) (18 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (10 * $width-godfather-mobile) (18 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (11 * $width-godfather-mobile) (18 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (12 * $width-godfather-mobile) (18 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (13 * $width-godfather-mobile) (18 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (14 * $width-godfather-mobile) (18 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (15 * $width-godfather-mobile) (18 * $width-godfather-mobile) 0
+        $skin-godfather,
+      (16 * $width-godfather-mobile) (18 * $width-godfather-mobile) 0
+        $skin-shadow-godfather,
+      (8 * $width-godfather-mobile) (19 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (9 * $width-godfather-mobile) (19 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (10 * $width-godfather-mobile) (19 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (11 * $width-godfather-mobile) (19 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (12 * $width-godfather-mobile) (19 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (13 * $width-godfather-mobile) (19 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (14 * $width-godfather-mobile) (19 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (15 * $width-godfather-mobile) (19 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (8 * $width-godfather-mobile) (20 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (9 * $width-godfather-mobile) (20 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (10 * $width-godfather-mobile) (20 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (12 * $width-godfather-mobile) (20 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (13 * $width-godfather-mobile) (20 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (14 * $width-godfather-mobile) (20 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (8 * $width-godfather-mobile) (21 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (9 * $width-godfather-mobile) (21 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (10 * $width-godfather-mobile) (21 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (12 * $width-godfather-mobile) (21 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (13 * $width-godfather-mobile) (21 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (14 * $width-godfather-mobile) (21 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (8 * $width-godfather-mobile) (22 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (9 * $width-godfather-mobile) (22 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (10 * $width-godfather-mobile) (22 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (12 * $width-godfather-mobile) (22 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (13 * $width-godfather-mobile) (22 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (14 * $width-godfather-mobile) (22 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (8 * $width-godfather-mobile) (23 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (9 * $width-godfather-mobile) (23 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (10 * $width-godfather-mobile) (23 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (12 * $width-godfather-mobile) (23 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (13 * $width-godfather-mobile) (23 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (14 * $width-godfather-mobile) (23 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (8 * $width-godfather-mobile) (24 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (9 * $width-godfather-mobile) (24 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (10 * $width-godfather-mobile) (24 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (12 * $width-godfather-mobile) (24 * $width-godfather-mobile) 0
+        $jaket-godfather,
+      (13 * $width-godfather-mobile) (24 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (14 * $width-godfather-mobile) (24 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (7 * $width-godfather-mobile) (25 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (8 * $width-godfather-mobile) (25 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (9 * $width-godfather-mobile) (25 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (10 * $width-godfather-mobile) (25 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (12 * $width-godfather-mobile) (25 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (13 * $width-godfather-mobile) (25 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather,
+      (14 * $width-godfather-mobile) (25 * $width-godfather-mobile) 0
+        $jaket-shadow-godfather;
+  }
 }
