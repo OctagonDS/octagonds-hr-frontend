@@ -324,8 +324,8 @@ const ContentMobile = () => {
           <ContentItemSmall arr={gladosData} />
         </div>
       </div>
-      <div className="content" style={{ marginBottom: 20, marginTop: 20 }}>
-        <div className="content__title" style={{ marginBottom: 20 }}>
+      <div className="content" style={{ marginBottom: 10, marginTop: 10 }}>
+        <div className="content__title" style={{ marginBottom: 10 }}>
           team lead
         </div>
       </div>
@@ -345,7 +345,7 @@ const ContentMobile = () => {
                   style={yoda ? {} : { height: 0 }}
                 />
               </div>
-              <div className="bubble left yoda__dialog" style={{ width: 256 }}>
+              <div className="bubble left yoda__dialog" style={{ width: 150 }}>
                 <div className="content__bit__text">
                   {yoda
                     ? t('content.mayStackoverflow')
