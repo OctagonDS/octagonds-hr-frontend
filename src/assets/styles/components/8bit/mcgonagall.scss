@@ -1488,7 +1488,7 @@ $hair2-css: #2f2f2f;
     left: 60px;
   }
   @media (max-width: 480px) {
-    left: 10px;
+    left: 0;
     top: 0;
   }
   &__dialog {
@@ -1508,7 +1508,7 @@ $hair2-css: #2f2f2f;
       left: 280px;
     }
     @media (max-width: 480px) {
-      left: 150px;
+      left: 140px;
       top: 75px;
     }
   }
