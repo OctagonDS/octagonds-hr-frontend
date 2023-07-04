@@ -319,7 +319,7 @@ const ContentMobile = () => {
                   className="glados__eye"
                   style={
                     glados === '-open'
-                      ? { transform: 'translate(111px, 145px)' }
+                      ? { transform: 'translate(110.5px, 145px)' }
                       : {}
                   }
                 />
