@@ -1,5 +1,7 @@
 $width-glados: 7px;
 
+$width-glados-mobile: 4.5px;
+
 $black-glados: #211f1f;
 $orange-glados: #ffaf36;
 $gray-black-glados: #595652;
@@ -15,6 +17,10 @@ $gray-blue-glados: #9badb7;
   @media (max-width: 1366px) {
     left: 50px;
   }
+  @media (max-width: 480px) {
+    top: 0;
+    left: 10px;
+  }
   &__box {
     position: absolute;
     width: 600px;
@@ -24,6 +30,10 @@ $gray-blue-glados: #9badb7;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    @media (max-width: 480px) {
+      width: 100%;
+      height: $width-glados-mobile * 50;
+    }
   }
   &__eye {
     position: relative;
@@ -34,6 +44,11 @@ $gray-blue-glados: #9badb7;
     top: 50%;
     transition: 1s ease-out;
     transform: translate(165px, 234px);
+    @media (max-width: 480px) {
+      width: $width-glados-mobile * 2;
+      height: $width-glados-mobile * 2;
+      transform: translate(107px, 151px);
+    }
   }
   &__dialog {
     position: absolute;
@@ -41,6 +56,10 @@ $gray-blue-glados: #9badb7;
     top: 178px;
     @media (max-width: 1366px) {
       left: 285px;
+    }
+    @media (max-width: 480px) {
+      left: 160px;
+      top: 110px;
     }
   }
   box-shadow: (4 * $width-glados) (1 * $width-glados) 0 $black-glados,
@@ -804,4 +823,960 @@ $gray-blue-glados: #9badb7;
     (17 * $width-glados) (46 * $width-glados) 0 $gray-blue-glados,
     (18 * $width-glados) (46 * $width-glados) 0 $gray-blue-glados,
     (19 * $width-glados) (46 * $width-glados) 0 $gray-blue-glados;
+  @media (max-width: 480px) {
+    width: $width-glados-mobile;
+    height: $width-glados-mobile;
+    box-shadow: (4 * $width-glados-mobile) (1 * $width-glados-mobile) 0
+        $black-glados,
+      (5 * $width-glados-mobile) (1 * $width-glados-mobile) 0 $black-glados,
+      (6 * $width-glados-mobile) (1 * $width-glados-mobile) 0 $orange-glados,
+      (7 * $width-glados-mobile) (1 * $width-glados-mobile) 0 $black-glados,
+      (8 * $width-glados-mobile) (1 * $width-glados-mobile) 0 $black-glados,
+      (9 * $width-glados-mobile) (1 * $width-glados-mobile) 0 $orange-glados,
+      (10 * $width-glados-mobile) (1 * $width-glados-mobile) 0 $black-glados,
+      (11 * $width-glados-mobile) (1 * $width-glados-mobile) 0 $black-glados,
+      (12 * $width-glados-mobile) (1 * $width-glados-mobile) 0 $orange-glados,
+      (4 * $width-glados-mobile) (2 * $width-glados-mobile) 0 $black-glados,
+      (5 * $width-glados-mobile) (2 * $width-glados-mobile) 0 $black-glados,
+      (6 * $width-glados-mobile) (2 * $width-glados-mobile) 0 $orange-glados,
+      (7 * $width-glados-mobile) (2 * $width-glados-mobile) 0 $black-glados,
+      (8 * $width-glados-mobile) (2 * $width-glados-mobile) 0 $black-glados,
+      (9 * $width-glados-mobile) (2 * $width-glados-mobile) 0 $orange-glados,
+      (10 * $width-glados-mobile) (2 * $width-glados-mobile) 0 $black-glados,
+      (11 * $width-glados-mobile) (2 * $width-glados-mobile) 0 $black-glados,
+      (12 * $width-glados-mobile) (2 * $width-glados-mobile) 0 $orange-glados,
+      (4 * $width-glados-mobile) (3 * $width-glados-mobile) 0 $black-glados,
+      (5 * $width-glados-mobile) (3 * $width-glados-mobile) 0 $black-glados,
+      (6 * $width-glados-mobile) (3 * $width-glados-mobile) 0 $black-glados,
+      (7 * $width-glados-mobile) (3 * $width-glados-mobile) 0 $orange-glados,
+      (8 * $width-glados-mobile) (3 * $width-glados-mobile) 0 $black-glados,
+      (9 * $width-glados-mobile) (3 * $width-glados-mobile) 0 $black-glados,
+      (10 * $width-glados-mobile) (3 * $width-glados-mobile) 0 $orange-glados,
+      (11 * $width-glados-mobile) (3 * $width-glados-mobile) 0 $black-glados,
+      (13 * $width-glados-mobile) (3 * $width-glados-mobile) 0 $orange-glados,
+      (4 * $width-glados-mobile) (4 * $width-glados-mobile) 0 $black-glados,
+      (5 * $width-glados-mobile) (4 * $width-glados-mobile) 0 $black-glados,
+      (6 * $width-glados-mobile) (4 * $width-glados-mobile) 0 $black-glados,
+      (7 * $width-glados-mobile) (4 * $width-glados-mobile) 0 $orange-glados,
+      (8 * $width-glados-mobile) (4 * $width-glados-mobile) 0 $black-glados,
+      (9 * $width-glados-mobile) (4 * $width-glados-mobile) 0 $black-glados,
+      (10 * $width-glados-mobile) (4 * $width-glados-mobile) 0 $orange-glados,
+      (11 * $width-glados-mobile) (4 * $width-glados-mobile) 0 $black-glados,
+      (13 * $width-glados-mobile) (4 * $width-glados-mobile) 0 $orange-glados,
+      (4 * $width-glados-mobile) (5 * $width-glados-mobile) 0 $black-glados,
+      (5 * $width-glados-mobile) (5 * $width-glados-mobile) 0 $black-glados,
+      (6 * $width-glados-mobile) (5 * $width-glados-mobile) 0 $black-glados,
+      (7 * $width-glados-mobile) (5 * $width-glados-mobile) 0 $orange-glados,
+      (8 * $width-glados-mobile) (5 * $width-glados-mobile) 0 $black-glados,
+      (9 * $width-glados-mobile) (5 * $width-glados-mobile) 0 $black-glados,
+      (10 * $width-glados-mobile) (5 * $width-glados-mobile) 0 $orange-glados,
+      (11 * $width-glados-mobile) (5 * $width-glados-mobile) 0 $black-glados,
+      (13 * $width-glados-mobile) (5 * $width-glados-mobile) 0 $orange-glados,
+      (4 * $width-glados-mobile) (6 * $width-glados-mobile) 0 $black-glados,
+      (5 * $width-glados-mobile) (6 * $width-glados-mobile) 0 $black-glados,
+      (6 * $width-glados-mobile) (6 * $width-glados-mobile) 0 $orange-glados,
+      (7 * $width-glados-mobile) (6 * $width-glados-mobile) 0 $black-glados,
+      (8 * $width-glados-mobile) (6 * $width-glados-mobile) 0 $black-glados,
+      (9 * $width-glados-mobile) (6 * $width-glados-mobile) 0 $orange-glados,
+      (10 * $width-glados-mobile) (6 * $width-glados-mobile) 0 $black-glados,
+      (11 * $width-glados-mobile) (6 * $width-glados-mobile) 0 $black-glados,
+      (12 * $width-glados-mobile) (6 * $width-glados-mobile) 0 $orange-glados,
+      (4 * $width-glados-mobile) (7 * $width-glados-mobile) 0 $black-glados,
+      (5 * $width-glados-mobile) (7 * $width-glados-mobile) 0 $black-glados,
+      (6 * $width-glados-mobile) (7 * $width-glados-mobile) 0 $orange-glados,
+      (7 * $width-glados-mobile) (7 * $width-glados-mobile) 0 $black-glados,
+      (8 * $width-glados-mobile) (7 * $width-glados-mobile) 0 $black-glados,
+      (9 * $width-glados-mobile) (7 * $width-glados-mobile) 0 $orange-glados,
+      (10 * $width-glados-mobile) (7 * $width-glados-mobile) 0 $black-glados,
+      (11 * $width-glados-mobile) (7 * $width-glados-mobile) 0 $black-glados,
+      (12 * $width-glados-mobile) (7 * $width-glados-mobile) 0 $orange-glados,
+      (4 * $width-glados-mobile) (8 * $width-glados-mobile) 0 $black-glados,
+      (5 * $width-glados-mobile) (8 * $width-glados-mobile) 0 $black-glados,
+      (6 * $width-glados-mobile) (8 * $width-glados-mobile) 0 $orange-glados,
+      (7 * $width-glados-mobile) (8 * $width-glados-mobile) 0 $black-glados,
+      (8 * $width-glados-mobile) (8 * $width-glados-mobile) 0 $black-glados,
+      (9 * $width-glados-mobile) (8 * $width-glados-mobile) 0 $orange-glados,
+      (10 * $width-glados-mobile) (8 * $width-glados-mobile) 0 $black-glados,
+      (11 * $width-glados-mobile) (8 * $width-glados-mobile) 0 $black-glados,
+      (12 * $width-glados-mobile) (8 * $width-glados-mobile) 0 $orange-glados,
+      (2 * $width-glados-mobile) (9 * $width-glados-mobile) 0 $gray-black-glados,
+      (3 * $width-glados-mobile) (9 * $width-glados-mobile) 0 $gray-black-glados,
+      (4 * $width-glados-mobile) (9 * $width-glados-mobile) 0 $gray-black-glados,
+      (5 * $width-glados-mobile) (9 * $width-glados-mobile) 0 $gray-black-glados,
+      (6 * $width-glados-mobile) (9 * $width-glados-mobile) 0 $gray-black-glados,
+      (7 * $width-glados-mobile) (9 * $width-glados-mobile) 0 $gray-black-glados,
+      (8 * $width-glados-mobile) (9 * $width-glados-mobile) 0 $gray-black-glados,
+      (9 * $width-glados-mobile) (9 * $width-glados-mobile) 0 $gray-black-glados,
+      (10 * $width-glados-mobile) (9 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (11 * $width-glados-mobile) (9 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (12 * $width-glados-mobile) (9 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (13 * $width-glados-mobile) (9 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (2 * $width-glados-mobile) (10 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (3 * $width-glados-mobile) (10 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (4 * $width-glados-mobile) (10 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (5 * $width-glados-mobile) (10 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (6 * $width-glados-mobile) (10 * $width-glados-mobile) 0 $gray-glados,
+      (7 * $width-glados-mobile) (10 * $width-glados-mobile) 0 $gray-glados,
+      (8 * $width-glados-mobile) (10 * $width-glados-mobile) 0 $gray-glados,
+      (9 * $width-glados-mobile) (10 * $width-glados-mobile) 0 $gray-glados,
+      (10 * $width-glados-mobile) (10 * $width-glados-mobile) 0 $gray-glados,
+      (11 * $width-glados-mobile) (10 * $width-glados-mobile) 0 $gray-glados,
+      (12 * $width-glados-mobile) (10 * $width-glados-mobile) 0 $gray-glados,
+      (13 * $width-glados-mobile) (10 * $width-glados-mobile) 0 $gray-glados,
+      (14 * $width-glados-mobile) (10 * $width-glados-mobile) 0 $gray-glados,
+      (2 * $width-glados-mobile) (11 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (3 * $width-glados-mobile) (11 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (4 * $width-glados-mobile) (11 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (5 * $width-glados-mobile) (11 * $width-glados-mobile) 0 $gray-glados,
+      (6 * $width-glados-mobile) (11 * $width-glados-mobile) 0 $gray-glados,
+      (7 * $width-glados-mobile) (11 * $width-glados-mobile) 0 $gray-blue-glados,
+      (8 * $width-glados-mobile) (11 * $width-glados-mobile) 0 $gray-blue-glados,
+      (9 * $width-glados-mobile) (11 * $width-glados-mobile) 0 $gray-blue-glados,
+      (10 * $width-glados-mobile) (11 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (11 * $width-glados-mobile) (11 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (12 * $width-glados-mobile) (11 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (13 * $width-glados-mobile) (11 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (14 * $width-glados-mobile) (11 * $width-glados-mobile) 0 $gray-glados,
+      (15 * $width-glados-mobile) (11 * $width-glados-mobile) 0 $gray-glados,
+      (2 * $width-glados-mobile) (12 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (3 * $width-glados-mobile) (12 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (4 * $width-glados-mobile) (12 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (5 * $width-glados-mobile) (12 * $width-glados-mobile) 0 $gray-glados,
+      (6 * $width-glados-mobile) (12 * $width-glados-mobile) 0 $gray-glados,
+      (7 * $width-glados-mobile) (12 * $width-glados-mobile) 0 $gray-glados,
+      (8 * $width-glados-mobile) (12 * $width-glados-mobile) 0 $gray-glados,
+      (9 * $width-glados-mobile) (12 * $width-glados-mobile) 0 $gray-glados,
+      (10 * $width-glados-mobile) (12 * $width-glados-mobile) 0 $gray-glados,
+      (11 * $width-glados-mobile) (12 * $width-glados-mobile) 0 $gray-glados,
+      (12 * $width-glados-mobile) (12 * $width-glados-mobile) 0 $gray-glados,
+      (13 * $width-glados-mobile) (12 * $width-glados-mobile) 0 $gray-glados,
+      (14 * $width-glados-mobile) (12 * $width-glados-mobile) 0 $gray-glados,
+      (15 * $width-glados-mobile) (12 * $width-glados-mobile) 0 $gray-glados,
+      (3 * $width-glados-mobile) (13 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (4 * $width-glados-mobile) (13 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (5 * $width-glados-mobile) (13 * $width-glados-mobile) 0 $gray-glados,
+      (6 * $width-glados-mobile) (13 * $width-glados-mobile) 0 $gray-glados,
+      (7 * $width-glados-mobile) (13 * $width-glados-mobile) 0 $gray-glados,
+      (8 * $width-glados-mobile) (13 * $width-glados-mobile) 0 $gray-glados,
+      (9 * $width-glados-mobile) (13 * $width-glados-mobile) 0 $gray-glados,
+      (10 * $width-glados-mobile) (13 * $width-glados-mobile) 0 $gray-glados,
+      (11 * $width-glados-mobile) (13 * $width-glados-mobile) 0 $gray-glados,
+      (12 * $width-glados-mobile) (13 * $width-glados-mobile) 0 $gray-glados,
+      (13 * $width-glados-mobile) (13 * $width-glados-mobile) 0 $gray-glados,
+      (14 * $width-glados-mobile) (13 * $width-glados-mobile) 0 $gray-glados,
+      (15 * $width-glados-mobile) (13 * $width-glados-mobile) 0 $gray-glados,
+      (4 * $width-glados-mobile) (14 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (5 * $width-glados-mobile) (14 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (6 * $width-glados-mobile) (14 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (7 * $width-glados-mobile) (14 * $width-glados-mobile) 0 $orange-glados,
+      (8 * $width-glados-mobile) (14 * $width-glados-mobile) 0 $black-glados,
+      (9 * $width-glados-mobile) (14 * $width-glados-mobile) 0 $black-glados,
+      (10 * $width-glados-mobile) (14 * $width-glados-mobile) 0 $orange-glados,
+      (11 * $width-glados-mobile) (14 * $width-glados-mobile) 0 $black-glados,
+      (12 * $width-glados-mobile) (14 * $width-glados-mobile) 0 $black-glados,
+      (13 * $width-glados-mobile) (14 * $width-glados-mobile) 0 $orange-glados,
+      (6 * $width-glados-mobile) (15 * $width-glados-mobile) 0 $black-glados,
+      (7 * $width-glados-mobile) (15 * $width-glados-mobile) 0 $black-glados,
+      (8 * $width-glados-mobile) (15 * $width-glados-mobile) 0 $orange-glados,
+      (9 * $width-glados-mobile) (15 * $width-glados-mobile) 0 $black-glados,
+      (10 * $width-glados-mobile) (15 * $width-glados-mobile) 0 $black-glados,
+      (11 * $width-glados-mobile) (15 * $width-glados-mobile) 0 $orange-glados,
+      (12 * $width-glados-mobile) (15 * $width-glados-mobile) 0 $black-glados,
+      (13 * $width-glados-mobile) (15 * $width-glados-mobile) 0 $black-glados,
+      (14 * $width-glados-mobile) (15 * $width-glados-mobile) 0 $orange-glados,
+      (5 * $width-glados-mobile) (16 * $width-glados-mobile) 0 $black-glados,
+      (6 * $width-glados-mobile) (16 * $width-glados-mobile) 0 $black-glados,
+      (7 * $width-glados-mobile) (16 * $width-glados-mobile) 0 $black-glados,
+      (8 * $width-glados-mobile) (16 * $width-glados-mobile) 0 $black-glados,
+      (9 * $width-glados-mobile) (16 * $width-glados-mobile) 0 $orange-glados,
+      (10 * $width-glados-mobile) (16 * $width-glados-mobile) 0 $black-glados,
+      (11 * $width-glados-mobile) (16 * $width-glados-mobile) 0 $black-glados,
+      (12 * $width-glados-mobile) (16 * $width-glados-mobile) 0 $orange-glados,
+      (13 * $width-glados-mobile) (16 * $width-glados-mobile) 0 $black-glados,
+      (14 * $width-glados-mobile) (16 * $width-glados-mobile) 0 $black-glados,
+      (15 * $width-glados-mobile) (16 * $width-glados-mobile) 0 $orange-glados,
+      (5 * $width-glados-mobile) (17 * $width-glados-mobile) 0 $black-glados,
+      (6 * $width-glados-mobile) (17 * $width-glados-mobile) 0 $black-glados,
+      (7 * $width-glados-mobile) (17 * $width-glados-mobile) 0 $black-glados,
+      (8 * $width-glados-mobile) (17 * $width-glados-mobile) 0 $black-glados,
+      (9 * $width-glados-mobile) (17 * $width-glados-mobile) 0 $orange-glados,
+      (10 * $width-glados-mobile) (17 * $width-glados-mobile) 0 $black-glados,
+      (11 * $width-glados-mobile) (17 * $width-glados-mobile) 0 $black-glados,
+      (12 * $width-glados-mobile) (17 * $width-glados-mobile) 0 $orange-glados,
+      (13 * $width-glados-mobile) (17 * $width-glados-mobile) 0 $black-glados,
+      (14 * $width-glados-mobile) (17 * $width-glados-mobile) 0 $black-glados,
+      (15 * $width-glados-mobile) (17 * $width-glados-mobile) 0 $orange-glados,
+      (4 * $width-glados-mobile) (18 * $width-glados-mobile) 0 $gray-blue-glados,
+      (5 * $width-glados-mobile) (18 * $width-glados-mobile) 0 $black-glados,
+      (6 * $width-glados-mobile) (18 * $width-glados-mobile) 0 $black-glados,
+      (7 * $width-glados-mobile) (18 * $width-glados-mobile) 0 $black-glados,
+      (8 * $width-glados-mobile) (18 * $width-glados-mobile) 0 $black-glados,
+      (9 * $width-glados-mobile) (18 * $width-glados-mobile) 0 $orange-glados,
+      (10 * $width-glados-mobile) (18 * $width-glados-mobile) 0 $black-glados,
+      (11 * $width-glados-mobile) (18 * $width-glados-mobile) 0 $black-glados,
+      (12 * $width-glados-mobile) (18 * $width-glados-mobile) 0 $orange-glados,
+      (13 * $width-glados-mobile) (18 * $width-glados-mobile) 0 $black-glados,
+      (14 * $width-glados-mobile) (18 * $width-glados-mobile) 0 $black-glados,
+      (15 * $width-glados-mobile) (18 * $width-glados-mobile) 0 $orange-glados,
+      (3 * $width-glados-mobile) (19 * $width-glados-mobile) 0 $gray-blue-glados,
+      (4 * $width-glados-mobile) (19 * $width-glados-mobile) 0 $gray-blue-glados,
+      (5 * $width-glados-mobile) (19 * $width-glados-mobile) 0 $black-glados,
+      (6 * $width-glados-mobile) (19 * $width-glados-mobile) 0 $black-glados,
+      (7 * $width-glados-mobile) (19 * $width-glados-mobile) 0 $black-glados,
+      (8 * $width-glados-mobile) (19 * $width-glados-mobile) 0 $black-glados,
+      (9 * $width-glados-mobile) (19 * $width-glados-mobile) 0 $orange-glados,
+      (10 * $width-glados-mobile) (19 * $width-glados-mobile) 0 $black-glados,
+      (11 * $width-glados-mobile) (19 * $width-glados-mobile) 0 $black-glados,
+      (12 * $width-glados-mobile) (19 * $width-glados-mobile) 0 $orange-glados,
+      (13 * $width-glados-mobile) (19 * $width-glados-mobile) 0 $black-glados,
+      (14 * $width-glados-mobile) (19 * $width-glados-mobile) 0 $black-glados,
+      (15 * $width-glados-mobile) (19 * $width-glados-mobile) 0 $orange-glados,
+      (3 * $width-glados-mobile) (20 * $width-glados-mobile) 0 $gray-blue-glados,
+      (4 * $width-glados-mobile) (20 * $width-glados-mobile) 0 $gray-blue-glados,
+      (5 * $width-glados-mobile) (20 * $width-glados-mobile) 0 $black-glados,
+      (6 * $width-glados-mobile) (20 * $width-glados-mobile) 0 $black-glados,
+      (7 * $width-glados-mobile) (20 * $width-glados-mobile) 0 $black-glados,
+      (8 * $width-glados-mobile) (20 * $width-glados-mobile) 0 $black-glados,
+      (9 * $width-glados-mobile) (20 * $width-glados-mobile) 0 $orange-glados,
+      (10 * $width-glados-mobile) (20 * $width-glados-mobile) 0 $black-glados,
+      (11 * $width-glados-mobile) (20 * $width-glados-mobile) 0 $black-glados,
+      (12 * $width-glados-mobile) (20 * $width-glados-mobile) 0 $orange-glados,
+      (13 * $width-glados-mobile) (20 * $width-glados-mobile) 0 $black-glados,
+      (14 * $width-glados-mobile) (20 * $width-glados-mobile) 0 $black-glados,
+      (15 * $width-glados-mobile) (20 * $width-glados-mobile) 0 $orange-glados,
+      (3 * $width-glados-mobile) (21 * $width-glados-mobile) 0 $gray-blue-glados,
+      (4 * $width-glados-mobile) (21 * $width-glados-mobile) 0 $gray-blue-glados,
+      (5 * $width-glados-mobile) (21 * $width-glados-mobile) 0 $black-glados,
+      (6 * $width-glados-mobile) (21 * $width-glados-mobile) 0 $black-glados,
+      (7 * $width-glados-mobile) (21 * $width-glados-mobile) 0 $black-glados,
+      (8 * $width-glados-mobile) (21 * $width-glados-mobile) 0 $black-glados,
+      (9 * $width-glados-mobile) (21 * $width-glados-mobile) 0 $orange-glados,
+      (10 * $width-glados-mobile) (21 * $width-glados-mobile) 0 $black-glados,
+      (11 * $width-glados-mobile) (21 * $width-glados-mobile) 0 $black-glados,
+      (12 * $width-glados-mobile) (21 * $width-glados-mobile) 0 $orange-glados,
+      (13 * $width-glados-mobile) (21 * $width-glados-mobile) 0 $black-glados,
+      (14 * $width-glados-mobile) (21 * $width-glados-mobile) 0 $black-glados,
+      (15 * $width-glados-mobile) (21 * $width-glados-mobile) 0 $orange-glados,
+      (2 * $width-glados-mobile) (22 * $width-glados-mobile) 0 $gray-glados,
+      (3 * $width-glados-mobile) (22 * $width-glados-mobile) 0 $gray-blue-glados,
+      (4 * $width-glados-mobile) (22 * $width-glados-mobile) 0 $gray-blue-glados,
+      (5 * $width-glados-mobile) (22 * $width-glados-mobile) 0 $black-glados,
+      (6 * $width-glados-mobile) (22 * $width-glados-mobile) 0 $black-glados,
+      (7 * $width-glados-mobile) (22 * $width-glados-mobile) 0 $black-glados,
+      (8 * $width-glados-mobile) (22 * $width-glados-mobile) 0 $black-glados,
+      (9 * $width-glados-mobile) (22 * $width-glados-mobile) 0 $orange-glados,
+      (10 * $width-glados-mobile) (22 * $width-glados-mobile) 0 $black-glados,
+      (11 * $width-glados-mobile) (22 * $width-glados-mobile) 0 $black-glados,
+      (12 * $width-glados-mobile) (22 * $width-glados-mobile) 0 $orange-glados,
+      (13 * $width-glados-mobile) (22 * $width-glados-mobile) 0 $black-glados,
+      (14 * $width-glados-mobile) (22 * $width-glados-mobile) 0 $black-glados,
+      (15 * $width-glados-mobile) (22 * $width-glados-mobile) 0 $orange-glados,
+      (2 * $width-glados-mobile) (23 * $width-glados-mobile) 0 $gray-glados,
+      (3 * $width-glados-mobile) (23 * $width-glados-mobile) 0 $gray-blue-glados,
+      (4 * $width-glados-mobile) (23 * $width-glados-mobile) 0 $gray-blue-glados,
+      (5 * $width-glados-mobile) (23 * $width-glados-mobile) 0 $black-glados,
+      (6 * $width-glados-mobile) (23 * $width-glados-mobile) 0 $black-glados,
+      (7 * $width-glados-mobile) (23 * $width-glados-mobile) 0 $black-glados,
+      (8 * $width-glados-mobile) (23 * $width-glados-mobile) 0 $black-glados,
+      (9 * $width-glados-mobile) (23 * $width-glados-mobile) 0 $orange-glados,
+      (10 * $width-glados-mobile) (23 * $width-glados-mobile) 0 $black-glados,
+      (11 * $width-glados-mobile) (23 * $width-glados-mobile) 0 $black-glados,
+      (12 * $width-glados-mobile) (23 * $width-glados-mobile) 0 $orange-glados,
+      (13 * $width-glados-mobile) (23 * $width-glados-mobile) 0 $black-glados,
+      (14 * $width-glados-mobile) (23 * $width-glados-mobile) 0 $black-glados,
+      (15 * $width-glados-mobile) (23 * $width-glados-mobile) 0 $orange-glados,
+      (2 * $width-glados-mobile) (24 * $width-glados-mobile) 0 $gray-glados,
+      (3 * $width-glados-mobile) (24 * $width-glados-mobile) 0 $gray-blue-glados,
+      (4 * $width-glados-mobile) (24 * $width-glados-mobile) 0 $gray-blue-glados,
+      (5 * $width-glados-mobile) (24 * $width-glados-mobile) 0 $black-glados,
+      (6 * $width-glados-mobile) (24 * $width-glados-mobile) 0 $black-glados,
+      (7 * $width-glados-mobile) (24 * $width-glados-mobile) 0 $black-glados,
+      (8 * $width-glados-mobile) (24 * $width-glados-mobile) 0 $orange-glados,
+      (9 * $width-glados-mobile) (24 * $width-glados-mobile) 0 $black-glados,
+      (10 * $width-glados-mobile) (24 * $width-glados-mobile) 0 $black-glados,
+      (11 * $width-glados-mobile) (24 * $width-glados-mobile) 0 $orange-glados,
+      (12 * $width-glados-mobile) (24 * $width-glados-mobile) 0 $black-glados,
+      (13 * $width-glados-mobile) (24 * $width-glados-mobile) 0 $black-glados,
+      (14 * $width-glados-mobile) (24 * $width-glados-mobile) 0 $orange-glados,
+      (1 * $width-glados-mobile) (25 * $width-glados-mobile) 0 $gray-glados,
+      (2 * $width-glados-mobile) (25 * $width-glados-mobile) 0 $gray-glados,
+      (3 * $width-glados-mobile) (25 * $width-glados-mobile) 0 $gray-blue-glados,
+      (4 * $width-glados-mobile) (25 * $width-glados-mobile) 0 $black-glados,
+      (5 * $width-glados-mobile) (25 * $width-glados-mobile) 0 $black-glados,
+      (6 * $width-glados-mobile) (25 * $width-glados-mobile) 0 $gray-glados,
+      (7 * $width-glados-mobile) (25 * $width-glados-mobile) 0 $gray-glados,
+      (8 * $width-glados-mobile) (25 * $width-glados-mobile) 0 $gray-glados,
+      (9 * $width-glados-mobile) (25 * $width-glados-mobile) 0 $gray-glados,
+      (10 * $width-glados-mobile) (25 * $width-glados-mobile) 0 $gray-glados,
+      (11 * $width-glados-mobile) (25 * $width-glados-mobile) 0 $gray-glados,
+      (12 * $width-glados-mobile) (25 * $width-glados-mobile) 0 $gray-glados,
+      (13 * $width-glados-mobile) (25 * $width-glados-mobile) 0 $gray-glados,
+      (14 * $width-glados-mobile) (25 * $width-glados-mobile) 0 $gray-glados,
+      (15 * $width-glados-mobile) (25 * $width-glados-mobile) 0 $gray-glados,
+      (16 * $width-glados-mobile) (25 * $width-glados-mobile) 0 $gray-glados,
+      (21 * $width-glados-mobile) (25 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (22 * $width-glados-mobile) (25 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (23 * $width-glados-mobile) (25 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (24 * $width-glados-mobile) (25 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (25 * $width-glados-mobile) (25 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (26 * $width-glados-mobile) (25 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (27 * $width-glados-mobile) (25 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (28 * $width-glados-mobile) (25 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (1 * $width-glados-mobile) (26 * $width-glados-mobile) 0 $gray-glados,
+      (2 * $width-glados-mobile) (26 * $width-glados-mobile) 0 $gray-glados,
+      (3 * $width-glados-mobile) (26 * $width-glados-mobile) 0 $black-glados,
+      (4 * $width-glados-mobile) (26 * $width-glados-mobile) 0 $black-glados,
+      (5 * $width-glados-mobile) (26 * $width-glados-mobile) 0 $black-glados,
+      (6 * $width-glados-mobile) (26 * $width-glados-mobile) 0 $gray-glados,
+      (7 * $width-glados-mobile) (26 * $width-glados-mobile) 0 $gray-glados,
+      (8 * $width-glados-mobile) (26 * $width-glados-mobile) 0 $gray-blue-glados,
+      (9 * $width-glados-mobile) (26 * $width-glados-mobile) 0 $gray-blue-glados,
+      (10 * $width-glados-mobile) (26 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (11 * $width-glados-mobile) (26 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (12 * $width-glados-mobile) (26 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (13 * $width-glados-mobile) (26 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (14 * $width-glados-mobile) (26 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (15 * $width-glados-mobile) (26 * $width-glados-mobile) 0 $gray-glados,
+      (16 * $width-glados-mobile) (26 * $width-glados-mobile) 0 $gray-glados,
+      (20 * $width-glados-mobile) (26 * $width-glados-mobile) 0 $black-glados,
+      (21 * $width-glados-mobile) (26 * $width-glados-mobile) 0 $gray-glados,
+      (22 * $width-glados-mobile) (26 * $width-glados-mobile) 0 $gray-glados,
+      (23 * $width-glados-mobile) (26 * $width-glados-mobile) 0 $gray-glados,
+      (24 * $width-glados-mobile) (26 * $width-glados-mobile) 0 $gray-glados,
+      (25 * $width-glados-mobile) (26 * $width-glados-mobile) 0 $gray-glados,
+      (26 * $width-glados-mobile) (26 * $width-glados-mobile) 0 $gray-glados,
+      (27 * $width-glados-mobile) (26 * $width-glados-mobile) 0 $gray-glados,
+      (28 * $width-glados-mobile) (26 * $width-glados-mobile) 0 $gray-glados,
+      (29 * $width-glados-mobile) (26 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (1 * $width-glados-mobile) (27 * $width-glados-mobile) 0 $gray-glados,
+      (2 * $width-glados-mobile) (27 * $width-glados-mobile) 0 $gray-glados,
+      (3 * $width-glados-mobile) (27 * $width-glados-mobile) 0 $black-glados,
+      (4 * $width-glados-mobile) (27 * $width-glados-mobile) 0 $black-glados,
+      (5 * $width-glados-mobile) (27 * $width-glados-mobile) 0 $black-glados,
+      (6 * $width-glados-mobile) (27 * $width-glados-mobile) 0 $black-glados,
+      (7 * $width-glados-mobile) (27 * $width-glados-mobile) 0 $gray-glados,
+      (8 * $width-glados-mobile) (27 * $width-glados-mobile) 0 $gray-glados,
+      (9 * $width-glados-mobile) (27 * $width-glados-mobile) 0 $gray-glados,
+      (10 * $width-glados-mobile) (27 * $width-glados-mobile) 0 $gray-glados,
+      (11 * $width-glados-mobile) (27 * $width-glados-mobile) 0 $gray-glados,
+      (12 * $width-glados-mobile) (27 * $width-glados-mobile) 0 $gray-glados,
+      (13 * $width-glados-mobile) (27 * $width-glados-mobile) 0 $gray-glados,
+      (14 * $width-glados-mobile) (27 * $width-glados-mobile) 0 $gray-glados,
+      (15 * $width-glados-mobile) (27 * $width-glados-mobile) 0 $gray-glados,
+      (20 * $width-glados-mobile) (27 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (21 * $width-glados-mobile) (27 * $width-glados-mobile) 0 $gray-glados,
+      (22 * $width-glados-mobile) (27 * $width-glados-mobile) 0 $gray-glados,
+      (23 * $width-glados-mobile) (27 * $width-glados-mobile) 0 $gray-glados,
+      (24 * $width-glados-mobile) (27 * $width-glados-mobile) 0 $gray-glados,
+      (25 * $width-glados-mobile) (27 * $width-glados-mobile) 0 $gray-glados,
+      (26 * $width-glados-mobile) (27 * $width-glados-mobile) 0 $gray-glados,
+      (27 * $width-glados-mobile) (27 * $width-glados-mobile) 0 $gray-glados,
+      (28 * $width-glados-mobile) (27 * $width-glados-mobile) 0 $gray-glados,
+      (29 * $width-glados-mobile) (27 * $width-glados-mobile) 0 $gray-glados,
+      (1 * $width-glados-mobile) (28 * $width-glados-mobile) 0 $gray-glados,
+      (2 * $width-glados-mobile) (28 * $width-glados-mobile) 0 $gray-glados,
+      (3 * $width-glados-mobile) (28 * $width-glados-mobile) 0 $black-glados,
+      (4 * $width-glados-mobile) (28 * $width-glados-mobile) 0 $black-glados,
+      (5 * $width-glados-mobile) (28 * $width-glados-mobile) 0 $black-glados,
+      (6 * $width-glados-mobile) (28 * $width-glados-mobile) 0 $black-glados,
+      (7 * $width-glados-mobile) (28 * $width-glados-mobile) 0 $black-glados,
+      (8 * $width-glados-mobile) (28 * $width-glados-mobile) 0 $black-glados,
+      (9 * $width-glados-mobile) (28 * $width-glados-mobile) 0 $black-glados,
+      (10 * $width-glados-mobile) (28 * $width-glados-mobile) 0 $black-glados,
+      (11 * $width-glados-mobile) (28 * $width-glados-mobile) 0 $black-glados,
+      (12 * $width-glados-mobile) (28 * $width-glados-mobile) 0 $black-glados,
+      (13 * $width-glados-mobile) (28 * $width-glados-mobile) 0 $black-glados,
+      (20 * $width-glados-mobile) (28 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (21 * $width-glados-mobile) (28 * $width-glados-mobile) 0 $gray-glados,
+      (22 * $width-glados-mobile) (28 * $width-glados-mobile) 0 $gray-glados,
+      (23 * $width-glados-mobile) (28 * $width-glados-mobile) 0 $gray-glados,
+      (24 * $width-glados-mobile) (28 * $width-glados-mobile) 0 $gray-glados,
+      (25 * $width-glados-mobile) (28 * $width-glados-mobile) 0 $gray-glados,
+      (26 * $width-glados-mobile) (28 * $width-glados-mobile) 0 $gray-glados,
+      (27 * $width-glados-mobile) (28 * $width-glados-mobile) 0 $gray-glados,
+      (28 * $width-glados-mobile) (28 * $width-glados-mobile) 0 $gray-glados,
+      (29 * $width-glados-mobile) (28 * $width-glados-mobile) 0 $gray-glados,
+      (1 * $width-glados-mobile) (29 * $width-glados-mobile) 0 $gray-glados,
+      (2 * $width-glados-mobile) (29 * $width-glados-mobile) 0 $gray-glados,
+      (3 * $width-glados-mobile) (29 * $width-glados-mobile) 0 $black-glados,
+      (4 * $width-glados-mobile) (29 * $width-glados-mobile) 0 $black-glados,
+      (5 * $width-glados-mobile) (29 * $width-glados-mobile) 0 $black-glados,
+      (6 * $width-glados-mobile) (29 * $width-glados-mobile) 0 $black-glados,
+      (7 * $width-glados-mobile) (29 * $width-glados-mobile) 0 $black-glados,
+      (8 * $width-glados-mobile) (29 * $width-glados-mobile) 0 $black-glados,
+      (9 * $width-glados-mobile) (29 * $width-glados-mobile) 0 $black-glados,
+      (10 * $width-glados-mobile) (29 * $width-glados-mobile) 0 $black-glados,
+      (11 * $width-glados-mobile) (29 * $width-glados-mobile) 0 $black-glados,
+      (12 * $width-glados-mobile) (29 * $width-glados-mobile) 0 $black-glados,
+      (13 * $width-glados-mobile) (29 * $width-glados-mobile) 0 $black-glados,
+      (20 * $width-glados-mobile) (29 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (21 * $width-glados-mobile) (29 * $width-glados-mobile) 0 $gray-glados,
+      (22 * $width-glados-mobile) (29 * $width-glados-mobile) 0 $gray-glados,
+      (23 * $width-glados-mobile) (29 * $width-glados-mobile) 0 $gray-glados,
+      (24 * $width-glados-mobile) (29 * $width-glados-mobile) 0 $gray-glados,
+      (25 * $width-glados-mobile) (29 * $width-glados-mobile) 0 $gray-glados,
+      (26 * $width-glados-mobile) (29 * $width-glados-mobile) 0 $gray-glados,
+      (27 * $width-glados-mobile) (29 * $width-glados-mobile) 0 $gray-glados,
+      (28 * $width-glados-mobile) (29 * $width-glados-mobile) 0 $gray-glados,
+      (29 * $width-glados-mobile) (29 * $width-glados-mobile) 0 $gray-glados,
+      (1 * $width-glados-mobile) (30 * $width-glados-mobile) 0 $gray-glados,
+      (2 * $width-glados-mobile) (30 * $width-glados-mobile) 0 $gray-glados,
+      (3 * $width-glados-mobile) (30 * $width-glados-mobile) 0 $black-glados,
+      (4 * $width-glados-mobile) (30 * $width-glados-mobile) 0 $black-glados,
+      (5 * $width-glados-mobile) (30 * $width-glados-mobile) 0 $black-glados,
+      (6 * $width-glados-mobile) (30 * $width-glados-mobile) 0 $black-glados,
+      (7 * $width-glados-mobile) (30 * $width-glados-mobile) 0 $black-glados,
+      (8 * $width-glados-mobile) (30 * $width-glados-mobile) 0 $black-glados,
+      (9 * $width-glados-mobile) (30 * $width-glados-mobile) 0 $black-glados,
+      (10 * $width-glados-mobile) (30 * $width-glados-mobile) 0 $black-glados,
+      (11 * $width-glados-mobile) (30 * $width-glados-mobile) 0 $black-glados,
+      (12 * $width-glados-mobile) (30 * $width-glados-mobile) 0 $black-glados,
+      (13 * $width-glados-mobile) (30 * $width-glados-mobile) 0 $black-glados,
+      (14 * $width-glados-mobile) (30 * $width-glados-mobile) 0 $black-glados,
+      (20 * $width-glados-mobile) (30 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (21 * $width-glados-mobile) (30 * $width-glados-mobile) 0 $gray-glados,
+      (22 * $width-glados-mobile) (30 * $width-glados-mobile) 0 $gray-glados,
+      (23 * $width-glados-mobile) (30 * $width-glados-mobile) 0 $gray-glados,
+      (24 * $width-glados-mobile) (30 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (25 * $width-glados-mobile) (30 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (26 * $width-glados-mobile) (30 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (27 * $width-glados-mobile) (30 * $width-glados-mobile) 0 $gray-glados,
+      (28 * $width-glados-mobile) (30 * $width-glados-mobile) 0 $gray-glados,
+      (29 * $width-glados-mobile) (30 * $width-glados-mobile) 0 $gray-glados,
+      (1 * $width-glados-mobile) (31 * $width-glados-mobile) 0 $gray-glados,
+      (2 * $width-glados-mobile) (31 * $width-glados-mobile) 0 $gray-glados,
+      (3 * $width-glados-mobile) (31 * $width-glados-mobile) 0 $black-glados,
+      (4 * $width-glados-mobile) (31 * $width-glados-mobile) 0 $black-glados,
+      (5 * $width-glados-mobile) (31 * $width-glados-mobile) 0 $black-glados,
+      (6 * $width-glados-mobile) (31 * $width-glados-mobile) 0 $black-glados,
+      (7 * $width-glados-mobile) (31 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (8 * $width-glados-mobile) (31 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (9 * $width-glados-mobile) (31 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (10 * $width-glados-mobile) (31 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (11 * $width-glados-mobile) (31 * $width-glados-mobile) 0 $black-glados,
+      (12 * $width-glados-mobile) (31 * $width-glados-mobile) 0 $black-glados,
+      (13 * $width-glados-mobile) (31 * $width-glados-mobile) 0 $black-glados,
+      (14 * $width-glados-mobile) (31 * $width-glados-mobile) 0 $black-glados,
+      (15 * $width-glados-mobile) (31 * $width-glados-mobile) 0 $black-glados,
+      (16 * $width-glados-mobile) (31 * $width-glados-mobile) 0 $black-glados,
+      (17 * $width-glados-mobile) (31 * $width-glados-mobile) 0 $black-glados,
+      (18 * $width-glados-mobile) (31 * $width-glados-mobile) 0 $black-glados,
+      (20 * $width-glados-mobile) (31 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (21 * $width-glados-mobile) (31 * $width-glados-mobile) 0 $gray-glados,
+      (22 * $width-glados-mobile) (31 * $width-glados-mobile) 0 $gray-glados,
+      (23 * $width-glados-mobile) (31 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (24 * $width-glados-mobile) (31 * $width-glados-mobile) 0 $black-glados,
+      (25 * $width-glados-mobile) (31 * $width-glados-mobile) 0 $black-glados,
+      (26 * $width-glados-mobile) (31 * $width-glados-mobile) 0 $black-glados,
+      (27 * $width-glados-mobile) (31 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (28 * $width-glados-mobile) (31 * $width-glados-mobile) 0 $gray-glados,
+      (29 * $width-glados-mobile) (31 * $width-glados-mobile) 0 $gray-glados,
+      (2 * $width-glados-mobile) (32 * $width-glados-mobile) 0 $gray-glados,
+      (3 * $width-glados-mobile) (32 * $width-glados-mobile) 0 $gray-blue-glados,
+      (4 * $width-glados-mobile) (32 * $width-glados-mobile) 0 $black-glados,
+      (5 * $width-glados-mobile) (32 * $width-glados-mobile) 0 $black-glados,
+      (6 * $width-glados-mobile) (32 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (7 * $width-glados-mobile) (32 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (8 * $width-glados-mobile) (32 * $width-glados-mobile) 0 $gray-glados,
+      (9 * $width-glados-mobile) (32 * $width-glados-mobile) 0 $gray-glados,
+      (10 * $width-glados-mobile) (32 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (11 * $width-glados-mobile) (32 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (12 * $width-glados-mobile) (32 * $width-glados-mobile) 0 $black-glados,
+      (13 * $width-glados-mobile) (32 * $width-glados-mobile) 0 $black-glados,
+      (14 * $width-glados-mobile) (32 * $width-glados-mobile) 0 $black-glados,
+      (15 * $width-glados-mobile) (32 * $width-glados-mobile) 0 $black-glados,
+      (16 * $width-glados-mobile) (32 * $width-glados-mobile) 0 $black-glados,
+      (17 * $width-glados-mobile) (32 * $width-glados-mobile) 0 $black-glados,
+      (18 * $width-glados-mobile) (32 * $width-glados-mobile) 0 $black-glados,
+      (19 * $width-glados-mobile) (32 * $width-glados-mobile) 0 $black-glados,
+      (20 * $width-glados-mobile) (32 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (21 * $width-glados-mobile) (32 * $width-glados-mobile) 0 $gray-glados,
+      (22 * $width-glados-mobile) (32 * $width-glados-mobile) 0 $gray-glados,
+      (23 * $width-glados-mobile) (32 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (24 * $width-glados-mobile) (32 * $width-glados-mobile) 0 $black-glados,
+      (25 * $width-glados-mobile) (32 * $width-glados-mobile) 0 $black-glados,
+      (26 * $width-glados-mobile) (32 * $width-glados-mobile) 0 $black-glados,
+      (27 * $width-glados-mobile) (32 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (28 * $width-glados-mobile) (32 * $width-glados-mobile) 0 $gray-glados,
+      (29 * $width-glados-mobile) (32 * $width-glados-mobile) 0 $gray-glados,
+      (2 * $width-glados-mobile) (33 * $width-glados-mobile) 0 $gray-glados,
+      (3 * $width-glados-mobile) (33 * $width-glados-mobile) 0 $gray-blue-glados,
+      (4 * $width-glados-mobile) (33 * $width-glados-mobile) 0 $black-glados,
+      (5 * $width-glados-mobile) (33 * $width-glados-mobile) 0 $black-glados,
+      (6 * $width-glados-mobile) (33 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (7 * $width-glados-mobile) (33 * $width-glados-mobile) 0 $gray-glados,
+      (8 * $width-glados-mobile) (33 * $width-glados-mobile) 0 $gray-blue-glados,
+      (9 * $width-glados-mobile) (33 * $width-glados-mobile) 0 $gray-blue-glados,
+      (10 * $width-glados-mobile) (33 * $width-glados-mobile) 0 $gray-glados,
+      (11 * $width-glados-mobile) (33 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (12 * $width-glados-mobile) (33 * $width-glados-mobile) 0 $black-glados,
+      (13 * $width-glados-mobile) (33 * $width-glados-mobile) 0 $black-glados,
+      (14 * $width-glados-mobile) (33 * $width-glados-mobile) 0 $black-glados,
+      (15 * $width-glados-mobile) (33 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (16 * $width-glados-mobile) (33 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (17 * $width-glados-mobile) (33 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (18 * $width-glados-mobile) (33 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (19 * $width-glados-mobile) (33 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (20 * $width-glados-mobile) (33 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (21 * $width-glados-mobile) (33 * $width-glados-mobile) 0 $gray-glados,
+      (22 * $width-glados-mobile) (33 * $width-glados-mobile) 0 $gray-glados,
+      (23 * $width-glados-mobile) (33 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (24 * $width-glados-mobile) (33 * $width-glados-mobile) 0 $black-glados,
+      (25 * $width-glados-mobile) (33 * $width-glados-mobile) 0 $black-glados,
+      (26 * $width-glados-mobile) (33 * $width-glados-mobile) 0 $black-glados,
+      (27 * $width-glados-mobile) (33 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (28 * $width-glados-mobile) (33 * $width-glados-mobile) 0 $gray-glados,
+      (29 * $width-glados-mobile) (33 * $width-glados-mobile) 0 $gray-glados,
+      (2 * $width-glados-mobile) (34 * $width-glados-mobile) 0 $gray-glados,
+      (3 * $width-glados-mobile) (34 * $width-glados-mobile) 0 $gray-blue-glados,
+      (4 * $width-glados-mobile) (34 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (5 * $width-glados-mobile) (34 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (6 * $width-glados-mobile) (34 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (7 * $width-glados-mobile) (34 * $width-glados-mobile) 0 $gray-glados,
+      (8 * $width-glados-mobile) (34 * $width-glados-mobile) 0 $gray-blue-glados,
+      (9 * $width-glados-mobile) (34 * $width-glados-mobile) 0 $gray-blue-glados,
+      (10 * $width-glados-mobile) (34 * $width-glados-mobile) 0 $gray-glados,
+      (11 * $width-glados-mobile) (34 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (12 * $width-glados-mobile) (34 * $width-glados-mobile) 0 $black-glados,
+      (13 * $width-glados-mobile) (34 * $width-glados-mobile) 0 $black-glados,
+      (14 * $width-glados-mobile) (34 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (15 * $width-glados-mobile) (34 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (16 * $width-glados-mobile) (34 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (17 * $width-glados-mobile) (34 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (18 * $width-glados-mobile) (34 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (19 * $width-glados-mobile) (34 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (20 * $width-glados-mobile) (34 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (21 * $width-glados-mobile) (34 * $width-glados-mobile) 0 $gray-glados,
+      (22 * $width-glados-mobile) (34 * $width-glados-mobile) 0 $gray-glados,
+      (23 * $width-glados-mobile) (34 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (24 * $width-glados-mobile) (34 * $width-glados-mobile) 0 $black-glados,
+      (25 * $width-glados-mobile) (34 * $width-glados-mobile) 0 $black-glados,
+      (26 * $width-glados-mobile) (34 * $width-glados-mobile) 0 $black-glados,
+      (27 * $width-glados-mobile) (34 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (28 * $width-glados-mobile) (34 * $width-glados-mobile) 0 $gray-glados,
+      (29 * $width-glados-mobile) (34 * $width-glados-mobile) 0 $gray-glados,
+      (3 * $width-glados-mobile) (35 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (4 * $width-glados-mobile) (35 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (5 * $width-glados-mobile) (35 * $width-glados-mobile) 0 $gray-glados,
+      (6 * $width-glados-mobile) (35 * $width-glados-mobile) 0 $gray-glados,
+      (7 * $width-glados-mobile) (35 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (8 * $width-glados-mobile) (35 * $width-glados-mobile) 0 $gray-glados,
+      (9 * $width-glados-mobile) (35 * $width-glados-mobile) 0 $gray-glados,
+      (10 * $width-glados-mobile) (35 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (11 * $width-glados-mobile) (35 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (12 * $width-glados-mobile) (35 * $width-glados-mobile) 0 $black-glados,
+      (13 * $width-glados-mobile) (35 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (14 * $width-glados-mobile) (35 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (15 * $width-glados-mobile) (35 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (16 * $width-glados-mobile) (35 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (17 * $width-glados-mobile) (35 * $width-glados-mobile) 0 $black-glados,
+      (18 * $width-glados-mobile) (35 * $width-glados-mobile) 0 $black-glados,
+      (19 * $width-glados-mobile) (35 * $width-glados-mobile) 0 $black-glados,
+      (20 * $width-glados-mobile) (35 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (21 * $width-glados-mobile) (35 * $width-glados-mobile) 0 $gray-glados,
+      (22 * $width-glados-mobile) (35 * $width-glados-mobile) 0 $gray-glados,
+      (23 * $width-glados-mobile) (35 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (24 * $width-glados-mobile) (35 * $width-glados-mobile) 0 $black-glados,
+      (25 * $width-glados-mobile) (35 * $width-glados-mobile) 0 $black-glados,
+      (26 * $width-glados-mobile) (35 * $width-glados-mobile) 0 $black-glados,
+      (27 * $width-glados-mobile) (35 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (28 * $width-glados-mobile) (35 * $width-glados-mobile) 0 $gray-glados,
+      (29 * $width-glados-mobile) (35 * $width-glados-mobile) 0 $gray-glados,
+      (3 * $width-glados-mobile) (36 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (4 * $width-glados-mobile) (36 * $width-glados-mobile) 0 $gray-glados,
+      (5 * $width-glados-mobile) (36 * $width-glados-mobile) 0 $gray-blue-glados,
+      (6 * $width-glados-mobile) (36 * $width-glados-mobile) 0 $gray-blue-glados,
+      (7 * $width-glados-mobile) (36 * $width-glados-mobile) 0 $gray-glados,
+      (8 * $width-glados-mobile) (36 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (9 * $width-glados-mobile) (36 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (10 * $width-glados-mobile) (36 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (11 * $width-glados-mobile) (36 * $width-glados-mobile) 0 $black-glados,
+      (12 * $width-glados-mobile) (36 * $width-glados-mobile) 0 $black-glados,
+      (13 * $width-glados-mobile) (36 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (14 * $width-glados-mobile) (36 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (15 * $width-glados-mobile) (36 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (16 * $width-glados-mobile) (36 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (17 * $width-glados-mobile) (36 * $width-glados-mobile) 0 $black-glados,
+      (18 * $width-glados-mobile) (36 * $width-glados-mobile) 0 $black-glados,
+      (19 * $width-glados-mobile) (36 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (20 * $width-glados-mobile) (36 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (21 * $width-glados-mobile) (36 * $width-glados-mobile) 0 $gray-glados,
+      (22 * $width-glados-mobile) (36 * $width-glados-mobile) 0 $gray-glados,
+      (23 * $width-glados-mobile) (36 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (24 * $width-glados-mobile) (36 * $width-glados-mobile) 0 $black-glados,
+      (25 * $width-glados-mobile) (36 * $width-glados-mobile) 0 $black-glados,
+      (26 * $width-glados-mobile) (36 * $width-glados-mobile) 0 $black-glados,
+      (27 * $width-glados-mobile) (36 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (28 * $width-glados-mobile) (36 * $width-glados-mobile) 0 $gray-glados,
+      (29 * $width-glados-mobile) (36 * $width-glados-mobile) 0 $gray-glados,
+      (3 * $width-glados-mobile) (37 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (4 * $width-glados-mobile) (37 * $width-glados-mobile) 0 $gray-glados,
+      (5 * $width-glados-mobile) (37 * $width-glados-mobile) 0 $gray-blue-glados,
+      (6 * $width-glados-mobile) (37 * $width-glados-mobile) 0 $gray-blue-glados,
+      (7 * $width-glados-mobile) (37 * $width-glados-mobile) 0 $gray-glados,
+      (8 * $width-glados-mobile) (37 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (9 * $width-glados-mobile) (37 * $width-glados-mobile) 0 $black-glados,
+      (10 * $width-glados-mobile) (37 * $width-glados-mobile) 0 $black-glados,
+      (11 * $width-glados-mobile) (37 * $width-glados-mobile) 0 $black-glados,
+      (12 * $width-glados-mobile) (37 * $width-glados-mobile) 0 $black-glados,
+      (13 * $width-glados-mobile) (37 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (14 * $width-glados-mobile) (37 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (15 * $width-glados-mobile) (37 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (16 * $width-glados-mobile) (37 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (17 * $width-glados-mobile) (37 * $width-glados-mobile) 0 $black-glados,
+      (18 * $width-glados-mobile) (37 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (19 * $width-glados-mobile) (37 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (20 * $width-glados-mobile) (37 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (21 * $width-glados-mobile) (37 * $width-glados-mobile) 0 $gray-glados,
+      (22 * $width-glados-mobile) (37 * $width-glados-mobile) 0 $gray-glados,
+      (23 * $width-glados-mobile) (37 * $width-glados-mobile) 0 $gray-glados,
+      (24 * $width-glados-mobile) (37 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (25 * $width-glados-mobile) (37 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (26 * $width-glados-mobile) (37 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (27 * $width-glados-mobile) (37 * $width-glados-mobile) 0 $gray-glados,
+      (28 * $width-glados-mobile) (37 * $width-glados-mobile) 0 $gray-glados,
+      (29 * $width-glados-mobile) (37 * $width-glados-mobile) 0 $gray-glados,
+      (4 * $width-glados-mobile) (38 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (5 * $width-glados-mobile) (38 * $width-glados-mobile) 0 $gray-glados,
+      (6 * $width-glados-mobile) (38 * $width-glados-mobile) 0 $gray-glados,
+      (7 * $width-glados-mobile) (38 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (8 * $width-glados-mobile) (38 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (9 * $width-glados-mobile) (38 * $width-glados-mobile) 0 $black-glados,
+      (10 * $width-glados-mobile) (38 * $width-glados-mobile) 0 $black-glados,
+      (11 * $width-glados-mobile) (38 * $width-glados-mobile) 0 $black-glados,
+      (12 * $width-glados-mobile) (38 * $width-glados-mobile) 0 $black-glados,
+      (13 * $width-glados-mobile) (38 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (14 * $width-glados-mobile) (38 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (15 * $width-glados-mobile) (38 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (16 * $width-glados-mobile) (38 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (17 * $width-glados-mobile) (38 * $width-glados-mobile) 0 $black-glados,
+      (18 * $width-glados-mobile) (38 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (19 * $width-glados-mobile) (38 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (20 * $width-glados-mobile) (38 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (21 * $width-glados-mobile) (38 * $width-glados-mobile) 0 $gray-glados,
+      (22 * $width-glados-mobile) (38 * $width-glados-mobile) 0 $gray-glados,
+      (23 * $width-glados-mobile) (38 * $width-glados-mobile) 0 $gray-glados,
+      (24 * $width-glados-mobile) (38 * $width-glados-mobile) 0 $gray-glados,
+      (25 * $width-glados-mobile) (38 * $width-glados-mobile) 0 $gray-glados,
+      (26 * $width-glados-mobile) (38 * $width-glados-mobile) 0 $gray-glados,
+      (27 * $width-glados-mobile) (38 * $width-glados-mobile) 0 $gray-glados,
+      (28 * $width-glados-mobile) (38 * $width-glados-mobile) 0 $gray-glados,
+      (29 * $width-glados-mobile) (38 * $width-glados-mobile) 0 $gray-glados,
+      (5 * $width-glados-mobile) (39 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (6 * $width-glados-mobile) (39 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (7 * $width-glados-mobile) (39 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (8 * $width-glados-mobile) (39 * $width-glados-mobile) 0 $gray-glados,
+      (9 * $width-glados-mobile) (39 * $width-glados-mobile) 0 $gray-glados,
+      (10 * $width-glados-mobile) (39 * $width-glados-mobile) 0 $gray-glados,
+      (11 * $width-glados-mobile) (39 * $width-glados-mobile) 0 $gray-glados,
+      (12 * $width-glados-mobile) (39 * $width-glados-mobile) 0 $gray-glados,
+      (13 * $width-glados-mobile) (39 * $width-glados-mobile) 0 $gray-glados,
+      (14 * $width-glados-mobile) (39 * $width-glados-mobile) 0 $gray-glados,
+      (15 * $width-glados-mobile) (39 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (16 * $width-glados-mobile) (39 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (17 * $width-glados-mobile) (39 * $width-glados-mobile) 0 $black-glados,
+      (18 * $width-glados-mobile) (39 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (19 * $width-glados-mobile) (39 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (20 * $width-glados-mobile) (39 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (21 * $width-glados-mobile) (39 * $width-glados-mobile) 0 $gray-glados,
+      (22 * $width-glados-mobile) (39 * $width-glados-mobile) 0 $gray-glados,
+      (23 * $width-glados-mobile) (39 * $width-glados-mobile) 0 $gray-glados,
+      (24 * $width-glados-mobile) (39 * $width-glados-mobile) 0 $gray-glados,
+      (25 * $width-glados-mobile) (39 * $width-glados-mobile) 0 $gray-glados,
+      (26 * $width-glados-mobile) (39 * $width-glados-mobile) 0 $gray-glados,
+      (27 * $width-glados-mobile) (39 * $width-glados-mobile) 0 $gray-glados,
+      (28 * $width-glados-mobile) (39 * $width-glados-mobile) 0 $gray-glados,
+      (6 * $width-glados-mobile) (40 * $width-glados-mobile) 0 $gray-glados,
+      (7 * $width-glados-mobile) (40 * $width-glados-mobile) 0 $gray-glados,
+      (8 * $width-glados-mobile) (40 * $width-glados-mobile) 0 $gray-glados,
+      (9 * $width-glados-mobile) (40 * $width-glados-mobile) 0 $gray-glados,
+      (10 * $width-glados-mobile) (40 * $width-glados-mobile) 0 $gray-glados,
+      (11 * $width-glados-mobile) (40 * $width-glados-mobile) 0 $gray-glados,
+      (12 * $width-glados-mobile) (40 * $width-glados-mobile) 0 $gray-glados,
+      (13 * $width-glados-mobile) (40 * $width-glados-mobile) 0 $gray-glados,
+      (14 * $width-glados-mobile) (40 * $width-glados-mobile) 0 $gray-glados,
+      (15 * $width-glados-mobile) (40 * $width-glados-mobile) 0 $gray-glados,
+      (16 * $width-glados-mobile) (40 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (17 * $width-glados-mobile) (40 * $width-glados-mobile) 0 $black-glados,
+      (18 * $width-glados-mobile) (40 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (19 * $width-glados-mobile) (40 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (20 * $width-glados-mobile) (40 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (21 * $width-glados-mobile) (40 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (22 * $width-glados-mobile) (40 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (23 * $width-glados-mobile) (40 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (24 * $width-glados-mobile) (40 * $width-glados-mobile) 0 $black-glados,
+      (25 * $width-glados-mobile) (40 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (7 * $width-glados-mobile) (41 * $width-glados-mobile) 0 $gray-glados,
+      (8 * $width-glados-mobile) (41 * $width-glados-mobile) 0 $gray-glados,
+      (9 * $width-glados-mobile) (41 * $width-glados-mobile) 0 $gray-glados,
+      (10 * $width-glados-mobile) (41 * $width-glados-mobile) 0 $gray-glados,
+      (11 * $width-glados-mobile) (41 * $width-glados-mobile) 0 $gray-glados,
+      (12 * $width-glados-mobile) (41 * $width-glados-mobile) 0 $gray-glados,
+      (13 * $width-glados-mobile) (41 * $width-glados-mobile) 0 $gray-glados,
+      (14 * $width-glados-mobile) (41 * $width-glados-mobile) 0 $gray-glados,
+      (15 * $width-glados-mobile) (41 * $width-glados-mobile) 0 $gray-glados,
+      (16 * $width-glados-mobile) (41 * $width-glados-mobile) 0 $gray-glados,
+      (17 * $width-glados-mobile) (41 * $width-glados-mobile) 0 $black-glados,
+      (18 * $width-glados-mobile) (41 * $width-glados-mobile) 0 $black-glados,
+      (19 * $width-glados-mobile) (41 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (20 * $width-glados-mobile) (41 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (21 * $width-glados-mobile) (41 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (22 * $width-glados-mobile) (41 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (23 * $width-glados-mobile) (41 * $width-glados-mobile) 0 $black-glados,
+      (24 * $width-glados-mobile) (41 * $width-glados-mobile) 0 $black-glados,
+      (25 * $width-glados-mobile) (41 * $width-glados-mobile) 0
+        $gray-black-glados,
+      (8 * $width-glados-mobile) (42 * $width-glados-mobile) 0 $gray-glados,
+      (9 * $width-glados-mobile) (42 * $width-glados-mobile) 0 $gray-glados,
+      (10 * $width-glados-mobile) (42 * $width-glados-mobile) 0 $gray-glados,
+      (11 * $width-glados-mobile) (42 * $width-glados-mobile) 0 $gray-glados,
+      (12 * $width-glados-mobile) (42 * $width-glados-mobile) 0 $gray-glados,
+      (13 * $width-glados-mobile) (42 * $width-glados-mobile) 0 $gray-glados,
+      (14 * $width-glados-mobile) (42 * $width-glados-mobile) 0 $gray-glados,
+      (15 * $width-glados-mobile) (42 * $width-glados-mobile) 0 $gray-glados,
+      (16 * $width-glados-mobile) (42 * $width-glados-mobile) 0 $gray-glados,
+      (17 * $width-glados-mobile) (42 * $width-glados-mobile) 0 $gray-glados,
+      (18 * $width-glados-mobile) (42 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (19 * $width-glados-mobile) (42 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (20 * $width-glados-mobile) (42 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (21 * $width-glados-mobile) (42 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (22 * $width-glados-mobile) (42 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (23 * $width-glados-mobile) (42 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (24 * $width-glados-mobile) (42 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (9 * $width-glados-mobile) (43 * $width-glados-mobile) 0 $gray-glados,
+      (10 * $width-glados-mobile) (43 * $width-glados-mobile) 0 $gray-glados,
+      (11 * $width-glados-mobile) (43 * $width-glados-mobile) 0 $gray-glados,
+      (12 * $width-glados-mobile) (43 * $width-glados-mobile) 0 $gray-glados,
+      (13 * $width-glados-mobile) (43 * $width-glados-mobile) 0 $gray-glados,
+      (14 * $width-glados-mobile) (43 * $width-glados-mobile) 0 $gray-glados,
+      (15 * $width-glados-mobile) (43 * $width-glados-mobile) 0 $gray-glados,
+      (16 * $width-glados-mobile) (43 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (17 * $width-glados-mobile) (43 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (18 * $width-glados-mobile) (43 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (19 * $width-glados-mobile) (43 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (20 * $width-glados-mobile) (43 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (21 * $width-glados-mobile) (43 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (22 * $width-glados-mobile) (43 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (23 * $width-glados-mobile) (43 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (10 * $width-glados-mobile) (44 * $width-glados-mobile) 0 $gray-glados,
+      (11 * $width-glados-mobile) (44 * $width-glados-mobile) 0 $gray-glados,
+      (12 * $width-glados-mobile) (44 * $width-glados-mobile) 0 $gray-glados,
+      (13 * $width-glados-mobile) (44 * $width-glados-mobile) 0 $gray-glados,
+      (14 * $width-glados-mobile) (44 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (15 * $width-glados-mobile) (44 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (16 * $width-glados-mobile) (44 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (17 * $width-glados-mobile) (44 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (18 * $width-glados-mobile) (44 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (19 * $width-glados-mobile) (44 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (20 * $width-glados-mobile) (44 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (21 * $width-glados-mobile) (44 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (22 * $width-glados-mobile) (44 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (11 * $width-glados-mobile) (45 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (12 * $width-glados-mobile) (45 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (13 * $width-glados-mobile) (45 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (14 * $width-glados-mobile) (45 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (15 * $width-glados-mobile) (45 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (16 * $width-glados-mobile) (45 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (17 * $width-glados-mobile) (45 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (18 * $width-glados-mobile) (45 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (19 * $width-glados-mobile) (45 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (20 * $width-glados-mobile) (45 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (21 * $width-glados-mobile) (45 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (13 * $width-glados-mobile) (46 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (14 * $width-glados-mobile) (46 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (15 * $width-glados-mobile) (46 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (16 * $width-glados-mobile) (46 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (17 * $width-glados-mobile) (46 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (18 * $width-glados-mobile) (46 * $width-glados-mobile) 0
+        $gray-blue-glados,
+      (19 * $width-glados-mobile) (46 * $width-glados-mobile) 0
+        $gray-blue-glados;
+  }
 }

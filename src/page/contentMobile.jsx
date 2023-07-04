@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useTranslation, Trans } from 'react-i18next'
-import useWindowSize from '../hooks/useWindowSize'
 import ContentItemSmall from '../components/contentItemSmall'
 import {
   BmoData,
@@ -16,7 +15,6 @@ import {
 
 const ContentMobile = () => {
   const { t } = useTranslation()
-  const size = useWindowSize()
   const rickData = RickData()
   const mcgonagallData = McgonagallData()
   const bmoData = BmoData()
@@ -299,10 +297,10 @@ const ContentMobile = () => {
       </div>
       <div
         className="content"
-        style={{ marginBottom: 20, marginTop: 20 }}
+        style={{ marginBottom: 10, marginTop: 10 }}
         data-aos="fade-up"
       >
-        <div className="content__title" style={{ marginBottom: 20 }}>
+        <div className="content__title" style={{ marginBottom: 10 }}>
           {t('content.aqaEngineer')}
         </div>
       </div>
@@ -310,12 +308,10 @@ const ContentMobile = () => {
         <div className="content__item__row">
           <div
             className="content__bit"
-            onMouseOver={() => (size.mobile ? {} : setGlados('-open'))}
-            onMouseOut={() => (size.mobile ? {} : setGlados('-close'))}
-            onTouchStart={() => (size.mobile ? setGlados('-open') : {})}
-            onTouchEnd={() => (size.mobile ? setGlados('-close') : {})}
-            onMouseDown={() => (size.mobile ? setGlados('-open') : {})}
-            onMouseUp={() => (size.mobile ? setGlados('-close') : {})}
+            onTouchStart={() => setGlados('-open')}
+            onTouchEnd={() => setGlados('-close')}
+            onMouseDown={() => setGlados('-open')}
+            onMouseUp={() => setGlados('-close')}
           >
             <div className="glados__box">
               <div className="glados">
@@ -323,14 +319,14 @@ const ContentMobile = () => {
                   className="glados__eye"
                   style={
                     glados === '-open'
-                      ? { transform: 'translate(171px, 225px)' }
+                      ? { transform: 'translate(111px, 145px)' }
                       : {}
                   }
                 />
               </div>
               <div
                 className="bubble left glados__dialog"
-                style={{ width: 270 }}
+                style={{ width: 155 }}
               >
                 <div className="content__bit__text">
                   {glados === '-open' ? (
@@ -361,12 +357,10 @@ const ContentMobile = () => {
         <div className="content__item__row">
           <div
             className="content__bit"
-            onMouseOver={() => (size.mobile ? {} : setYoda(true))}
-            onMouseOut={() => (size.mobile ? {} : setYoda(false))}
-            onTouchStart={() => (size.mobile ? setYoda(true) : {})}
-            onTouchEnd={() => (size.mobile ? setYoda(false) : {})}
-            onMouseDown={() => (size.mobile ? setYoda(true) : {})}
-            onMouseUp={() => (size.mobile ? setYoda(false) : {})}
+            onTouchStart={() => setYoda(true)}
+            onTouchEnd={() => setYoda(false)}
+            onMouseDown={() => setYoda(true)}
+            onMouseUp={() => setYoda(false)}
           >
             <div className="yoda__box">
               <div className="yoda">
