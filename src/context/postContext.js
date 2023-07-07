@@ -1,5 +1,6 @@
 import { useState, createContext } from 'react'
-// import axios from 'axios'
+import strEmpty from '../utils/strEmpty'
+import axios from 'axios'
 
 const PostContext = createContext()
 
@@ -11,6 +12,24 @@ export const PostProvider = ({ children }) => {
 
   const sendFeedback = async (e) => {
     e.preventDefault()
+    const name = e.target.name.value
+    const email = e.target.email.value
+    const phone = e.target.phone.value
+    const messenger = e.target.messenger.value
+    // console.log(strEmpty(name))
+    // console.log(strEmpty(messenger))
+    if (!strEmpty(email)) {
+      console.log(222)
+      const data = {
+        name: name,
+        email: email,
+      }
+      await axios
+        .post(`https://hr.octagonds.tech:8001/api/email/send`, data)
+        .catch((error) => {
+          console.log(error)
+        })
+    }
     //     const FormData = require('form-data')
     //     let data = new FormData()
     //     data.append('fields[name_1]', e.target['fields[name_1]'].value)
@@ -43,6 +62,7 @@ export const PostProvider = ({ children }) => {
     setTimeout(() => {
       setSuccessForm(false)
     }, 10000)
+    e.target.reset()
   }
 
   let contextData = {
