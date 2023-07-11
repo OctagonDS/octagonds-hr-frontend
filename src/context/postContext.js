@@ -19,7 +19,7 @@ export const PostProvider = ({ children }) => {
     const phone = e.target.phone.value
     const messenger = e.target.messenger.value
     let ip = ''
-    const JWT =
+    const jwt =
       'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImU4ODY1YjZlZjJiZjAyZjU1ZDBhZWQ2ZGUwNjk2NGQ4MjFkOGMyYTgyNTZmMjZkZjEwYjUxNzc1NjNhZjRlZjU2MGQyOTc0NzgzYzlkNTExIn0.eyJhdWQiOiJhOWI3MWQ4ZC0yMTliLTRmYTUtYWY5OC1iYTBmY2E3NzRkNmEiLCJqdGkiOiJlODg2NWI2ZWYyYmYwMmY1NWQwYWVkNmRlMDY5NjRkODIxZDhjMmE4MjU2ZjI2ZGYxMGI1MTc3NTYzYWY0ZWY1NjBkMjk3NDc4M2M5ZDUxMSIsImlhdCI6MTY4OTA3ODY1NywibmJmIjoxNjg5MDc4NjU3LCJleHAiOjE2ODkxNjUwNTcsInN1YiI6Ijk0MTU5MjIiLCJncmFudF90eXBlIjoiIiwiYWNjb3VudF9pZCI6MzA5NjAwMjIsImJhc2VfZG9tYWluIjoiYW1vY3JtLnJ1IiwidmVyc2lvbiI6InYxIiwic2NvcGVzIjpbInB1c2hfbm90aWZpY2F0aW9ucyIsImZpbGVzIiwiY3JtIiwiZmlsZXNfZGVsZXRlIiwibm90aWZpY2F0aW9ucyJdfQ.kZUb4eDWC1nXUASGfVOQZNqwRqC5GDW_eSVJxhaKWfrpOVc-u351ZrNDyQTY5X5Bqgv5cmzHWqjkqgku2ouIBA2JlYQr9hW6NsV_f-65sR1Kh6dC9RyGZHxlCX6U6MguLJHfKJoauMLgk67cURjvBeFpD2tInZGUNvFS935LgiWd8oNhdGWKKCxSkqiR2edWEo1Np7zP2o4Us5tfsDaYydnBCp2hmpxnjQktgY5SiO2SDfikxwSstSZqmSsNC4e3NNGAlKbOjnEkEhXvi1RBWDHHTseUdPIhJ_XVc4YEOjmAYLZYgU6EOCPK1GoGUu_TZdZqF-T5Lj8lKUPlRHxi-Q'
     // console.log(strEmpty(name))
     // console.log(strEmpty(messenger))
@@ -35,9 +35,9 @@ export const PostProvider = ({ children }) => {
       //     console.log(error)
       //   })
     }
-    await axios
-      .get(`https://geolocation-db.com/json/`)
-      .then((res) => (ip = res.data.IPv4))
+    // await axios
+    //   .get(`https://geolocation-db.com/json/`)
+    //   .then((res) => (ip = res.data.IPv4))
 
     const amoData = {
       request_id: now,
@@ -79,7 +79,7 @@ export const PostProvider = ({ children }) => {
         ],
       },
       metadata: {
-        ip: ip,
+        // ip: ip,
         form_id: 'b06msjbn1dvbvf1784q8ayf5xe835jp3a77d',
         form_sent_at: now,
         form_name: 'HR форма',
@@ -89,7 +89,7 @@ export const PostProvider = ({ children }) => {
     }
     const headers = {
       'Content-Type': 'application/json',
-      Authorization: `Bearer ${JWT}`,
+      Authorization: `Bearer ${jwt}`,
     }
 
     await axios
